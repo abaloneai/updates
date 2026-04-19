@@ -6,21 +6,23 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
-            <title>Version 1.0.0</title>
+            <title>Version 1.0.0 — Stay in flow. Talk anywhere you type.</title>
             <pubDate>Sun, 19 Apr 2026 11:07:25 +0700</pubDate>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <h2>Abalone Flow 1.0.0</h2>
-                <p>First public release. Local dictation for macOS — hold a key, talk, release, your words appear at the cursor. All on-device, nothing leaves your machine.</p>
+                <p><strong>Stay in flow. Talk anywhere you type.</strong></p>
+                <p>Hold a key, speak, release. Your words appear at the cursor — in any app, any field, anywhere on your Mac.</p>
                 <ul>
-                    <li>Push-to-talk and double-tap hands-free on any shortcut key</li>
-                    <li>Live waveform overlay while recording</li>
-                    <li>On-device Whisper transcription</li>
-                    <li>History with audio retention, paste-last shortcut, clipboard preservation</li>
+                    <li><strong>Faster than typing.</strong> Streaming transcription puts words on screen as you speak them.</li>
+                    <li><strong>Private by design.</strong> Everything runs on your Mac. Your voice never leaves it.</li>
+                    <li><strong>Free. No caps.</strong> No weekly limits. No subscription. No account.</li>
+                    <li><strong>Near-perfect accuracy.</strong> ~97% on clean English, with punctuation and capitalization.</li>
+                    <li><strong>Everywhere you work.</strong> Claude Code, Mail, Slack, Obsidian, Linear — if you can type there, you can speak there.</li>
                 </ul>
-                <p>Requires macOS 14 (Sonoma) or later.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon recommended.</p>
             ]]></description>
             <enclosure
                 url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.0.0/AbaloneFlow-1.0.0.dmg"
