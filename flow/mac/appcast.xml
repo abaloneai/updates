@@ -7,7 +7,7 @@
         <language>en</language>
         <item>
             <title>Version 1.0.0 — Speak 3x faster than you type. Anywhere on your Mac.</title>
-            <pubDate>Sun, 19 Apr 2026 11:50:00 +0700</pubDate>
+            <pubDate>Sun, 19 Apr 2026 19:46:19 +0700</pubDate>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
@@ -28,8 +28,8 @@
             ]]></description>
             <enclosure
                 url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.0.0/AbaloneFlow-1.0.0.dmg"
-                sparkle:edSignature="eCFrRbubsEyvaSiTS2/OgRVCiP2Anl9diIb4RyxV7Bqt+2gV7AZd1/roWvYZsF7yTJa0EPBPdDFPADXCVBX/AA=="
-                length="6147274"
+                sparkle:edSignature="yCdU3I/Cl/D0wg1inkQJd7xWlCrY5UzBFyuXLqLdJt+HVDlGGZB8SyTjylh/o4SizZeM79LQCEoX1H1+mBczDw=="
+                length="7042896"
                 type="application/octet-stream" />
         </item>
     </channel>
