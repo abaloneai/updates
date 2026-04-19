@@ -6,6 +6,36 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.1.0 — Richer mid-session mode switching</title>
+            <pubDate>Mon, 20 Apr 2026 00:15:00 +0700</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.1.0</h2>
+                <p>Better mid-session control, more configurable hotkeys, fewer false scolds.</p>
+                <h3>New hotkey gestures</h3>
+                <ul>
+                    <li><strong>Latch mid-session:</strong> Hold your PTT key, then press your hands-free combo — recording continues, now in hands-free.</li>
+                    <li><strong>Double-tap modifier-only PTT:</strong> E.g. Control alone, now toggles hands-free. Used to only work on Fn.</li>
+                    <li><strong>Single-tap to stop hands-free:</strong> Press your PTT key once during an active session to stop and transcribe.</li>
+                    <li><strong>Extend the chord:</strong> Ctrl → Ctrl+Cmd during PTT promotes into hands-free. Works with any binding you configure.</li>
+                    <li><strong>Confirmation sound:</strong> A short "Pop" plays on mode flips so you always know what state you're in.</li>
+                </ul>
+                <h3>Fixes</h3>
+                <ul>
+                    <li>Hotkeys attach at HID driver level — other dictation apps can't steal your keys.</li>
+                    <li>Accidental short taps (&lt;200 ms) no longer trigger the "No speech detected" warning.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.1.0/AbaloneFlow-1.1.0.dmg"
+                sparkle:edSignature="SP66LQ6Qr54t2nbEet/giCYTRh3sJYjvJINi9l9ZH2TNrHOl/hhtxLVAUjYessQTqn2Jm8SNWbtXwhr5rQTCAg=="
+                length="7049187"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.0.0 — Speak 3x faster than you type. Anywhere on your Mac.</title>
             <pubDate>Sun, 19 Apr 2026 19:46:19 +0700</pubDate>
             <sparkle:version>1</sparkle:version>
