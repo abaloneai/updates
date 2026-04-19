@@ -6,24 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
-            <title>Version 1.0.0 — Stay in flow. Talk anywhere you type.</title>
+            <title>Version 1.0.0 — Speak 3x faster than you type. Anywhere on your Mac.</title>
             <pubDate>Sun, 19 Apr 2026 11:07:25 +0700</pubDate>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <h2>Abalone Flow 1.0.0</h2>
-                <p><strong>Stay in flow. Talk anywhere you type.</strong></p>
-                <p>Thinking is fast. Typing is slow. Abalone Flow puts your voice where your fingers used to be — hold a key, speak, release. Your words appear at the cursor in any app on your Mac.</p>
-                <h3>Why people use it</h3>
+                <p><strong>Speak 3x faster than you type. Anywhere on your Mac.</strong></p>
+                <p>You speak at 140 words per minute. You type at 40. Abalone Flow closes that gap everywhere you'd normally type — Mail, Slack, Claude Code, Cursor, Obsidian, Linear, Notion.</p>
+                <p>Hold a key. Speak. Release. Your words land at the cursor, already punctuated and capitalized, before you've taken your hand off the key.</p>
+                <h3>The five things that matter</h3>
                 <ul>
-                    <li><strong>Faster than typing.</strong> Words appear while you speak them, not after.</li>
-                    <li><strong>Private by design.</strong> Everything runs on your Mac. Nothing uploads, ever.</li>
-                    <li><strong>Free. No caps.</strong> No weekly word limits. No subscription. No account.</li>
-                    <li><strong>Near-perfect accuracy.</strong> ~97% on clean English, with punctuation and capitalization. We transcribe what you said, not what an AI thinks you meant.</li>
-                    <li><strong>Everywhere you type.</strong> Claude Code, Cursor, Mail, Slack, Obsidian, Linear, Notion.</li>
+                    <li><strong>Transcription runs on your Mac.</strong> OpenAI Whisper via WhisperKit, native on Apple Silicon. Audio never leaves your machine.</li>
+                    <li><strong>Your history syncs across devices.</strong> Transcribed text follows you from laptop to desktop; audio stays local.</li>
+                    <li><strong>One-click sign-in with Google.</strong> No forms, no email to verify, no inbox ceremony.</li>
+                    <li><strong>Free.</strong> No subscription, no credit card, no word limits today.</li>
+                    <li><strong>Near-perfect accuracy.</strong> ~97% on clean English. Swap in Large-v3 for broadcast-grade transcription.</li>
                 </ul>
-                <p>Requires macOS 14 Sonoma or later. Apple Silicon recommended.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon (M1, M2, M3, M4).</p>
             ]]></description>
             <enclosure
                 url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.0.0/AbaloneFlow-1.0.0.dmg"
