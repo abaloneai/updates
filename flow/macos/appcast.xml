@@ -14,13 +14,14 @@
             <description><![CDATA[
                 <h2>Abalone Flow 1.0.0</h2>
                 <p><strong>Stay in flow. Talk anywhere you type.</strong></p>
-                <p>Hold a key, speak, release. Your words appear at the cursor — in any app, any field, anywhere on your Mac.</p>
+                <p>Thinking is fast. Typing is slow. Abalone Flow puts your voice where your fingers used to be — hold a key, speak, release. Your words appear at the cursor in any app on your Mac.</p>
+                <h3>Why people use it</h3>
                 <ul>
-                    <li><strong>Faster than typing.</strong> Streaming transcription puts words on screen as you speak them.</li>
-                    <li><strong>Private by design.</strong> Everything runs on your Mac. Your voice never leaves it.</li>
-                    <li><strong>Free. No caps.</strong> No weekly limits. No subscription. No account.</li>
-                    <li><strong>Near-perfect accuracy.</strong> ~97% on clean English, with punctuation and capitalization.</li>
-                    <li><strong>Everywhere you work.</strong> Claude Code, Mail, Slack, Obsidian, Linear — if you can type there, you can speak there.</li>
+                    <li><strong>Faster than typing.</strong> Words appear while you speak them, not after.</li>
+                    <li><strong>Private by design.</strong> Everything runs on your Mac. Nothing uploads, ever.</li>
+                    <li><strong>Free. No caps.</strong> No weekly word limits. No subscription. No account.</li>
+                    <li><strong>Near-perfect accuracy.</strong> ~97% on clean English, with punctuation and capitalization. We transcribe what you said, not what an AI thinks you meant.</li>
+                    <li><strong>Everywhere you type.</strong> Claude Code, Cursor, Mail, Slack, Obsidian, Linear, Notion.</li>
                 </ul>
                 <p>Requires macOS 14 Sonoma or later. Apple Silicon recommended.</p>
             ]]></description>
