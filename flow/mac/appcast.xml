@@ -6,6 +6,30 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.1.1 — bug-fix release</title>
+            <pubDate>Mon, 20 Apr 2026 01:20:00 +0700</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.1.1</h2>
+                <p>Bug fixes for home stats, hands-free, and push-to-talk.</p>
+                <h3>Fixes</h3>
+                <ul>
+                    <li><strong>Home stats from cloud DB.</strong> Weekly streak and 7-day WPM now read from the full cloud dataset, not the 200-row local cache.</li>
+                    <li><strong>Modifier-only hands-free fires instantly.</strong> No more 150 ms hold before Control+Command (or any modifier combo bound to hands-free) starts recording.</li>
+                    <li><strong>Push-to-talk no longer hangs after a mode switch.</strong> Pressing push-to-talk to stop hands-free used to silently break the key until a restart.</li>
+                    <li><strong>Double-tap to re-enter hands-free works every time.</strong> After stopping hands-free with a single tap, the next double-tap was being dropped.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.1.1/AbaloneFlow-1.1.1.dmg"
+                sparkle:edSignature="2lIzBW1WyO5Ish3xhBz9LIT5zjESWF0h3i6OaGDizqY9jQRISsONP3fA1mcQQMqPvIO7I6DdhsTbyUOdbndzBw=="
+                length="7052404"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.1.0 — Richer mid-session mode switching</title>
             <pubDate>Mon, 20 Apr 2026 00:15:00 +0700</pubDate>
             <sparkle:version>2</sparkle:version>
