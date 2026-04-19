@@ -5,6 +5,28 @@
         <link>https://updates.abalone.ai/flow/macos/appcast.xml</link>
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
-        <!-- Release entries appended here by scripts/generate-appcast-entry.sh -->
+        <item>
+            <title>Version 1.0.0</title>
+            <pubDate>Sun, 19 Apr 2026 11:07:25 +0700</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.0.0</h2>
+                <p>First public release. Local dictation for macOS — hold a key, talk, release, your words appear at the cursor. All on-device, nothing leaves your machine.</p>
+                <ul>
+                    <li>Push-to-talk and double-tap hands-free on any shortcut key</li>
+                    <li>Live waveform overlay while recording</li>
+                    <li>On-device Whisper transcription</li>
+                    <li>History with audio retention, paste-last shortcut, clipboard preservation</li>
+                </ul>
+                <p>Requires macOS 14 (Sonoma) or later.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.0.0/AbaloneFlow-1.0.0.dmg"
+                sparkle:edSignature="eWv7N3gAX3kxAh7/BZG5nVrREDAvYlihhXPuqdUI97FGkbncHt9idYAQThCuvVIXRwiVP8cDhAJx8iEbero+Cg=="
+                length="6147351"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
