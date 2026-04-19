@@ -2,12 +2,12 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
     <channel>
         <title>Abalone Flow</title>
-        <link>https://updates.abalone.ai/flow/macos/appcast.xml</link>
+        <link>https://updates.abalone.ai/flow/mac/appcast.xml</link>
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
             <title>Version 1.0.0 — Speak 3x faster than you type. Anywhere on your Mac.</title>
-            <pubDate>Sun, 19 Apr 2026 11:07:25 +0700</pubDate>
+            <pubDate>Sun, 19 Apr 2026 11:50:00 +0700</pubDate>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
@@ -28,8 +28,8 @@
             ]]></description>
             <enclosure
                 url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.0.0/AbaloneFlow-1.0.0.dmg"
-                sparkle:edSignature="eWv7N3gAX3kxAh7/BZG5nVrREDAvYlihhXPuqdUI97FGkbncHt9idYAQThCuvVIXRwiVP8cDhAJx8iEbero+Cg=="
-                length="6147351"
+                sparkle:edSignature="eCFrRbubsEyvaSiTS2/OgRVCiP2Anl9diIb4RyxV7Bqt+2gV7AZd1/roWvYZsF7yTJa0EPBPdDFPADXCVBX/AA=="
+                length="6147274"
                 type="application/octet-stream" />
         </item>
     </channel>
