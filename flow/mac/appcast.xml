@@ -6,6 +6,28 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.2.1 — silent auto-update fix</title>
+            <pubDate>Tue, 21 Apr 2026 13:10:45 +0000</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.2.1</h2>
+                <p>A quick follow-up to 1.2.0. The automatic update flow wasn't reliably surfacing the "Restart to Update" button when a new version was available in the background — you'd either see nothing, or occasionally a stray Sparkle dialog. This fixes both.</p>
+                <h3>Change</h3>
+                <ul>
+                    <li>Sparkle now downloads new versions silently in the background (as intended) and the "Restart to Update" capsule appears automatically under the sidebar logo, in Settings, and in the app menu — no dialogs to dismiss.</li>
+                </ul>
+                <p>No behaviour changes to dictation, cloud sync, or telemetry from 1.2.0.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.2.1/AbaloneFlow-1.2.1.dmg"
+                sparkle:edSignature="Md1kJuLro2aZEbjpTGZPJih36GP42Lf5S39+93Sq6XnW+AMtfagHLw3olIbKRYw2x6Y/oqcPvLH0n9fxPHhsAw=="
+                length="6425525"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.2.0 — per-device telemetry + privacy policy</title>
             <pubDate>Tue, 21 Apr 2026 11:19:08 +0000</pubDate>
             <sparkle:version>6</sparkle:version>
