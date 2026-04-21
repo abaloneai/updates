@@ -6,6 +6,27 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.1.3 — silent Restart to Update</title>
+            <pubDate>Tue, 21 Apr 2026 06:06:00 +0000</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.1.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.1.3</h2>
+                <p>Smoother update flow — no more dialogs to click through.</p>
+                <h3>Change</h3>
+                <ul>
+                    <li><strong>"Restart to Update" is now silent.</strong> Clicking the button used to surface two Sparkle dialogs ("Update Available" and then "Install and Relaunch"). Now it just quits the app, installs the new version, and relaunches — no clicks needed.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.1.3/AbaloneFlow-1.1.3.dmg"
+                sparkle:edSignature="heeXgtvfH/bDwNE2Vnzx6xbQWooHVCpkg+xpSHw35eNp+EqeJ+pzTQ/AWtC0biWBDvSxhOpaCOxSGEICIjL8DA=="
+                length="6419832"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.1.2 — launch fix for China</title>
             <pubDate>Tue, 21 Apr 2026 02:23:00 +0000</pubDate>
             <sparkle:version>4</sparkle:version>
