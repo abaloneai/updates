@@ -6,6 +6,27 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.1.2 — launch fix for China</title>
+            <pubDate>Tue, 21 Apr 2026 02:23:00 +0000</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.1.2</h2>
+                <p>Fixes a launch failure reported by users in mainland China.</p>
+                <h3>Fix</h3>
+                <ul>
+                    <li><strong>"Apple could not verify" dialog on first launch.</strong> The notarization ticket is now stapled to the app bundle itself, so Gatekeeper can verify offline — no need to reach Apple's servers. This unblocks users in regions where Apple's notarization endpoints are throttled.</li>
+                </ul>
+                <p>No other behavior changes. Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.1.2/AbaloneFlow-1.1.2.dmg"
+                sparkle:edSignature="IjUvveq5rWC4ahptETXBf3SqQxYRH2I0svkKTrIJyDeLX7HdKH0aV9FSsnGq3CaoFMOTWxKj5SkAe1kgQnPQAQ=="
+                length="6417995"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.1.1 — bug-fix release</title>
             <pubDate>Mon, 20 Apr 2026 01:20:00 +0700</pubDate>
             <sparkle:version>3</sparkle:version>
