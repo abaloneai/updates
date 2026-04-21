@@ -6,6 +6,28 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.2.2 — stale-cache update CTA fix</title>
+            <pubDate>Tue, 21 Apr 2026 14:51:58 +0000</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.2.2</h2>
+                <p>Another small polish on the auto-update flow. In 1.2.1 a stale DMG cache could leave the "Restart to Update" capsule on-screen even when there was nothing new to install — clicking it would quit the app without doing anything. This release ignores Sparkle's delegate callbacks for versions that match what's already running.</p>
+                <h3>Change</h3>
+                <ul>
+                    <li>The "Restart to Update" capsule only appears when there's a genuinely newer build waiting. No more ghost CTAs that do nothing when clicked.</li>
+                </ul>
+                <p>No behaviour changes to dictation, cloud sync, or telemetry.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.2.2/AbaloneFlow-1.2.2.dmg"
+                sparkle:edSignature="gW0Nfm7/OmQ9sDwPrbRiU5GrEBnPpBC3tAQ6BYqLLDxPd4QRu3OkYgH5pYsrcPqFjmsnN4/1VGq+YsMC9YpYBg=="
+                length="6427586"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.2.1 — silent auto-update fix</title>
             <pubDate>Tue, 21 Apr 2026 13:10:45 +0000</pubDate>
             <sparkle:version>7</sparkle:version>
