@@ -6,6 +6,29 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.2.3 — smarter update checks + reliable restart</title>
+            <pubDate>Tue, 21 Apr 2026 15:53:32 +0000</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.2.3</h2>
+                <p>Closes out the auto-update flow. The "Restart to Update" button now reliably installs the update and relaunches the app. Previously, under certain conditions, clicking it would quit the app without installing anything — leaving you stuck on the old version.</p>
+                <h3>Changes</h3>
+                <ul>
+                    <li><strong>Checks for updates every time you launch the app</strong>, plus once an hour while it's running. Previously it only checked once every 24 hours, which meant relaunching didn't necessarily trigger a fresh check.</li>
+                    <li><strong>"Restart to Update" now reliably installs.</strong> You'll see a brief one-click "Install and Relaunch" confirmation from Sparkle when you click the capsule — then the app installs and relaunches, the way it was always supposed to.</li>
+                </ul>
+                <p>No behaviour changes to dictation, cloud sync, or telemetry.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.2.3/AbaloneFlow-1.2.3.dmg"
+                sparkle:edSignature="Bm6aEAlwTxv4XBWKnMdXUA9ISWYU4yF6iKjv/7EsCToVG+CivgHCGlRwGfihTK7g2XWX2S9lyLOzi7gf4brrCA=="
+                length="6424708"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.2.2 — stale-cache update CTA fix</title>
             <pubDate>Tue, 21 Apr 2026 14:51:58 +0000</pubDate>
             <sparkle:version>8</sparkle:version>
