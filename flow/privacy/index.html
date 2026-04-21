@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy — Abalone Flow</title>
+    <meta name="description" content="How Abalone Flow handles your data. Plain English. Updated 2026-04-21.">
+    <link rel="canonical" href="https://updates.abalone.ai/flow/privacy">
+    <link rel="icon" type="image/svg+xml" href="https://updates.abalone.ai/flow/icon.svg">
+    <style>
+        :root {
+            --bg: #14141f;
+            --text: #ffffff;
+            --muted: rgba(255, 255, 255, 0.65);
+            --accent: #aabeff;
+            --panel: rgba(255, 255, 255, 0.04);
+            --panel-border: rgba(255, 255, 255, 0.08);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+        }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 64px 24px 96px;
+        }
+        .back {
+            display: inline-block;
+            font-size: 14px;
+            color: var(--muted);
+            text-decoration: none;
+            margin-bottom: 48px;
+        }
+        .back:hover { color: var(--text); }
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+        .updated {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-top: 48px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 16px;
+        }
+        a { color: var(--accent); }
+        a:hover { text-decoration: none; }
+        ul {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.85);
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 8px; }
+        strong { color: var(--text); font-weight: 600; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--panel-border);
+            vertical-align: top;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        th {
+            color: var(--text);
+            font-weight: 600;
+            background: var(--panel);
+        }
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: var(--muted);
+            padding: 24px 0 32px;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a class="back" href="https://updates.abalone.ai/flow">← Back to Abalone Flow</a>
+
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: 2026-04-21</p>
+
+        <p>
+            This is the privacy policy for <strong>Abalone Flow</strong> (the Mac app)
+            and <a href="https://abalone.ai">abalone.ai</a>. It's written in plain
+            English because we'd rather you read it than skim it.
+        </p>
+
+        <h2>Who we are</h2>
+        <p>
+            Abalone is a solo-founder project by <strong>Vincent Wei</strong>.
+            Contact: <a href="mailto:vincent@vincentwei.co">vincent@vincentwei.co</a>.
+            For GDPR purposes, Abalone is the data controller for data collected
+            through Abalone Flow and abalone.ai.
+        </p>
+
+        <h2>What we collect, and why</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Why we have it</th>
+                    <th>Lawful basis (GDPR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Email, name, avatar (from Google or Apple OAuth)</td>
+                    <td>Account identity, so your dictation history syncs across devices</td>
+                    <td>Contract (you asked us to store it)</td>
+                </tr>
+                <tr>
+                    <td>Dictation text</td>
+                    <td>Your searchable history across the devices you sign into</td>
+                    <td>Contract</td>
+                </tr>
+                <tr>
+                    <td>Audio recordings</td>
+                    <td>Lets you retry transcription with a different model later</td>
+                    <td>Contract</td>
+                </tr>
+                <tr>
+                    <td>Device metadata: Mac model, chip, OS version, app version, locale, timezone, hardware identifier (IOPlatformUUID), serial number</td>
+                    <td>Debugging crash reports and compatibility issues; product decisions (e.g. when we can drop macOS 13 support)</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td>IP address and country (derived from IP by our edge provider)</td>
+                    <td>Security monitoring, growth analytics (&ldquo;where are our users?&rdquo;)</td>
+                    <td>Legitimate interest</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            We do <strong>not</strong> collect precise location (GPS), contact lists,
+            browsing history, or anything from other apps. The app's voice-to-text
+            model runs locally on your Mac — the raw audio does not leave your device
+            for transcription. It's only uploaded to cloud storage if you're signed
+            in, so you can retry transcription later from another device.
+        </p>
+
+        <h2>What we do <em>not</em> do</h2>
+        <ul>
+            <li>No advertising. No ad networks.</li>
+            <li>No selling, sharing, or licensing data to third parties.</li>
+            <li>No behavioral tracking, no fingerprinting beyond the hardware identifier above, no cookies beyond what's required to sign you in.</li>
+            <li>No AI training on your data.</li>
+        </ul>
+
+        <h2>How long we keep it</h2>
+        <p>We keep your data for as long as your account exists.</p>
+        <p>
+            When you delete your account (or email us at the address above asking us
+            to), we delete everything within 30 days. That includes your dictation
+            text, audio files, device rows, and profile.
+        </p>
+
+        <h2>Who we share with</h2>
+        <p>
+            We don't share your data for marketing. We use a small number of
+            <strong>subprocessors</strong> to run the service:
+        </p>
+        <ul>
+            <li><a href="https://supabase.com">Supabase</a> — database and audio storage hosting</li>
+            <li>Google / Apple — OAuth sign-in (only — we don't share anything else with them)</li>
+            <li>GitHub — hosts our app update releases (the update check sends your IP to GitHub's CDN, same as any download)</li>
+        </ul>
+
+        <h2>Your rights</h2>
+        <p>If you're in the EU, UK, or California, you have the right to:</p>
+        <ul>
+            <li><strong>Access</strong> — ask us for a copy of your data</li>
+            <li><strong>Deletion</strong> — ask us to delete it</li>
+            <li><strong>Portability</strong> — ask for it in a machine-readable format</li>
+            <li><strong>Objection</strong> — ask us to stop processing it</li>
+        </ul>
+        <p>
+            Email <a href="mailto:vincent@vincentwei.co">vincent@vincentwei.co</a>.
+            We'll respond within 30 days.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+            Abalone Flow isn't designed for children under 13, and we don't knowingly
+            collect data from them.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+            If we materially change what we collect or how we use it, we'll update
+            the &ldquo;Last updated&rdquo; date at the top and notify signed-in users
+            in-app. Small clarifications won't trigger a notice.
+        </p>
+
+        <h2>Contact</h2>
+        <p><a href="mailto:vincent@vincentwei.co">vincent@vincentwei.co</a></p>
+    </main>
+
+    <footer>© 2026 Abalone.ai</footer>
+</body>
+</html>
