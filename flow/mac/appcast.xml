@@ -6,6 +6,28 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.2.4 — fix: rapid hotkey taps no longer spawn ghost recordings</title>
+            <pubDate>Wed, 22 Apr 2026 08:45:28 +0000</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.2.4</h2>
+                <p>Quiet but nasty bug fix. Rapid-fire-tapping your recording hotkey — five or six times in quick succession — could start multiple overlapping recording sessions in the background. Each would run invisibly until hitting the 10-minute max-duration cap, at which point it would paste a duplicate into your active app and save a near-empty 10-minute clip to your history. The pill would shimmer strangely and you'd often have to force-quit to escape. Fixed.</p>
+                <h3>Change</h3>
+                <ul>
+                    <li><strong>Recording keys are ignored while a session is wrapping up.</strong> If you press the hotkey during the brief window where the app is transcribing and pasting the previous session, the press is dropped rather than starting a new overlapping one. You can start a fresh recording as soon as that finishes (usually under a second).</li>
+                </ul>
+                <p>No behaviour changes to dictation, cloud sync, or telemetry.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.2.4/AbaloneFlow-1.2.4.dmg"
+                sparkle:edSignature="96spSZN29hKf3Ou6iBXi0ZFqlirxS/wloHSvE7NX1hODZuJcEN2CxKSbaVfzgYB4wrEn9IxvzM9tJDb/bxPVDg=="
+                length="6425376"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.2.3 — smarter update checks + reliable restart</title>
             <pubDate>Tue, 21 Apr 2026 15:53:32 +0000</pubDate>
             <sparkle:version>9</sparkle:version>
