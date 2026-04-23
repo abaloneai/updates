@@ -6,6 +6,31 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.3.0 — dictation moves to the notch</title>
+            <pubDate>Thu, 23 Apr 2026 16:56:43 +0000</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.3.0</h2>
+                <p>The dictation pill has moved. Instead of floating at the bottom of the screen, it now lives at the top — anchored to the notch, extending downward as a small card when you record. Closer to where your eyes already are, out of the way of whatever you're writing into, and finally giving the notch a job on Macs that have one.</p>
+                <h3>What's new</h3>
+                <ul>
+                    <li><strong>Notch-anchored pill.</strong> The pill sits flush against the top edge of your screen, extending the hardware notch if you have one and sitting in the same spot on Macs without. Hover it to see the shortcut hint; click to start recording.</li>
+                    <li><strong>Undoable cancel.</strong> When you stop a recording by hitting the X, you get a short grace period with a progress bar and an Undo button. Hover the card and the countdown pauses — take as long as you need. Miss the window and the audio is discarded cleanly.</li>
+                    <li><strong>New recording animations.</strong> A small abalone pearl appears during warming-up, transcribing, and done states, with motion tuned to the phase the app is in. The waveform during recording is crisper and the completion "done" moment is a single clean checkmark.</li>
+                    <li><strong>New menu bar icon.</strong> A custom pearl-crescent template replaces the generic microphone glyph — matches the app's identity and respects your menu bar's light/dark appearance.</li>
+                </ul>
+                <p>Everything else — hotkeys, transcription quality, cloud sync, history — behaves the same. Your settings and recordings carry over unchanged.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.3.0/AbaloneFlow-1.3.0.dmg"
+                sparkle:edSignature="jSytV0PVduwJoXYH7duJRB+Ehxr3LxyLEsNPAHQn+qVFTsVcElVNTvTVUUr2AIWw1+Bm5jgm+TkyswNFNYCDAg=="
+                length="6423308"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.2.4 — fix: rapid hotkey taps no longer spawn ghost recordings</title>
             <pubDate>Wed, 22 Apr 2026 08:45:28 +0000</pubDate>
             <sparkle:version>10</sparkle:version>
