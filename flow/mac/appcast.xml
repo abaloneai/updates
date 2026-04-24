@@ -6,6 +6,31 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.3.2 — shortcuts settings polish, one-tap error fixes</title>
+            <pubDate>Fri, 24 Apr 2026 08:02:15 +0000</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.3.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.3.2</h2>
+                <p>The Shortcuts page in Settings got a cleanup. Same shortcuts, same keys — just easier to read, easier to fix, and easier to reset.</p>
+                <h3>What's changed</h3>
+                <ul>
+                    <li><strong>Cleaner two-column layout.</strong> Each row now reads label on the left, keys on the right — the standard macOS settings convention. Keycaps scan cleanly down the right edge so you can spot what's bound to what at a glance.</li>
+                    <li><strong>One Reset all shortcuts button.</strong> A single button at the top-right of the page resets every shortcut to its default, appearing only when something's actually been changed. The old per-row reset is gone — one clear escape hatch instead of two.</li>
+                    <li><strong>One-tap fixes for invalid combos.</strong> If you try to bind something that won't work — a bare letter that fires while you type, Shift alone, or a universal ⌘ combo like ⌘Z — the error now shows tappable suggestion chips. Click one to commit a fixed version without re-recording.</li>
+                    <li><strong>"Double-tap for hands-free" moved into the description.</strong> The hint now sits alongside "Hold to record" under Push to Talk, where behavior copy belongs. The controls column is just keycaps and actions.</li>
+                </ul>
+                <p>No changes to dictation, transcription, hotkey behavior, or anything outside the Settings page. Your bindings carry over unchanged.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.3.2/AbaloneFlow-1.3.2.dmg"
+                sparkle:edSignature="jhmvUDByJLDPZizeZ1UsaziMOTrJ+91tgbaPALU2vW3uXpm9Rnuoc31XfTK17wQS2SyMM/vlTrJivmWyxr8ADQ=="
+                length="6446297"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.3.1 — card polish, reliable hover-to-pause</title>
             <pubDate>Fri, 24 Apr 2026 05:17:05 +0000</pubDate>
             <sparkle:version>12</sparkle:version>
