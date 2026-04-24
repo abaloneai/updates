@@ -6,6 +6,30 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.3.1 — card polish, reliable hover-to-pause</title>
+            <pubDate>Fri, 24 Apr 2026 05:17:05 +0000</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>1.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.3.1</h2>
+                <p>Small polish on the cards that drop down from the notch — the permission prompt, model-download error, and sign-up nudge. Nothing new, just nicer.</p>
+                <h3>What's changed</h3>
+                <ul>
+                    <li><strong>Countdown ring around the X.</strong> Cards that auto-dismiss now show a thin ring that drains as the timer runs out, so you can see how long you have before it disappears.</li>
+                    <li><strong>Hover pauses the timer — reliably.</strong> Move the cursor anywhere over a card and the countdown freezes. Move away and it picks back up. (Previously this only worked sometimes, depending on where the cursor crossed.)</li>
+                    <li><strong>Roomier layout.</strong> The dismiss X now sits in its own column in the top-right corner, and there's more breathing room between the title, body, and button. The card still stays locked to the notch width so it reads as one stacked element with the notch above.</li>
+                </ul>
+                <p>No changes to dictation, transcription, hotkeys, or anything else. Your settings and recordings carry over unchanged.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.3.1/AbaloneFlow-1.3.1.dmg"
+                sparkle:edSignature="hC2uvADuPis+KoIX8Dd6pVoLN8Um7sBCM5aR4jDEB6pyKz2xllcmLUB9nLbp+gZpqemXL8xa1ReqWe4FNIlwDw=="
+                length="6434021"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.3.0 — dictation moves to the notch</title>
             <pubDate>Thu, 23 Apr 2026 16:56:43 +0000</pubDate>
             <sparkle:version>11</sparkle:version>
