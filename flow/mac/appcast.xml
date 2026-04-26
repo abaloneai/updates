@@ -6,6 +6,30 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.4.1 — dock icon brings the window back reliably</title>
+            <pubDate>Sun, 26 Apr 2026 10:44:37 +0000</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.4.1</h2>
+                <p>A small but long-overdue fix: clicking the Abalone Flow icon in your Dock now reliably brings the main window back, even after you've closed it.</p>
+                <h3>What's changed</h3>
+                <ul>
+                    <li><strong>Dock-click always reopens the window.</strong> Previously, after closing the main window with the red ✕, clicking the Dock icon sometimes did nothing. The window now hides instead of being destroyed, and a single Dock click brings it forward every time.</li>
+                    <li><strong>Window follows you across Spaces.</strong> If the main window is on a different desktop (Space) than the one you're currently on, clicking the Dock icon now pulls the window to your current Space — instead of yanking you to wherever the window was sitting.</li>
+                    <li><strong>Minimized windows un-minimize on Dock click.</strong> If you'd minimized the window to the Dock with the yellow –, clicking the app icon now restores it directly.</li>
+                </ul>
+                <p>No changes to dictation, transcription, shortcuts, or your dictionary. Same shortcuts, same keys, same everything else.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.4.1/AbaloneFlow-1.4.1.dmg"
+                sparkle:edSignature="uhydZA7GOjml3EvBVoNDis1aImqRzUxI6G/gPInhXbL1LbT3c6pmXC7s3gqZvl/vTZRMm0uBecXBeUbLlYU+Aw=="
+                length="6630645"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.4.0 — Abalone learns proper nouns from your edits</title>
             <pubDate>Sun, 26 Apr 2026 10:07:14 +0000</pubDate>
             <sparkle:version>14</sparkle:version>
