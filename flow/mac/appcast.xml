@@ -6,6 +6,35 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.4.0 — Abalone learns proper nouns from your edits</title>
+            <pubDate>Sun, 26 Apr 2026 10:07:14 +0000</pubDate>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.4.0 — Adaptive Dictionary</h2>
+                <p>Abalone now learns the words you care about. Names, products, jargon — anything Whisper gets wrong the first time. You fix it once; from then on, it's right.</p>
+                <h3>How it works</h3>
+                <ul>
+                    <li><strong>Auto-learn from your corrections.</strong> When you fix a transcription — change "Wispr" to "Wispr Flow", or "Sameer" to "Samir" — Abalone quietly notes the corrected proper noun. Next time you dictate, Whisper biases toward your spelling.</li>
+                    <li><strong>Add words yourself.</strong> Open Settings → Dictionary and type the words you want Abalone to know: company names, teammates, product lines. Up to 100 entries, on-device only.</li>
+                    <li><strong>Source badge per entry.</strong> Words you typed in show as "added by you"; words Abalone caught from your edits show with a sparkle ✨ "learned" badge — so you can tell which ones came from where.</li>
+                    <li><strong>One toggle to disable.</strong> If auto-learn isn't your thing, flip the switch at the top of the Dictionary page. Manual entries keep working.</li>
+                </ul>
+                <h3>What triggers a learning</h3>
+                <p>Auto-learn waits for a clear "I'm done editing" signal before saving anything. The strongest signals are <strong>pressing Enter to send</strong> (in Slack, ChatGPT, Cursor, etc.) and <strong>switching apps</strong>. Clicking a Send button with the mouse, or focusing a different field, also counts. The system never learns from text you typed — only from edits you made to dictated text.</p>
+                <h3>What gets filtered out</h3>
+                <p>To avoid learning typos or junk, Abalone runs every candidate word through Apple's spell-checker plus a stoplist of common English words. Only proper nouns and words that look like real names make it into your dictionary. Lowercase corrections, common-word swaps, and partial-word edits are skipped.</p>
+                <p>Privacy: the dictionary lives on your Mac. If you're signed in, it syncs to your account so it's there on your next device — same shape as your transcription history.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.4.0/AbaloneFlow-1.4.0.dmg"
+                sparkle:edSignature="ttzfmnXReOyMuMbDR7em/73oBzZqjB4DYzLp99nA30hpSqWpt0+7sFUL+orOrBOC0GVZyQPM3BUluwVRM7K5BA=="
+                length="6628118"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.3.2 — shortcuts settings polish, one-tap error fixes</title>
             <pubDate>Fri, 24 Apr 2026 08:02:15 +0000</pubDate>
             <sparkle:version>13</sparkle:version>
