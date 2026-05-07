@@ -6,6 +6,28 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.4.3 — Fn+Delete works again, plus a friendlier push-to-talk</title>
+            <pubDate>Thu, 07 May 2026 08:33:35 +0000</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.4.3 — Fn keys behave the way macOS intended</h2>
+                <p>Two small but meaningful keyboard fixes for anyone who uses Abalone with Fn as their dictation key.</p>
+                <ul>
+                    <li><strong>Fn+Delete forward-deletes again.</strong> When Abalone intercepts the Fn key for dictation, it accidentally also blocked macOS from translating Fn+Delete into a forward delete. Same for Fn+Left/Right (Home/End) and Fn+Up/Down (Page Up/Down). All of those now work the way they should.</li>
+                    <li><strong>Holding Fn with another key won't accidentally start recording.</strong> Previously, if you held Fn for forward-deletes (or any Fn-modifier action), the hold timer could fire and start dictation behind your back. Now the moment you press another key while holding Fn, Abalone knows you're using Fn as a modifier — recording stays off.</li>
+                    <li><strong>Push-to-talk feels more deliberate.</strong> The hold threshold is now 400ms (up from 150ms) — matching the double-tap window. A casual brush of Fn won't trigger PTT, but a clear hold still feels snappy.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.4.3/AbaloneFlow-1.4.3.dmg"
+                sparkle:edSignature="MpmEUZBKp7kZqZ/LGlAf3X6CGK4moJzbbHiOV9Uy53m0g51f6yXAH2WoXXQpRCoOrFngfxchYurg9kIIKNU+Aw=="
+                length="6662761"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.4.2 — polish: cursor feedback, mic default, final-word transcription fix</title>
             <pubDate>Mon, 04 May 2026 23:28:25 +0000</pubDate>
             <sparkle:version>16</sparkle:version>
