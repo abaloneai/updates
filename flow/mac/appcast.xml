@@ -6,6 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.5.1 — Whisper v3 turbo on every Mac</title>
+            <pubDate>Sat, 16 May 2026 22:32:21 +0000</pubDate>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.5.1 — Whisper v3 turbo, automatically</h2>
+                <p>v1.5.0 made Whisper v3 turbo the default model for new users — comparable size to the previous default, noticeably faster on Apple Silicon, with quality on par. But existing users had no way to switch.</p>
+                <p>This update fixes that. The first time you launch 1.5.1, your on-device model upgrades to turbo automatically — nothing to click. Cloud transcription covers the ~5–10 minute download window so you can keep dictating throughout.</p>
+                <p>Your previous model files stay in your cache. If you ever want to switch back, they're still there.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.5.1/AbaloneFlow-1.5.1.dmg"
+                sparkle:edSignature="LWa/LntlAWfzZy9jj8hS0QrNe1hw2bS/QARNq1yus7bn8kxHt0vk/jZ0NJBn51vxB6/PnGUVzlffYNQRx8AKAg=="
+                length="7106568"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.5.0 — New onboarding, instant cloud dictation, and engine choice</title>
             <pubDate>Sat, 16 May 2026 20:07:06 +0000</pubDate>
             <sparkle:version>19</sparkle:version>
