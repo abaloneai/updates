@@ -6,6 +6,56 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.5.0 — New onboarding, instant cloud dictation, and engine choice</title>
+            <pubDate>Sat, 16 May 2026 20:07:06 +0000</pubDate>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.5.0 — Hello, and start dictating now</h2>
+                <p>The biggest update since launch. A brand-new welcome flow for first-time users, instant dictation while your on-device model downloads, an engine picker for the way you prefer to work, and a smaller, faster default model.</p>
+                <h3>A real first-launch experience</h3>
+                <p>Six guided screens teach you everything you need in under two minutes — and nothing you don't:</p>
+                <ul>
+                    <li><strong>Permissions, explained.</strong> Accessibility and microphone access are requested inline, with plain-English context for each.</li>
+                    <li><strong>Pick your dictation shortcut.</strong> Try Fn, a key combo, or any modifier — see exactly how it feels in a live preview.</li>
+                    <li><strong>Mic check.</strong> Pick the input device and watch a live waveform confirm it's listening. No more guessing whether the right mic is selected.</li>
+                    <li><strong>Language follows your keyboard.</strong> By default Abalone reads your active keyboard layout — switch ⌘+Space and it switches with you. You can pin a single language too.</li>
+                    <li><strong>Meet the dictionary.</strong> A short demo shows how Abalone learns names and proper nouns from your edits — using your own name as the example.</li>
+                    <li><strong>One real practice dictation.</strong> Hold your shortcut, say a sentence, watch it land. The first proof that this just works.</li>
+                </ul>
+                <h3>Dictate the second you sign in</h3>
+                <p>Abalone's on-device model is ~500 MB. That used to mean waiting before your first dictation. Not anymore.</p>
+                <ul>
+                    <li><strong>Cloud bridge.</strong> While your on-device model is downloading, Abalone routes dictation through the cloud automatically. You press your shortcut and it just works.</li>
+                    <li><strong>Quiet handoff.</strong> The moment your on-device model finishes installing, Abalone switches over silently. No prompts, no popups.</li>
+                    <li><strong>Honest progress.</strong> The home page shows a thin progress bar at the bottom of the window so you always know where the download stands — without taking over the screen.</li>
+                </ul>
+                <h3>Engine picker</h3>
+                <p>Settings → Engine Mode lets you choose how Abalone transcribes:</p>
+                <ul>
+                    <li><strong>Auto.</strong> On-device when ready, cloud when not. The default — and what most people want.</li>
+                    <li><strong>Cloud.</strong> Fastest cold start, lowest latency.</li>
+                    <li><strong>On Device.</strong> Everything stays on your Mac. Works fully offline.</li>
+                </ul>
+                <h3>Whisper v3 turbo as the default</h3>
+                <p>The default on-device model is now Whisper v3 turbo — about half the size of the previous default, noticeably faster on Apple Silicon, with quality on par with the small model. Existing models keep working; turbo downloads the next time your cache is cleared.</p>
+                <h3>Polish under the hood</h3>
+                <ul>
+                    <li>Fixed an Fn-as-modifier edge case where holding Fn with another key could accidentally start recording.</li>
+                    <li>Dock icon now reliably reopens the main window.</li>
+                    <li>Pill status messages stay single-line and consistent across states.</li>
+                    <li>Cloud transcription pre-warms the moment you press your shortcut, shaving response time off every cloud dictation.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.5.0/AbaloneFlow-1.5.0.dmg"
+                sparkle:edSignature="imtnCW2clswPqge37HnC7MuKSBhsow2vfqm8MMkDOyDF4VV/GN4u9mHHGJAvFBQ6cRcmlcqrhi0/N1r/e/GABQ=="
+                length="7106546"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.4.3 — Fn+Delete works again, plus a friendlier push-to-talk</title>
             <pubDate>Thu, 07 May 2026 08:33:35 +0000</pubDate>
             <sparkle:version>18</sparkle:version>
