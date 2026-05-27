@@ -6,6 +6,45 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.6.0 — Polish on every dictation</title>
+            <pubDate>Wed, 27 May 2026 14:56:53 +0000</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.6.0 — Speak rough. Land clean.</h2>
+                <p>Until today, Abalone gave you a raw transcript: every "um", every misfire, every comma in the wrong place. This update adds the second pass. Your dictation runs through an AI editor before it lands at your cursor. Filler gone. Grammar tidied. Your voice intact.</p>
+                <h3>Bring your own AI</h3>
+                <p>The first time you launch 1.6.0, Abalone asks which AI does the polish:</p>
+                <ul>
+                    <li><strong>Your ChatGPT.</strong> Sign in once with Plus, Pro, or Team. The polish runs on your subscription — no extra account to manage.</li>
+                    <li><strong>Abalone Cloud.</strong> Skip the sign-in and Abalone's bundled polish takes over. Included.</li>
+                </ul>
+                <p>Switch any time in Settings → AI Providers. Claude and bring-your-own-key are coming soon.</p>
+                <h3>Watch the magic</h3>
+                <p>Onboarding now has one screen that does what three used to. A live Gmail compose mock. The real pill. Your own voice. Speak the prompt, see the raw text land, then watch the polish redraft it in front of you. End of demo. You're in the app.</p>
+                <h3>History remembers both</h3>
+                <p>Every dictation now stores what you said and what the polish made of it. Edit either. Compare the two. Useful when you want to revisit a thought in its rawest form.</p>
+                <h3>Faster first polish</h3>
+                <p>The path between your microphone and the AI used to start cold on every launch. Now it stays warm while the app is open — like an editor keeping a language server alive. The first polish after opening the app skips the cold-start tax.</p>
+                <h3>Dictionary, smarter</h3>
+                <p>When you edit a transcription, Abalone learns what you meant. 1.6.0 swaps the old pattern-matching for a language model. It spots names, technical terms, and your personal vocabulary the way a human editor would, then quietly remembers.</p>
+                <h3>Polish under the hood</h3>
+                <ul>
+                    <li>If polish hits an error mid-dictation, your raw text stays at the cursor. Nothing lost.</li>
+                    <li>ESC cancels in-flight polish cleanly.</li>
+                    <li>Cap-reached state shows a clear card with the reset date — no "AI is unavailable" guesswork.</li>
+                    <li>Window title is now "Abalone Flow" with the space it deserves.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.6.0/AbaloneFlow-1.6.0.dmg"
+                sparkle:edSignature="1/4pc0ia9Sg+zYC1pQjqN6OxX/SGTok8Ig+puM+F8ndRvx0ZiXgeIdfGwheaXhumFJy2/9nV8M/8NZrhhM7yAw=="
+                length="7558503"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.5.1 — Whisper v3 turbo on every Mac</title>
             <pubDate>Sat, 16 May 2026 22:32:21 +0000</pubDate>
             <sparkle:version>20</sparkle:version>
