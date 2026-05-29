@@ -6,6 +6,41 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.7.0 — Polish that knows when to be quiet</title>
+            <pubDate>Fri, 29 May 2026 00:13:18 +0000</pubDate>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.0 — Polish that knows when to be quiet.</h2>
+                <p>If you're on Abalone's included polish (no provider connected), the app now handles your monthly cap the way Claude handles yours: a heads-up at 80%, a hard stop at 100%, and then silence. Not a "polish failed" card on every dictation for the rest of the month.</p>
+                <h3>What the pill does now when you're capped</h3>
+                <p>Nothing dramatic. Your dictation runs, your raw text pastes, the green checkmark lands. No purple polish flicker, no failure card, no apology on repeat. The system knows polish can't run; it doesn't pretend to try.</p>
+                <h3>The 80% conversation</h3>
+                <p>When you cross 80% of your monthly cap, one card appears — "Polish nearing monthly limit" — with the percent used and a link to connect your own AI. Then it's quiet until 100%. No 81%, 82%, 83% chatter; you don't need to be reminded every 35 seconds.</p>
+                <h3>INCLUDED, not TRIAL</h3>
+                <p>The Settings → AI Providers section that tracks your monthly polish allowance is now labeled "INCLUDED." It's a permanent free tier, not a trial period that ends. The chip still turns orange at 80% and red at 100% — only the framing stopped lying.</p>
+                <h3>Faster polish under the hood</h3>
+                <p>Cloud polish swapped from gpt-4o-mini to gpt-5-nano. Cheaper per token (about a third of the old price), and sub-1s first byte on most connections. Already live for everyone since last week — this build just officializes the change and stamps it on your local copy.</p>
+                <h3>Update prompts that actually reach you</h3>
+                <p>Most people live in the menu bar. Update prompts used to render only inside the main window, which meant you'd miss them until you happened to open Settings. Now they surface in the pill too. The next "1.7.1 is ready" reaches you whether the window is open or not.</p>
+                <h3>One card system</h3>
+                <p>Internally, every notification the pill shows — sign-in prompts, the AI-cap card, the "we just learned a word" confirmation, this new nearing-limit heads-up — now flows through the same component. Same countdown ring, same dismiss button, same hover-pause. The "Learned 5 new words" pop-up that used to look slightly different from every other card now reads as part of the same family.</p>
+                <h3>Smaller polish, no less honest</h3>
+                <ul>
+                    <li>The cap-reached card's button now reads "AI providers" instead of "Connect ChatGPT" — it'll keep being honest as Claude and bring-your-own-key land.</li>
+                    <li>Card layout breathes more: dismiss button floats in the top-right corner of any card instead of reserving a full-height column. Body text and action rows now extend to the right edge instead of being pinched.</li>
+                    <li>The "polish couldn't finish" card no longer fires when polish was actually just paused for the cap — different problem, different message, no conflation.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.0/AbaloneFlow-1.7.0.dmg"
+                sparkle:edSignature="KAoBj/vr+4eZz0hvyGyHghExgWi6zmJxPeJRfhbU1oYb4Pp2BFeRHfPEAk9exqmQbdWlLcjvgEOsGxp30MjrBw=="
+                length="7523347"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.6.0 — Polish on every dictation</title>
             <pubDate>Wed, 27 May 2026 14:56:53 +0000</pubDate>
             <sparkle:version>21</sparkle:version>
