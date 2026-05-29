@@ -6,6 +6,31 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.7.1 — Faster polish on ChatGPT — refresh moves off the critical path</title>
+            <pubDate>Fri, 29 May 2026 00:31:29 +0000</pubDate>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.1 — Faster polish on ChatGPT.</h2>
+                <p>If you connect your ChatGPT subscription as your polish provider, polish on 1.7.1 lands measurably faster than 1.7.0. The fix moves OAuth token refresh off the polish call's critical path — your token gets refreshed in the background, well before it expires, instead of blocking the next polish for a few hundred milliseconds while we phone home to OpenAI.</p>
+                <h3>What you'll notice</h3>
+                <p>Less perceived latency on every polish — especially the first one you do after the app's been open a while. The two paths (your ChatGPT vs. Abalone's included polish) now feel closer in responsiveness, though Abalone's included path still has a small structural edge because it talks directly to OpenAI's API endpoint instead of going through ChatGPT.com's consumer infrastructure. That's a difference we can narrow but not fully close — you can read more in the architecture notes if you're curious.</p>
+                <h3>What changed under the hood</h3>
+                <ul>
+                    <li><strong>Background refresh, read-through cache.</strong> Polish always returns immediately with the cached token if it has any meaningful life left. A background task refreshes the token when it crosses 20 minutes from expiry — well before any polish call could trip the cliff. Concurrent calls dedupe onto a single in-flight refresh instead of starting three races.</li>
+                    <li><strong>Per-branch retry budget structure.</strong> The polish retry schedule is now factored per auth kind — same values today, but ready to diverge cleanly if telemetry shows one branch needs more headroom.</li>
+                    <li><strong>Per-branch logs.</strong> Every polish log line now includes the auth kind, so Console.app can give per-branch latency distributions without manual correlation. Boring but invaluable for the next round of tuning.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.1/AbaloneFlow-1.7.1.dmg"
+                sparkle:edSignature="GjwlJ3Sq0OxuuT6sHSVAuNylBzOCdKGamtvIWIM6QpymXGhLIpZ+BqbunXAAGWnaUYAogNwUiG+DtpXcDns5Dw=="
+                length="7530225"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.7.0 — Polish that knows when to be quiet</title>
             <pubDate>Fri, 29 May 2026 00:13:18 +0000</pubDate>
             <sparkle:version>22</sparkle:version>
