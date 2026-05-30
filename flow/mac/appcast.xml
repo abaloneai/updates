@@ -6,6 +6,34 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.7.2 — Dictation keeps working when you hit your monthly limit</title>
+            <pubDate>Sat, 30 May 2026 13:54:54 +0000</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>1.7.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.2 — Your dictation never hits a dead end.</h2>
+                <p>Before, if you'd set transcription to Cloud and used up your included monthly cloud usage, the next dictation could fail with a confusing stack of messages — a "limit reached" pill, a "couldn't transcribe, retry" card (where retry did nothing), and a cap notice, all at once. Now it just keeps working: when the cloud is maxed out, Abalone quietly transcribes on the on-device model instead and hands you your text. One calm notification, no dead end.</p>
+                <h3>What you'll notice</h3>
+                <ul>
+                    <li><strong>It keeps going at your limit.</strong> Hit your monthly cloud usage on Cloud mode and dictation switches to the on-device model automatically — you still get your words. Your transcription mode moves to Auto so it's clear what's running: on-device when it's ready, cloud when it isn't.</li>
+                    <li><strong>One calm message, not a pile-up.</strong> You used to get three competing pop-ups — a "limit reached" pill, a dead "retry" card, and a cap notice. Now there's nothing to dismiss when on-device can carry it; if the on-device model is still downloading, you get a single "warming up the on-device model" note instead. No re-nag on every relaunch.</li>
+                    <li><strong>See where you stand.</strong> Settings → Providers now shows your monthly usage at a glance, turning amber as you approach the limit.</li>
+                </ul>
+                <h3>What changed under the hood</h3>
+                <ul>
+                    <li><strong>One decision, one message.</strong> A single pre-flight resolver now decides which engine a dictation uses — or, if it can't run, exactly why — and the routing and the on-screen message both read from that one decision. They can no longer disagree, which is what produced the old pile-up.</li>
+                    <li><strong>Graceful fallback everywhere.</strong> Any cloud transcription failure (limit, network, server) now falls back to the on-device model when it's available, instead of surfacing an error you can't act on.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.2/AbaloneFlow-1.7.2.dmg"
+                sparkle:edSignature="aCQbBRKnfwbX8FXO9+IzlOhO11TS+W6yhKfTkJmLfHhEo2S1ZzXKes5IKfpnwD81WtgGYOVk+7wjpKYmB29sCQ=="
+                length="7537147"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.7.1 — Faster polish on ChatGPT — refresh moves off the critical path</title>
             <pubDate>Fri, 29 May 2026 00:31:29 +0000</pubDate>
             <sparkle:version>23</sparkle:version>
