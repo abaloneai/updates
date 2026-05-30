@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.7.3 — The engine badge now matches what you picked</title>
+            <pubDate>Sat, 30 May 2026 14:32:29 +0000</pubDate>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>1.7.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.3 — The engine badge says what you chose.</h2>
+                <p>A small clarity fix to the home screen. The transcription badge now reflects the mode you selected: pick <strong>Cloud</strong> and it says Cloud. Previously, if you were at your monthly cloud limit, choosing Cloud could confusingly show "On Device" instead — the badge was reporting the engine that would actually run rather than the one you'd picked.</p>
+                <p>Now the badge honors your choice and only changes when you actually dictate: a capped Cloud dictation still falls back to the on-device model automatically (introduced in 1.7.2), and at that point the badge follows — switching to On Device so you can see exactly what ran. No more "I picked Cloud but it says On Device" head-scratching.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.3/AbaloneFlow-1.7.3.dmg"
+                sparkle:edSignature="MvQ/x/Y5vnxfJcVO+hfAWX5+OkjUP/dB5haVnK33IEx3wa0sYJQcYdYBmZAaDAqrH+9hZOBwjbl3zfKx6DZZAQ=="
+                length="7537246"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.7.2 — Dictation keeps working when you hit your monthly limit</title>
             <pubDate>Sat, 30 May 2026 13:54:54 +0000</pubDate>
             <sparkle:version>24</sparkle:version>
