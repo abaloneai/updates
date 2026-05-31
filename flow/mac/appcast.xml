@@ -6,6 +6,23 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.7.5 — Quieter updates</title>
+            <pubDate>Sun, 31 May 2026 10:40:06 +0000</pubDate>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>1.7.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.5 — Quieter updates.</h2>
+                <p>We retired the pop-up card that greeted you on launch whenever a new version was waiting. It was redundant: Abalone already downloads updates in the background and installs them the next time you quit. The "Restart to Update" button still lives in the sidebar and menu for when you want it sooner — one less card to wave away.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.5/AbaloneFlow-1.7.5.dmg"
+                sparkle:edSignature="O/BSRqiXGaUoHQAZICix9kgkea01o5a2SyhfgssTBMdAYrO61KZR+nWeflg3Lqtgd/olWuP0qQtCgINOJWMoAQ=="
+                length="7528518"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.7.4 — A smoother welcome when new features ship</title>
             <pubDate>Sun, 31 May 2026 06:14:32 +0000</pubDate>
             <sparkle:version>26</sparkle:version>
