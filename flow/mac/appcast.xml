@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.7.4 — A smoother welcome when new features ship</title>
+            <pubDate>Sun, 31 May 2026 06:14:32 +0000</pubDate>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>1.7.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.4 — A better welcome for the next feature.</h2>
+                <p>Mostly behind the scenes. Starting now, when a release ships something that needs a moment of setup — connecting an AI provider, granting a permission, anything you'd otherwise have to discover by digging through Settings — Abalone walks you through it the next time you open the app. Bug-fix releases stay invisible; just launch and keep going.</p>
+                <p>If you upgraded straight here from a version older than 1.6.0, the next launch will show you a short three-screen tour: a hello, the AI provider connection that powers polish, and a live "watch the magic" demo in a mock email.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.4/AbaloneFlow-1.7.4.dmg"
+                sparkle:edSignature="1I9gWgHzSQn78mSpLBIk3pJUpY0FnNXmpBv6zLf0op4YalvN0XtpBtvgRlRe9vfwiK3kHq/owM1UX5L5VD5UDA=="
+                length="7532537"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.7.3 — The engine badge now matches what you picked</title>
             <pubDate>Sat, 30 May 2026 14:32:29 +0000</pubDate>
             <sparkle:version>25</sparkle:version>
