@@ -6,6 +6,23 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.7.6 — Smarter from the start</title>
+            <pubDate>Thu, 04 Jun 2026 04:28:04 +0000</pubDate>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>1.7.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.6 — Smarter from the start.</h2>
+                <p>Your name is now in your dictionary the moment you finish onboarding. If Whisper ever mishears it — accent, unusual spelling, whatever — the polish step knows the right version and corrects it automatically. First dictation, already sharp.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.6/AbaloneFlow-1.7.6.dmg"
+                sparkle:edSignature="hGHy9PXgyo8qXZDejcAGtcYeRFxEULCTONXJuJj5nbbgkBXmIxIu+g1f4UW0to1myud6DWMtBcjfIuZuHh+cBA=="
+                length="7529570"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.7.5 — Quieter updates</title>
             <pubDate>Sun, 31 May 2026 10:40:06 +0000</pubDate>
             <sparkle:version>27</sparkle:version>
