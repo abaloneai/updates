@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.7.7 — Faster everything</title>
+            <pubDate>Fri, 05 Jun 2026 17:58:49 +0000</pubDate>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>1.7.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.7 — Faster everything.</h2>
+                <p>Cloud dictation now runs through Groq's Whisper turbo — transcription that used to take 2–3 seconds now lands in about one. Polish follows the same path: Llama 4 Scout on Groq finishes in under half a second on most dictations. Both fall back automatically if their primary provider is unavailable, so you stay unblocked.</p>
+                <p>AirPods connecting mid-dictation no longer stops your recording. The engine pins to the microphone you started with, so Bluetooth routing changes pass by unnoticed.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.7/AbaloneFlow-1.7.7.dmg"
+                sparkle:edSignature="JbE+5XCNnhSIYH66uWzuDD8ZKE/PWxPD+c37kqF7keAqHed5iEaCGhFofsF14nT5yt66eKdPBO1jcwkq/TtjDA=="
+                length="7547092"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.7.6 — Smarter from the start</title>
             <pubDate>Thu, 04 Jun 2026 04:28:04 +0000</pubDate>
             <sparkle:version>28</sparkle:version>
