@@ -1,9 +1,9 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
     <channel>
-        <title>Abalone Flow</title>
-        <link>https://updates.abalone.ai/flow/mac/appcast.xml</link>
-        <description>Updates for Abalone Flow.</description>
+        <title>Abalone</title>
+        <link>https://updates.abalone.ai/mac/appcast.xml</link>
+        <description>Updates for Abalone.</description>
         <language>en</language>
         <item>
             <title>Version 1.7.7 — Faster everything</title>
