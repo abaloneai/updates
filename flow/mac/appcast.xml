@@ -6,6 +6,21 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.8.1 — One more step to finish updating</title>
+            <pubDate>Mon, 08 Jun 2026 16:14:42 +0000</pubDate>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>1.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                This is a bridge release — it guides you to install the new Abalone app.
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.1/Abalone-1.8.1.dmg"
+                sparkle:edSignature="oMkyz2ytsaY8EDzO1CLV8TwRiFfb9jDa87Prx6ih8YL318Hlrt++gHw3qKdFVuNcnx195IEgfEFdGs2doYVvCA=="
+                length="7597704"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.8.0 — Abalone Flow is now Abalone</title>
             <pubDate>Mon, 08 Jun 2026 15:50:13 +0000</pubDate>
             <sparkle:version>30</sparkle:version>
