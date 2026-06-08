@@ -1,0 +1,707 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>Abalone Flow</title>
+        <link>https://updates.abalone.ai/flow/mac/appcast.xml</link>
+        <description>Updates for Abalone Flow.</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.7.7 — Faster everything</title>
+            <pubDate>Fri, 05 Jun 2026 17:58:49 +0000</pubDate>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>1.7.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.7 — Faster everything.</h2>
+                <p>Cloud dictation now runs through Groq's Whisper turbo — transcription that used to take 2–3 seconds now lands in about one. Polish follows the same path: Llama 4 Scout on Groq finishes in under half a second on most dictations. Both fall back automatically if their primary provider is unavailable, so you stay unblocked.</p>
+                <p>AirPods connecting mid-dictation no longer stops your recording. The engine pins to the microphone you started with, so Bluetooth routing changes pass by unnoticed.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.7/AbaloneFlow-1.7.7.dmg"
+                sparkle:edSignature="JbE+5XCNnhSIYH66uWzuDD8ZKE/PWxPD+c37kqF7keAqHed5iEaCGhFofsF14nT5yt66eKdPBO1jcwkq/TtjDA=="
+                length="7547092"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.6 — Smarter from the start</title>
+            <pubDate>Thu, 04 Jun 2026 04:28:04 +0000</pubDate>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>1.7.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.6 — Smarter from the start.</h2>
+                <p>Your name is now in your dictionary the moment you finish onboarding. If Whisper ever mishears it — accent, unusual spelling, whatever — the polish step knows the right version and corrects it automatically. First dictation, already sharp.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.6/AbaloneFlow-1.7.6.dmg"
+                sparkle:edSignature="hGHy9PXgyo8qXZDejcAGtcYeRFxEULCTONXJuJj5nbbgkBXmIxIu+g1f4UW0to1myud6DWMtBcjfIuZuHh+cBA=="
+                length="7529570"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.5 — Quieter updates</title>
+            <pubDate>Sun, 31 May 2026 10:40:06 +0000</pubDate>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>1.7.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.5 — Quieter updates.</h2>
+                <p>We retired the pop-up card that greeted you on launch whenever a new version was waiting. It was redundant: Abalone already downloads updates in the background and installs them the next time you quit. The "Restart to Update" button still lives in the sidebar and menu for when you want it sooner — one less card to wave away.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.5/AbaloneFlow-1.7.5.dmg"
+                sparkle:edSignature="O/BSRqiXGaUoHQAZICix9kgkea01o5a2SyhfgssTBMdAYrO61KZR+nWeflg3Lqtgd/olWuP0qQtCgINOJWMoAQ=="
+                length="7528518"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.4 — A smoother welcome when new features ship</title>
+            <pubDate>Sun, 31 May 2026 06:14:32 +0000</pubDate>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>1.7.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.4 — A better welcome for the next feature.</h2>
+                <p>Mostly behind the scenes. Starting now, when a release ships something that needs a moment of setup — connecting an AI provider, granting a permission, anything you'd otherwise have to discover by digging through Settings — Abalone walks you through it the next time you open the app. Bug-fix releases stay invisible; just launch and keep going.</p>
+                <p>If you upgraded straight here from a version older than 1.6.0, the next launch will show you a short three-screen tour: a hello, the AI provider connection that powers polish, and a live "watch the magic" demo in a mock email.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.4/AbaloneFlow-1.7.4.dmg"
+                sparkle:edSignature="1I9gWgHzSQn78mSpLBIk3pJUpY0FnNXmpBv6zLf0op4YalvN0XtpBtvgRlRe9vfwiK3kHq/owM1UX5L5VD5UDA=="
+                length="7532537"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.3 — The engine badge now matches what you picked</title>
+            <pubDate>Sat, 30 May 2026 14:32:29 +0000</pubDate>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>1.7.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.3 — The engine badge says what you chose.</h2>
+                <p>A small clarity fix to the home screen. The transcription badge now reflects the mode you selected: pick <strong>Cloud</strong> and it says Cloud. Previously, if you were at your monthly cloud limit, choosing Cloud could confusingly show "On Device" instead — the badge was reporting the engine that would actually run rather than the one you'd picked.</p>
+                <p>Now the badge honors your choice and only changes when you actually dictate: a capped Cloud dictation still falls back to the on-device model automatically (introduced in 1.7.2), and at that point the badge follows — switching to On Device so you can see exactly what ran. No more "I picked Cloud but it says On Device" head-scratching.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.3/AbaloneFlow-1.7.3.dmg"
+                sparkle:edSignature="MvQ/x/Y5vnxfJcVO+hfAWX5+OkjUP/dB5haVnK33IEx3wa0sYJQcYdYBmZAaDAqrH+9hZOBwjbl3zfKx6DZZAQ=="
+                length="7537246"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.2 — Dictation keeps working when you hit your monthly limit</title>
+            <pubDate>Sat, 30 May 2026 13:54:54 +0000</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>1.7.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.2 — Your dictation never hits a dead end.</h2>
+                <p>Before, if you'd set transcription to Cloud and used up your included monthly cloud usage, the next dictation could fail with a confusing stack of messages — a "limit reached" pill, a "couldn't transcribe, retry" card (where retry did nothing), and a cap notice, all at once. Now it just keeps working: when the cloud is maxed out, Abalone quietly transcribes on the on-device model instead and hands you your text. One calm notification, no dead end.</p>
+                <h3>What you'll notice</h3>
+                <ul>
+                    <li><strong>It keeps going at your limit.</strong> Hit your monthly cloud usage on Cloud mode and dictation switches to the on-device model automatically — you still get your words. Your transcription mode moves to Auto so it's clear what's running: on-device when it's ready, cloud when it isn't.</li>
+                    <li><strong>One calm message, not a pile-up.</strong> You used to get three competing pop-ups — a "limit reached" pill, a dead "retry" card, and a cap notice. Now there's nothing to dismiss when on-device can carry it; if the on-device model is still downloading, you get a single "warming up the on-device model" note instead. No re-nag on every relaunch.</li>
+                    <li><strong>See where you stand.</strong> Settings → Providers now shows your monthly usage at a glance, turning amber as you approach the limit.</li>
+                </ul>
+                <h3>What changed under the hood</h3>
+                <ul>
+                    <li><strong>One decision, one message.</strong> A single pre-flight resolver now decides which engine a dictation uses — or, if it can't run, exactly why — and the routing and the on-screen message both read from that one decision. They can no longer disagree, which is what produced the old pile-up.</li>
+                    <li><strong>Graceful fallback everywhere.</strong> Any cloud transcription failure (limit, network, server) now falls back to the on-device model when it's available, instead of surfacing an error you can't act on.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.2/AbaloneFlow-1.7.2.dmg"
+                sparkle:edSignature="aCQbBRKnfwbX8FXO9+IzlOhO11TS+W6yhKfTkJmLfHhEo2S1ZzXKes5IKfpnwD81WtgGYOVk+7wjpKYmB29sCQ=="
+                length="7537147"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.1 — Faster polish on ChatGPT — refresh moves off the critical path</title>
+            <pubDate>Fri, 29 May 2026 00:31:29 +0000</pubDate>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.1 — Faster polish on ChatGPT.</h2>
+                <p>If you connect your ChatGPT subscription as your polish provider, polish on 1.7.1 lands measurably faster than 1.7.0. The fix moves OAuth token refresh off the polish call's critical path — your token gets refreshed in the background, well before it expires, instead of blocking the next polish for a few hundred milliseconds while we phone home to OpenAI.</p>
+                <h3>What you'll notice</h3>
+                <p>Less perceived latency on every polish — especially the first one you do after the app's been open a while. The two paths (your ChatGPT vs. Abalone's included polish) now feel closer in responsiveness, though Abalone's included path still has a small structural edge because it talks directly to OpenAI's API endpoint instead of going through ChatGPT.com's consumer infrastructure. That's a difference we can narrow but not fully close — you can read more in the architecture notes if you're curious.</p>
+                <h3>What changed under the hood</h3>
+                <ul>
+                    <li><strong>Background refresh, read-through cache.</strong> Polish always returns immediately with the cached token if it has any meaningful life left. A background task refreshes the token when it crosses 20 minutes from expiry — well before any polish call could trip the cliff. Concurrent calls dedupe onto a single in-flight refresh instead of starting three races.</li>
+                    <li><strong>Per-branch retry budget structure.</strong> The polish retry schedule is now factored per auth kind — same values today, but ready to diverge cleanly if telemetry shows one branch needs more headroom.</li>
+                    <li><strong>Per-branch logs.</strong> Every polish log line now includes the auth kind, so Console.app can give per-branch latency distributions without manual correlation. Boring but invaluable for the next round of tuning.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.1/AbaloneFlow-1.7.1.dmg"
+                sparkle:edSignature="GjwlJ3Sq0OxuuT6sHSVAuNylBzOCdKGamtvIWIM6QpymXGhLIpZ+BqbunXAAGWnaUYAogNwUiG+DtpXcDns5Dw=="
+                length="7530225"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.0 — Polish that knows when to be quiet</title>
+            <pubDate>Fri, 29 May 2026 00:13:18 +0000</pubDate>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.7.0 — Polish that knows when to be quiet.</h2>
+                <p>If you're on Abalone's included polish (no provider connected), the app now handles your monthly cap the way Claude handles yours: a heads-up at 80%, a hard stop at 100%, and then silence. Not a "polish failed" card on every dictation for the rest of the month.</p>
+                <h3>What the pill does now when you're capped</h3>
+                <p>Nothing dramatic. Your dictation runs, your raw text pastes, the green checkmark lands. No purple polish flicker, no failure card, no apology on repeat. The system knows polish can't run; it doesn't pretend to try.</p>
+                <h3>The 80% conversation</h3>
+                <p>When you cross 80% of your monthly cap, one card appears — "Polish nearing monthly limit" — with the percent used and a link to connect your own AI. Then it's quiet until 100%. No 81%, 82%, 83% chatter; you don't need to be reminded every 35 seconds.</p>
+                <h3>INCLUDED, not TRIAL</h3>
+                <p>The Settings → AI Providers section that tracks your monthly polish allowance is now labeled "INCLUDED." It's a permanent free tier, not a trial period that ends. The chip still turns orange at 80% and red at 100% — only the framing stopped lying.</p>
+                <h3>Faster polish under the hood</h3>
+                <p>Cloud polish swapped from gpt-4o-mini to gpt-5-nano. Cheaper per token (about a third of the old price), and sub-1s first byte on most connections. Already live for everyone since last week — this build just officializes the change and stamps it on your local copy.</p>
+                <h3>Update prompts that actually reach you</h3>
+                <p>Most people live in the menu bar. Update prompts used to render only inside the main window, which meant you'd miss them until you happened to open Settings. Now they surface in the pill too. The next "1.7.1 is ready" reaches you whether the window is open or not.</p>
+                <h3>One card system</h3>
+                <p>Internally, every notification the pill shows — sign-in prompts, the AI-cap card, the "we just learned a word" confirmation, this new nearing-limit heads-up — now flows through the same component. Same countdown ring, same dismiss button, same hover-pause. The "Learned 5 new words" pop-up that used to look slightly different from every other card now reads as part of the same family.</p>
+                <h3>Smaller polish, no less honest</h3>
+                <ul>
+                    <li>The cap-reached card's button now reads "AI providers" instead of "Connect ChatGPT" — it'll keep being honest as Claude and bring-your-own-key land.</li>
+                    <li>Card layout breathes more: dismiss button floats in the top-right corner of any card instead of reserving a full-height column. Body text and action rows now extend to the right edge instead of being pinched.</li>
+                    <li>The "polish couldn't finish" card no longer fires when polish was actually just paused for the cap — different problem, different message, no conflation.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.7.0/AbaloneFlow-1.7.0.dmg"
+                sparkle:edSignature="KAoBj/vr+4eZz0hvyGyHghExgWi6zmJxPeJRfhbU1oYb4Pp2BFeRHfPEAk9exqmQbdWlLcjvgEOsGxp30MjrBw=="
+                length="7523347"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.6.0 — Polish on every dictation</title>
+            <pubDate>Wed, 27 May 2026 14:56:53 +0000</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.6.0 — Speak rough. Land clean.</h2>
+                <p>Until today, Abalone gave you a raw transcript: every "um", every misfire, every comma in the wrong place. This update adds the second pass. Your dictation runs through an AI editor before it lands at your cursor. Filler gone. Grammar tidied. Your voice intact.</p>
+                <h3>Bring your own AI</h3>
+                <p>The first time you launch 1.6.0, Abalone asks which AI does the polish:</p>
+                <ul>
+                    <li><strong>Your ChatGPT.</strong> Sign in once with Plus, Pro, or Team. The polish runs on your subscription — no extra account to manage.</li>
+                    <li><strong>Abalone Cloud.</strong> Skip the sign-in and Abalone's bundled polish takes over. Included.</li>
+                </ul>
+                <p>Switch any time in Settings → AI Providers. Claude and bring-your-own-key are coming soon.</p>
+                <h3>Watch the magic</h3>
+                <p>Onboarding now has one screen that does what three used to. A live Gmail compose mock. The real pill. Your own voice. Speak the prompt, see the raw text land, then watch the polish redraft it in front of you. End of demo. You're in the app.</p>
+                <h3>History remembers both</h3>
+                <p>Every dictation now stores what you said and what the polish made of it. Edit either. Compare the two. Useful when you want to revisit a thought in its rawest form.</p>
+                <h3>Faster first polish</h3>
+                <p>The path between your microphone and the AI used to start cold on every launch. Now it stays warm while the app is open — like an editor keeping a language server alive. The first polish after opening the app skips the cold-start tax.</p>
+                <h3>Dictionary, smarter</h3>
+                <p>When you edit a transcription, Abalone learns what you meant. 1.6.0 swaps the old pattern-matching for a language model. It spots names, technical terms, and your personal vocabulary the way a human editor would, then quietly remembers.</p>
+                <h3>Polish under the hood</h3>
+                <ul>
+                    <li>If polish hits an error mid-dictation, your raw text stays at the cursor. Nothing lost.</li>
+                    <li>ESC cancels in-flight polish cleanly.</li>
+                    <li>Cap-reached state shows a clear card with the reset date — no "AI is unavailable" guesswork.</li>
+                    <li>Window title is now "Abalone Flow" with the space it deserves.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.6.0/AbaloneFlow-1.6.0.dmg"
+                sparkle:edSignature="1/4pc0ia9Sg+zYC1pQjqN6OxX/SGTok8Ig+puM+F8ndRvx0ZiXgeIdfGwheaXhumFJy2/9nV8M/8NZrhhM7yAw=="
+                length="7558503"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.5.1 — Whisper v3 turbo on every Mac</title>
+            <pubDate>Sat, 16 May 2026 22:32:21 +0000</pubDate>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.5.1 — Whisper v3 turbo, automatically</h2>
+                <p>v1.5.0 made Whisper v3 turbo the default model for new users — comparable size to the previous default, noticeably faster on Apple Silicon, with quality on par. But existing users had no way to switch.</p>
+                <p>This update fixes that. The first time you launch 1.5.1, your on-device model upgrades to turbo automatically — nothing to click. Cloud transcription covers the ~5–10 minute download window so you can keep dictating throughout.</p>
+                <p>Your previous model files stay in your cache. If you ever want to switch back, they're still there.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.5.1/AbaloneFlow-1.5.1.dmg"
+                sparkle:edSignature="LWa/LntlAWfzZy9jj8hS0QrNe1hw2bS/QARNq1yus7bn8kxHt0vk/jZ0NJBn51vxB6/PnGUVzlffYNQRx8AKAg=="
+                length="7106568"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.5.0 — New onboarding, instant cloud dictation, and engine choice</title>
+            <pubDate>Sat, 16 May 2026 20:07:06 +0000</pubDate>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.5.0 — Hello, and start dictating now</h2>
+                <p>The biggest update since launch. A brand-new welcome flow for first-time users, instant dictation while your on-device model downloads, an engine picker for the way you prefer to work, and a smaller, faster default model.</p>
+                <h3>A real first-launch experience</h3>
+                <p>Six guided screens teach you everything you need in under two minutes — and nothing you don't:</p>
+                <ul>
+                    <li><strong>Permissions, explained.</strong> Accessibility and microphone access are requested inline, with plain-English context for each.</li>
+                    <li><strong>Pick your dictation shortcut.</strong> Try Fn, a key combo, or any modifier — see exactly how it feels in a live preview.</li>
+                    <li><strong>Mic check.</strong> Pick the input device and watch a live waveform confirm it's listening. No more guessing whether the right mic is selected.</li>
+                    <li><strong>Language follows your keyboard.</strong> By default Abalone reads your active keyboard layout — switch ⌘+Space and it switches with you. You can pin a single language too.</li>
+                    <li><strong>Meet the dictionary.</strong> A short demo shows how Abalone learns names and proper nouns from your edits — using your own name as the example.</li>
+                    <li><strong>One real practice dictation.</strong> Hold your shortcut, say a sentence, watch it land. The first proof that this just works.</li>
+                </ul>
+                <h3>Dictate the second you sign in</h3>
+                <p>Abalone's on-device model is ~500 MB. That used to mean waiting before your first dictation. Not anymore.</p>
+                <ul>
+                    <li><strong>Cloud bridge.</strong> While your on-device model is downloading, Abalone routes dictation through the cloud automatically. You press your shortcut and it just works.</li>
+                    <li><strong>Quiet handoff.</strong> The moment your on-device model finishes installing, Abalone switches over silently. No prompts, no popups.</li>
+                    <li><strong>Honest progress.</strong> The home page shows a thin progress bar at the bottom of the window so you always know where the download stands — without taking over the screen.</li>
+                </ul>
+                <h3>Engine picker</h3>
+                <p>Settings → Engine Mode lets you choose how Abalone transcribes:</p>
+                <ul>
+                    <li><strong>Auto.</strong> On-device when ready, cloud when not. The default — and what most people want.</li>
+                    <li><strong>Cloud.</strong> Fastest cold start, lowest latency.</li>
+                    <li><strong>On Device.</strong> Everything stays on your Mac. Works fully offline.</li>
+                </ul>
+                <h3>Whisper v3 turbo as the default</h3>
+                <p>The default on-device model is now Whisper v3 turbo — about half the size of the previous default, noticeably faster on Apple Silicon, with quality on par with the small model. Existing models keep working; turbo downloads the next time your cache is cleared.</p>
+                <h3>Polish under the hood</h3>
+                <ul>
+                    <li>Fixed an Fn-as-modifier edge case where holding Fn with another key could accidentally start recording.</li>
+                    <li>Dock icon now reliably reopens the main window.</li>
+                    <li>Pill status messages stay single-line and consistent across states.</li>
+                    <li>Cloud transcription pre-warms the moment you press your shortcut, shaving response time off every cloud dictation.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.5.0/AbaloneFlow-1.5.0.dmg"
+                sparkle:edSignature="imtnCW2clswPqge37HnC7MuKSBhsow2vfqm8MMkDOyDF4VV/GN4u9mHHGJAvFBQ6cRcmlcqrhi0/N1r/e/GABQ=="
+                length="7106546"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.4.3 — Fn+Delete works again, plus a friendlier push-to-talk</title>
+            <pubDate>Thu, 07 May 2026 08:33:35 +0000</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.4.3 — Fn keys behave the way macOS intended</h2>
+                <p>Two small but meaningful keyboard fixes for anyone who uses Abalone with Fn as their dictation key.</p>
+                <ul>
+                    <li><strong>Fn+Delete forward-deletes again.</strong> When Abalone intercepts the Fn key for dictation, it accidentally also blocked macOS from translating Fn+Delete into a forward delete. Same for Fn+Left/Right (Home/End) and Fn+Up/Down (Page Up/Down). All of those now work the way they should.</li>
+                    <li><strong>Holding Fn with another key won't accidentally start recording.</strong> Previously, if you held Fn for forward-deletes (or any Fn-modifier action), the hold timer could fire and start dictation behind your back. Now the moment you press another key while holding Fn, Abalone knows you're using Fn as a modifier — recording stays off.</li>
+                    <li><strong>Push-to-talk feels more deliberate.</strong> The hold threshold is now 400ms (up from 150ms) — matching the double-tap window. A casual brush of Fn won't trigger PTT, but a clear hold still feels snappy.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.4.3/AbaloneFlow-1.4.3.dmg"
+                sparkle:edSignature="MpmEUZBKp7kZqZ/LGlAf3X6CGK4moJzbbHiOV9Uy53m0g51f6yXAH2WoXXQpRCoOrFngfxchYurg9kIIKNU+Aw=="
+                length="6662761"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.4.2 — polish: cursor feedback, mic default, final-word transcription fix</title>
+            <pubDate>Mon, 04 May 2026 23:28:25 +0000</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>1.4.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.4.2</h2>
+                <p>A polish release — no new features, just things that should have been right from the start.</p>
+                <h3>What's changed</h3>
+                <ul>
+                    <li><strong>Your Mac's built-in mic is now always the default.</strong> Previously the app could silently switch to a Bluetooth device (like AirPods), causing a 1–3 second connection delay before your first dictation went through. Now Abalone always records from the built-in microphone unless you explicitly choose something else in Settings → Microphone.</li>
+                    <li><strong>"Connecting mic…" feedback.</strong> If you do choose a Bluetooth mic and it needs a moment to negotiate, the dictation pill now shows "Connecting mic…" instead of a silent waveform while it waits.</li>
+                    <li><strong>Final words no longer get cut off.</strong> Short final words at the end of a dictation ("…and <em>finally</em>") were sometimes dropped. Fixed by giving the audio engine a moment to flush its last buffer before transcription runs.</li>
+                    <li><strong>Pointer cursor everywhere.</strong> Every button, toggle, keycap, and menu item in the app now shows the hand cursor on hover. No more arrow cursor over things you can click.</li>
+                </ul>
+                <p>No changes to core dictation, shortcuts, your dictionary, or cloud sync.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.4.2/AbaloneFlow-1.4.2.dmg"
+                sparkle:edSignature="It6tcqnfIH6bWBmrb2DrGm+j3fE5gTxq09mGP5hPn1CZmRGW6yj1cIKDQhLBGHvVZX4AF1CtAPJk8DAbUfy7Ag=="
+                length="6660961"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.4.1 — dock icon brings the window back reliably</title>
+            <pubDate>Sun, 26 Apr 2026 10:44:37 +0000</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.4.1</h2>
+                <p>A small but long-overdue fix: clicking the Abalone Flow icon in your Dock now reliably brings the main window back, even after you've closed it.</p>
+                <h3>What's changed</h3>
+                <ul>
+                    <li><strong>Dock-click always reopens the window.</strong> Previously, after closing the main window with the red ✕, clicking the Dock icon sometimes did nothing. The window now hides instead of being destroyed, and a single Dock click brings it forward every time.</li>
+                    <li><strong>Window follows you across Spaces.</strong> If the main window is on a different desktop (Space) than the one you're currently on, clicking the Dock icon now pulls the window to your current Space — instead of yanking you to wherever the window was sitting.</li>
+                    <li><strong>Minimized windows un-minimize on Dock click.</strong> If you'd minimized the window to the Dock with the yellow –, clicking the app icon now restores it directly.</li>
+                </ul>
+                <p>No changes to dictation, transcription, shortcuts, or your dictionary. Same shortcuts, same keys, same everything else.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.4.1/AbaloneFlow-1.4.1.dmg"
+                sparkle:edSignature="uhydZA7GOjml3EvBVoNDis1aImqRzUxI6G/gPInhXbL1LbT3c6pmXC7s3gqZvl/vTZRMm0uBecXBeUbLlYU+Aw=="
+                length="6630645"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.4.0 — Abalone learns proper nouns from your edits</title>
+            <pubDate>Sun, 26 Apr 2026 10:07:14 +0000</pubDate>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.4.0 — Adaptive Dictionary</h2>
+                <p>Abalone now learns the words you care about. Names, products, jargon — anything Whisper gets wrong the first time. You fix it once; from then on, it's right.</p>
+                <h3>How it works</h3>
+                <ul>
+                    <li><strong>Auto-learn from your corrections.</strong> When you fix a transcription — change "Wispr" to "Wispr Flow", or "Sameer" to "Samir" — Abalone quietly notes the corrected proper noun. Next time you dictate, Whisper biases toward your spelling.</li>
+                    <li><strong>Add words yourself.</strong> Open Settings → Dictionary and type the words you want Abalone to know: company names, teammates, product lines. Up to 100 entries, on-device only.</li>
+                    <li><strong>Source badge per entry.</strong> Words you typed in show as "added by you"; words Abalone caught from your edits show with a sparkle ✨ "learned" badge — so you can tell which ones came from where.</li>
+                    <li><strong>One toggle to disable.</strong> If auto-learn isn't your thing, flip the switch at the top of the Dictionary page. Manual entries keep working.</li>
+                </ul>
+                <h3>What triggers a learning</h3>
+                <p>Auto-learn waits for a clear "I'm done editing" signal before saving anything. The strongest signals are <strong>pressing Enter to send</strong> (in Slack, ChatGPT, Cursor, etc.) and <strong>switching apps</strong>. Clicking a Send button with the mouse, or focusing a different field, also counts. The system never learns from text you typed — only from edits you made to dictated text.</p>
+                <h3>What gets filtered out</h3>
+                <p>To avoid learning typos or junk, Abalone runs every candidate word through Apple's spell-checker plus a stoplist of common English words. Only proper nouns and words that look like real names make it into your dictionary. Lowercase corrections, common-word swaps, and partial-word edits are skipped.</p>
+                <p>Privacy: the dictionary lives on your Mac. If you're signed in, it syncs to your account so it's there on your next device — same shape as your transcription history.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.4.0/AbaloneFlow-1.4.0.dmg"
+                sparkle:edSignature="ttzfmnXReOyMuMbDR7em/73oBzZqjB4DYzLp99nA30hpSqWpt0+7sFUL+orOrBOC0GVZyQPM3BUluwVRM7K5BA=="
+                length="6628118"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.3.2 — shortcuts settings polish, one-tap error fixes</title>
+            <pubDate>Fri, 24 Apr 2026 08:02:15 +0000</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.3.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.3.2</h2>
+                <p>The Shortcuts page in Settings got a cleanup. Same shortcuts, same keys — just easier to read, easier to fix, and easier to reset.</p>
+                <h3>What's changed</h3>
+                <ul>
+                    <li><strong>Cleaner two-column layout.</strong> Each row now reads label on the left, keys on the right — the standard macOS settings convention. Keycaps scan cleanly down the right edge so you can spot what's bound to what at a glance.</li>
+                    <li><strong>One Reset all shortcuts button.</strong> A single button at the top-right of the page resets every shortcut to its default, appearing only when something's actually been changed. The old per-row reset is gone — one clear escape hatch instead of two.</li>
+                    <li><strong>One-tap fixes for invalid combos.</strong> If you try to bind something that won't work — a bare letter that fires while you type, Shift alone, or a universal ⌘ combo like ⌘Z — the error now shows tappable suggestion chips. Click one to commit a fixed version without re-recording.</li>
+                    <li><strong>"Double-tap for hands-free" moved into the description.</strong> The hint now sits alongside "Hold to record" under Push to Talk, where behavior copy belongs. The controls column is just keycaps and actions.</li>
+                </ul>
+                <p>No changes to dictation, transcription, hotkey behavior, or anything outside the Settings page. Your bindings carry over unchanged.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.3.2/AbaloneFlow-1.3.2.dmg"
+                sparkle:edSignature="jhmvUDByJLDPZizeZ1UsaziMOTrJ+91tgbaPALU2vW3uXpm9Rnuoc31XfTK17wQS2SyMM/vlTrJivmWyxr8ADQ=="
+                length="6446297"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.3.1 — card polish, reliable hover-to-pause</title>
+            <pubDate>Fri, 24 Apr 2026 05:17:05 +0000</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>1.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.3.1</h2>
+                <p>Small polish on the cards that drop down from the notch — the permission prompt, model-download error, and sign-up nudge. Nothing new, just nicer.</p>
+                <h3>What's changed</h3>
+                <ul>
+                    <li><strong>Countdown ring around the X.</strong> Cards that auto-dismiss now show a thin ring that drains as the timer runs out, so you can see how long you have before it disappears.</li>
+                    <li><strong>Hover pauses the timer — reliably.</strong> Move the cursor anywhere over a card and the countdown freezes. Move away and it picks back up. (Previously this only worked sometimes, depending on where the cursor crossed.)</li>
+                    <li><strong>Roomier layout.</strong> The dismiss X now sits in its own column in the top-right corner, and there's more breathing room between the title, body, and button. The card still stays locked to the notch width so it reads as one stacked element with the notch above.</li>
+                </ul>
+                <p>No changes to dictation, transcription, hotkeys, or anything else. Your settings and recordings carry over unchanged.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.3.1/AbaloneFlow-1.3.1.dmg"
+                sparkle:edSignature="hC2uvADuPis+KoIX8Dd6pVoLN8Um7sBCM5aR4jDEB6pyKz2xllcmLUB9nLbp+gZpqemXL8xa1ReqWe4FNIlwDw=="
+                length="6434021"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.3.0 — dictation moves to the notch</title>
+            <pubDate>Thu, 23 Apr 2026 16:56:43 +0000</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.3.0</h2>
+                <p>The dictation pill has moved. Instead of floating at the bottom of the screen, it now lives at the top — anchored to the notch, extending downward as a small card when you record. Closer to where your eyes already are, out of the way of whatever you're writing into, and finally giving the notch a job on Macs that have one.</p>
+                <h3>What's new</h3>
+                <ul>
+                    <li><strong>Notch-anchored pill.</strong> The pill sits flush against the top edge of your screen, extending the hardware notch if you have one and sitting in the same spot on Macs without. Hover it to see the shortcut hint; click to start recording.</li>
+                    <li><strong>Undoable cancel.</strong> When you stop a recording by hitting the X, you get a short grace period with a progress bar and an Undo button. Hover the card and the countdown pauses — take as long as you need. Miss the window and the audio is discarded cleanly.</li>
+                    <li><strong>New recording animations.</strong> A small abalone pearl appears during warming-up, transcribing, and done states, with motion tuned to the phase the app is in. The waveform during recording is crisper and the completion "done" moment is a single clean checkmark.</li>
+                    <li><strong>New menu bar icon.</strong> A custom pearl-crescent template replaces the generic microphone glyph — matches the app's identity and respects your menu bar's light/dark appearance.</li>
+                </ul>
+                <p>Everything else — hotkeys, transcription quality, cloud sync, history — behaves the same. Your settings and recordings carry over unchanged.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.3.0/AbaloneFlow-1.3.0.dmg"
+                sparkle:edSignature="jSytV0PVduwJoXYH7duJRB+Ehxr3LxyLEsNPAHQn+qVFTsVcElVNTvTVUUr2AIWw1+Bm5jgm+TkyswNFNYCDAg=="
+                length="6423308"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.2.4 — fix: rapid hotkey taps no longer spawn ghost recordings</title>
+            <pubDate>Wed, 22 Apr 2026 08:45:28 +0000</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.2.4</h2>
+                <p>Quiet but nasty bug fix. Rapid-fire-tapping your recording hotkey — five or six times in quick succession — could start multiple overlapping recording sessions in the background. Each would run invisibly until hitting the 10-minute max-duration cap, at which point it would paste a duplicate into your active app and save a near-empty 10-minute clip to your history. The pill would shimmer strangely and you'd often have to force-quit to escape. Fixed.</p>
+                <h3>Change</h3>
+                <ul>
+                    <li><strong>Recording keys are ignored while a session is wrapping up.</strong> If you press the hotkey during the brief window where the app is transcribing and pasting the previous session, the press is dropped rather than starting a new overlapping one. You can start a fresh recording as soon as that finishes (usually under a second).</li>
+                </ul>
+                <p>No behaviour changes to dictation, cloud sync, or telemetry.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.2.4/AbaloneFlow-1.2.4.dmg"
+                sparkle:edSignature="96spSZN29hKf3Ou6iBXi0ZFqlirxS/wloHSvE7NX1hODZuJcEN2CxKSbaVfzgYB4wrEn9IxvzM9tJDb/bxPVDg=="
+                length="6425376"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.2.3 — smarter update checks + reliable restart</title>
+            <pubDate>Tue, 21 Apr 2026 15:53:32 +0000</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.2.3</h2>
+                <p>Closes out the auto-update flow. The "Restart to Update" button now reliably installs the update and relaunches the app. Previously, under certain conditions, clicking it would quit the app without installing anything — leaving you stuck on the old version.</p>
+                <h3>Changes</h3>
+                <ul>
+                    <li><strong>Checks for updates every time you launch the app</strong>, plus once an hour while it's running. Previously it only checked once every 24 hours, which meant relaunching didn't necessarily trigger a fresh check.</li>
+                    <li><strong>"Restart to Update" now reliably installs.</strong> You'll see a brief one-click "Install and Relaunch" confirmation from Sparkle when you click the capsule — then the app installs and relaunches, the way it was always supposed to.</li>
+                </ul>
+                <p>No behaviour changes to dictation, cloud sync, or telemetry.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.2.3/AbaloneFlow-1.2.3.dmg"
+                sparkle:edSignature="Bm6aEAlwTxv4XBWKnMdXUA9ISWYU4yF6iKjv/7EsCToVG+CivgHCGlRwGfihTK7g2XWX2S9lyLOzi7gf4brrCA=="
+                length="6424708"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.2.2 — stale-cache update CTA fix</title>
+            <pubDate>Tue, 21 Apr 2026 14:51:58 +0000</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.2.2</h2>
+                <p>Another small polish on the auto-update flow. In 1.2.1 a stale DMG cache could leave the "Restart to Update" capsule on-screen even when there was nothing new to install — clicking it would quit the app without doing anything. This release ignores Sparkle's delegate callbacks for versions that match what's already running.</p>
+                <h3>Change</h3>
+                <ul>
+                    <li>The "Restart to Update" capsule only appears when there's a genuinely newer build waiting. No more ghost CTAs that do nothing when clicked.</li>
+                </ul>
+                <p>No behaviour changes to dictation, cloud sync, or telemetry.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.2.2/AbaloneFlow-1.2.2.dmg"
+                sparkle:edSignature="gW0Nfm7/OmQ9sDwPrbRiU5GrEBnPpBC3tAQ6BYqLLDxPd4QRu3OkYgH5pYsrcPqFjmsnN4/1VGq+YsMC9YpYBg=="
+                length="6427586"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.2.1 — silent auto-update fix</title>
+            <pubDate>Tue, 21 Apr 2026 13:10:45 +0000</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.2.1</h2>
+                <p>A quick follow-up to 1.2.0. The automatic update flow wasn't reliably surfacing the "Restart to Update" button when a new version was available in the background — you'd either see nothing, or occasionally a stray Sparkle dialog. This fixes both.</p>
+                <h3>Change</h3>
+                <ul>
+                    <li>Sparkle now downloads new versions silently in the background (as intended) and the "Restart to Update" capsule appears automatically under the sidebar logo, in Settings, and in the app menu — no dialogs to dismiss.</li>
+                </ul>
+                <p>No behaviour changes to dictation, cloud sync, or telemetry from 1.2.0.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.2.1/AbaloneFlow-1.2.1.dmg"
+                sparkle:edSignature="Md1kJuLro2aZEbjpTGZPJih36GP42Lf5S39+93Sq6XnW+AMtfagHLw3olIbKRYw2x6Y/oqcPvLH0n9fxPHhsAw=="
+                length="6425525"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.2.0 — per-device telemetry + privacy policy</title>
+            <pubDate>Tue, 21 Apr 2026 11:19:08 +0000</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.2.0</h2>
+                <p>New: the app now reports non-sensitive device info when you sign in, so we can debug issues faster and understand what Macs and OS versions our users are on. Nothing changes in how dictation works — your voice is still transcribed locally on your Mac.</p>
+                <h3>What gets reported</h3>
+                <ul>
+                    <li>Mac model, chip, macOS version, app version, locale, timezone, and a stable hardware identifier — sent to our server the first time you sign in and on each launch afterwards.</li>
+                    <li>IP address and country (derived by our edge provider) — logged for security monitoring.</li>
+                </ul>
+                <h3>What does <em>not</em> get collected</h3>
+                <ul>
+                    <li>No precise location, no contact lists, no browsing history, no data from other apps.</li>
+                    <li>No selling, sharing, or licensing of your data. No ad networks. No AI training on what you say.</li>
+                </ul>
+                <p>Full details, including how to request deletion, are in our <a href="https://updates.abalone.ai/flow/privacy">privacy policy</a>. If you'd rather not share this data, email vincent@vincentwei.co and we'll delete your account on request.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.2.0/AbaloneFlow-1.2.0.dmg"
+                sparkle:edSignature="RItWhZ/G1uYzRvJeXb8WevYLT2hUebx8N8DFBLJM2DuQdAihiNcTxnwVkjlivO0RkQ/qkD7s7F/AM2aOHoVIBA=="
+                length="6426171"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.3 — silent Restart to Update</title>
+            <pubDate>Tue, 21 Apr 2026 06:06:00 +0000</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.1.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.1.3</h2>
+                <p>Smoother update flow — no more dialogs to click through.</p>
+                <h3>Change</h3>
+                <ul>
+                    <li><strong>"Restart to Update" is now silent.</strong> Clicking the button used to surface two Sparkle dialogs ("Update Available" and then "Install and Relaunch"). Now it just quits the app, installs the new version, and relaunches — no clicks needed.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.1.3/AbaloneFlow-1.1.3.dmg"
+                sparkle:edSignature="heeXgtvfH/bDwNE2Vnzx6xbQWooHVCpkg+xpSHw35eNp+EqeJ+pzTQ/AWtC0biWBDvSxhOpaCOxSGEICIjL8DA=="
+                length="6419832"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.2 — launch fix for China</title>
+            <pubDate>Tue, 21 Apr 2026 02:23:00 +0000</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.1.2</h2>
+                <p>Fixes a launch failure reported by users in mainland China.</p>
+                <h3>Fix</h3>
+                <ul>
+                    <li><strong>"Apple could not verify" dialog on first launch.</strong> The notarization ticket is now stapled to the app bundle itself, so Gatekeeper can verify offline — no need to reach Apple's servers. This unblocks users in regions where Apple's notarization endpoints are throttled.</li>
+                </ul>
+                <p>No other behavior changes. Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.1.2/AbaloneFlow-1.1.2.dmg"
+                sparkle:edSignature="IjUvveq5rWC4ahptETXBf3SqQxYRH2I0svkKTrIJyDeLX7HdKH0aV9FSsnGq3CaoFMOTWxKj5SkAe1kgQnPQAQ=="
+                length="6417995"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.1 — bug-fix release</title>
+            <pubDate>Mon, 20 Apr 2026 01:20:00 +0700</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.1.1</h2>
+                <p>Bug fixes for home stats, hands-free, and push-to-talk.</p>
+                <h3>Fixes</h3>
+                <ul>
+                    <li><strong>Home stats from cloud DB.</strong> Weekly streak and 7-day WPM now read from the full cloud dataset, not the 200-row local cache.</li>
+                    <li><strong>Modifier-only hands-free fires instantly.</strong> No more 150 ms hold before Control+Command (or any modifier combo bound to hands-free) starts recording.</li>
+                    <li><strong>Push-to-talk no longer hangs after a mode switch.</strong> Pressing push-to-talk to stop hands-free used to silently break the key until a restart.</li>
+                    <li><strong>Double-tap to re-enter hands-free works every time.</strong> After stopping hands-free with a single tap, the next double-tap was being dropped.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.1.1/AbaloneFlow-1.1.1.dmg"
+                sparkle:edSignature="2lIzBW1WyO5Ish3xhBz9LIT5zjESWF0h3i6OaGDizqY9jQRISsONP3fA1mcQQMqPvIO7I6DdhsTbyUOdbndzBw=="
+                length="7052404"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.0 — Richer mid-session mode switching</title>
+            <pubDate>Mon, 20 Apr 2026 00:15:00 +0700</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.1.0</h2>
+                <p>Better mid-session control, more configurable hotkeys, fewer false scolds.</p>
+                <h3>New hotkey gestures</h3>
+                <ul>
+                    <li><strong>Latch mid-session:</strong> Hold your PTT key, then press your hands-free combo — recording continues, now in hands-free.</li>
+                    <li><strong>Double-tap modifier-only PTT:</strong> E.g. Control alone, now toggles hands-free. Used to only work on Fn.</li>
+                    <li><strong>Single-tap to stop hands-free:</strong> Press your PTT key once during an active session to stop and transcribe.</li>
+                    <li><strong>Extend the chord:</strong> Ctrl → Ctrl+Cmd during PTT promotes into hands-free. Works with any binding you configure.</li>
+                    <li><strong>Confirmation sound:</strong> A short "Pop" plays on mode flips so you always know what state you're in.</li>
+                </ul>
+                <h3>Fixes</h3>
+                <ul>
+                    <li>Hotkeys attach at HID driver level — other dictation apps can't steal your keys.</li>
+                    <li>Accidental short taps (&lt;200 ms) no longer trigger the "No speech detected" warning.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.1.0/AbaloneFlow-1.1.0.dmg"
+                sparkle:edSignature="SP66LQ6Qr54t2nbEet/giCYTRh3sJYjvJINi9l9ZH2TNrHOl/hhtxLVAUjYessQTqn2Jm8SNWbtXwhr5rQTCAg=="
+                length="7049187"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.0.0 — Speak 3x faster than you type. Anywhere on your Mac.</title>
+            <pubDate>Sun, 19 Apr 2026 19:46:19 +0700</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone Flow 1.0.0</h2>
+                <p><strong>Speak 3x faster than you type. Anywhere on your Mac.</strong></p>
+                <p>You speak at 140 words per minute. You type at 40. Abalone Flow closes that gap everywhere you'd normally type — Mail, Slack, Claude Code, Cursor, Obsidian, Linear, Notion.</p>
+                <p>Hold a key. Speak. Release. Your words land at the cursor, already punctuated and capitalized, before you've taken your hand off the key.</p>
+                <h3>The five things that matter</h3>
+                <ul>
+                    <li><strong>Transcription runs on your Mac.</strong> OpenAI Whisper via WhisperKit, native on Apple Silicon. Audio never leaves your machine.</li>
+                    <li><strong>Your history syncs across devices.</strong> Transcribed text follows you from laptop to desktop; audio stays local.</li>
+                    <li><strong>One-click sign-in with Google.</strong> No forms, no email to verify, no inbox ceremony.</li>
+                    <li><strong>Free.</strong> No subscription, no credit card, no word limits today.</li>
+                    <li><strong>Near-perfect accuracy.</strong> ~97% on clean English. Swap in Large-v3 for broadcast-grade transcription.</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon (M1, M2, M3, M4).</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.0.0/AbaloneFlow-1.0.0.dmg"
+                sparkle:edSignature="yCdU3I/Cl/D0wg1inkQJd7xWlCrY5UzBFyuXLqLdJt+HVDlGGZB8SyTjylh/o4SizZeM79LQCEoX1H1+mBczDw=="
+                length="7042896"
+                type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
