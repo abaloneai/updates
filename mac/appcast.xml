@@ -2,9 +2,32 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
     <channel>
         <title>Abalone</title>
-        <link>https://updates.abalone.ai/mac/appcast.xml</link>
-        <description>Updates for Abalone.</description>
+        <link>https://updates.abalone.ai/flow/mac/appcast.xml</link>
+        <description>Updates for Abalone Flow.</description>
         <language>en</language>
+        <item>
+            <title>Version 1.8.0 — Abalone Flow is now Abalone</title>
+            <pubDate>Mon, 08 Jun 2026 15:50:13 +0000</pubDate>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>1.8.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.8.0 — New name, cleaner foundation.</h2>
+                <p>Abalone Flow is now just <strong>Abalone</strong>. Same app, tighter name.</p>
+                <p>After updating, macOS will ask you to re-grant Microphone and Accessibility access once — this is expected when an app's identity changes and takes about 30 seconds. Everything you've set up (hotkey, model, history) carries over automatically.</p>
+                <h3>Also in this update</h3>
+                <ul>
+                <li>Fixed a bug where macOS showed a password dialog whenever Abalone started up, asking for access to the system keychain. This affected every launch on some machines. Gone.</li>
+                <li>Onboarding is clearer — the permissions screen now explains why each access is needed, and the shortcut key screen shows both ways to use your key (hold to record, or double-tap to toggle).</li>
+                </ul>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.0/Abalone-1.8.0.dmg"
+                sparkle:edSignature="vkhosTAZbHybJ5dMJ80srAtFI1w1XRk0vb+CPaNFSra8Q5pPkBHJ4e9kU+hR+SsDBglLr6iPADqvc9u+qslDAA=="
+                length="7592677"
+                type="application/octet-stream" />
+        </item>
         <item>
             <title>Version 1.7.7 — Faster everything</title>
             <pubDate>Fri, 05 Jun 2026 17:58:49 +0000</pubDate>
