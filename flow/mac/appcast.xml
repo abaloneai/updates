@@ -14,15 +14,10 @@
             <sparkle:informationalUpdate>true</sparkle:informationalUpdate>
             <link>https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.0/Abalone-1.8.0.dmg</link>
             <description><![CDATA[
-                <h2>Abalone Flow is now Abalone</h2>
-                <p>We've renamed the app and given it a new identity. This update requires a fresh download — click <strong>Download</strong> below to get it. Takes about 30 seconds.</p>
+                <h2>We've renamed the app to Abalone</h2>
+                <p>Because the app has a new identity, this update needs a fresh install — click <strong>Download</strong> below. It's 7MB and takes about 30 seconds.</p>
+                <p>Once downloaded, open the file and <strong>drag Abalone to your Applications folder</strong>. Then launch it from there.</p>
                 <p>Your dictation history, hotkey, and settings carry over automatically.</p>
-                <h3>Also in this update</h3>
-                <ul>
-                <li>Fixed the macOS keychain password dialog that appeared on every app launch. Gone for good.</li>
-                <li>Clearer onboarding — the shortcut key screen now shows both ways to use your key (hold to record, or double-tap to toggle).</li>
-                </ul>
-                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
             ]]></description>
         </item>
         <item>
