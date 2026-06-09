@@ -183,7 +183,13 @@
 
   <script>
     window.addEventListener('load', function() {
-      window.location.href = 'https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.0/Abalone-1.8.0.dmg';
+      // Use a hidden iframe so the page stays visible after the download starts.
+      // window.location.href would navigate to the CDN URL, which closes the
+      // connection after sending the file and leaves a "site can't be reached" error.
+      var iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = 'https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.0/Abalone-1.8.0.dmg';
+      document.body.appendChild(iframe);
     });
   </script>
 </head>
