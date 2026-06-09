@@ -11,9 +11,10 @@
       --bg: #14141f;
       --text: #ffffff;
       --accent: #aabeff;
-      --panel: rgba(255, 255, 255, 0.04);
-      --panel-border: rgba(255, 255, 255, 0.08);
-      --muted: rgba(255, 255, 255, 0.5);
+      --panel: rgba(255,255,255,0.04);
+      --panel-border: rgba(255,255,255,0.08);
+      --muted: rgba(255,255,255,0.45);
+      --step-border: rgba(255,255,255,0.06);
     }
 
     html, body {
@@ -25,195 +26,200 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 40px 24px;
+      padding: 48px 24px;
     }
 
-    .page {
-      max-width: 480px;
-      width: 100%;
-      text-align: center;
-    }
+    .page { max-width: 520px; width: 100%; text-align: center; }
 
-    /* Pearl icon */
-    .icon {
-      width: 72px;
-      height: 72px;
-      margin: 0 auto 28px;
-      animation: shimmer 8s ease-in-out infinite;
-    }
-    @keyframes shimmer {
-      0%, 100% { filter: brightness(1); }
-      50% { filter: brightness(1.06); }
-    }
+    /* Icon */
+    .icon { width: 64px; height: 64px; margin: 0 auto 24px; animation: shimmer 6s ease-in-out infinite; }
+    @keyframes shimmer { 0%,100%{filter:brightness(1)} 50%{filter:brightness(1.08)} }
 
-    /* Heading */
-    h1 {
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-    }
+    h1 { font-size: 26px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 6px; }
 
-    .version {
-      font-size: 15px;
-      color: var(--muted);
-      margin-bottom: 32px;
-    }
+    .subtitle { font-size: 14px; color: var(--muted); margin-bottom: 36px; }
 
     /* Animated dots */
-    .dots {
-      display: inline-flex;
-      gap: 6px;
-      margin-left: 4px;
-    }
-    .dots span {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-      animation: pulse 1.2s ease-in-out infinite;
-    }
-    .dots span:nth-child(2) { animation-delay: 0.2s; }
-    .dots span:nth-child(3) { animation-delay: 0.4s; }
-    @keyframes pulse {
-      0%, 100% { opacity: 0.3; transform: scale(0.8); }
-      50% { opacity: 1; transform: scale(1); }
-    }
+    .dots { display: inline-flex; gap: 5px; margin-left: 2px; vertical-align: middle; }
+    .dots span { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); animation: dot 1.2s ease-in-out infinite; }
+    .dots span:nth-child(2){animation-delay:.2s} .dots span:nth-child(3){animation-delay:.4s}
+    @keyframes dot { 0%,100%{opacity:.25;transform:scale(.7)} 50%{opacity:1;transform:scale(1)} }
 
-    /* Steps card */
-    .steps {
-      background: var(--panel);
-      border: 1px solid var(--panel-border);
-      border-radius: 16px;
-      padding: 28px 24px;
-      text-align: left;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      margin-bottom: 24px;
-    }
-
-    .steps-title {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 20px;
-    }
+    /* Steps */
+    .steps { display: flex; flex-direction: column; gap: 2px; margin-bottom: 28px; text-align: left; }
 
     .step {
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: 14px;
+      padding: 20px 20px 20px 16px;
       display: flex;
       gap: 16px;
       align-items: flex-start;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--panel-border);
     }
-    .step:last-child { border-bottom: none; padding-bottom: 0; }
-    .step:first-of-type { padding-top: 0; }
 
     .step-num {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      background: var(--panel-border);
-      border: 1px solid rgba(255,255,255,0.12);
+      width: 22px; height: 22px; border-radius: 50%;
+      border: 1.5px solid rgba(170,190,255,0.4);
+      color: var(--accent); font-size: 11px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 2px;
+    }
+
+    .step-body { flex: 1; }
+    .step-title { font-size: 15px; font-weight: 600; margin-bottom: 12px; }
+
+    /* Visual illustrations */
+    .visual {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--step-border);
+      border-radius: 10px;
+      padding: 14px 16px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--accent);
+      gap: 10px;
+    }
+
+    .file-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; flex-shrink: 0;
+    }
+    .file-label { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.3; }
+    .file-label strong { display: block; font-size: 13px; color: var(--text); font-weight: 500; }
+    .file-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    /* Drag arrow animation */
+    .drag-row {
+      display: flex; align-items: center; gap: 8px; width: 100%;
+    }
+    .drag-arrow {
+      flex: 1; display: flex; align-items: center; gap: 0;
+      position: relative; height: 2px;
+    }
+    .drag-line {
+      flex: 1; height: 1.5px;
+      background: linear-gradient(90deg, var(--accent) 0%, transparent 100%);
+      border-radius: 2px;
+    }
+    .drag-head {
+      width: 0; height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 8px solid var(--accent);
       flex-shrink: 0;
-      margin-top: 1px;
+    }
+    .drag-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      animation: slidedot 2s ease-in-out infinite;
+      position: absolute; left: 0;
+    }
+    @keyframes slidedot {
+      0%   { left: 0;    opacity: 1; }
+      80%  { left: calc(100% - 8px); opacity: 1; }
+      100% { left: calc(100% - 8px); opacity: 0; }
     }
 
-    .step-text {
-      font-size: 15px;
-      line-height: 1.5;
-      color: rgba(255,255,255,0.85);
-    }
-
-    .step-text strong {
-      color: var(--text);
-      font-weight: 600;
-    }
-
-    .step-sub {
-      font-size: 13px;
-      color: var(--muted);
-      margin-top: 3px;
-    }
+    /* Trash animation */
+    .trash-icon { font-size: 22px; animation: trashbounce 2.5s ease-in-out infinite; }
+    @keyframes trashbounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
 
     /* Fallback */
-    .fallback {
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    .fallback a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
+    .fallback { font-size: 13px; color: var(--muted); }
+    .fallback a { color: var(--accent); text-decoration: none; font-weight: 500; }
     .fallback a:hover { text-decoration: underline; }
   </style>
 
   <script>
-    // Auto-start download immediately on page load
     window.addEventListener('load', function() {
       window.location.href = 'https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.0/Abalone-1.8.0.dmg';
     });
   </script>
 </head>
 <body>
-  <div class="page">
+<div class="page">
 
-    <!-- Pearl icon -->
-    <img class="icon"
-         src="https://updates.abalone.ai/flow/icon.svg"
-         alt="Abalone">
+  <img class="icon" src="https://updates.abalone.ai/flow/icon.svg" alt="Abalone">
 
-    <!-- Heading -->
-    <h1>Your download is starting<span class="dots"><span></span><span></span><span></span></span></h1>
-    <p class="version">Abalone 1.8.0 — 7.2 MB</p>
+  <h1>Your download is starting<span class="dots"><span></span><span></span><span></span></span></h1>
+  <p class="subtitle">Abalone 1.8.0 · 7.2 MB</p>
 
-    <!-- Install steps -->
-    <div class="steps">
-      <div class="steps-title">What to do next</div>
+  <div class="steps">
 
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-text">
-          <strong>Open Abalone 1.8.0.dmg</strong>
-          <div class="step-sub">Check your Downloads folder or browser toolbar</div>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-text">
-          <strong>Drag Abalone to your Applications folder</strong>
-          <div class="step-sub">A window will open showing where to drag it</div>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-text">
-          <strong>Launch Abalone from Applications</strong>
-          <div class="step-sub">Then delete Abalone Flow — you won't need it anymore</div>
+    <!-- Step 1: Open DMG -->
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-title">Open the downloaded file</div>
+        <div class="visual">
+          <div class="file-icon">📥</div>
+          <div class="file-label">
+            <strong>Abalone 1.8.0.dmg</strong>
+            <span class="file-sub">In your Downloads folder or browser toolbar</span>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Fallback -->
-    <p class="fallback">
-      Download didn't start?
-      <a href="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.0/Abalone-1.8.0.dmg">
-        Download again
-      </a>
-    </p>
+    <!-- Step 2: Drag to Applications -->
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-title">Drag Abalone to Applications</div>
+        <div class="visual">
+          <div class="drag-row">
+            <div style="text-align:center;flex-shrink:0">
+              <img src="https://updates.abalone.ai/flow/icon.svg" style="width:32px;height:32px;border-radius:7px" alt="">
+              <div style="font-size:10px;color:var(--muted);margin-top:3px">Abalone</div>
+            </div>
+            <div class="drag-arrow">
+              <div class="drag-dot"></div>
+              <div class="drag-line"></div>
+              <div class="drag-head"></div>
+            </div>
+            <div style="text-align:center;flex-shrink:0">
+              <div style="font-size:28px">📁</div>
+              <div style="font-size:10px;color:var(--muted);margin-top:1px">Applications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: Delete old app -->
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-title">Delete the old app</div>
+        <div class="visual">
+          <div class="drag-row">
+            <div style="text-align:center;flex-shrink:0">
+              <div style="font-size:28px;opacity:0.5">🐚</div>
+              <div style="font-size:10px;color:var(--muted);margin-top:1px">Abalone Flow</div>
+            </div>
+            <div class="drag-arrow">
+              <div class="drag-dot" style="animation-delay:.5s"></div>
+              <div class="drag-line"></div>
+              <div class="drag-head"></div>
+            </div>
+            <div style="text-align:center;flex-shrink:0">
+              <div class="trash-icon">🗑️</div>
+              <div style="font-size:10px;color:var(--muted);margin-top:1px">Trash</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:var(--muted);margin-top:8px">Find it in your Applications folder</div>
+      </div>
+    </div>
 
   </div>
+
+  <p class="fallback">
+    Download didn't start? <a href="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.0/Abalone-1.8.0.dmg">Download again</a>
+  </p>
+
+</div>
 </body>
 </html>
