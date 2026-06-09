@@ -11,17 +11,14 @@
             <sparkle:version>33</sparkle:version>
             <sparkle:shortVersionString>1.8.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:informationalUpdate>true</sparkle:informationalUpdate>
+            <link>https://updates.abalone.ai/download/mac</link>
             <description><![CDATA[
-                <h2>Abalone 1.8.1 — Installer polish.</h2>
-                <p>The DMG installer now shows the correct blue Applications folder icon on macOS 15 and later — drag and drop to install as usual.</p>
-                <p>If you're upgrading from Abalone Flow, macOS will ask you to re-grant Microphone and Accessibility access once. Takes about 30 seconds. Everything else — hotkey, model, history — carries over automatically.</p>
-                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+                <h2>Abalone has a new identity</h2>
+                <p>This update needs a fresh install — click <strong>Learn More</strong> to download it. It's 7 MB and takes about 30 seconds.</p>
+                <p>Open the downloaded file, drag <strong>Abalone</strong> to your Applications folder, then launch it. Your history, hotkey, and settings carry over automatically.</p>
+                <p>Once the new app is running, delete <strong>Abalone Flow</strong> from Applications.</p>
             ]]></description>
-            <enclosure
-                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.1/Abalone-1.8.1.dmg"
-                sparkle:edSignature="8NakOzADNaUuZjDeetlz0MV+0eJU15UpHhMo7+P2ij1eI5QGQmmM7HYxkWO8A72WCSq+WrCXg9ZDEIOtyzYTCA=="
-                length="7598762"
-                type="application/octet-stream" />
         </item>
         <item>
             <title>Version 1.8.0 — Abalone Flow is now Abalone</title>
