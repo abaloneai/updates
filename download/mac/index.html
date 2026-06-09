@@ -24,10 +24,10 @@
       display: flex; align-items: center; justify-content: center;
       padding: 48px 24px;
     }
-    .page { max-width: 860px; width: 100%; text-align: center; }
+    .page { max-width: 1060px; width: 100%; text-align: center; }
 
     /* Header */
-    .icon { width: 60px; height: 60px; margin: 0 auto 20px; animation: shimmer 6s ease-in-out infinite; }
+    .icon { width: 64px; height: 64px; margin: 0 auto 20px; animation: shimmer 6s ease-in-out infinite; }
     @keyframes shimmer { 0%,100%{filter:brightness(1)} 50%{filter:brightness(1.08)} }
     h1 { font-size: 24px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 6px; }
     .subtitle { font-size: 13px; color: var(--muted); margin-bottom: 40px; }
@@ -40,83 +40,84 @@
     .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
+      gap: 16px;
       margin-bottom: 28px;
       text-align: left;
     }
-    @media (max-width: 600px) { .steps { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) { .steps { grid-template-columns: 1fr; } }
 
     .card {
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 20px;
+      border-radius: 20px;
+      padding: 28px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 16px;
       position: relative;
     }
 
-    .card-header { display: flex; align-items: center; gap: 10px; }
+    .card-header { display: flex; align-items: center; gap: 12px; }
     .num {
-      width: 22px; height: 22px; border-radius: 50%;
-      border: 1.5px solid rgba(170,190,255,0.45);
-      color: var(--accent); font-size: 11px; font-weight: 700;
+      width: 32px; height: 32px; border-radius: 50%;
+      border: 2px solid rgba(170,190,255,0.5);
+      color: var(--accent); font-size: 14px; font-weight: 700;
       display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .card-title { font-size: 14px; font-weight: 600; }
+    .card-title { font-size: 16px; font-weight: 600; }
 
     /* ── Step 1: file download visual ── */
     .dmg-visual {
       background: rgba(255,255,255,0.04);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px 14px;
-      display: flex; align-items: center; gap: 10px;
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex; align-items: center; gap: 12px;
     }
     .dmg-icon {
-      width: 36px; height: 36px; border-radius: 7px;
+      width: 40px; height: 40px; border-radius: 8px;
       background: linear-gradient(145deg,#2a2a3e,#1a1a2e);
       border: 1px solid rgba(255,255,255,0.1);
       display: flex; align-items: center; justify-content: center;
-      font-size: 18px; flex-shrink: 0;
+      font-size: 20px; flex-shrink: 0;
     }
     .dmg-info { flex: 1; }
     .dmg-name { font-size: 13px; font-weight: 500; }
-    .dmg-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .dmg-sub { font-size: 11px; color: var(--muted); margin-top: 3px; }
 
-    /* Arrow pointing to bottom-left (browser download bar) */
+    /* Arrow pointing to bottom-left corner */
     .download-hint {
-      display: flex; align-items: center; gap: 6px;
-      font-size: 11px; color: var(--accent);
-      margin-top: 2px;
+      display: flex; align-items: center; gap: 10px;
+      color: var(--accent);
     }
-    .hint-arrow {
-      font-size: 18px;
-      animation: bounce-bl 1.8s ease-in-out infinite;
+    .hint-arrow-svg {
+      width: 40px; height: 40px; flex-shrink: 0;
+      animation: bounce-bl 1.6s ease-in-out infinite;
+      color: var(--accent);
     }
+    .hint-text { font-size: 12px; line-height: 1.4; }
     @keyframes bounce-bl {
-      0%,100% { transform: translate(0,0); }
-      50% { transform: translate(-3px, 3px); }
+      0%, 100% { transform: translate(0, 0); }
+      50%       { transform: translate(-5px, 5px); }
     }
 
     /* ── Step 2: drag visual ── */
     .drag-visual {
       background: rgba(255,255,255,0.04);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px 14px;
+      border-radius: 12px;
+      padding: 20px 16px;
       display: flex; align-items: center; justify-content: space-between; gap: 8px;
     }
     .app-icon {
-      display: flex; flex-direction: column; align-items: center; gap: 5px;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
       flex-shrink: 0;
     }
     .app-icon img, .app-icon .folder {
-      width: 44px; height: 44px; border-radius: 10px;
+      width: 48px; height: 48px; border-radius: 11px;
     }
-    .app-icon .folder { font-size: 38px; line-height: 44px; text-align: center; }
-    .app-icon-label { font-size: 10px; color: var(--sub); }
+    .app-icon .folder { font-size: 42px; line-height: 48px; text-align: center; }
+    .app-icon-label { font-size: 11px; color: var(--sub); }
 
     /* Drag arrow */
     .drag-arrow-wrap {
@@ -131,8 +132,8 @@
     .drag-ghost {
       position: absolute;
       top: 50%; transform: translateY(-50%);
-      width: 18px; height: 18px;
-      border-radius: 4px;
+      width: 20px; height: 20px;
+      border-radius: 5px;
       opacity: 0.9;
       animation: slide 2s cubic-bezier(.4,0,.2,1) infinite;
     }
@@ -140,7 +141,7 @@
       0%   { left: -4px; opacity: 0; }
       15%  { opacity: 1; }
       85%  { opacity: 1; }
-      100% { left: calc(100% - 14px); opacity: 0; }
+      100% { left: calc(100% - 16px); opacity: 0; }
     }
     .drag-arrowhead {
       position: absolute; right: -8px; top: 50%;
@@ -151,22 +152,28 @@
       border-left: 10px solid rgba(170,190,255,0.6);
     }
 
-    /* ── Step 3: open folder ── */
-    .open-btn {
-      display: flex; align-items: center; justify-content: center; gap: 8px;
-      background: rgba(170,190,255,0.1);
-      border: 1px solid rgba(170,190,255,0.25);
-      border-radius: 10px;
-      padding: 12px 16px;
-      text-decoration: none;
-      color: var(--accent);
-      font-size: 13px; font-weight: 500;
-      transition: background .15s, border-color .15s;
-      cursor: pointer;
+    /* ── Step 3: keyboard shortcut ── */
+    .shortcut-row {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
     }
-    .open-btn:hover { background: rgba(170,190,255,0.16); border-color: rgba(170,190,255,0.4); }
-    .open-btn-icon { font-size: 18px; }
-    .step3-sub { font-size: 11px; color: var(--muted); }
+    .keys { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+    .key {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-bottom-width: 2px;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 13px; font-weight: 500;
+      color: var(--text);
+      min-width: 28px;
+    }
+    .shortcut-desc { font-size: 12px; color: var(--sub); line-height: 1.4; }
+    .step3-sub { font-size: 12px; color: var(--muted); line-height: 1.5; }
 
     /* Fallback */
     .fallback { font-size: 13px; color: var(--muted); }
@@ -203,8 +210,12 @@
         </div>
       </div>
       <div class="download-hint">
-        <span class="hint-arrow">↙</span>
-        <span>It appears in the bottom-left of your browser</span>
+        <!-- SVG arrow pointing toward bottom-left corner of the screen -->
+        <svg class="hint-arrow-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="30" y1="10" x2="10" y2="30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <polyline points="10,18 10,30 22,30" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="hint-text">It appears in the<br>bottom-left of your browser</span>
       </div>
     </div>
 
@@ -232,16 +243,21 @@
       </div>
     </div>
 
-    <!-- 3: Open Applications & delete old -->
+    <!-- 3: Delete old app -->
     <div class="card">
       <div class="card-header">
         <div class="num">3</div>
         <div class="card-title">Delete the old app</div>
       </div>
-      <a class="open-btn" href="file:///Applications/">
-        <span class="open-btn-icon">📁</span>
-        Open Applications folder
-      </a>
+      <!-- file:// URLs are blocked by all browsers — use the keyboard shortcut instead -->
+      <div class="shortcut-row">
+        <div class="keys">
+          <span class="key">⇧</span>
+          <span class="key">⌘</span>
+          <span class="key">A</span>
+        </div>
+        <span class="shortcut-desc">Opens Applications<br>in Finder</span>
+      </div>
       <div class="step3-sub">
         Find <strong style="color:var(--sub)">Abalone Flow</strong>, drag it to the Trash, then empty Trash.
       </div>
