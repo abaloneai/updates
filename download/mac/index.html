@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloading Abalone 1.8.0</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #14141f;
+      --text: #ffffff;
+      --accent: #aabeff;
+      --panel: rgba(255, 255, 255, 0.04);
+      --panel-border: rgba(255, 255, 255, 0.08);
+      --muted: rgba(255, 255, 255, 0.5);
+    }
+
+    html, body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+
+    .page {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Pearl icon */
+    .icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 28px;
+      animation: shimmer 8s ease-in-out infinite;
+    }
+    @keyframes shimmer {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.06); }
+    }
+
+    /* Heading */
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .version {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    /* Animated dots */
+    .dots {
+      display: inline-flex;
+      gap: 6px;
+      margin-left: 4px;
+    }
+    .dots span {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 1.2s ease-in-out infinite;
+    }
+    .dots span:nth-child(2) { animation-delay: 0.2s; }
+    .dots span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1); }
+    }
+
+    /* Steps card */
+    .steps {
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      text-align: left;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      margin-bottom: 24px;
+    }
+
+    .steps-title {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--panel-border);
+    }
+    .step:last-child { border-bottom: none; padding-bottom: 0; }
+    .step:first-of-type { padding-top: 0; }
+
+    .step-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--panel-border);
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .step-text {
+      font-size: 15px;
+      line-height: 1.5;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .step-text strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .step-sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
+    /* Fallback */
+    .fallback {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .fallback a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .fallback a:hover { text-decoration: underline; }
+  </style>
+
+  <script>
+    // Auto-start download immediately on page load
+    window.addEventListener('load', function() {
+      window.location.href = 'https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.0/Abalone-1.8.0.dmg';
+    });
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Pearl icon -->
+    <img class="icon"
+         src="https://updates.abalone.ai/flow/icon.svg"
+         alt="Abalone">
+
+    <!-- Heading -->
+    <h1>Your download is starting<span class="dots"><span></span><span></span><span></span></span></h1>
+    <p class="version">Abalone 1.8.0 — 7.2 MB</p>
+
+    <!-- Install steps -->
+    <div class="steps">
+      <div class="steps-title">What to do next</div>
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <strong>Open Abalone 1.8.0.dmg</strong>
+          <div class="step-sub">Check your Downloads folder or browser toolbar</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <strong>Drag Abalone to your Applications folder</strong>
+          <div class="step-sub">A window will open showing where to drag it</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <strong>Launch Abalone from Applications</strong>
+          <div class="step-sub">Then delete Abalone Flow — you won't need it anymore</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fallback -->
+    <p class="fallback">
+      Download didn't start?
+      <a href="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.0/Abalone-1.8.0.dmg">
+        Download again
+      </a>
+    </p>
+
+  </div>
+</body>
+</html>
