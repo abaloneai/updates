@@ -17,6 +17,7 @@
                 <h2>We've renamed the app to Abalone</h2>
                 <p>Because the app has a new identity, this update needs a fresh install — click <strong>Learn More</strong> to download it. It's 7MB and takes about 30 seconds.</p>
                 <p>Once downloaded, open the file and <strong>drag Abalone to your Applications folder</strong>. Then launch it from there.</p>
+                <p>Once you've confirmed the new app is working, <strong>delete Abalone Flow</strong> from your Applications folder so you don't have two copies.</p>
                 <p>Your dictation history, hotkey, and settings carry over automatically.</p>
             ]]></description>
         </item>
