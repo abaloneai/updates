@@ -114,10 +114,8 @@
       display: flex; flex-direction: column; align-items: center; gap: 6px;
       flex-shrink: 0;
     }
-    .app-icon img, .app-icon .folder {
-      width: 48px; height: 48px; border-radius: 11px;
-    }
-    .app-icon .folder { font-size: 42px; line-height: 48px; text-align: center; }
+    .app-icon img { width: 48px; height: 48px; border-radius: 11px; }
+    .app-icon .folder { width: 52px; height: 46px; }
     .app-icon-label { font-size: 11px; color: var(--sub); }
 
     /* Drag arrow */
@@ -224,7 +222,12 @@
           </div>
         </div>
         <div class="app-icon">
-          <div class="folder">📁</div>
+          <!-- macOS-style blue Applications folder -->
+          <svg class="folder" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 10 Q0 6 4 6 L20 6 L24 10 L48 10 Q52 10 52 14 L52 42 Q52 46 48 46 L4 46 Q0 46 0 42 Z" fill="#1C6FD1"/>
+            <path d="M0 16 L52 16 L52 42 Q52 46 48 46 L4 46 Q0 46 0 42 Z" fill="#2183F0"/>
+            <path d="M4 18 L48 18 L48 24 Q26 28 4 24 Z" fill="rgba(255,255,255,0.18)"/>
+          </svg>
           <span class="app-icon-label">Applications</span>
         </div>
       </div>
