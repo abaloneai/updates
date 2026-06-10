@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.8.4 — Abalone 1.8.4</title>
+            <pubDate>Wed, 10 Jun 2026 16:20:18 +0000</pubDate>
+            <sparkle:version>37</sparkle:version>
+            <sparkle:shortVersionString>1.8.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.8.4 — Polish, without the pause.</h2>
+                <p>Polish got a reliability overhaul. If a dictation sometimes took an extra five or six seconds — or came back unpolished after a long purple wait — the culprit was a network connection that had quietly gone stale while the app sat idle. Abalone now keeps that connection fresh from the moment you start talking (and re-checks it every 40 seconds during long dictations), so your polished text rides a line that's already open.</p>
+                <p>Also in this build: slow-but-healthy polish requests now get the time they need instead of being cancelled and restarted mid-flight, and long dictations polish as reliably as short ones.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.8.4/Abalone-1.8.4.dmg"
+                sparkle:edSignature="MNdFSp4+/4NLdzgs8OZhpoqkI/A13se3XPxbrAfLpQ+kkQ5rm3Zi+IK5gtfYRG9BoDdIBovt6Sy+Git6UIITAw=="
+                length="7617082"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.8.3 — Abalone 1.8.3</title>
             <pubDate>Wed, 10 Jun 2026 08:58:19 +0000</pubDate>
             <sparkle:version>35</sparkle:version>
