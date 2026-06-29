@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.9.0 — Abalone 1.9.0</title>
+            <pubDate>Mon, 29 Jun 2026 11:35:30 +0000</pubDate>
+            <sparkle:version>38</sparkle:version>
+            <sparkle:shortVersionString>1.9.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.9.0 — Show it what you're looking at.</h2>
+                <p>Open the agent on a fresh chat and it now sees the window in front of you — the picture <em>and</em> the text on it — captured as context. Ask "what's this error?" or "summarise this thread" without copying a word. It reads the whole window (the full document, not just the title bar), so the agent works from what you're actually looking at. Don't want it? The screen tile shows up as it's captured, with an ✕ to drop it before you send.</p>
+                <p>Attachments grew up too. Drop in screenshots, images, PDFs, or files and each becomes a tile you can tap to open full-size — zoom in crisp with the buttons, a pinch, or a scroll; flip between the picture and the text on it; page through several at once. A Word or Excel file opens straight in its own app. And everything you attach is saved on your Mac first, so it's there instantly — offline, signed out, always — with the cloud as backup.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.9.0/Abalone-1.9.0.dmg"
+                sparkle:edSignature="PvAof4tXA1CQ+8wBywvSehsid0iwrJGAJ3Pghgr505ekKBUyAdf95T0bgqJ6LhKy84aAi1eprwCMJNSrBWlnAA=="
+                length="9473435"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.8.4 — Abalone 1.8.4</title>
             <pubDate>Wed, 10 Jun 2026 16:20:18 +0000</pubDate>
             <sparkle:version>37</sparkle:version>
