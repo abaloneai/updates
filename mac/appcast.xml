@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.10.0 — Abalone 1.10.0</title>
+            <pubDate>Tue, 30 Jun 2026 08:33:04 +0000</pubDate>
+            <sparkle:version>40</sparkle:version>
+            <sparkle:shortVersionString>1.10.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.10.0 — Permissions without the scavenger hunt.</h2>
+                <p>Granting macOS permissions used to mean opening System Settings, scrolling past an alphabetical wall of every app on your Mac, spotting Abalone, and flipping a tiny switch. Now Abalone opens the exact page for you and floats a little card right beneath it — just drag Abalone's icon into the list and you're done. Move the Settings window around and the card follows it.</p>
+                <p>It works the same way wherever a permission is needed — turning on your shortcut, or letting the agent see your screen — and if you ever wave off the microphone, there's a clear path back instead of a dead end.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.10.0/Abalone-1.10.0.dmg"
+                sparkle:edSignature="7jVGlieCaymFUwhNfb+IHwb/Yzfm8Bvut4mNsbl3YS6mjPl2Qm2W1N0+OgRA3l8XknD+pYSlRgE8+AL+iDnJBg=="
+                length="9486465"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.9.1 — Abalone 1.9.1</title>
             <pubDate>Mon, 29 Jun 2026 16:05:12 +0000</pubDate>
             <sparkle:version>39</sparkle:version>
