@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.10.1 — Abalone 1.10.1</title>
+            <pubDate>Wed, 01 Jul 2026 04:33:03 +0000</pubDate>
+            <sparkle:version>41</sparkle:version>
+            <sparkle:shortVersionString>1.10.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.10.1 — A calmer, more reliable assistant.</h2>
+                <p>The assistant now runs on your own connected ChatGPT, so starting it just works. Haven't connected ChatGPT yet? A one-tap prompt gets you there — no more dead-end error.</p>
+                <p>The conversation reads cleaner, too: the assistant's behind-the-scenes steps fold away under "Show work," a live line tells you what it's doing and how long it's taking, and long messages scroll to the right place instead of stranding you at the top.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.10.1/Abalone-1.10.1.dmg"
+                sparkle:edSignature="53DsU3meQHz8Uf0daU4L/Q+uPJu+3jUFbJSudjRVZ/Wlv5vIqkI3CNTiNYbiX+VshlGFN/2lOVaIpUOkf5yYCA=="
+                length="9516778"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.10.0 — Abalone 1.10.0</title>
             <pubDate>Tue, 30 Jun 2026 08:33:04 +0000</pubDate>
             <sparkle:version>40</sparkle:version>
