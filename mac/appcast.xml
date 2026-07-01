@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.10.4 — Abalone 1.10.4</title>
+            <pubDate>Wed, 01 Jul 2026 14:37:31 +0000</pubDate>
+            <sparkle:version>44</sparkle:version>
+            <sparkle:shortVersionString>1.10.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.10.4 — Grabs the right words.</h2>
+                <p>When you highlight something and ask the AI about it, Abalone is now careful about <em>whose</em> highlight it picks up. Before, if it couldn't read the selection directly it would grab whatever was highlighted anywhere — sometimes text from another window, or even its own. Now it checks who owns the highlight: if it's the app you're looking at, it's used; if it can't be sure, it hands it over with a note instead of pretending it's yours.</p>
+                <p>Also fixed a rare crash that could happen when the app tried to read its own window.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.10.4/Abalone-1.10.4.dmg"
+                sparkle:edSignature="+e1Jwlk95Vqw3DErYqQLPu4Z68e8iOjHjJWtyklC2Yp1oJt5Z/9r6ueBFLBkerb/BqCTLoMV2vsreKjcbVyiAA=="
+                length="9529804"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.10.3 — Abalone 1.10.3</title>
             <pubDate>Wed, 01 Jul 2026 12:07:43 +0000</pubDate>
             <sparkle:version>43</sparkle:version>
