@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.10.3 — Abalone 1.10.3</title>
+            <pubDate>Wed, 01 Jul 2026 12:07:43 +0000</pubDate>
+            <sparkle:version>43</sparkle:version>
+            <sparkle:shortVersionString>1.10.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.10.3 — Deletes that stay deleted.</h2>
+                <p>Delete a chat and it's gone for good. Before, a removed conversation could quietly wander back after you signed out and in, or turn up on another Mac — the app forgot to tell the cloud. Now it doesn't.</p>
+                <p>Deleting is also calmer: tapping the trash asks for a quick confirm — <b>Cancel</b> or a red <b>Delete</b> — instead of a three-second countdown. Nothing disappears until you say so.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.10.3/Abalone-1.10.3.dmg"
+                sparkle:edSignature="aTbQVCj68kWkU6pHP4pa+kyUE/qAOFqkWIoyjxmzGJtyTELqXT39Vo1hJpbs7LXtYA/3FZEQoL4qvMFFG0nJAA=="
+                length="9528088"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.10.2 — Abalone 1.10.2</title>
             <pubDate>Wed, 01 Jul 2026 07:41:21 +0000</pubDate>
             <sparkle:version>42</sparkle:version>
