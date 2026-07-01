@@ -6,6 +6,23 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.10.2 — Abalone 1.10.2</title>
+            <pubDate>Wed, 01 Jul 2026 07:41:21 +0000</pubDate>
+            <sparkle:version>42</sparkle:version>
+            <sparkle:shortVersionString>1.10.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.10.2 — Clearer permission prompts.</h2>
+                <p>A little polish to the permission helper. The app's name now shows in full (no clipped ".app"), and when microphone access needs switching back on, the card mirrors the row you're looking for — with the switch flipping on — instead of a chip that looked like you should drag it.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/flow-macos-v1.10.2/Abalone-1.10.2.dmg"
+                sparkle:edSignature="/OAraqf1+ZCQztIyoTuqXZDvWfhIhWBCppF+KK/7odH6EfuA1CsrdJA9Art2V0c3zUFwMp+h0cuSrhGTDz8MDQ=="
+                length="9531837"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.10.1 — Abalone 1.10.1</title>
             <pubDate>Wed, 01 Jul 2026 04:33:03 +0000</pubDate>
             <sparkle:version>41</sparkle:version>
