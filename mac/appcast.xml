@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.10.5 — Abalone 1.10.5</title>
+            <pubDate>Thu, 02 Jul 2026 04:58:23 +0000</pubDate>
+            <sparkle:version>45</sparkle:version>
+            <sparkle:shortVersionString>1.10.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.10.5 — Never loses your words.</h2>
+                <p>Every chat's input box now remembers what you left in it. Type half a message, dictate mid-thought, close the notch, switch chats, even quit the app — your unsent words are saved on your Mac and waiting in the box when you come back. Each chat keeps its own draft; it clears only when you send or delete it yourself.</p>
+                <p>Closing a dictation now catches your last words too. The speech engine always runs a beat behind your voice — before, clicking ✕ threw away whatever it hadn't caught up on. Now closing finishes the transcript in the background, exactly like sending does, and tucks the complete words into the chat's draft.</p>
+                <p>Long dictations into the AI are smooth again. The live transcript was redrawing everything you'd said several times a second — the longer you spoke, the choppier the waveform and the more the text ghosted. Now it only draws the newest lines, so a ten-minute dictation feels like a ten-second one.</p>
+                <p>Sending can no longer close the notch on you. If you clicked into another app while a long recording was still being transcribed, the pill would collapse and silently drop your message. Now the message always sends — collapse the pill and the answer keeps working in the background, with the finished hint on the dot.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.10.5/Abalone-1.10.5.dmg"
+                sparkle:edSignature="6GeSlOekGHLcXO7i+pvSSoLD7q3THUuwKEiwRILfyl+xJ54eOfQbh0z9wXdIOcoyVn10XY1S+A/M8PxLJLshCQ=="
+                length="9539941"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.10.4 — Abalone 1.10.4</title>
             <pubDate>Wed, 01 Jul 2026 14:37:31 +0000</pubDate>
             <sparkle:version>44</sparkle:version>
