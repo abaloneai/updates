@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.11.3 — Abalone 1.11.3</title>
+            <pubDate>Fri, 03 Jul 2026 11:40:16 +0000</pubDate>
+            <sparkle:version>50</sparkle:version>
+            <sparkle:shortVersionString>1.11.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.11.3 — The agent crash, actually fixed</h2>
+                <p>1.11.2 packed the agent's files into the app but the app kept looking for them in the wrong spot — a spot that only existed on the machine that built it. So the crash survived: opening a chat, sending a message to the agent, or loading the conversation feed still brought the app down on every Mac but ours. The lookup now points where the files actually live, and we verified it with the build-machine safety net deliberately removed — the exact condition that fooled us twice.</p>
+                <p>Our crash telemetry caught every one of these, which is how we traced it. If your agent crashed on 1.11.0 through 1.11.2, this is the one to install.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.11.3/Abalone-1.11.3.dmg"
+                sparkle:edSignature="ZIsPHq4yUkekM2N/1NScgEI0YxqDXe6vO7CiyvnVPiPZFSjULD+dWuMZQVwK/iXWhuOlnYPvM8YiO1bkmnd5Bw=="
+                length="14013003"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.11.2 — Abalone 1.11.2</title>
             <pubDate>Fri, 03 Jul 2026 10:33:21 +0000</pubDate>
             <sparkle:version>49</sparkle:version>
