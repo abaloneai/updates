@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.11.1 — Abalone 1.11.1</title>
+            <pubDate>Fri, 03 Jul 2026 10:16:57 +0000</pubDate>
+            <sparkle:version>48</sparkle:version>
+            <sparkle:shortVersionString>1.11.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.11.1 — Long dictations, smooth to the last word</h2>
+                <p>Talk for ten seconds or ten minutes: the waveform and clock now stay silky the whole way. Before this fix, the speech engine kept every second of audio since you started in one growing pile and re-shuffled that pile many times a second — by minute three the shuffling got heavy enough for the display to hiccup. Abalone now runs its own streaming engine: audio lands once in a quiet archive, the recognizer reads only the few seconds it's still deciding on, and the microphone thread does the same tiny amount of work at minute nine as at minute one.</p>
+                <p>The rebuild also hardened the seams around it: a lightning-fast send right after summoning the agent can no longer strand a hot microphone, closing a chat mid-send can't drop your last few words anymore, and if the speech engine ever dies mid-session the mic now shuts off and tells you instead of recording into the void.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.11.1/Abalone-1.11.1.dmg"
+                sparkle:edSignature="lIPE+d1Z2A/uprCjQMO33S4s3uMemusUsj7mm7fEk2NEL4IIgFldsJqxPr9UQYzGOU1R9FgELmN3ybMUZz8+DQ=="
+                length="9627393"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.11.0 — Abalone 1.11.0</title>
             <pubDate>Fri, 03 Jul 2026 07:54:36 +0000</pubDate>
             <sparkle:version>47</sparkle:version>
