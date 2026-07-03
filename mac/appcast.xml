@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.11.0 — Abalone 1.11.0</title>
+            <pubDate>Fri, 03 Jul 2026 07:54:36 +0000</pubDate>
+            <sparkle:version>47</sparkle:version>
+            <sparkle:shortVersionString>1.11.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.11.0 — Say "reply to this." Get a draft. Drop it in.</h2>
+                <p>Look at any message — Slack, Mail, iMessage — hold your agent key and say "reply to this, tell them Thursday works." Abalone reads what's on your screen, writes the reply, and hands it to you as a draft card right in the notch. Click <b>Insert</b> and the words land in the exact app you were looking at — Abalone remembers where you were, brings it forward, and types the draft where your cursor was. <b>Copy</b> is there too, and confirms the moment it's done.</p>
+                <p>Not quite right? Under every draft sit a few refinement buttons written by the AI for that specific draft — "More formal," "Shorter," "Add a question" — each one click from a fresh version. Or just say what you'd change, the way you'd tell a colleague.</p>
+                <p>The draft card is the first of Abalone's skills — self-contained abilities the agent picks up on its own when the moment calls for one. More are on the way, and they'll all work like this: you speak, the agent works, and the answer arrives as something you can act on, not just read.</p>
+                <p>Also in this release: bullet points and line breaks in agent replies now render the way they were written, and the notch panel grows taller when a draft is on screen so nothing gets cropped.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.11.0/Abalone-1.11.0.dmg"
+                sparkle:edSignature="kDX2f/GXaEX6/avnhiiDfcuRjPvQU2wMGWGI7bua85A/itMTqW9sWFtdNn1h7P2yfMquM7zFLQ20tY/KLqvDBg=="
+                length="9614801"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.10.6 — Abalone 1.10.6</title>
             <pubDate>Fri, 03 Jul 2026 03:37:30 +0000</pubDate>
             <sparkle:version>46</sparkle:version>
