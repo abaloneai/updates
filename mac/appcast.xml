@@ -6,6 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.11.2 — Abalone 1.11.2</title>
+            <pubDate>Fri, 03 Jul 2026 10:33:21 +0000</pubDate>
+            <sparkle:version>49</sparkle:version>
+            <sparkle:shortVersionString>1.11.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.11.2 — The agent works on every Mac again</h2>
+                <p>This one matters: on any Mac except the one that built the app, opening the agent — clicking a chat, sending a message, or just loading the conversation feed — could crash Abalone instantly. The app's web renderer and skill files were being left out of the box during packaging, and macOS quietly covered for it on our build machine while failing everywhere else. The files now ship inside the app, and our release pipeline gained a hard gate that refuses to build an app without them — so this class of bug is extinct, not just fixed.</p>
+                <p>If Abalone ever crashed for you when touching the agent, this is the release that ends it. Update, open a chat, and say "reply to this" — the draft card from 1.11.0 finally gets to do its job on your machine.</p>
+                <p>Everything from 1.11.1 rides along: the streaming dictation engine that keeps ten-minute dictations as smooth as ten-second ones.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.11.2/Abalone-1.11.2.dmg"
+                sparkle:edSignature="Pnj60A5CO9hgfp5+mB/kPMRHudl+Jc8njsldsB1mUuNfZ0a854S1/ssID5ZBzHx2Sj6CxnbZDCqGbaGpeJLaDA=="
+                length="13375183"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.11.1 — Abalone 1.11.1</title>
             <pubDate>Fri, 03 Jul 2026 10:16:57 +0000</pubDate>
             <sparkle:version>48</sparkle:version>
