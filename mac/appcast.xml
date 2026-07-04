@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.12.0 — Abalone 1.12.0</title>
+            <pubDate>Sat, 04 Jul 2026 14:52:44 +0000</pubDate>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>1.12.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.12.0 — Your words are safe, your screen stays awake</h2>
+                <p><strong>Escape finally means one thing.</strong> While you're dictating to the agent, ESC stops the mic and lands every word you said in the composer, ready to edit — nothing is ever thrown away, no matter how fast you press it. Once you've sent a message, it's sent: ESC stops the reply (even in the split second before the first word arrives), but your message stays in the conversation. To take a message back, tap it and edit. One key, one rule, no surprises.</p>
+                <p><strong>Click away mid-conversation.</strong> Talking to the agent and need to check something? Click into your work — the session tucks itself into a small capsule by the notch and keeps listening (or keeps working) while you do. Click it to bring the conversation back. Sending, stopping, and your hotkey all still work from the capsule.</p>
+                <p><strong>The screen mirrors your attention, not your keyboard.</strong> Long dictations and agent conversations are hands-off, and macOS used to read that stillness as "asleep at the wheel" — dimming the display mid-sentence. Now the screen stays on while you're in the conversation, and if you put a running task away, the Mac stays awake until it finishes. Closing the lid still sleeps immediately, as it should.</p>
+                <p>Also: tooltips wrap properly instead of getting cut off (and duck out from under the hardware notch), the capture tile's "can't see the screen" state is cleaner, and the live transcript no longer freezes for seconds at a time during long dictations.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.12.0/Abalone-1.12.0.dmg"
+                sparkle:edSignature="xC8knkv3slosNIZEnGgulsu2xIEqCRYxHBP6NXdZVKdPYjPf86Em30NEamajB1HEX26fDTyByPbtLRkC46JQAA=="
+                length="14095342"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.11.4 — Abalone 1.11.4</title>
             <pubDate>Fri, 03 Jul 2026 12:06:28 +0000</pubDate>
             <sparkle:version>51</sparkle:version>
