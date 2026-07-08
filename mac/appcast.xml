@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.12.2 — Abalone 1.12.2</title>
+            <pubDate>Wed, 08 Jul 2026 00:11:08 +0000</pubDate>
+            <sparkle:version>55</sparkle:version>
+            <sparkle:shortVersionString>1.12.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.12.2 — New chats open with their eyes open</h2>
+                <p><strong>⌘N now sees what you see.</strong> Starting a new chat from the notch grabs the window you're looking at, the same way opening the agent does — so "new conversation about <em>this</em>" is two keystrokes: open the agent, hit ⌘N. One rule everywhere now: the first message of a conversation knows what's on your screen; follow-ups only see what you deliberately show. (⌘N from the main window stays blank — there, the screen is just Abalone itself.)</p>
+                <p><strong>Clicking into Abalone's own windows tucks the card away too.</strong> The agent card already stepped aside when you clicked into another app, but a click into Abalone's main window or Settings left it hanging open. Now any click that isn't on the card itself means "I've moved on" — and the card politely gets out of the way. Nothing is lost: your conversation, draft, and attachments are right there on the next open.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.12.2/Abalone-1.12.2.dmg"
+                sparkle:edSignature="VDr6falfV6iv7aSXsnJ/EtLvBdE9LBGneFD1QeR1QIDFlcZ2YUg8HBFBWML0rsYlE+UPP6sRek0KHVP+hw74Dw=="
+                length="14093892"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.12.1 — Abalone 1.12.1</title>
             <pubDate>Tue, 07 Jul 2026 10:56:09 +0000</pubDate>
             <sparkle:version>53</sparkle:version>
