@@ -6,6 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.12.3 — Abalone 1.12.3</title>
+            <pubDate>Thu, 09 Jul 2026 11:55:18 +0000</pubDate>
+            <sparkle:version>56</sparkle:version>
+            <sparkle:shortVersionString>1.12.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.12.3 — Long dictations now finish their polish</h2>
+                <p><strong>Dictate for eight minutes, get eight minutes of polished text.</strong> Polish used to run on a stopwatch: 15 seconds, no matter how much you said. Short dictations never noticed; a long one got cut off mid-polish and pasted raw, every time, even on retry. The stopwatch now scales with how much you spoke — a quick note still lands as fast as ever, and a long ramble gets the time it actually needs. Polish only gives up when the stream genuinely stalls, never just because your thought was long.</p>
+                <p><strong>The same fix, one layer down.</strong> The cloud polish path used to ask the AI for the entire cleaned-up text in one four-second gulp — fine for a sentence, impossible for an essay. It now streams word-by-word as the model writes, so length simply stopped being a failure mode. If a stream ever does get cut off mid-flight, Abalone detects the truncation and falls back to your raw words instead of pasting half a polish.</p>
+                <p><strong>Smarter model picks in the agent.</strong> The model list now knows which models your account can actually use — no more picking one that fails on send — and each model runs at the reasoning effort that suits it best.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.12.3/Abalone-1.12.3.dmg"
+                sparkle:edSignature="gAZ2Hws3k7fDEyM8pdg79vHN8gD+GdxuFPtzN9QIDncHimmmN+4Aci+9UfwlkAin5wJKsVUEARJFFjh73LX2Ag=="
+                length="14112087"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.12.2 — Abalone 1.12.2</title>
             <pubDate>Wed, 08 Jul 2026 00:11:08 +0000</pubDate>
             <sparkle:version>55</sparkle:version>
