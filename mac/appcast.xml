@@ -6,6 +6,27 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.13.0 — Abalone 1.13.0</title>
+            <pubDate>Thu, 09 Jul 2026 15:43:16 +0000</pubDate>
+            <sparkle:version>58</sparkle:version>
+            <sparkle:shortVersionString>1.13.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.13.0 — The GPT-5.6 generation, verified for your account</h2>
+                <p><strong>GPT-5.6 Luna, Terra, and Sol arrive in the agent.</strong> OpenAI rolls the 5.6 family out account by account, so Abalone now checks quietly in the background which of them your ChatGPT login can actually run — and shows exactly those. No broken menu entries, no guessing. The moment OpenAI switches a new model on for you, it simply appears in your picker.</p>
+                <p><strong>Reasoning effort, per model.</strong> Terra and Sol expose their real thinking dials — Low, Medium, High, and Extra High — each verified against OpenAI's own service, so every option in the menu is one the model genuinely accepts.</p>
+                <p><strong>The picker heals itself.</strong> If a model ever stops working for your account — you switch ChatGPT logins, or OpenAI reshuffles access — the app notices on the very first failed message, drops the dead model from the list, and your next try runs on a model that works. Switching accounts re-checks everything automatically.</p>
+                <p><strong>Sturdier sign-in.</strong> A momentary network blip during ChatGPT sign-in used to fail the whole attempt with a cryptic system error. The exchange now rides through the blip, and when something genuinely is wrong, the message says so in plain words.</p>
+                <p><strong>Long agent chats compact at the right time.</strong> The 5.6 models carry a much larger context window than the app assumed, so conversations no longer get summarized three times earlier than necessary.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.13.0/Abalone-1.13.0.dmg"
+                sparkle:edSignature="mklXQHGXNchrY2VfY92UezdCVUeVhBoTw5PvX2Gq5N3U4mPoQl2t/9p8fLep+IPUWMZTj1aBhiTpBUCAe7xwBA=="
+                length="14124542"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.12.3 — Abalone 1.12.3</title>
             <pubDate>Thu, 09 Jul 2026 11:55:18 +0000</pubDate>
             <sparkle:version>56</sparkle:version>
