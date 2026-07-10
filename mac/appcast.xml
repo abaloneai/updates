@@ -6,6 +6,28 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.15.0 — Abalone 1.15.0</title>
+            <pubDate>Fri, 10 Jul 2026 15:54:26 +0000</pubDate>
+            <sparkle:version>61</sparkle:version>
+            <sparkle:shortVersionString>1.15.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.15.0 — The main window becomes the agent's home</h2>
+                <p><strong>A real workspace, not a history list.</strong> The main window is now a full agent workspace: your conversation renders as a rich, live document — formatted answers, tool steps you can follow, images on the turns that carried them — with a proper composer underneath. Attach files, pick your model and effort, switch projects, all without leaving the keyboard. The notch pill is still the fastest way in; the window is now where the real work lives.</p>
+                <p><strong>Type while it works.</strong> Send a message while the agent is mid-task and it queues as a steer — the agent folds it in at its next natural pause, exactly like briefing a colleague who's already moving. Queued messages show as chips you can edit or discard, and pressing Stop walks the queue one step at a time instead of throwing your words away.</p>
+                <p><strong>Projects grew up.</strong> A project now holds its instructions, its sources (notes, PDFs, files the agent can read), and as many folders as the work spans — with a clear primary folder where the agent stands. Browse everything from the new Projects screen, edit titles in place, and create new projects with a proper naming step. Deleting anything now asks the way it should: click once to arm, click elsewhere to change your mind.</p>
+                <p><strong>See how full the conversation is.</strong> A small ring by the composer shows how much of the model's context window this chat has used — it fills as the conversation grows, so "should I start a fresh chat?" stops being a guess.</p>
+                <p><strong>A calmer sidebar.</strong> Recents now shows what's actually recent — older chats tuck into the Chats browser (with search) instead of stacking forever, and a running chat never disappears on you, no matter how old it is.</p>
+                <p><strong>Under the hood.</strong> A deep pre-release review hardened the whole release: folder-consent prompts can no longer double-start a run, deleted chats stay deleted across account switches, deleting a project can't pull the floor out from under a live run, and side panels in the model menu now align cleanly to the row that opened them.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.15.0/Abalone-1.15.0.dmg"
+                sparkle:edSignature="Bp5ppDHBArOGUfHeWA4W/6kS4858LE7JiolV6M1aTXVVMnj0rPtGntPNN/rZFUul6mxQICaHixfsl5dg0nI3BA=="
+                length="15013859"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.14.0 — Abalone 1.14.0</title>
             <pubDate>Fri, 10 Jul 2026 07:52:03 +0000</pubDate>
             <sparkle:version>59</sparkle:version>
