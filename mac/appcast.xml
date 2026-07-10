@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.14.0 — Abalone 1.14.0</title>
+            <pubDate>Fri, 10 Jul 2026 07:52:03 +0000</pubDate>
+            <sparkle:version>59</sparkle:version>
+            <sparkle:shortVersionString>1.14.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.14.0 — Pick any window, and a default that actually thinks</h2>
+                <p><strong>Pick a Window.</strong> The agent could always see the window in front of you — now it can see the one behind it too. Open the ＋ menu and choose <em>Pick a Window…</em> to get a live thumbnail grid of everything on your screen; click one and that exact window lands on the attachment rail, right next to what's already there. Add a second, a third, mid-conversation — the panel floats above your work, so you never lose your thread by clicking around to line windows up.</p>
+                <p><strong>The model you see is the model that runs.</strong> Until now, if you never picked a model, the agent quietly ran the fastest, shallowest tier — no matter what the picker showed. Every message now carries your resolved model explicitly, so the label and the actual work can never drift apart again.</p>
+                <p><strong>A default with a brain.</strong> The out-of-the-box model is now a reasoning tier: GPT-5.6 Terra where your account has it, GPT-5.5 otherwise. The fast no-thinking models are still one click away — they're just no longer the silent default.</p>
+                <p><strong>A picker that reads like a dial.</strong> Models are now ordered fastest to deepest — Luna, Terra, Sol — with the default clearly marked, so choosing a tier is a glance, not a puzzle.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.14.0/Abalone-1.14.0.dmg"
+                sparkle:edSignature="xBzVMeP5EJJHb0NGx/84hvYxyfTTP7nN3ugqXtCDTXj/M34oCDaSmRAdTjk904B5quZdL9Zdn9O9QB9QwYUZDg=="
+                length="14173488"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.13.0 — Abalone 1.13.0</title>
             <pubDate>Thu, 09 Jul 2026 15:43:16 +0000</pubDate>
             <sparkle:version>58</sparkle:version>
