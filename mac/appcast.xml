@@ -6,6 +6,23 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.15.1 — Abalone 1.15.1</title>
+            <pubDate>Fri, 10 Jul 2026 16:50:23 +0000</pubDate>
+            <sparkle:version>62</sparkle:version>
+            <sparkle:shortVersionString>1.15.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.15.1 — Small polish</h2>
+                <p><strong>Projects screen.</strong> The search bar now stays at the top of the Projects screen even before you've created your first project, so the page keeps its structure from day one.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.15.1/Abalone-1.15.1.dmg"
+                sparkle:edSignature="j4ZE+aK6b6e1vvOPpPABDNgrE77gfnVtBmlpM/FhnIolp4JGmSoEpEdCTInk8+qBCaN/R2pJm5zQKwtuVN9NCQ=="
+                length="15013799"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.15.0 — Abalone 1.15.0</title>
             <pubDate>Fri, 10 Jul 2026 15:54:26 +0000</pubDate>
             <sparkle:version>61</sparkle:version>
