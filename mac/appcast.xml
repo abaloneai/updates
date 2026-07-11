@@ -6,6 +6,27 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.16.0 — Abalone 1.16.0</title>
+            <pubDate>Sat, 11 Jul 2026 08:46:29 +0000</pubDate>
+            <sparkle:version>63</sparkle:version>
+            <sparkle:shortVersionString>1.16.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.16.0 — Your agent can now see your screen</h2>
+                <p><strong>Screen tools.</strong> Ask "what windows do I have open?" or "look at my Calendar" — the agent lists your windows, captures the one you name, and shows you exactly what it saw, right in the conversation. Every look is visible on the record, and it all runs under your existing Screen Recording permission.</p>
+                <p><strong>Sharper images.</strong> Pictures in the conversation now load a full-resolution version on demand, and clicking one opens a clean full-size preview with an Image/Text toggle for captures.</p>
+                <p><strong>Zoom and shortcuts.</strong> Zoom the conversation with ⌘+ / ⌘− and reset with ⌘0 — a small indicator shows the level. Start a new chat from anywhere with ⌘N.</p>
+                <p><strong>Cleaner tables.</strong> Tables in replies got a minimal new look and a one-click copy button that puts the whole table on your clipboard as Markdown.</p>
+                <p><strong>Stop that always works.</strong> Stopping the agent is now instant and reliable in every situation, and anything interrupted mid-way says so honestly in the transcript. Also fixed a crash that could occur while capturing a window.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.16.0/Abalone-1.16.0.dmg"
+                sparkle:edSignature="KcBsvStKj6wiAc37B690io2ohNymfheqEsup1DR7dQ64kKy3TaBevX/lmoYaesAsx1wDh4WMauQsDDWiR7TuBA=="
+                length="15123867"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.15.1 — Abalone 1.15.1</title>
             <pubDate>Fri, 10 Jul 2026 16:50:23 +0000</pubDate>
             <sparkle:version>62</sparkle:version>
