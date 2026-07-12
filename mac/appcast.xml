@@ -6,6 +6,27 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.17.0 — Abalone 1.17.0</title>
+            <pubDate>Sun, 12 Jul 2026 04:32:17 +0000</pubDate>
+            <sparkle:version>64</sparkle:version>
+            <sparkle:shortVersionString>1.17.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.17.0 — Permission, made conversational. Plus: your agent can browse the web.</h2>
+                <p><strong>The agent asks like a person.</strong> When the agent needs your OK, the question now speaks plainly — "I'd like to count the files on your Desktop." — with the exact command one tap away and two clear buttons: Don't Allow and Allow. No jargon, no tiny print. The question takes over the composer until you decide, so it's never lost in the scroll.</p>
+                <p><strong>Talk back to it.</strong> Not sure? Just reply — type or dictate "what does this do?" and the agent explains, then asks again so you can approve with one click. Words never grant permission on their own; only the Allow button does. That's the safety line, and now it feels like a conversation instead of a form.</p>
+                <p><strong>An honest clock.</strong> While a question waits for you, the status says "waiting for you" and the timer stops — your thinking time never counts against the agent's. Decide whenever you're ready.</p>
+                <p><strong>The agent can browse the web.</strong> Ask it to look something up or read a page — it searches, opens pages, and cites what it found. Reading a new site asks for your OK first, once per site, through the same clear question card.</p>
+                <p><strong>Smoother voice.</strong> You can dictate a reply while the agent works, ESC now stops just your dictation (never the whole run), and chats waiting on your answer show a quiet orange dot in the sidebar.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.17.0/Abalone-1.17.0.dmg"
+                sparkle:edSignature="4d4m3ETdEdulr89y82RKCuYq7Ey+2N9yDKSLO09Zrfu3BHyglEq/dwTQ49bzE0QRJ8/XX9BCuEBPZ/H9eVXTBg=="
+                length="15153175"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.16.0 — Abalone 1.16.0</title>
             <pubDate>Sat, 11 Jul 2026 08:46:29 +0000</pubDate>
             <sparkle:version>63</sparkle:version>
