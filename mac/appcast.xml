@@ -6,6 +6,27 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.18.0 — Abalone 1.18.0</title>
+            <pubDate>Sun, 12 Jul 2026 09:32:17 +0000</pubDate>
+            <sparkle:version>65</sparkle:version>
+            <sparkle:shortVersionString>1.18.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Abalone 1.18.0 — Your projects follow you. And the sidebar grew up.</h2>
+                <p><strong>Projects sync across your Macs.</strong> Sign in, and every project — its name, its emoji, its pinned state, its standing instructions, even the order you arranged them in — appears on every Mac you use. File a chat into a project on your laptop; it's filed on your desktop too. Delete a project on one machine and it's gone everywhere. Your folders stay yours: what a project points at on disk never leaves the Mac it lives on.</p>
+                <p><strong>The sidebar was redesigned.</strong> Chats now nest under their projects with a clean connector line, and Recents holds only the chats that don't belong anywhere yet. Drag to reorder projects; drag a chat anywhere onto a project to file it — you'll see the actual row in your hand, a line showing exactly where it lands, and the cursor closes into a grab the moment you pick something up.</p>
+                <p><strong>A real emoji picker.</strong> Click a project's icon and browse a full picker — search, categories, and a Frequently Used row that learns what you actually use.</p>
+                <p><strong>Menus that belong on a Mac.</strong> Every right-click and ⋯ menu across the app is now a native macOS menu — the translucent kind — with keyboard shortcuts shown as proper keycaps.</p>
+                <p><strong>Under the hood.</strong> Chats waiting on your approval now show their orange dot in every list, and a long list of small fixes to drag-and-drop, selection highlights, and sync resilience.</p>
+                <p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.18.0/Abalone-1.18.0.dmg"
+                sparkle:edSignature="vYdMqqmpbaeF869dtfLRzxCnh2XysXVAtxoyvYeIsA578WsEKVkM0YGMTHWiFeeoS+Vsdy+RDlwH7Wf3ccGcAA=="
+                length="15305296"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.17.0 — Abalone 1.17.0</title>
             <pubDate>Sun, 12 Jul 2026 04:32:17 +0000</pubDate>
             <sparkle:version>64</sparkle:version>
