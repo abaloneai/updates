@@ -6,6 +6,23 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.18.2 — Fixed a rare dictation crash</title>
+            <pubDate>Mon, 13 Jul 2026 09:08:25 +0000</pubDate>
+            <sparkle:version>67</sparkle:version>
+            <sparkle:shortVersionString>1.18.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Fixed a rare crash</b> when dictation started at the exact moment your microphone was switching — AirPods connecting, a headset handing off. Abalone now waits for the switch to finish before it starts listening.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.18.2/Abalone-1.18.2.dmg"
+                sparkle:edSignature="yTEfV+7EQVQmxRrS7Pdb+2L02NuccC8iS4Ja6Hnq2MznRHVNR0stwcub3PSLLuKIaiQ3aLpRxpgZdOJySSslCQ=="
+                length="15381727"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.18.1 — Cleaner zoom controls and a clearer update button</title>
             <pubDate>Mon, 13 Jul 2026 07:32:38 +0000</pubDate>
             <sparkle:version>66</sparkle:version>
