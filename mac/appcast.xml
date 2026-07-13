@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.18.1 — Cleaner zoom controls and a clearer update button</title>
+            <pubDate>Mon, 13 Jul 2026 07:32:38 +0000</pubDate>
+            <sparkle:version>66</sparkle:version>
+            <sparkle:shortVersionString>1.18.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Zoom controls</b> now sit neatly in the top-right corner of the window, with a cleaner single background.</li>
+                <li><b>Update prompt</b> is easier to spot — a blue “Restart to Update” button so you always know when a new version is ready to install.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.18.1/Abalone-1.18.1.dmg"
+                sparkle:edSignature="LDQPmtvJUaj8A8pntcTJN/qRVHS4ms6MDXPNH7vhnayjo9ipCd15sIUXOYYVlgwc0RdbFPvbe1wLwtARZdaxCw=="
+                length="15380920"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.18.0 — Abalone 1.18.0</title>
             <pubDate>Sun, 12 Jul 2026 09:32:17 +0000</pubDate>
             <sparkle:version>65</sparkle:version>
