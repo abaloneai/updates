@@ -6,6 +6,28 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.19.0 — Search that shows, not tells</title>
+            <pubDate>Tue, 14 Jul 2026 03:00:28 +0000</pubDate>
+            <sparkle:version>68</sparkle:version>
+            <sparkle:shortVersionString>1.19.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>A real map for places.</b> Ask for restaurants, cafés, or anything nearby and results come with a live, pannable vector map — crisp Google-Maps-style rendering, numbered pins that match the list. Click a pin and its row lights up and stays selected.</li>
+                <li><b>Photos open like they should.</b> Image results sit in a clean justified gallery; clicking one opens a proper preview panel with arrows at the edges, zoom controls, and keyboard navigation — no more dark overlay.</li>
+                <li><b>Videos, news, and shopping results</b> each get their own card — thumbnails, sources, prices — with a small ↗ marking anything that opens in your browser.</li>
+                <li><b>Reasoning that matches the label.</b> The model pill said "Medium" but turns weren't actually thinking at Medium. Now the effort you see is the effort that runs.</li>
+                <li><b>Search keeps working during outages.</b> If our search provider has a hiccup, web searches automatically fall back to a second provider.</li>
+                <li><b>Small fixes:</b> sidebar logo alignment, calmer map styling with collapsed attribution, and a taller map for easier browsing.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.19.0/Abalone-1.19.0.dmg"
+                sparkle:edSignature="5al/RIE2gS4WxevwAHfl5/r1LSRRUJj/P3TLr/0dW+WUhFQr7TcipPbyYQc78WOLOKP/iETa7ghEFr27b/X0AA=="
+                length="15762522"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.18.2 — Fixed a rare dictation crash</title>
             <pubDate>Mon, 13 Jul 2026 09:08:25 +0000</pubDate>
             <sparkle:version>67</sparkle:version>

@@ -6,6 +6,21 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.19.0 — Search that shows, not tells</title>
+            <pubDate>Tue, 14 Jul 2026 03:00:28 +0000</pubDate>
+            <sparkle:version>68</sparkle:version>
+            <sparkle:shortVersionString>1.19.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:informationalUpdate>true</sparkle:informationalUpdate>
+            <link>https://updates.abalone.ai/download/mac</link>
+            <description><![CDATA[
+                <h2>Abalone has a new identity</h2>
+                <p>This update needs a fresh install — click <strong>Learn More</strong> to download it. It's 7 MB and takes about 30 seconds.</p>
+                <p>Open the downloaded file, drag <strong>Abalone</strong> to your Applications folder, then launch it. Your history, hotkey, and settings carry over automatically.</p>
+                <p>Once the new app is running, delete <strong>Abalone Flow</strong> from Applications.</p>
+            ]]></description>
+        </item>
+        <item>
             <title>Version 1.18.2 — Fixed a rare dictation crash</title>
             <pubDate>Mon, 13 Jul 2026 09:08:25 +0000</pubDate>
             <sparkle:version>67</sparkle:version>
