@@ -6,6 +6,23 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.20.1 — A quieter logo</title>
+            <pubDate>Tue, 14 Jul 2026 19:56:18 +0000</pubDate>
+            <sparkle:version>70</sparkle:version>
+            <sparkle:shortVersionString>1.20.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>The in-app logo stays black and white.</b> Your chosen app icon now changes only the Dock — the little abalone mark in the sidebar and the notch keeps its clean monochrome look, adapting to light and dark mode. Simpler to read, easier on the eyes.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.20.1/Abalone-1.20.1.dmg"
+                sparkle:edSignature="AcS0S/MPLvtkv+P7q67BTggzlN8oXIPpO3fVfGak60n4bkj9bgS+EAtwNKfiQgQ9Gn5iitxGd55P9vdEogqmBw=="
+                length="17171253"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.20.0 — Pick your icon</title>
             <pubDate>Tue, 14 Jul 2026 19:33:48 +0000</pubDate>
             <sparkle:version>69</sparkle:version>
