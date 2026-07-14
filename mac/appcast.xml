@@ -6,6 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.20.0 — Pick your icon</title>
+            <pubDate>Tue, 14 Jul 2026 19:33:48 +0000</pubDate>
+            <sparkle:version>69</sparkle:version>
+            <sparkle:shortVersionString>1.20.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Five app icons to choose from.</b> Settings → System → App icon now offers Sunset, Charcoal, Nacre, Rainbow, and Cosmos. Pick one and the Dock updates instantly — no restart, nothing to reinstall.</li>
+                <li><b>A cleaner default.</b> The new default icon puts the sunset crescent on a bright white tile, so it reads crisply in the Dock at any size. Charcoal keeps its signature black-on-black look for those who prefer it quiet.</li>
+                <li><b>The whole app follows your pick.</b> The little abalone mark in the sidebar and the notch pill takes on your chosen icon's colors — and it adapts between light and dark mode so it stays legible on any background.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.20.0/Abalone-1.20.0.dmg"
+                sparkle:edSignature="FqJ3QWXHs6jBv4NAFE4FVqhubL6HXYiFXNFbtAl1M9U0ZKsCiNpfn0ld2GiLKKobAfFktvFuklKiNIM4tJAaCw=="
+                length="17182165"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.19.0 — Search that shows, not tells</title>
             <pubDate>Tue, 14 Jul 2026 03:00:28 +0000</pubDate>
             <sparkle:version>68</sparkle:version>
