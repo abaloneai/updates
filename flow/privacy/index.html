@@ -104,7 +104,7 @@
         <a class="back" href="https://updates.abalone.ai/flow">← Back to Abalone Flow</a>
 
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: 2026-07-12</p>
+        <p class="updated">Last updated: 2026-07-18</p>
 
         <p>
             This is the privacy policy for <strong>Abalone Flow</strong> (the Mac app)
@@ -179,6 +179,53 @@
             Pointing a project at a folder never uploads that folder: the folder
             path and the files inside it stay on your Mac, and project source files
             are local in this version.
+        </p>
+
+        <h2>Using your own Claude subscription</h2>
+        <p>
+            In Settings &rarr; Providers there's a toggle called <strong>"Use your
+            Claude subscription."</strong> It's off unless you turn it on, and
+            turning it on means signing in &mdash; so signing in is the opt-in.
+            Once it's on, dictation polish and agent turns can run on your own
+            Claude plan instead of ours.
+        </p>
+        <p>
+            Signing in runs Anthropic's own sign-in flow &mdash; the same one their
+            <code>claude</code> command-line tool uses &mdash; not anything we
+            built. We never see, store, or refresh your Claude credentials;
+            Anthropic's tool owns them on your Mac (if you already use Claude Code
+            and are signed in there, we detect that instead of opening a browser).
+            All we read is Anthropic's own signed-in status &mdash; your email and
+            subscription plan &mdash; so Settings can show something like
+            "Connected &mdash; you@example.com &middot; Pro." Turning this feature
+            off in our Settings doesn't touch your Claude Code sign-in; it's still
+            there, ready the moment you turn it back on.
+        </p>
+        <p>
+            When this feature runs, it runs on Anthropic's own engine, not ours: a
+            small program (about 250MB &mdash; a Node runtime plus Anthropic's own
+            SDK and command-line tool) that we host for you to download once, from
+            our own update server, and checked before install against both a
+            published checksum and a cryptographic signature &mdash; the same
+            release key that signs the app's own updates. That engine sends your
+            dictation transcript or agent messages straight to Anthropic, billed
+            to your own Claude subscription &mdash; never through Abalone's
+            servers. If you use the agent's web search or page-reading during one
+            of these turns, that also goes through Anthropic's own built-in tools,
+            not the Serper/Firecrawl setup described earlier in this policy.
+        </p>
+        <p>
+            Each call still shows up in your usage history, the same way calls on
+            your own connected ChatGPT account do: the app reports one row &mdash;
+            which feature it was, which model answered, how many tokens it used,
+            how long it took &mdash; never the words you dictated or said to the
+            agent. It costs you nothing against our monthly cap; Anthropic bills
+            your own subscription instead.
+        </p>
+        <p>
+            We also keep a small switch on our server that can turn this feature
+            off for everyone if something's wrong with it. It's just a yes/no flag
+            the app checks &mdash; it carries no data about you.
         </p>
 
         <h2>What we do <em>not</em> do</h2>
