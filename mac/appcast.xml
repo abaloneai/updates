@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.21.0 — Use your own Claude subscription</title>
+            <pubDate>Sat, 18 Jul 2026 06:13:47 +0000</pubDate>
+            <sparkle:version>71</sparkle:version>
+            <sparkle:shortVersionString>1.21.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Bring your Claude plan to Abalone.</b> Have Claude Pro or Max? Connect it in Settings → AI Providers, and dictation polish and the agent can run on Anthropic's engine using your own plan — your words travel straight from your Mac to Anthropic, never through our servers.</li>
+                <li><b>Sign-in that respects your setup.</b> Already use Claude Code? One click detects your existing login and connects instantly — no browser, no new password. New to Claude? A claude.ai tab opens and Anthropic's own sign-in does the rest. We never see or store your credentials.</li>
+                <li><b>Downloaded on demand, verified before install.</b> The Claude engine (~110MB) downloads only if you opt in, and every byte is checksum- and signature-verified before it runs.</li>
+                <li><b>Dark Dock icons.</b> Every app-icon colourway now has a dark twin — find them in the icon picker in Settings.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.21.0/Abalone-1.21.0.dmg"
+                sparkle:edSignature="vSmYrzuqlfVMkKRRus4ODuVZALM7gNXPvgDqVoKb59ub3raJVdiryCPZLkT1nncVkQYk0i88ecsI2LLwfjw5Cg=="
+                length="19266472"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.20.1 — A quieter logo</title>
             <pubDate>Tue, 14 Jul 2026 19:56:18 +0000</pubDate>
             <sparkle:version>70</sparkle:version>
