@@ -6,6 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.21.1 — Smoother, one-click updates</title>
+            <pubDate>Sat, 18 Jul 2026 09:26:11 +0000</pubDate>
+            <sparkle:version>72</sparkle:version>
+            <sparkle:shortVersionString>1.21.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>One click, no dialogs.</b> "Restart to Update" now installs the new version and relaunches instantly — the extra confirmation popup is gone.</li>
+                <li><b>Click any time.</b> If the update is still downloading when you click, the button shows "Preparing update…" and the app restarts itself the moment it's ready. No more clicks that silently do nothing.</li>
+                <li><b>Failures speak up.</b> If an update can't download, the sidebar chip says so and offers Retry instead of staying quiet.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.21.1/Abalone-1.21.1.dmg"
+                sparkle:edSignature="IE6j1js0+aAVuIvIa4S3nUeIoWhxV4gwF68mzHZiwJtDf0jVZg3lNLkiSYY4eZ34uVI9UO6fouGSigV6a56EDQ=="
+                length="19280710"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.21.0 — Use your own Claude subscription</title>
             <pubDate>Sat, 18 Jul 2026 06:13:47 +0000</pubDate>
             <sparkle:version>71</sparkle:version>
