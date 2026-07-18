@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.22.0 — Local dictation polish and smarter provider routing</title>
+            <pubDate>Sat, 18 Jul 2026 11:11:35 +0000</pubDate>
+            <sparkle:version>73</sparkle:version>
+            <sparkle:shortVersionString>1.22.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Dictate and polish fully on device.</b> On eligible Apple Intelligence Macs, choosing On Device now keeps both WhisperKit transcription and Apple Foundation Models polish local. If local polish cannot safely improve the text, Abalone pastes the original transcript instead.</li>
+                <li><b>Keeps the whole thought.</b> Cloud dictation polish now uses our benchmark-tested preservation prompt, with stronger checks for names, numbers, command-like phrases, and the final words you spoke.</li>
+                <li><b>Uses your fastest connected AI.</b> Auto follows your AI-provider priority, using the faster Claude Haiku polish path or ChatGPT Luna when connected, with graceful fallback if a provider is unavailable.</li>
+                <li><b>A clearer Dictations screen.</b> The welcome, stats, live listening status, shortcut, engine picker, search, and history now share one cleaner layout, with native row menus for Copy, Save Audio, and Delete.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.22.0/Abalone-1.22.0.dmg"
+                sparkle:edSignature="IgfEljZUHeqHGFSNP4YoHAuCABuieRNGdjbGGJnh4jEdUPho6bD6eXwCk7EquS87IZS535n2MxicHk4hlHqEDA=="
+                length="19290803"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.21.1 — Smoother, one-click updates</title>
             <pubDate>Sat, 18 Jul 2026 09:26:11 +0000</pubDate>
             <sparkle:version>72</sparkle:version>
