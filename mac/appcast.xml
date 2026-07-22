@@ -6,6 +6,23 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.23.2 — The Agent keeps up with your screen</title>
+            <pubDate>Wed, 22 Jul 2026 16:58:17 +0000</pubDate>
+            <sparkle:version>76</sparkle:version>
+            <sparkle:shortVersionString>1.23.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Fresh context every time.</b> Summon the Agent from the notch and it now captures the window you are looking at, even when you are continuing an existing chat. Scroll to a new message, switch windows, or return with an update—the latest screen appears as a removable attachment before you send.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.23.2/Abalone-1.23.2.dmg"
+                sparkle:edSignature="I+pn1uYczzyiq6jfXGBE7wSqJKJH6yT9GEcs5MYXBI2Gla0OeaqRK1fL03/5wtMw9HTaVo3wlheRza6T0CIYAw=="
+                length="20497689"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.23.1 — A smoother Agent introduction</title>
             <pubDate>Wed, 22 Jul 2026 15:25:36 +0000</pubDate>
             <sparkle:version>75</sparkle:version>
