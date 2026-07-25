@@ -160,9 +160,18 @@
         <p>
             We do <strong>not</strong> collect precise location (GPS), contact lists,
             browsing history, or anything from other apps. The app's voice-to-text
-            model runs locally on your Mac — the raw audio does not leave your device
-            for transcription. It's only uploaded to cloud storage if you're signed
-            in, so you can retry transcription later from another device.
+            model runs locally on your Mac, and once it's ready, raw audio doesn't
+            leave your device for transcription. The one exception is the short
+            bridge while the local model isn't ready — while it first downloads
+            after install, or in the first moments after the app launches.
+            Dictations in that window are transcribed in the cloud: the audio goes
+            through our server to our transcription provider (Groq, with OpenAI as
+            backup), is used only to produce your text, and isn't stored by us.
+            Prefer that this never happens? Choose Local-only mode in Settings —
+            then audio never leaves your Mac, and dictation simply waits until the
+            local model is ready. Audio is otherwise only uploaded to cloud storage
+            if you're signed in, so you can retry transcription later from another
+            device.
         </p>
 
         <h2>Agent data</h2>
