@@ -6,6 +6,27 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.23.7 — Reliable first dictations</title>
+            <pubDate>Sun, 26 Jul 2026 22:17:39 +0000</pubDate>
+            <sparkle:version>81</sparkle:version>
+            <sparkle:shortVersionString>1.23.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Your first dictation just works.</b> Fixed a bug where a dictation right after launching the app could fail with "Audio capture failed" — the microphone now opens only after your audio device is fully ready, and the start sound plays exactly when audio is truly flowing.</li>
+                <li><b>Talk to your assistant while the speech model downloads.</b> Asking Abalone something no longer shows "Warming up speech engine" on a fresh install — your words ride Abalone's cloud while the on-device model finishes downloading, then everything moves on-device automatically.</li>
+                <li><b>One waveform, everywhere.</b> Every sound wave in the app — dictation, setup lessons, talking to your assistant — now moves at the same steady pace with the same feel, and adapts to quiet rooms and quiet voices.</li>
+                <li><b>The tucked-away assistant tells the truth.</b> If you click away while it works, the small capsule now narrates progress and flips to "✓ Take a look" when your answer is ready — or "Needs your OK" when it's waiting on you — instead of showing "working" forever or popping open over your work.</li>
+                <li><b>New installs start on Auto.</b> Fresh setups pick the best transcription engine automatically; anyone who explicitly chose Cloud or On Device keeps their choice.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.23.7/Abalone-1.23.7.dmg"
+                sparkle:edSignature="WS4SLfC5mQdBr3zgiFRS7OELwaYmysof4qbIlOXyx9I0CwJObul2TC5t53oPeB4HqZntuodpmAJq9bQjo8JZCA=="
+                length="20563755"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.23.6 — Smoother notch motion</title>
             <pubDate>Sun, 26 Jul 2026 13:28:41 +0000</pubDate>
             <sparkle:version>80</sparkle:version>
