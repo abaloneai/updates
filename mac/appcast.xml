@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.23.6 — Smoother notch motion</title>
+            <pubDate>Sun, 26 Jul 2026 13:28:41 +0000</pubDate>
+            <sparkle:version>80</sparkle:version>
+            <sparkle:shortVersionString>1.23.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>A calmer, more natural notch.</b> The pill now unfolds smoothly from the hardware notch and returns cleanly, without edge gaps, bright seams, or motion trails across dictation and status states.</li>
+                <li><b>A seamless agent opening.</b> Captured-screen previews now arrive only after the agent panel has settled, removing the tiny flash that could appear during expansion.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.23.6/Abalone-1.23.6.dmg"
+                sparkle:edSignature="7Oxqn5VXFAgvRsi1ACJWjn8zwIqyv2KkDGEWAmafjzJPZkO28xcS7YNvGIF7l0Fb/oW0fzOZRkFiQf8cPIyRDQ=="
+                length="20514920"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.23.5 — Setup polish</title>
             <pubDate>Sun, 26 Jul 2026 10:23:32 +0000</pubDate>
             <sparkle:version>79</sparkle:version>
