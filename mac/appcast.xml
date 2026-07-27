@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.24.1 — Live transcription that keeps up</title>
+            <pubDate>Mon, 27 Jul 2026 14:29:02 +0000</pubDate>
+            <sparkle:version>83</sparkle:version>
+            <sparkle:shortVersionString>1.24.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Spoken words stay close to your voice.</b> Fixed an issue that made live text fall farther behind during longer dictations and voice messages.</li>
+                <li><b>Settled speech stays settled.</b> Abalone now carries finished speech forward instead of repeatedly processing it, while keeping the newest phrase flexible for accurate corrections.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.24.1/Abalone-1.24.1.dmg"
+                sparkle:edSignature="C2zp63RLG6OQtry4hZQtSeVcQXL5jBF1+y935QhV3ubH4PITdLJEy0C2d5YU31stj+xRNmotRdkayJUK14BTDQ=="
+                length="20567770"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.24.0 — Dictation that starts the instant you do</title>
             <pubDate>Mon, 27 Jul 2026 01:01:18 +0000</pubDate>
             <sparkle:version>82</sparkle:version>
