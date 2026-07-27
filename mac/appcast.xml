@@ -6,6 +6,27 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.24.0 — Dictation that starts the instant you do</title>
+            <pubDate>Mon, 27 Jul 2026 01:01:18 +0000</pubDate>
+            <sparkle:version>82</sparkle:version>
+            <sparkle:shortVersionString>1.24.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Reliable from the first second.</b> Dictating right after launching or updating the app could record nothing and end in an error. The microphone now opens the proven way every time — and if it's ever slow to wake, the app quietly repairs it before you'd notice.</li>
+                <li><b>The sound tells the truth.</b> The start chime now plays at the exact moment the mic goes live. When you hear it, it's listening — never before.</li>
+                <li><b>Clearer permission asks.</b> When the agent needs your OK, it explains the step in plain words with the exact command or address underneath, and Allow now offers "once" or "always."</li>
+                <li><b>Safety without the nagging.</b> The agent browses and reads the web without interrupting you, and steps in only when something could genuinely be unsafe — sending data out, using your location, or reaching outside its folder.</li>
+                <li><b>Smarter word learning.</b> Correct a name or term after dictating and the app learns it for next time — and it now learns only the words you kept, spelled exactly the way you kept them.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.24.0/Abalone-1.24.0.dmg"
+                sparkle:edSignature="U2gOwDPYWxVRSdp67qGvtjWi6eXDThht/dxauizlREBiIh6416XE/3ZT61o7IezwY7+RnKnzNzDRjtheaJ8KDw=="
+                length="20568910"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.23.7 — Reliable first dictations</title>
             <pubDate>Sun, 26 Jul 2026 22:17:39 +0000</pubDate>
             <sparkle:version>81</sparkle:version>
