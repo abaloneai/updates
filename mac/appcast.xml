@@ -6,6 +6,24 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.24.2 — Claude sign-in that repairs itself</title>
+            <pubDate>Tue, 28 Jul 2026 04:49:04 +0000</pubDate>
+            <sparkle:version>84</sparkle:version>
+            <sparkle:shortVersionString>1.24.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Claude setup now recovers automatically.</b> Abalone detects a missing or outdated Claude engine, securely downloads a complete signed replacement, and continues sign-in without asking you to repair files manually.</li>
+                <li><b>Claude updates no longer interrupt a working connection.</b> Compatible engine updates install safely in the background, while offline users can keep using the last validated version.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.24.2/Abalone-1.24.2.dmg"
+                sparkle:edSignature="9fO1LHNdcqKTaLhvETj5UMKLrIVwjemwh94pZwV0TEvqiXVnTSUyvJMNhhljqL66q8iHBBAF3HvuiMADV3YoBA=="
+                length="20590011"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.24.1 — Live transcription that keeps up</title>
             <pubDate>Mon, 27 Jul 2026 14:29:02 +0000</pubDate>
             <sparkle:version>83</sparkle:version>
