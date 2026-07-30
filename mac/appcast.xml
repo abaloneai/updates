@@ -6,6 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.24.3 — Safer automatic commands, without the interruptions</title>
+            <pubDate>Thu, 30 Jul 2026 17:11:55 +0000</pubDate>
+            <sparkle:version>85</sparkle:version>
+            <sparkle:shortVersionString>1.24.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Auto now checks shell commands before they run.</b> An independent, tool-free safety pass compares each proposed command with what you asked for and stops actions that are too broad, destructive, or unrelated.</li>
+                <li><b>Routine work stays fast.</b> Read-only checks and clearly requested project work continue without an approval popup, while Ask First remains fully human-controlled.</li>
+                <li><b>Folder mode gets an operating-system boundary.</b> Mutating shell commands that stay in your selected project run inside a macOS filesystem sandbox, while read-only shell checks are write-blocked in every mode.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.24.3/Abalone-1.24.3.dmg"
+                sparkle:edSignature="fLCRAd2DczIOoKRcf12TF1IJYsA+58ZDSkZxlDbt95fSZRB+mJHYh9EWOY0p74A23kAftfcoa6PnfdIF+t0bCw=="
+                length="20635944"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.24.2 — Claude sign-in that repairs itself</title>
             <pubDate>Tue, 28 Jul 2026 04:49:04 +0000</pubDate>
             <sparkle:version>84</sparkle:version>
