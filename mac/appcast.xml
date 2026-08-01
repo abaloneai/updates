@@ -6,6 +6,28 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.25.0 — The agent shows its work — and answers flow</title>
+            <pubDate>Sat, 01 Aug 2026 05:36:21 +0000</pubDate>
+            <sparkle:version>86</sparkle:version>
+            <sparkle:shortVersionString>1.25.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Watch the agent work, live.</b> Every search and page it reads appears as a step the moment it happens — steps bundle as it goes, thinking shows as quiet notes, and when the answer arrives the whole trail folds into one line: "Worked for 1m 23s". Click it any time to see exactly what your agent did.</li>
+                <li><b>Answers stream like thought.</b> Replies now flow in word by word — smooth and continuous on every AI provider, instead of arriving in blocks.</li>
+                <li><b>Web search runs on your own AI plan.</b> General web search now rides your connected ChatGPT or Claude subscription directly, so research is faster and never rationed — while places, news, and image searches stay just as rich.</li>
+                <li><b>Sending feels instant.</b> Your message lands in the conversation the moment you hit send — on the main window and the notch — and a brand-new chat is ready to type into immediately.</li>
+                <li><b>Runs are harder to lose.</b> If the connection drops mid-answer, the agent quietly retries and picks up where it left off. Stopping a run closes every step honestly, and denying one action no longer cancels the rest of the work.</li>
+                <li><b>Dozens of small refinements.</b> Steps rise in softly, the follow-the-answer arrow appears exactly when you need it, summaries answer in chat instead of becoming draft cards, and abandoned screenshots no longer linger in the composer.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.25.0/Abalone-1.25.0.dmg"
+                sparkle:edSignature="zann60BVnLpPF9C6mTgL1o+BhfYbGcxHRrPiidOYWEqNfThML4Qlpmwh9dZ2vzZtF4oSNvRU/wICjxCmK3ZRCA=="
+                length="20697288"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.24.3 — Safer automatic commands, without the interruptions</title>
             <pubDate>Thu, 30 Jul 2026 17:11:55 +0000</pubDate>
             <sparkle:version>85</sparkle:version>
