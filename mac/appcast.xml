@@ -6,6 +6,30 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.26.0 — The agent gets its own browser</title>
+            <pubDate>Wed, 05 Aug 2026 14:49:50 +0000</pubDate>
+            <sparkle:version>87</sparkle:version>
+            <sparkle:shortVersionString>1.26.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>The agent gets its own browser.</b> A real browser now sits right beside your conversation, with tabs, a back button, and an address bar — everything you'd expect. A visible cursor glides across the page and shows exactly where it clicks, and every page it visits shows up as a step in the same trail you already see for searches and thinking.</li>
+                <li><b>Free to browse, careful with the risky stuff.</b> The agent can look around, click links, and read pages without stopping to ask. It only pauses for your OK before anything that spends money, sends something, or signs you in — it will never type a password anywhere, and a page taking card details is entirely off-limits: it stops and hands the page to you. All of its web activity runs through this one browser; it can't take control of other apps on your Mac to get online.</li>
+                <li><b>When a page needs you, you get a card.</b> Sign-ins, verification codes, captchas — the agent stops and plays a "Your turn" card instead of struggling: open the page beside the chat with one click, do your part, press "I'm done," and the errand carries on. It will never ask for a password in the chat, and it can't type into password fields — those moments are always yours.</li>
+                <li><b>A visible plan for bigger jobs.</b> Ask for something with several steps, and the agent writes a short checklist first, checking items off live as it works. Open it any time to see the whole plan, not just a summary — it adjusts if you redirect the agent mid-task, stays saved as part of the conversation, and won't quietly call itself done while steps are still unchecked.</li>
+                <li><b>Long conversations stay smooth.</b> Huge conversations used to slow everything down — typing lag, choppy scrolling, sluggish replies. Scrolling, dictating, and reading the agent's replies all stay fast now, no matter how long the conversation has grown.</li>
+                <li><b>Dictation lands more accurately.</b> Text appears provisionally as you talk and firms up moments later, so you watch it settle instead of jumping around — and a single misheard word can no longer snowball into more mistakes later in the same dictation.</li>
+                <li><b>Runs are harder to interrupt by accident.</b> A long agent run no longer cuts off partway through — not while it's deep in thought, not while it's waiting on your answer, not after many steps in a row. If one step fails, only that step retries, never the whole conversation, and you'll see plainly what went wrong instead of a run that just quietly stops. Working in more than one conversation at once no longer risks them crossing wires.</li>
+                <li><b>Dozens of smaller refinements.</b> Dictation can no longer take the app down when your Mac's microphone is mid-shuffle (Bluetooth headphones connecting, waking from sleep) — it says the mic isn't ready and lets you try again. Stop is now the one button for ending a run. The composer makes it obvious when typing will answer a pending question instead of starting something new. Sign-in pop-ups open as tabs right beside the page that asked for them — nothing can ever open hidden behind your window. Downloads tell you plainly whether they landed, and tabs drag into the order you want.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.26.0/Abalone-1.26.0.dmg"
+                sparkle:edSignature="c3AQRADzSaOBkPTnrE8wKMpLd7FISSOoY/v/Eb9J6v6N4u7ggkZRAWzqi1mLcqWK+i2P04LNdINYvStpzniuAg=="
+                length="153233434"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.25.0 — The agent shows its work — and answers flow</title>
             <pubDate>Sat, 01 Aug 2026 05:36:21 +0000</pubDate>
             <sparkle:version>86</sparkle:version>
