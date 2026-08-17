@@ -6,6 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.26.1 — The agent spends your plan more carefully</title>
+            <pubDate>Mon, 17 Aug 2026 19:45:33 +0000</pubDate>
+            <sparkle:version>88</sparkle:version>
+            <sparkle:shortVersionString>1.26.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Smarter default effort.</b> The agent now runs at Medium effort out of the box — just as capable on real questions, without spending your Claude plan's limits on thinking through simple steps like clicking a button or scrolling a page. If you've picked an effort level yourself, your choice stays exactly as you set it, and you can raise or lower it anytime from the model picker.</li>
+                <li><b>More honest usage accounting.</b> Behind the scenes, the app now records what each agent turn really used — including runs that were cancelled or failed — so usage totals reflect reality.</li>
+                <li><b>Leaner browsing under the hood.</b> Groundwork that stops the agent from re-reading stale copies of web pages it has already moved past, making long browsing tasks cheaper and more focused.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.26.1/Abalone-1.26.1.dmg"
+                sparkle:edSignature="xGuz4uQp94mk5uRa1I9j+rj15IggnstK5ZM8RJiNBnkKFibTYk8D9/lFNxpvPA+YX4FbP1L0z3Rm9eQhecR+Cw=="
+                length="153433961"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.26.0 — The agent gets its own browser</title>
             <pubDate>Wed, 05 Aug 2026 14:49:50 +0000</pubDate>
             <sparkle:version>87</sparkle:version>
