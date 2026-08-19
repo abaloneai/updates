@@ -6,6 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.26.2 — Music steps aside while you speak</title>
+            <pubDate>Wed, 19 Aug 2026 00:32:21 +0000</pubDate>
+            <sparkle:version>89</sparkle:version>
+            <sparkle:shortVersionString>1.26.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                <li><b>Other audio ducks while you dictate.</b> Start speaking — to type or to the agent — and whatever's playing gently fades to a whisper instead of drowning out your voice, then comes right back the moment you're done. A fade, never a mute.</li>
+                <li><b>Your volume stays yours.</b> Touch your volume keys while the music is turned down and the app steps aside instantly — your choice wins, no questions asked.</li>
+                <li><b>On by default, easy to turn off.</b> Prefer your music loud? Flip "Turn down other audio while dictating" in Settings.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.26.2/Abalone-1.26.2.dmg"
+                sparkle:edSignature="xzY8KD7IUHl3atEd97wRZZ2/fJVYIzqSq+gurLj4Kh0QgVgfk+OEINytYXIXWlx2Q0uJvgzaLyfqgokICLvPDg=="
+                length="153453724"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.26.1 — The agent spends your plan more carefully</title>
             <pubDate>Mon, 17 Aug 2026 19:45:33 +0000</pubDate>
             <sparkle:version>88</sparkle:version>
