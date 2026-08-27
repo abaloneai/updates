@@ -6,6 +6,38 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.27.0 — Talking to the agent no longer interrupts it</title>
+            <pubDate>Thu, 27 Aug 2026 08:46:30 +0000</pubDate>
+            <sparkle:version>90</sparkle:version>
+            <sparkle:shortVersionString>1.27.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Talk to it while it works</h2>
+                <p>You can now send the agent a thought at any moment — mid-reply, mid-task, mid-anything. It finishes what it's doing, folds your message in, and keeps working with everything it already knew. Nothing gets cut off, and no work is thrown away. The <strong>Stop</strong> button is the one and only way to interrupt.</p>
+                <h2>Fewer needless questions</h2>
+                <p>At <strong>Auto in folder</strong>, the agent can now send messages on websites — a support chat, a contact form — without asking your permission for every single one. The things that always stop it are unchanged and absolute: payments, sign-ins, and human-verification checks are yours alone, at every trust level.</p>
+                <h2>A worklist you can see</h2>
+                <p>On long errands the agent keeps a visible checklist, a plan, and a running notebook. You can watch it tick things off, and when you reopen a conversation later, its working state is still there.</p>
+                <h2>Every new chat starts blank</h2>
+                <p>⌘N — and every New-chat button — opens a clean, project-less chat. No inherited folder, no remembered default. A chat joins a project only when you put it there: the folder pill, a project's own "+", or the project page.</p>
+                <h2>One menu family</h2>
+                <p>The model picker was rebuilt to match every other menu in the composer — same look, same spacing, same behavior — with Effort and More-models as panes inside the menu. And it now floats above the browser panel like a proper menu, so nothing gets cramped when the panel is open.</p>
+                <h2>The sidebar earns its keys</h2>
+                <p>The sidebar toggle now sits beside the window controls where it belongs, ⌘B hides and shows the sidebar (⇧⌘B for the side panel), and both collapse with one smooth motion instead of a jump.</p>
+                <h2>Chats open instantly</h2>
+                <p>Opening a long conversation used to freeze the app for a moment and then fight you when you scrolled up — the view kept snapping back to the bottom. Both are gone: chats now open in a blink no matter how long they are, the view holds still the instant you move it yourself, and it only follows along while the agent is actively writing. Arrow and page keys now scroll the conversation too.</p>
+                <h2>Archive, not delete</h2>
+                <p>The chat menu's "Close" is now <strong>Archive</strong> — a clearer word for what it always did: tidy a chat out of the sidebar without deleting anything. Archived chats stay findable in ⌘F and the Chats screen, and come back the moment anything new happens in them. The ⌘F search palette also slimmed down: one action per row (the ⋯ menu), which holds everything — Rename, Move to Project, Archive, Delete.</p>
+                <h2>And the small stuff</h2>
+                <p>Esc releases the composer when nothing is running (your text stays put). ⌘U opens the file picker on any page with a composer, focused or not. On a project page with an empty composer, the arrow keys walk the chat list — Spotlight-style. Stray box-shaped symbols no longer appear in answers from the ChatGPT lane. Dictating into an edited message sends with the same key as always. The agent's answers can no longer be swallowed by its own bookkeeping. Replies to your mid-task messages arrive as real messages, not folded-away notes. Dozens of alignment and spacing fixes throughout.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.27.0/Abalone-1.27.0.dmg"
+                sparkle:edSignature="PwHqg0sGOZGH0tUKwzC2/YON6GBhS6XMIwsrVpyHBy06001xxZ3cPK7xyhktqkKN1AXxEDnWDFI0pSY0UHO8DQ=="
+                length="154532556"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.26.2 — Music steps aside while you speak</title>
             <pubDate>Wed, 19 Aug 2026 00:32:21 +0000</pubDate>
             <sparkle:version>89</sparkle:version>
