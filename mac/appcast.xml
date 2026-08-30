@@ -6,6 +6,30 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.27.1 — The beachball at launch is gone</title>
+            <pubDate>Sun, 30 Aug 2026 02:11:15 +0000</pubDate>
+            <sparkle:version>91</sparkle:version>
+            <sparkle:shortVersionString>1.27.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Launch without the freeze</h2>
+                <p>Since 1.27.0, the first launch after an update could show the spinning beachball — "Application Not Responding" — for many seconds before the app woke up. Three separate causes were found and rooted out: a launch-time warm-up that could stall the whole app waiting on a slow macOS service (removed outright), your conversation history being read on the same thread that draws the window (moved off it — the bigger your history, the more you'll feel this one), and the speech model's after-update tune-up elbowing everything else aside (it now works quietly in the background). The window is up and responsive in a blink, every launch.</p>
+                <h2>Your SSD gets a break</h2>
+                <p>The app was writing gigabytes per session of pointless cache to disk — copies of network responses it would never read again. Every connection now opts out of that cache. Less disk wear, less background churn, nothing visible lost.</p>
+                <h2>Menus line up</h2>
+                <p>In the notch's project menu, icons now sit level with each project's name instead of floating between the lines, and emoji icons are no longer clipped at the edges. The slash-command menu now matches the composer's width exactly — edge to edge — instead of poking out past it.</p>
+                <h2>Long chats stream lighter</h2>
+                <p>While a reply streams into a long conversation, the app was rebuilding the entire feed dozens of times a second even when nothing but the incoming text had changed. It now skips the rebuild whenever the change can't affect anything else on screen — noticeably less fan and heat on your longest chats.</p>
+                <h2>And the small stuff</h2>
+                <p>Older dictations in your history now show their full model names. If the app is ever slow to start again, it now keeps a precise record of where launch time went, so the cause can be found in one look instead of a hunt. And under the hood, every one of the agent's model calls — polish, titles, summaries, safety checks — now travels through one engine instead of two, with byte-for-byte proof that nothing changed on the way.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.27.1/Abalone-1.27.1.dmg"
+                sparkle:edSignature="vPeTKfPC04lfwiRnMwN0cx2yu4x5lQiNOBOOgEFwqBDPcpyEpf4xXk5Pjy+/dgT4jE1UikMfZ0V104LuEX/yCw=="
+                length="154470787"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.27.0 — Talking to the agent no longer interrupts it</title>
             <pubDate>Thu, 27 Aug 2026 08:46:30 +0000</pubDate>
             <sparkle:version>90</sparkle:version>
