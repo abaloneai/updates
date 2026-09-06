@@ -6,6 +6,30 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.28.0 — Your agent gets a computer of its own</title>
+            <pubDate>Sun, 06 Sep 2026 18:38:49 +0000</pubDate>
+            <sparkle:version>92</sparkle:version>
+            <sparkle:shortVersionString>1.28.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>A computer of its own</h2>
+                <p>The agent can now do its work on a computer that lives in the cloud, separate from your Mac — browsing the web, filling out a form, running a command — while your own machine stays free. A new <strong>Computer</strong> tab in the side panel shows exactly what it's doing there, in real time, and a <strong>Files</strong> tab lets you look through anything it saved. Copy and paste now works between your Mac and that screen, in both directions. Every new chat starts it with a clean desktop, and if two chats need it at the same time, the second one is told to wait rather than colliding with the first.</p>
+                <h2>ChatGPT models, refreshed</h2>
+                <p>GPT-6 Astra is joining the ChatGPT lineup as the most capable option — it'll appear in your model picker as soon as OpenAI switches it on for your account. The GPT-5.6 models (Luna, Terra, Sol) all gained a "Max" effort setting for the hardest problems, and the context size shown next to each one is now the working window OpenAI's own client uses (272k for the 5.6 family). The "More models" list now shows four options before you need to scroll, and the retired GPT-5.4 model is gone.</p>
+                <h2>Claude, kept current</h2>
+                <p>Claude Fable 5.1 replaces Fable 5. There is nothing to do on your end: the Claude engine updates itself in the background, and the model list re-reads itself after your first Claude turn, so the new name shows up without a relaunch. The Claude models in your picker are now ordered fastest to most capable: Haiku, Sonnet, Opus, Fable.</p>
+                <h2>See where your usage goes</h2>
+                <p>Your account page's "This month" card now breaks your usage down by feature instead of showing just one number, so you can see what your dictation, your agent, and your cloud computer each cost.</p>
+                <h2>And the small stuff</h2>
+                <p>Dragging a tab in the side panel used to drag the whole window along with it — fixed, and a dragged tab now lifts clearly above the others as they slide aside to make room. A long answer that turns into a table, a list, or another document while the agent is still working now streams into place as the answer from the start, instead of appearing as a small note and then jumping.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.28.0/Abalone-1.28.0.dmg"
+                sparkle:edSignature="aAQrbD7HKBADZIkbwq06Hk+5dEWiI6Kat+/XIngGXcn1xTQ9OMw238ynMTgaCCcQ4siE/0HB/VV3hznZu9mWCA=="
+                length="154849086"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.27.1 — The beachball at launch is gone</title>
             <pubDate>Sun, 30 Aug 2026 02:11:15 +0000</pubDate>
             <sparkle:version>91</sparkle:version>

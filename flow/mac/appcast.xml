@@ -6,6 +6,21 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.28.0 — Your agent gets a computer of its own</title>
+            <pubDate>Sun, 06 Sep 2026 18:38:49 +0000</pubDate>
+            <sparkle:version>92</sparkle:version>
+            <sparkle:shortVersionString>1.28.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:informationalUpdate>true</sparkle:informationalUpdate>
+            <link>https://updates.abalone.ai/download/mac</link>
+            <description><![CDATA[
+                <h2>Abalone has a new identity</h2>
+                <p>This update needs a fresh install — click <strong>Learn More</strong> to download it. It's 7 MB and takes about 30 seconds.</p>
+                <p>Open the downloaded file, drag <strong>Abalone</strong> to your Applications folder, then launch it. Your history, hotkey, and settings carry over automatically.</p>
+                <p>Once the new app is running, delete <strong>Abalone Flow</strong> from Applications.</p>
+            ]]></description>
+        </item>
+        <item>
             <title>Version 1.27.1 — The beachball at launch is gone</title>
             <pubDate>Sun, 30 Aug 2026 02:11:15 +0000</pubDate>
             <sparkle:version>91</sparkle:version>
