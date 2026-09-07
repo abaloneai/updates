@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.28.1 — Updates you can watch, and a Claude engine that stays signed in</title>
+            <pubDate>Mon, 07 Sep 2026 06:47:52 +0000</pubDate>
+            <sparkle:version>93</sparkle:version>
+            <sparkle:shortVersionString>1.28.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>See the update download</h2>
+                <p>When an update is ready, the small "Update available" capsule under the sidebar logo, in Settings, and in the app menu now opens the standard macOS update window when you click it: what's new, a real download progress bar, and an "Install and Relaunch" button when it's done. Before, clicking showed a spinner with no idea of progress for as long as the download took. Checks still happen quietly every hour in the background; the app never pops a dialog on its own.</p>
+                <h2>The Claude engine updates without signing you out</h2>
+                <p>Abalone's Claude engine updates itself in the background. Until now, on the first launch after an engine update the Claude row looked signed out and offered "Sign in" for the minute or two the download took, and clicking it showed "Looking for a Claude sign-in…" until the download finished. You were never actually signed out. The app now checks your account on the engine it already has, in about a second, then updates the engine behind the scenes while showing the download's progress under your connected account. Nothing to click, nothing to re-enter.</p>
+                <h2>And the small stuff</h2>
+                <p>When the agent's working caption in the notch card wraps to a second line, its blue dot now sits on the first line instead of floating between the two.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.28.1/Abalone-1.28.1.dmg"
+                sparkle:edSignature="tLkcOknOxqLN0N2riF9HnenNmlONjbWTshK1ITNTtTpponDHzMWoeueMQ9qFd9SJz12F2S1rM0gYHyAs4jRiDA=="
+                length="154851799"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.28.0 — Your agent gets a computer of its own</title>
             <pubDate>Sun, 06 Sep 2026 18:38:49 +0000</pubDate>
             <sparkle:version>92</sparkle:version>
