@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy — Abalone Flow</title>
-    <meta name="description" content="How Abalone Flow handles your data. Plain English. Updated 2026-07-12.">
+    <meta name="description" content="How Abalone Flow handles your data. Plain English. Updated 2026-10-17.">
     <link rel="canonical" href="https://updates.abalone.ai/flow/privacy">
     <link rel="icon" type="image/svg+xml" href="https://updates.abalone.ai/flow/icon.svg">
     <style>
@@ -104,20 +104,21 @@
         <a class="back" href="https://updates.abalone.ai/flow">← Back to Abalone Flow</a>
 
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: 2026-07-18</p>
+        <p class="updated">Last updated: 2026-10-17</p>
 
         <p>
-            This is the privacy policy for <strong>Abalone Flow</strong> (the Mac app)
-            and <a href="https://abalone.ai">abalone.ai</a>. It's written in plain
-            English because we'd rather you read it than skim it.
+            This is the privacy policy for <strong>Abalone Flow</strong> (the Mac
+            app) and the <a href="https://abalone.ai">abalone.ai</a> website. It's
+            written in plain English because we'd rather you read it than skim it.
         </p>
 
         <h2>Who we are</h2>
         <p>
             Abalone is a solo-founder project by <strong>Vincent Wei</strong>.
-            Contact: <a href="mailto:vincent@vincentwei.co">vincent@vincentwei.co</a>.
-            For GDPR purposes, Abalone is the data controller for data collected
-            through Abalone Flow and abalone.ai.
+            Contact:
+            <a href="mailto:vincent@vincentwei.co">vincent@vincentwei.co</a>. For
+            GDPR purposes, Abalone is the data controller for data collected through
+            Abalone Flow and abalone.ai.
         </p>
 
         <h2>What we collect, and why</h2>
@@ -151,102 +152,288 @@
                     <td>Legitimate interest</td>
                 </tr>
                 <tr>
+                    <td>Whether you've turned on location for the agent (yes/no only — never your actual location)</td>
+                    <td>Seeing how many people use this, to guide whether we build more location-aware features</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td>Crash reports (the diagnostic file macOS writes if the app crashes: stack traces plus app/OS version — never your dictation text or audio)</td>
+                    <td>Finding and fixing crashes. Uploaded on the next launch while signed in; capped at 512KB per report</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
                     <td>IP address and country (derived from IP by our edge provider)</td>
                     <td>Security monitoring, growth analytics (&ldquo;where are our users?&rdquo;)</td>
                     <td>Legitimate interest</td>
                 </tr>
+                <tr>
+                    <td>Usage stats for each AI request — which feature it was, which model answered, how many tokens it used, how long it took (never the words you dictated or said to the agent). For agent requests on a connected ChatGPT account, also a few short fingerprints of the request: codes made from it with a secret key only our server holds, which show whether two requests in a row started the same way. They can't be turned back into your words, and without that key nobody can check a guess against them</td>
+                    <td>Enforcing the monthly included-usage cap fairly, and seeing which features are slow or expensive to run — including requests made on your own connected ChatGPT account, which cost you nothing on our side and are recorded that way</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td>The AI's working memory for one agent run (what ChatGPT hands back between the steps of a run: its own reasoning in the encrypted form OpenAI returns it, a short summary of that reasoning, and the web searches it ran — never shown to you)</td>
+                    <td>Lets a run carry on where it left off from one step to the next. Deleted when the run ends</td>
+                    <td>Contract</td>
+                </tr>
+                <tr>
+                    <td>What a cloud agent does on your Mac, one step at a time: the step (read a file, write one after you allow it, open a page in the app's browser, list your open windows, look at one window, or run a command that can only look and never changes anything) and your Mac's answer — the same words the chat already saves. When the agent looks at a window, your Mac's answer is a picture of that window plus the text it can read in it; the picture goes to the AI for that step and is never saved in the chat, while the window's name and text, the list of open windows, and a command's output are saved in the chat like any other step's result. With it, when your Mac's Abalone last checked in and which of those tools it can run</td>
+                    <td>Gets each step to your Mac exactly once, and tells the agent within about 5 seconds when your Mac isn't reachable. A step and its answer (a window's picture included) are kept about 10 minutes after it ends and deleted within an hour</td>
+                    <td>Contract</td>
+                </tr>
             </tbody>
         </table>
+
         <p>
-            We do <strong>not</strong> collect precise location (GPS), contact lists,
-            browsing history, or anything from other apps. The app's voice-to-text
-            model runs locally on your Mac, and once it's ready, raw audio doesn't
-            leave your device for transcription. The one exception is the short
-            bridge while the local model isn't ready — while it first downloads
-            after install, or in the first moments after the app launches.
-            Dictations in that window are transcribed in the cloud: the audio goes
-            through our server to our transcription provider (Groq, with OpenAI as
-            backup), is used only to produce your text, and isn't stored by us.
-            Prefer that this never happens? Choose Local-only mode in Settings —
-            then audio never leaves your Mac, and dictation simply waits until the
-            local model is ready. Audio is otherwise only uploaded to cloud storage
-            if you're signed in, so you can retry transcription later from another
-            device.
+            <strong>Web searches and page reads by the agent.</strong> When you ask
+            the agent something that needs the web, your search query is sent
+            through our server to our search provider (Serper.dev, which returns
+            Google results — regular results, places, images, news, videos, or
+            shopping, depending on what you asked). Pages the agent reads are
+            downloaded through our server; if our own fetcher can't read a page
+            (heavy JavaScript, scraping blocks), we fall back to a second service,
+            Firecrawl, sending it just that page's URL. We don't save your queries
+            or the pages you read to any database. To avoid paying for the same
+            search twice, our server may hold recent search results in short-term
+            memory for up to 15 minutes, then they're gone. What we keep is only a
+            count of how many searches and fetches you made this month, which
+            enforces the monthly included-usage cap (lawful basis: Contract — you
+            asked the agent to look it up). The sites the agent visits see our
+            server's requests, not your device.
+        </p>
+
+        <p>
+            We do <strong>not</strong> track your location, and we never see or
+            store GPS coordinates; the app doesn't read your location. If you ask
+            the agent something local (&ldquo;coffee near me&rdquo;), only a place
+            you name in your own words goes into that search. We do save whether
+            you've switched the agent's location permission on or off — just that
+            yes/no, synced from your Mac — never a location. We also don't collect
+            contact lists, browsing history, or anything from other apps. By
+            default, Abalone transcribes your dictations on your Mac. Your audio
+            goes to the cloud only if you choose Cloud mode in Settings, or for a
+            short while after you first install Abalone, while the on-device model
+            is still downloading. When it does, the audio streams as you speak
+            through our server to our transcription provider, ElevenLabs (its Scribe
+            Realtime model, which we ask not to keep it), is used only to produce
+            your text, and isn't stored by us. Your custom dictionary words travel
+            with it so names come out right. Prefer that audio never leaves your
+            Mac, even during setup? Choose On Device mode in Settings — then
+            dictation runs entirely on your Mac, works offline, and simply waits if
+            the local model isn't finished downloading yet. On Device covers
+            dictation only: Scribe always writes with cloud AI (see below). Audio is
+            otherwise only uploaded to cloud storage if you're signed in, so you can
+            retry transcription later from another device.
+        </p>
+
+        <p>
+            <strong>Polishing your dictation.</strong> In Auto and Cloud modes, your
+            finished dictation text is sent through our server to Cerebras (its
+            gpt-oss model) to tidy the wording before it's pasted, along with the
+            name of the app you're in, its window title and your dictionary words.
+            If Cerebras is down or slow to answer, our server sends the same request
+            to OpenAI (its GPT-6 Luna model) instead. We don't keep the text beyond
+            the usage record described above. Cerebras and OpenAI don't use it to
+            train their models under their API terms, and may keep it only for a
+            limited time for safety checks. In On Device mode nothing is sent: the
+            words are pasted as spoken.
+        </p>
+
+        <h2>Scribe</h2>
+        <p>
+            Scribe is a separate shortcut from dictation: hold its key, say what you
+            want written — a reply, a message, anything — and a draft appears, ready
+            to insert into whatever app you're in. Your spoken request goes through
+            our server to OpenAI, whose GPT-6 Luna model writes the draft; if OpenAI
+            is down or slow to answer, our server sends the same request to
+            Anthropic (its Claude Haiku model) instead. Every request also carries
+            the name of the app you're in, its window title, any text already in the
+            box you're writing in, and your first name (as your account, or else
+            your Mac, knows it) so a draft fits the place and can sign off as you.
+            So the draft sounds like you, our server also adds up to four of your
+            own recent dictations from your synced history: the newest ones from the
+            same app (or from other apps when it has fewer than two), never earlier
+            Scribe drafts. This holds in every Dictation mode, On Device included:
+            Scribe always writes with cloud AI. The first time Scribe would also
+            read the window you're in (so it can see the conversation you're
+            replying to), it asks first — a one-time question, not a question every
+            time. If you say yes, up to about 2,300 characters of that window's
+            text, around where you're typing, travel with your request from then on
+            (our server passes on the end of the conversation and the names and
+            unusual words in it), and you can turn it back off any time in Settings
+            → Dictation &amp; Scribe. None of this is stored by Abalone. OpenAI and
+            Anthropic don't use it to train their models under their API terms, and
+            may keep it only for a limited time for safety checks. A Scribe draft
+            you actually insert is saved to your dictation history exactly like a
+            regular dictation, so you can find it again later; a draft you never
+            insert is never saved.
         </p>
 
         <h2>Agent data</h2>
         <p>
             If you use the agent and you're signed in, we also store your agent
-            conversations (their titles and the transcript content of each turn
-            &mdash; which can include excerpts of files the agent read for you, and
-            any files or images you attach to a message) and your project shells (a
+            conversations (their titles and the transcript content of each turn —
+            which can include excerpts of files the agent read for you, and the
+            model's own summary of what it was thinking while it worked, which the
+            transcript keeps so you can reread it later) and your project shells (a
             project's name, icon, and any standing instructions you write) in our
-            database, so they sync across the devices you sign into. Deleting a
-            conversation or project in the app soft-deletes it on our side too.
-        </p>
-        <p>
-            Pointing a project at a folder never uploads that folder: the folder
-            path and the files inside it stay on your Mac, and project source files
-            are local in this version.
+            database, so they sync across the devices you sign into. Agent turns run
+            in our cloud, and our servers (not the app) write each conversation into
+            your account. Images and files you attach to a message (up to 10 per
+            message, up to 20 MB each) are stored in your account's cloud storage
+            with that message, and are sent to the AI you chose (for example
+            ChatGPT) while it answers that message, so it can read them. Deleting a
+            conversation or project in the app soft-deletes it on our side too. To
+            show which chats have something new for you on every device, we also
+            keep one number per chat: how far you have read it (the position of the
+            newest message you've seen). It holds no words and no time. It stays
+            with the chat and is removed when the chat is permanently removed or
+            your account is deleted.
         </p>
 
-        <h2>Using your own Claude subscription</h2>
         <p>
-            In Settings &rarr; Providers there's a toggle called <strong>"Use your
-            Claude subscription."</strong> It's off unless you turn it on, and
-            turning it on means signing in &mdash; so signing in is the opt-in.
-            Once it's on, dictation polish and agent turns can run on your own
-            Claude plan instead of ours.
+            When the agent browses for you, each browsing step in that transcript
+            also records the address of the page it reached, so you can click that
+            step later — after quitting the app, or on another Mac — and get the
+            page back. We take the credentials out of the address first: sign-in
+            details in the address itself are dropped, and parameters that carry a
+            password, token, or sign-in code are replaced with the word
+            <code>redacted</code>. Search terms and filters are kept, because
+            without them the address is a different page. Deleting the conversation
+            deletes these along with the rest of its transcript.
         </p>
+
         <p>
-            Signing in runs Anthropic's own sign-in flow &mdash; the same one their
-            <code>claude</code> command-line tool uses &mdash; not anything we
-            built. We never see, store, or refresh your Claude credentials;
-            Anthropic's tool owns them on your Mac (if you already use Claude Code
-            and are signed in there, we detect that instead of opening a browser).
-            All we read is Anthropic's own signed-in status &mdash; your email and
-            subscription plan &mdash; so Settings can show something like
-            "Connected &mdash; you@example.com &middot; Pro." Turning this feature
-            off in our Settings doesn't touch your Claude Code sign-in; it's still
-            there, ready the moment you turn it back on.
+            Pointing an agent at folders on your Mac never uploads the files in
+            them. The Abalone app tells our servers where those folders are — their
+            paths, plus the names of the agent's first 20 source files, the
+            descriptions you wrote for them, and how many there are — so the agent
+            knows where to look. When a run can open files on that Mac, those paths
+            go to the AI provider as part of the agent's instructions for that run.
+            The files stay on your Mac; when the agent opens one there, what it
+            reads is sent to the AI provider like the rest of the conversation.
         </p>
+
         <p>
-            When this feature runs, it runs on Anthropic's own engine, not ours: a
-            small program (about 250MB &mdash; a Node runtime plus Anthropic's own
-            SDK and command-line tool) that we host for you to download once, from
-            our own update server, and checked before install against both a
-            published checksum and a cryptographic signature &mdash; the same
-            release key that signs the app's own updates. That engine sends your
-            dictation transcript or agent messages straight to Anthropic, billed
-            to your own Claude subscription &mdash; never through Abalone's
-            servers. If you use the agent's web search or page-reading during one
-            of these turns, that also goes through Anthropic's own built-in tools,
-            not the Serper/Firecrawl setup described earlier in this policy.
+            Files you send in a chat are also saved in that chat's own folder on
+            your Mac (<code>~/Abalone/Chats</code>), so the agent can open them
+            there. We note which of your Macs saved each file and under what name,
+            so the agent is told the right place to look. Deleting the chat moves
+            its folder to the Trash, and signing out or switching accounts moves all
+            of these chat folders to the Trash.
         </p>
+
+        <h2>Connecting your ChatGPT subscription</h2>
         <p>
-            Each call still shows up in your usage history, the same way calls on
-            your own connected ChatGPT account do: the app reports one row &mdash;
-            which feature it was, which model answered, how many tokens it used,
-            how long it took &mdash; never the words you dictated or said to the
-            agent. It costs you nothing against our monthly cap; Anthropic bills
-            your own subscription instead.
+            In Settings → AI providers you can connect your own ChatGPT
+            subscription. It's off unless you do, and connecting means signing in
+            with ChatGPT in your browser — so signing in is the opt-in. Once
+            connected, agent runs (including scheduled ones) can use your plan
+            instead of ours.
         </p>
+
         <p>
-            We also keep a small switch on our server that can turn this feature
-            off for everyone if something's wrong with it. It's just a yes/no flag
-            the app checks &mdash; it carries no data about you.
+            Your connection's sign-in session is stored encrypted in our database
+            (Supabase, in the US) so those runs can use it. The key that unlocks it
+            is kept apart from the database, so a copy of the database alone can't
+            open it. We never see your password, and disconnecting deletes the
+            stored sign-in. Those runs send your messages to ChatGPT (OpenAI),
+            billed to your own subscription.
+        </p>
+
+        <p>
+            Each call still shows up in your usage history: we record one row —
+            which feature it was, which model answered, how many tokens it used, how
+            long it took — never the words you dictated or said to the agent. It
+            costs you nothing against our monthly cap; ChatGPT bills your own
+            subscription instead.
+        </p>
+
+        <h2>Connected apps</h2>
+        <p>
+            In Apps &amp; skills → Apps you can add apps such as Gmail, Google
+            Calendar, Notion or Slack, and more than one account of the same app.
+            Every one of your Agents can use the apps you add. Your app logins are
+            held by Composio, our connected-apps provider, not by us; we store none
+            of them.
+        </p>
+
+        <p>
+            For each account you add we keep its email address or name, as the app
+            reports it, and the name you give it, so you and your Agents can tell
+            your accounts apart. Removing the account deletes both, and asks the app
+            to drop Abalone's access too (unless another of your added apps uses the
+            same sign-in).
+        </p>
+
+        <p>
+            When an Agent uses an app, what it asks for and what comes back pass
+            through Composio, and the result is saved in that chat like any other
+            tool result. Composio keeps each of these requests and results (an
+            email's text, for example) for up to one year. An Agent reads from your
+            apps freely. A message to other people — an email, a reply, a Slack
+            message — is never sent by the Agent: it waits as a draft on a card in
+            the chat, where you can read it, change its subject and text (and for an
+            email who it goes to and, in Outlook, the address it goes from), and
+            press Send or Discard. Anything else that would create, change or delete
+            something runs only after you press the action's own button (Create,
+            Save, Delete and so on) on a card that shows exactly what will happen
+            and from which account; Cancel skips just that one action. An email that
+            goes only to that account's own address is sent without asking. An Agent
+            never moves or spends money (an ad budget or bid included), trades, or
+            changes a password, even with your OK, and in accounting, payments and
+            advertising apps it only reads. Each app call adds one usage row (the
+            tool's name and the app, never what was read).
+        </p>
+
+        <p>
+            Each draft is kept in your account — who it's to, the subject and text,
+            the account it would go from, any changes you made to them when you
+            pressed Send, and whether you sent it, cancelled it or a newer draft
+            replaced it — so the chat and your Inbox show it on every Mac you sign
+            into. The Agent is told who each recent draft was for (as you changed
+            it) and whether you sent it, never the words. When you press Send, the
+            message (with any changes you made) goes out through Composio as that
+            account. If you press Send or Discard while offline, your Mac keeps that
+            press, and any changes you typed, until it can deliver it. A draft can
+            be sent for 7 days. Drafts you never sent or cancelled are deleted when
+            you delete their chat or Agent; sent, cancelled and replaced drafts stay
+            until you delete your account.
+        </p>
+
+        <p>
+            Gmail, Google Calendar and Google Drive are trademarks of Google LLC.
+            Other names and logos belong to their owners.
+        </p>
+
+        <h2>Skills</h2>
+        <p>
+            In Marketplace → Skills you keep skills: the steps an agent follows for
+            one kind of task (a name, a description, instructions and any files),
+            and which of your agents use each one. They are stored in your account
+            so your agents can use them on every Mac you sign into. An agent can
+            make a new skill at once (you can delete it any time); it changes or
+            deletes a skill only after you press Change or Delete on a card. Turning
+            a skill on or off for an agent happens at once. Deleting a skill removes
+            it from every agent; a run already under way keeps the version it
+            started with. A skill grants no access to tools, accounts, files or
+            computers.
         </p>
 
         <h2>What we do <em>not</em> do</h2>
         <ul>
             <li>No advertising. No ad networks.</li>
             <li>No selling, sharing, or licensing data to third parties.</li>
-            <li>No behavioral tracking, no fingerprinting beyond the hardware identifier above, no cookies beyond what's required to sign you in.</li>
+            <li>
+                No behavioral tracking, no fingerprinting beyond the hardware
+                identifier above, no cookies beyond what's required to sign you in.
+            </li>
             <li>No AI training on your data.</li>
         </ul>
 
         <h2>How long we keep it</h2>
         <p>We keep your data for as long as your account exists.</p>
+
         <p>
             When you delete your account (or email us at the address above asking us
             to), we delete everything within 30 days. That includes your dictation
@@ -258,20 +445,90 @@
             We don't share your data for marketing. We use a small number of
             <strong>subprocessors</strong> to run the service:
         </p>
+
         <ul>
-            <li><a href="https://supabase.com">Supabase</a> — database and audio storage hosting</li>
-            <li>Google / Apple — OAuth sign-in (only — we don't share anything else with them)</li>
-            <li>GitHub — hosts our app update releases (the update check sends your IP to GitHub's CDN, same as any download)</li>
+            <li>
+                <strong><a href="https://supabase.com">Supabase</a></strong> —
+                database, file storage and the agent's cloud work, in the US
+            </li>
+            <li>
+                <strong>Google / Apple</strong> — OAuth sign-in (only — we don't
+                share anything else with them)
+            </li>
+            <li>
+                <strong><a href="https://elevenlabs.io">ElevenLabs</a></strong> —
+                cloud transcription, only when your audio goes to the cloud (the
+                audio and your dictionary words, not kept)
+            </li>
+            <li>
+                <strong><a href="https://cerebras.ai">Cerebras</a></strong> — cleans
+                up your dictation text (automatic polish), receiving the text to
+                tidy with the app, window title and your dictionary words (transit
+                only, not kept by us; not used for training under Cerebras's API
+                terms)
+            </li>
+            <li>
+                <strong><a href="https://openai.com">OpenAI</a></strong> — cleans up
+                your dictation text only when Cerebras can't, receiving the same
+                text to tidy (transit only, not kept by us; not used for training
+                under OpenAI's API terms); and writes Scribe drafts, receiving the
+                spoken request with what's listed under Scribe above: the app,
+                window title, text in the box, your first name, a few of your recent
+                dictations, and the window's text when you've allowed it (transit
+                only, not kept by us; not used for training under OpenAI's API
+                terms)
+            </li>
+            <li>
+                <strong><a href="https://anthropic.com">Anthropic</a></strong> —
+                writes a Scribe draft only when OpenAI can't, receiving the same
+                request (transit only, not kept by us; not used for training under
+                Anthropic's API terms)
+            </li>
+            <li>
+                <strong><a href="https://openrouter.ai">OpenRouter</a></strong> —
+                names your agent chats: receives a chat's first message and the
+                start of the agent's reply, and passes them only to US hosts that
+                keep nothing (transit only, not kept by us)
+            </li>
+            <li>
+                <strong><a href="https://serper.dev">Serper.dev</a></strong> — runs
+                the agent's web searches (your query only)
+            </li>
+            <li>
+                <strong><a href="https://composio.dev">Composio</a></strong> —
+                connects your apps (Gmail, Calendar, …): holds their logins, passes
+                an Agent's app requests and results, and sends the messages you
+                press Send on, only for apps you added, and keeps those requests and
+                results for up to one year
+            </li>
+            <li>
+                <strong><a href="https://firecrawl.dev">Firecrawl</a></strong> —
+                fallback page-fetching when our own fetcher can't read a page (the
+                URL only, and only when the fallback is used)
+            </li>
+            <li>
+                <strong><a href="https://e2b.dev">E2B</a></strong> — runs the
+                agent's cloud computer, only when one of your agents uses it: the
+                pages it opens (and any sites you sign in to there), the commands it
+                runs and the files it keeps are on a machine E2B hosts for your
+                account
+            </li>
+            <li>
+                <strong>GitHub</strong> — hosts our app update releases (the update
+                check sends your IP to GitHub's CDN, same as any download)
+            </li>
         </ul>
 
         <h2>Your rights</h2>
         <p>If you're in the EU, UK, or California, you have the right to:</p>
+
         <ul>
             <li><strong>Access</strong> — ask us for a copy of your data</li>
             <li><strong>Deletion</strong> — ask us to delete it</li>
             <li><strong>Portability</strong> — ask for it in a machine-readable format</li>
             <li><strong>Objection</strong> — ask us to stop processing it</li>
         </ul>
+
         <p>
             Email <a href="mailto:vincent@vincentwei.co">vincent@vincentwei.co</a>.
             We'll respond within 30 days.
@@ -279,15 +536,15 @@
 
         <h2>Children</h2>
         <p>
-            Abalone Flow isn't designed for children under 13, and we don't knowingly
-            collect data from them.
+            Abalone Flow isn't designed for children under 13, and we don't
+            knowingly collect data from them.
         </p>
 
         <h2>Changes to this policy</h2>
         <p>
             If we materially change what we collect or how we use it, we'll update
-            the &ldquo;Last updated&rdquo; date at the top and notify signed-in users
-            in-app. Small clarifications won't trigger a notice.
+            the &ldquo;Last updated&rdquo; date at the top and notify signed-in
+            users in-app. Small clarifications won't trigger a notice.
         </p>
 
         <h2>Contact</h2>
