@@ -6,6 +6,48 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.29.0 — A team of agents, Scribe, and sharper dictation</title>
+            <pubDate>Sat, 17 Oct 2026 09:01:02 +0000</pubDate>
+            <sparkle:version>94</sparkle:version>
+            <sparkle:shortVersionString>1.29.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="94"/>
+            <description><![CDATA[
+                <p>Nothing to do: you stay signed in, and your history comes along.</p>
+                <p>If you connected ChatGPT, sign in to it once more.</p>
+                <p>Stop keeps what was already written.</p>
+                <p>Your data now lives on our US servers, ChatGPT sign-ins are stored there encrypted, and our <a href="https://updates.abalone.ai/flow/privacy">privacy policy</a> is updated.</p>
+                <h2>Agents that work on their own</h2>
+                <ul>
+                <li><strong>Schedules</strong> replace routines. Ask your agent to run something every 5 to 30 minutes, every few hours, daily, or once. Each schedule keeps its own chat, or starts a new one for each run. A schedule never waits for you: if it needs something it says so and marks the chat for you.</li>
+                <li><strong>Skills</strong> have their own page with a shop of starter skills. Skills can be added to any agent, and the agent can create and edit them for you.</li>
+                <li><strong>Connected apps</strong>: sign in to an app once, and every agent can use it. Browse about 120 apps, search them and the accounts you have added, add a second account with Add another, and ask your agent to connect or remove one right from chat. Anything that moves money or changes a password is off limits.</li>
+                <li><strong>Your agent's computer</strong> is steadier and has its own tab in the side panel. If a computer cannot start, the agent says why. You can take over the screen and give it back.</li>
+                <li><strong>Files</strong>: drop up to ten files on a chat to attach them. Files you send are also saved in that chat's folder in ~/Abalone/Chats on your Mac, so your agent can open them there, and it knows which folders you gave it.</li>
+                <li><strong>Messages wait for your Send.</strong> When your agent writes an email or a Slack message, it waits as a card in the chat: read it, fix a word if you like, then press Send or Discard. Ask for a change and the new draft replaces the old one. Your agent keeps working meanwhile.</li>
+                <li><strong>One kind of card for everything that needs you.</strong> Every message, question, approval and hand-off looks the same in the chat and the Inbox, and each button says what it does (Send, Delete, Add…). The button you press shows the wait, and when it's done the card folds to one line you can open. Discard, Cancel or Skip passes on that one thing and your agent carries on; only Stop ends a task.</li>
+                <li><strong>Your agent can look at your Mac.</strong> It can list your open windows and look at one, and run commands that only read and never change anything. Pick a Window works again.</li>
+                </ul>
+                <h2>Scribe: say what you want written</h2>
+                <p>Hold <strong>Caps Lock</strong>, say what you need ("tell Sam I'll be ten minutes late"), and Scribe writes it in your voice, using what is on your screen to match the conversation. The draft streams into a card beside the notch. Press the shortcut again to follow up and change it, then insert it where you were typing. Caps Lock now starts Scribe instead of typing capitals; you can pick another key in Settings. Scribe has its own page in Settings, and your Scribe drafts sit next to your dictations in History.</p>
+                <h2>Dictation, rebuilt</h2>
+                <p>The on-device speech model is now NVIDIA Parakeet Ultra, which replaces Whisper. It is more accurate, and it downloads once on first launch (while it downloads, cloud dictation covers you if you are signed in). There are now three modes in one picker: <strong>Auto</strong> (on your Mac once the model is ready), <strong>Cloud</strong> (more languages, needs internet) and <strong>On Device</strong> (works offline, fully private). Cloud dictation now streams, so your words appear as you speak. The recording wave is calmer and clearer, History shows the app each dictation went to, and Esc cancels a recording.</p>
+                <h2>A calmer main window</h2>
+                <p>Your agents now sit at the top of the sidebar with their faces, and you can pin and reorder them. A blue dot means a chat has something for you, and under each agent the sidebar lists those chats plus the one you have open. While an agent works, its steps show as a quiet timeline in the chat, with the answer underneath. The side panel opens on your agent's Inbox, which collects every question, approval and message waiting on you and lists what finished in the last 7 days, next to its Schedules, Identity and Cloud computer tabs. You also get one Mac notification when a run finishes or needs you while you are looking elsewhere. Agent faces have new eyes and colours, and the notch face looks around, follows your typing and falls asleep when you step away.</p>
+                <h2>Settings and sign-in</h2>
+                <p>Settings are one page, easier to search, and show your usage by feature in dollars. If your sign-in cannot renew for a moment (for example, a bad connection), Abalone now keeps you signed in instead of showing you as signed out. New app icons replace the old ones: Ink (black with the white mark, the default), Pearl, Sunset, Cobalt and Violet, in Settings. An icon you picked before goes back to Ink.</p>
+                <h2>More reliable</h2>
+                <p>If a model's reply is cut off or the server has a brief error, Abalone tries again twice on its own before giving up. Failures now say what went wrong in plain words, and on websites the agent never sends for you: you press Send yourself. Chats open at once from a saved copy. Lists in your agent's replies are easier to read: wrapped lines line up under the text.</p>
+                <h2>What went away</h2>
+                <p>Claude subscription sign-in is gone. Agents now run on your ChatGPT account, and "More models" is marked coming soon. Long-term memory and the older routines are removed, and search results now show as text instead of picture grids. Use Settings &gt; AI providers to connect ChatGPT.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.29.0/Abalone-1.29.0.dmg"
+                sparkle:edSignature="W3lIEoZETrTGNczmftMIVdQpd5bXmEsqNwCcK7K0iuGbkaqfhlyS+DgPeL0j6H9higm286tAGupwnX7rSplICA=="
+                length="161312652"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.28.1 — Updates you can watch, and a Claude engine that stays signed in</title>
             <pubDate>Mon, 07 Sep 2026 06:47:52 +0000</pubDate>
             <sparkle:version>93</sparkle:version>
