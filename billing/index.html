@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Back to Abalone</title>
+    <link rel="icon" type="image/svg+xml" href="https://updates.abalone.ai/flow/icon.svg">
+    <!--
+        Stripe's return page. The billing Edge Function sends people here after
+        Checkout (?billing=done or ?billing=cancelled) and after the customer
+        portal (no billing), with ?app=dev or ?app=release: the app that asked.
+        The page opens that app once (abalone-dev://billing/... for the dev
+        build, abalone://billing/... for the released one; the browser asks
+        first) and keeps the same link as its button. The link proves nothing:
+        the app shows the plan from our database.
+    -->
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0d0e16;
+            --text: #f7f7fb;
+            --muted: #a6a8b7;
+            --accent: #aab8ff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { min-height: 100%; background: var(--bg); }
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 16px;
+            background:
+                radial-gradient(900px circle at 74% 6%, rgba(111, 129, 229, 0.12), transparent 62%),
+                radial-gradient(720px circle at 4% 40%, rgba(79, 94, 175, 0.07), transparent 68%),
+                var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-align: center;
+        }
+        main { width: 100%; max-width: 440px; }
+        img { width: 64px; height: 64px; margin-bottom: 24px; }
+        h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 12px; }
+        p { font-size: 16px; line-height: 1.5; color: var(--muted); }
+        .cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            margin: 32px 0 16px;
+            padding: 0 24px;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 999px;
+            background: linear-gradient(180deg, #f8f8fb 0%, #dfe4fa 100%);
+            box-shadow: 0 10px 30px rgba(115, 134, 224, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+            color: #11131d;
+            font-size: 16px;
+            font-weight: 690;
+            letter-spacing: -0.01em;
+            text-decoration: none;
+            transition: transform 160ms ease, box-shadow 160ms ease;
+        }
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 38px rgba(115, 134, 224, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+        }
+        .cta:active { transform: translateY(0); }
+        .cta:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+        .close { font-size: 14px; }
+        @media (max-width: 480px) { .cta { width: 100%; } }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="https://updates.abalone.ai/flow/icon.svg" alt="">
+        <h1 id="title">Done with billing</h1>
+        <p id="body">Any change shows in Abalone.</p>
+        <a class="cta" id="back" href="abalone://billing">Back to Abalone</a>
+        <p class="close">You can close this tab.</p>
+    </main>
+    <script>
+        (function () {
+            var params = new URLSearchParams(location.search);
+            var billing = params.get("billing");
+            var words = {
+                done: ["Payment done", "Your plan is on in Abalone."],
+                cancelled: ["Nothing was charged", "You can choose a plan any time in Abalone."]
+            };
+            var scheme = params.get("app") === "dev" ? "abalone-dev" : "abalone";
+            var known = billing === "done" || billing === "cancelled";
+            var link = scheme + "://billing" + (known ? "/" + billing : "");
+            if (known) {
+                document.getElementById("title").textContent = words[billing][0];
+                document.getElementById("body").textContent = words[billing][1];
+                document.title = words[billing][0] + " · Abalone";
+            }
+            document.getElementById("back").href = link;
+            // Once, on arrival: the browser asks before it opens the app. The button stays for a second try.
+            location.href = link;
+        })();
+    </script>
+</body>
+</html>
