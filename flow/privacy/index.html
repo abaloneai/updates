@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy — Abalone Flow</title>
-    <meta name="description" content="How Abalone Flow handles your data. Plain English. Updated 2026-10-17.">
+    <meta name="description" content="How Abalone Flow handles your data. Plain English. Updated 2026-10-21.">
     <link rel="canonical" href="https://updates.abalone.ai/flow/privacy">
     <link rel="icon" type="image/svg+xml" href="https://updates.abalone.ai/flow/icon.svg">
     <style>
@@ -56,6 +56,12 @@
             margin-top: 48px;
             margin-bottom: 16px;
         }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
         p {
             font-size: 16px;
             color: rgba(255, 255, 255, 0.85);
@@ -104,7 +110,7 @@
         <a class="back" href="https://updates.abalone.ai/flow">← Back to Abalone Flow</a>
 
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: 2026-10-17</p>
+        <p class="updated">Last updated: 2026-10-21</p>
 
         <p>
             This is the privacy policy for <strong>Abalone Flow</strong> (the Mac
@@ -147,6 +153,11 @@
                     <td>Contract</td>
                 </tr>
                 <tr>
+                    <td>Pictures the agent saved to show you (a picture of part of a page in its browser on your Mac, or of its cloud computer's screen, up to 512 KB each, with its size and where it came from)</td>
+                    <td>Showing you what it found, in its answer, on every device you sign into. Removed when you delete the conversation</td>
+                    <td>Contract</td>
+                </tr>
+                <tr>
                     <td>Device metadata: Mac model, chip, OS version, app version, locale, timezone, hardware identifier (IOPlatformUUID), serial number</td>
                     <td>Debugging crash reports and compatibility issues; product decisions (e.g. when we can drop macOS 13 support)</td>
                     <td>Legitimate interest</td>
@@ -167,13 +178,23 @@
                     <td>Legitimate interest</td>
                 </tr>
                 <tr>
-                    <td>Usage stats for each AI request — which feature it was, which model answered, how many tokens it used, how long it took (never the words you dictated or said to the agent). For agent requests on a connected ChatGPT account, also a few short fingerprints of the request: codes made from it with a secret key only our server holds, which show whether two requests in a row started the same way. They can't be turned back into your words, and without that key nobody can check a guess against them</td>
+                    <td>Usage stats for each AI request — which feature it was, which model answered, how many tokens it used, how long it took (never the words you dictated or said to the agent). For agent requests, also a few short fingerprints of the request: codes made from it with a secret key only our server holds, which show whether two requests in a row started the same way. They can't be turned back into your words, and without that key nobody can check a guess against them. When you delete your account, each row's cost, feature, model and time stay in our books with your account removed from it, so it no longer says whose it was</td>
                     <td>Enforcing the monthly included-usage cap fairly, and seeing which features are slow or expensive to run — including requests made on your own connected ChatGPT account, which cost you nothing on our side and are recorded that way</td>
                     <td>Legitimate interest</td>
                 </tr>
                 <tr>
-                    <td>The AI's working memory for one agent run (what ChatGPT hands back between the steps of a run: its own reasoning in the encrypted form OpenAI returns it, a short summary of that reasoning, and the web searches it ran — never shown to you)</td>
+                    <td>Your agents' memory pages: each agent's MEMORY.md (what it learned about working with you) and your USER.md (facts about you that all your agents read) — lines your agents save and lines you type, each with the date it was added or last changed, and their earlier versions for 30 days (your own edits within 10 minutes of each other count as one)</td>
+                    <td>So your agents remember what you told them, in every chat</td>
+                    <td>Contract</td>
+                </tr>
+                <tr>
+                    <td>The run state of one agent run (what the AI that answers — your own ChatGPT, or OpenAI or Anthropic on our account — hands back between the steps of a run: its own reasoning in the sealed form its maker returns it in, a short summary of that reasoning, and the web searches it ran with what they found; and the notes the run writes into its conversation, including a copy of your memory pages — never shown to you)</td>
                     <td>Lets a run carry on where it left off from one step to the next. Deleted when the run ends</td>
+                    <td>Contract</td>
+                </tr>
+                <tr>
+                    <td>Which chat waits for an app sign-in you started in it (the sign-in's account id, the chat and the app's name)</td>
+                    <td>So the agent in that chat picks up where it left off once you've signed in. Deleted when it's used, and never kept past about an hour</td>
                     <td>Contract</td>
                 </tr>
                 <tr>
@@ -183,24 +204,6 @@
                 </tr>
             </tbody>
         </table>
-
-        <p>
-            <strong>Web searches and page reads by the agent.</strong> When you ask
-            the agent something that needs the web, your search query is sent
-            through our server to our search provider (Serper.dev, which returns
-            Google results — regular results, places, images, news, videos, or
-            shopping, depending on what you asked). Pages the agent reads are
-            downloaded through our server; if our own fetcher can't read a page
-            (heavy JavaScript, scraping blocks), we fall back to a second service,
-            Firecrawl, sending it just that page's URL. We don't save your queries
-            or the pages you read to any database. To avoid paying for the same
-            search twice, our server may hold recent search results in short-term
-            memory for up to 15 minutes, then they're gone. What we keep is only a
-            count of how many searches and fetches you made this month, which
-            enforces the monthly included-usage cap (lawful basis: Contract — you
-            asked the agent to look it up). The sites the agent visits see our
-            server's requests, not your device.
-        </p>
 
         <p>
             We do <strong>not</strong> track your location, and we never see or
@@ -277,14 +280,24 @@
             model's own summary of what it was thinking while it worked, which the
             transcript keeps so you can reread it later) and your project shells (a
             project's name, icon, and any standing instructions you write) in our
-            database, so they sync across the devices you sign into. Agent turns run
-            in our cloud, and our servers (not the app) write each conversation into
-            your account. Images and files you attach to a message (up to 10 per
-            message, up to 20 MB each) are stored in your account's cloud storage
-            with that message, and are sent to the AI you chose (for example
-            ChatGPT) while it answers that message, so it can read them. Deleting a
-            conversation or project in the app soft-deletes it on our side too. To
-            show which chats have something new for you on every device, we also
+            database, so they sync across the devices you sign into. When a chat's
+            model, or its thinking, is left to Auto, the first 2,000 characters of
+            the message that starts Auto's choice for that chat (usually its first;
+            for a chat from before this choice existed, its next one) go once
+            through our server to Cerebras (its gpt-oss model), which answers only
+            how much model and thinking the chat needs; we keep that answer on the
+            chat, and not the text. Agent turns run in our cloud, and our servers
+            (not the app) write each conversation into your account. Images and
+            files you attach to a message (up to 10 per message, up to 20 MB each)
+            are stored in your account's cloud storage with that message, and are
+            sent to the AI that answers — your own ChatGPT if you connected it,
+            otherwise OpenAI on our account, or Anthropic on our account when the
+            model is a Claude — while it answers that message, so it can read them.
+            Deleting a conversation or project in the app soft-deletes it on our
+            side too, and removes the files in it from our cloud storage within a
+            minute: the images and files you sent in it and the pictures the agent
+            saved in it (the conversation's hidden records stay until you delete
+            your account). To show which chats have something new for you on every device, we also
             keep one number per chat: how far you have read it (the position of the
             newest message you've seen). It holds no words and no time. It stays
             with the chat and is removed when the chat is permanently removed or
@@ -294,13 +307,48 @@
         <p>
             When the agent browses for you, each browsing step in that transcript
             also records the address of the page it reached, so you can click that
-            step later — after quitting the app, or on another Mac — and get the
+            step later — after quitting the app, or on another device — and get the
             page back. We take the credentials out of the address first: sign-in
             details in the address itself are dropped, and parameters that carry a
             password, token, or sign-in code are replaced with the word
             <code>redacted</code>. Search terms and filters are kept, because
             without them the address is a different page. Deleting the conversation
             deletes these along with the rest of its transcript.
+        </p>
+
+        <p>
+            When the agent wants to show you something it found — part of a page in
+            its browser on your Mac, or its cloud computer's screen — it takes a
+            picture of it and places it in its answer. We store that picture in your
+            account's cloud storage with the conversation (up to 512 KB each), with
+            a record of its size, where it came from and the step that took it, so
+            the answer shows it on every device you sign into, with a link back to
+            the page. Only pictures the agent takes to show you are saved. From its
+            browser on your Mac, nothing is saved of a page with card fields, a
+            typed password, or an app asking for access to one of your accounts, or
+            of a page that couldn't be checked. Its cloud computer's screen has no
+            such check: there, the agent is told never to show a password, card
+            number or sign-in code. The AI that answers already sees each picture
+            the agent takes, as it does today. Deleting the conversation removes its
+            pictures within a minute.
+        </p>
+
+        <p>
+            Before an agent's tool results are added to the chat or sent to the AI,
+            text in the shape of a known password, key or sign-in token is hidden. A
+            key of an unknown kind, or one shown in a picture, can still get
+            through. The raw result of a tool run on your desktop is kept on our
+            server for about 10 minutes (never more than an hour) while the agent
+            picks it up.
+        </p>
+
+        <p>
+            When you send a message while a page is open in the chat's browser, the
+            message also records which page was in front of you: its title and its
+            address, without sign-in details or anything after <code>?</code> or
+            <code>#</code> (so search terms are left out). Never the page's text. It
+            is kept with your message and sent to the AI that answers with it, so
+            &ldquo;this page&rdquo; means the page you were looking at.
         </p>
 
         <p>
@@ -315,6 +363,80 @@
         </p>
 
         <p>
+            When you make a new agent, it sets itself up by asking you one question
+            about its job, made for you. To make that question fit, its first
+            replies (until it has a job or instructions) also read the names of your
+            other agents and the first line of what each does, the titles of your 10
+            newest chats, and the names of the 5 apps you dictated into most in the
+            last 90 days with how many times. Only names and titles (a chat's title
+            is its own short summary): nothing inside your apps, and no messages
+            from your chats or text from your dictations. They go to the AI that
+            answers as part of that reply's notes. Its question keeps a short list of
+            what it looked at (those names and counts), so the chat can show it
+            beside the question.
+        </p>
+
+        <p>
+            When you add or reconnect an app from a chat, we note which chat asked,
+            for up to an hour, so that when the sign-in finishes the agent there
+            picks up where it left off. The note is deleted as soon as it's used,
+            and a job deletes any note older than an hour every few minutes.
+        </p>
+
+        <p>
+            When one of your agents makes another agent, or asks one of your agents
+            to change something, its words (the brief) open that agent's chat,
+            labelled with the agent that sent them, and are stored in the chat like
+            any message.
+        </p>
+
+        <h3>Memory</h3>
+        <p>
+            Your agents keep two short memory pages: each agent's own MEMORY.md
+            (what it learned about working with you) and your USER.md (facts about
+            you, which all your agents read). An agent saves a line while it answers
+            you, and every save shows as a step in the chat. You can read and edit
+            both pages in an agent's Identity tab. Each line is kept with the date it
+            was added or last changed (the app adds the date to lines you type), so
+            an agent can tell an old fact from a new one; the app doesn't show the
+            dates.
+        </p>
+
+        <ul>
+            <li>
+                Both pages go, as one note, to the AI that answers each run of an
+                agent (your own ChatGPT if you connected it, or the next AI if a run
+                fails over to it; otherwise OpenAI on our account, or Anthropic on
+                our account when the model is a Claude), so it can use them. A run
+                keeps the pages as they were when it started (in a long run, when it
+                last summarized the conversation) until it ends, also while it waits
+                for you on a card. So a change, or a Forget, reaches the agent's next
+                run, not one already under way.
+            </li>
+            <li>
+                We keep every earlier version of a page for 30 days (your own edits
+                within 10 minutes of each other count as one), and History on the
+                page lets you put one back.
+            </li>
+            <li>
+                &ldquo;Forget everything&rdquo; on a page deletes the page and all
+                its History. The chat where a line was saved still shows that step
+                and the agent's call, which both hold the line. Deleting that chat
+                hides them; we keep them until you delete your account.
+            </li>
+            <li>
+                Deleting a chat does <strong>not</strong> remove a line already
+                saved from it. To remove it, open the page and delete the line, or
+                ask the agent to.
+            </li>
+            <li>
+                Deleting an agent deletes its MEMORY.md and that page's History.
+                Lines it saved to your USER.md stay until you remove them. Deleting
+                your account deletes all your memory pages and their History.
+            </li>
+        </ul>
+
+        <p>
             Files you send in a chat are also saved in that chat's own folder on
             your Mac (<code>~/Abalone/Chats</code>), so the agent can open them
             there. We note which of your Macs saved each file and under what name,
@@ -325,11 +447,30 @@
 
         <h2>Connecting your ChatGPT subscription</h2>
         <p>
-            In Settings → AI providers you can connect your own ChatGPT
+            In Settings → AI models you can connect your own ChatGPT
             subscription. It's off unless you do, and connecting means signing in
             with ChatGPT in your browser — so signing in is the opt-in. Once
             connected, agent runs (including scheduled ones) can use your plan
-            instead of ours.
+            instead of ours. Without it, your agents run on our own accounts when
+            you have a plan with us: OpenAI's for a GPT model, Anthropic's for a
+            Claude model (see OpenAI and Anthropic under &ldquo;Who we share
+            with&rdquo;).
+        </p>
+
+        <p>
+            Each agent keeps the choice you (or the agent, when you ask it) make for
+            it: Auto, a level (Fast, Expert or Max) or one model, with its thinking
+            level; a chat can keep its own choice too. We store that choice with the
+            agent or the chat, and your set of levels (and any model you put on a
+            level) with your account. When you send a message we work out which
+            model answers it and keep that on the run, with the one backup behind
+            it, so &ldquo;Next AI&rdquo; can try it. Which account answers is
+            decided for each message: your ChatGPT plan when your ChatGPT account
+            offers that model, otherwise our own OpenAI account when you have a plan
+            with us. A Claude model always runs on our own Anthropic account, so it
+            needs a plan with us. When the chosen model can't run there, a level's
+            backup answers; a model you picked by name answers alone. None of this
+            holds any words you wrote.
         </p>
 
         <p>
@@ -344,8 +485,9 @@
         <p>
             Each call still shows up in your usage history: we record one row —
             which feature it was, which model answered, how many tokens it used, how
-            long it took — never the words you dictated or said to the agent. It
-            costs you nothing against our monthly cap; ChatGPT bills your own
+            long it took, whether it finished, and what the same call would have
+            cost on our own OpenAI account, so we can compare the two — never the
+            words you dictated or said to the agent. It costs you nothing against our monthly cap; ChatGPT bills your own
             subscription instead.
         </p>
 
@@ -374,8 +516,8 @@
             apps freely. A message to other people — an email, a reply, a Slack
             message — is never sent by the Agent: it waits as a draft on a card in
             the chat, where you can read it, change its subject and text (and for an
-            email who it goes to and, in Outlook, the address it goes from), and
-            press Send or Discard. Anything else that would create, change or delete
+            email who it goes to and, for a new email, which of your accounts for
+            that app sends it), and press Send or Discard. Anything else that would create, change or delete
             something runs only after you press the action's own button (Create,
             Save, Delete and so on) on a card that shows exactly what will happen
             and from which account; Cancel skips just that one action. An email that
@@ -389,8 +531,9 @@
         <p>
             Each draft is kept in your account — who it's to, the subject and text,
             the account it would go from, any changes you made to them when you
-            pressed Send, and whether you sent it, cancelled it or a newer draft
-            replaced it — so the chat and your Inbox show it on every Mac you sign
+            pressed Send, and whether you sent it, cancelled it, or it was replaced
+            (by a newer draft, Try again, or the next message you sent while it was
+            the chat's only open draft) — so the chat and your Inbox show it on every Mac you sign
             into. The Agent is told who each recent draft was for (as you changed
             it) and whether you sent it, never the words. When you press Send, the
             message (with any changes you made) goes out through Composio as that
@@ -420,6 +563,34 @@
             computers.
         </p>
 
+        <h2>Paying for a plan</h2>
+        <p>
+            When you subscribe, you pay on Stripe's own page: your card details go
+            to Stripe and never reach us. From Stripe we keep only what a plan
+            needs: your Stripe customer id (made when you first open the payment
+            page, so you only ever have one), your subscription id, which plan
+            you're on, its status (paid, payment failed, cancelled), the current
+            billing period, when it ends if you cancelled, and a plan change waiting
+            for your renewal and its date, plus the ids of Stripe's notices to us so
+            each is handled once. Each agent run also notes which plan you had when
+            it started, so we can see how each plan is used. If two payment pages
+            ever start a second plan, we cancel it at once and refund its payment in
+            full. If a payment for your current period is refunded in full (for
+            example by Stripe's Link), the plan ends at once. You change your plan
+            in Abalone, which asks Stripe to make the change; your card and your
+            invoices are managed on Stripe's page. If a payment fails and you add a
+            new card there, Abalone asks Stripe to pay what's due with it right
+            away; the card's details still stay with Stripe. Where Stripe sells the
+            plan for us (Stripe Managed Payments), Stripe is the seller of record:
+            it asks for your name and billing address to work out the tax, adds the
+            tax and pays it, and handles refunds and disputes under its own terms.
+            Your address stays with Stripe; we don't receive it. When you delete
+            your account, we delete your customer at Stripe within minutes: your
+            subscription ends at once, with no further charges, and your saved card
+            is removed. The invoices and payments Stripe must keep for tax and
+            accounting stay with Stripe.
+        </p>
+
         <h2>What we do <em>not</em> do</h2>
         <ul>
             <li>No advertising. No ad networks.</li>
@@ -435,9 +606,18 @@
         <p>We keep your data for as long as your account exists.</p>
 
         <p>
+            Earlier versions of your memory pages are kept for 30 days. Older ones
+            are deleted the next time that page changes, except the version that was
+            in effect 30 days ago, so History always has the page as it stood then.
+            Our weekly backup keeps each copy of the database for 28 days, so a page
+            you forget, or an old version that leaves History, is gone from our
+            backups within 29 days.
+        </p>
+
+        <p>
             When you delete your account (or email us at the address above asking us
             to), we delete everything within 30 days. That includes your dictation
-            text, audio files, device rows, and profile.
+            text, audio files, device rows, and profile, in our backups too.
         </p>
 
         <h2>Who we share with</h2>
@@ -452,8 +632,21 @@
                 database, file storage and the agent's cloud work, in the US
             </li>
             <li>
+                <strong><a href="https://www.cloudflare.com">Cloudflare</a></strong> —
+                keeps our weekly backup copy of the database and stored files (R2
+                storage). It is encrypted before it reaches Cloudflare, so Cloudflare
+                can't read it, and a deleted account leaves it within the 30 days
+                above
+            </li>
+            <li>
                 <strong>Google / Apple</strong> — OAuth sign-in (only — we don't
                 share anything else with them)
+            </li>
+            <li>
+                <strong><a href="https://stripe.com">Stripe</a></strong> — takes
+                payments for plans: your card, billing details and invoices are held
+                by Stripe; we pass it your account id so a subscription is matched to
+                you
             </li>
             <li>
                 <strong><a href="https://elevenlabs.io">ElevenLabs</a></strong> —
@@ -465,7 +658,11 @@
                 up your dictation text (automatic polish), receiving the text to
                 tidy with the app, window title and your dictionary words (transit
                 only, not kept by us; not used for training under Cerebras's API
-                terms)
+                terms); and, when a chat's model or its thinking is left to Auto,
+                reads the first 2,000 characters of the message that starts Auto's
+                choice for that chat (usually its first) once, to choose how much
+                model and thinking the chat needs (transit only, not kept by us; not
+                used for training under Cerebras's API terms)
             </li>
             <li>
                 <strong><a href="https://openai.com">OpenAI</a></strong> — cleans up
@@ -476,13 +673,31 @@
                 window title, text in the box, your first name, a few of your recent
                 dictations, and the window's text when you've allowed it (transit
                 only, not kept by us; not used for training under OpenAI's API
+                terms); and answers your agents when you have a plan with us and no
+                connected ChatGPT: while a run works, it receives the conversation,
+                its files, your memory pages and what the agent's tools read (web
+                pages, Mac files it opens, connected-app results) (not kept by us
+                beyond the chat itself; not used for training under OpenAI's API
                 terms)
             </li>
             <li>
                 <strong><a href="https://anthropic.com">Anthropic</a></strong> —
                 writes a Scribe draft only when OpenAI can't, receiving the same
                 request (transit only, not kept by us; not used for training under
-                Anthropic's API terms)
+                Anthropic's API terms); and answers your agents when the model is a
+                Claude (one you or your agent picked, one of your levels runs, or our
+                backup for one) and you have a plan with us: while a run works, it
+                receives the conversation, its files, your memory pages and what the
+                agent's tools read (web pages, Mac files it opens, connected-app
+                results), and runs the web searches the agent asks for (not kept by
+                us beyond the chat itself; not used for training under Anthropic's
+                API terms)
+            </li>
+            <li>
+                <strong><a href="https://epoch.ai">Epoch AI</a></strong> — once a
+                day our server downloads its public ranking of AI models (the Epoch
+                Capabilities Index) to show how capable each model is; nothing about
+                you or your account is sent
             </li>
             <li>
                 <strong><a href="https://openrouter.ai">OpenRouter</a></strong> —
@@ -491,20 +706,11 @@
                 keep nothing (transit only, not kept by us)
             </li>
             <li>
-                <strong><a href="https://serper.dev">Serper.dev</a></strong> — runs
-                the agent's web searches (your query only)
-            </li>
-            <li>
                 <strong><a href="https://composio.dev">Composio</a></strong> —
                 connects your apps (Gmail, Calendar, …): holds their logins, passes
                 an Agent's app requests and results, and sends the messages you
                 press Send on, only for apps you added, and keeps those requests and
                 results for up to one year
-            </li>
-            <li>
-                <strong><a href="https://firecrawl.dev">Firecrawl</a></strong> —
-                fallback page-fetching when our own fetcher can't read a page (the
-                URL only, and only when the fallback is used)
             </li>
             <li>
                 <strong><a href="https://e2b.dev">E2B</a></strong> — runs the
@@ -515,7 +721,10 @@
             </li>
             <li>
                 <strong>GitHub</strong> — hosts our app update releases (the update
-                check sends your IP to GitHub's CDN, same as any download)
+                check sends your IP to GitHub's CDN, same as any download), and runs
+                our weekly backup job: the database and stored files pass through
+                GitHub's machines for the minutes the job runs, are encrypted before
+                they leave, and are deleted when it ends
             </li>
         </ul>
 
