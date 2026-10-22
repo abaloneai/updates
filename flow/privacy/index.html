@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy — Abalone Flow</title>
-    <meta name="description" content="How Abalone Flow handles your data. Plain English. Updated 2026-10-21.">
+    <meta name="description" content="How Abalone Flow handles your data. Plain English. Updated 2026-10-22.">
     <link rel="canonical" href="https://updates.abalone.ai/flow/privacy">
     <link rel="icon" type="image/svg+xml" href="https://updates.abalone.ai/flow/icon.svg">
     <style>
@@ -110,7 +110,7 @@
         <a class="back" href="https://updates.abalone.ai/flow">← Back to Abalone Flow</a>
 
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: 2026-10-21</p>
+        <p class="updated">Last updated: 2026-10-22</p>
 
         <p>
             This is the privacy policy for <strong>Abalone Flow</strong> (the Mac
@@ -163,8 +163,8 @@
                     <td>Legitimate interest</td>
                 </tr>
                 <tr>
-                    <td>Whether you've turned on location for the agent (yes/no only — never your actual location)</td>
-                    <td>Seeing how many people use this, to guide whether we build more location-aware features</td>
+                    <td>Whether you had turned on location for the agent, as Abalone 1.29.0 and earlier reported it (yes/no only — never your actual location). Newer versions have no such setting and report nothing; the yes/no already saved is deleted with your account</td>
+                    <td>Seeing how many people used this, to guide whether we build more location-aware features</td>
                     <td>Legitimate interest</td>
                 </tr>
                 <tr>
@@ -178,8 +178,8 @@
                     <td>Legitimate interest</td>
                 </tr>
                 <tr>
-                    <td>Usage stats for each AI request — which feature it was, which model answered, how many tokens it used, how long it took (never the words you dictated or said to the agent). For agent requests, also a few short fingerprints of the request: codes made from it with a secret key only our server holds, which show whether two requests in a row started the same way. They can't be turned back into your words, and without that key nobody can check a guess against them. When you delete your account, each row's cost, feature, model and time stay in our books with your account removed from it, so it no longer says whose it was</td>
-                    <td>Enforcing the monthly included-usage cap fairly, and seeing which features are slow or expensive to run — including requests made on your own connected ChatGPT account, which cost you nothing on our side and are recorded that way</td>
+                    <td>Usage stats for each AI request — which feature it was, which model answered, how many tokens it used, how long it took, what it was for (for example a step, a chat title, or why the cloud computer was awake), how it ended (words or a tool call), its step number, the effort it ran at, your plan at the time, and which version of the app made the request (for example macos/94) (never the words you dictated or said to the agent). For agent requests, also a few short fingerprints of the request: codes made from it with a secret key only our server holds, which show whether two requests in a row started the same way. They can't be turned back into your words, and without that key nobody can check a guess against them. When you delete your account, each row's cost, feature, model and time stay in our books with your account removed from it, so it no longer says whose it was</td>
+                    <td>Enforcing our weekly and 5-hour usage limits fairly, and seeing which features are slow or expensive to run — including requests made on your own connected ChatGPT account, which cost you nothing on our side and are recorded that way</td>
                     <td>Legitimate interest</td>
                 </tr>
                 <tr>
@@ -198,7 +198,7 @@
                     <td>Contract</td>
                 </tr>
                 <tr>
-                    <td>What a cloud agent does on your Mac, one step at a time: the step (read a file, write one after you allow it, open a page in the app's browser, list your open windows, look at one window, or run a command that can only look and never changes anything) and your Mac's answer — the same words the chat already saves. When the agent looks at a window, your Mac's answer is a picture of that window plus the text it can read in it; the picture goes to the AI for that step and is never saved in the chat, while the window's name and text, the list of open windows, and a command's output are saved in the chat like any other step's result. With it, when your Mac's Abalone last checked in and which of those tools it can run</td>
+                    <td>What a cloud agent does on your Mac, one step at a time: the step (read a file, open a file it read beside the chat on your Mac, write one after you allow it, open a page in the app's browser, list your open windows, look at one window, or run a command that can only look and never changes anything) and your Mac's answer — the same words the chat already saves. When the agent opens a file beside the chat, your Mac's answer starts with where that file is on your Mac (its full path); the file's words drawn beside the chat stay on your Mac. When the agent looks at a window, your Mac's answer is a picture of that window plus the text it can read in it; the picture goes to the AI for that step and is never saved in the chat, while the window's name and text, the list of open windows, and a command's output are saved in the chat like any other step's result. With it, when your Mac's Abalone last checked in and which of those tools it can run</td>
                     <td>Gets each step to your Mac exactly once, and tells the agent within about 5 seconds when your Mac isn't reachable. A step and its answer (a window's picture included) are kept about 10 minutes after it ends and deleted within an hour</td>
                     <td>Contract</td>
                 </tr>
@@ -209,9 +209,10 @@
             We do <strong>not</strong> track your location, and we never see or
             store GPS coordinates; the app doesn't read your location. If you ask
             the agent something local (&ldquo;coffee near me&rdquo;), only a place
-            you name in your own words goes into that search. We do save whether
-            you've switched the agent's location permission on or off — just that
-            yes/no, synced from your Mac — never a location. We also don't collect
+            you name in your own words goes into that search. Abalone 1.29.0 and
+            earlier also saved whether you'd switched the agent's location setting
+            on or off — just that yes/no, synced from your Mac — never a location;
+            newer versions have no such setting. We also don't collect
             contact lists, browsing history, or anything from other apps. By
             default, Abalone transcribes your dictations on your Mac. Your audio
             goes to the cloud only if you choose Cloud mode in Settings, or for a
@@ -280,14 +281,12 @@
             model's own summary of what it was thinking while it worked, which the
             transcript keeps so you can reread it later) and your project shells (a
             project's name, icon, and any standing instructions you write) in our
-            database, so they sync across the devices you sign into. When a chat's
-            model, or its thinking, is left to Auto, the first 2,000 characters of
-            the message that starts Auto's choice for that chat (usually its first;
-            for a chat from before this choice existed, its next one) go once
-            through our server to Cerebras (its gpt-oss model), which answers only
-            how much model and thinking the chat needs; we keep that answer on the
-            chat, and not the text. Agent turns run in our cloud, and our servers
-            (not the app) write each conversation into your account. Images and
+            database, so they sync across the devices you sign into. Agent turns
+            run in our cloud, and our servers (not the app) write each conversation
+            into your account. A new chat is named by the same AI that answers it
+            (your own ChatGPT, or OpenAI or Anthropic on our account): its first
+            message and the start of the agent's reply go to that model, and we
+            keep only the title it returns. Images and
             files you attach to a message (up to 10 per message, up to 20 MB each)
             are stored in your account's cloud storage with that message, and are
             sent to the AI that answers — your own ChatGPT if you connected it,
@@ -363,17 +362,18 @@
         </p>
 
         <p>
-            When you make a new agent, it sets itself up by asking you one question
-            about its job, made for you. To make that question fit, its first
-            replies (until it has a job or instructions) also read the names of your
-            other agents and the first line of what each does, the titles of your 10
-            newest chats, and the names of the 5 apps you dictated into most in the
-            last 90 days with how many times. Only names and titles (a chat's title
-            is its own short summary): nothing inside your apps, and no messages
-            from your chats or text from your dictations. They go to the AI that
-            answers as part of that reply's notes. Its question keeps a short list of
-            what it looked at (those names and counts), so the chat can show it
-            beside the question.
+            When you make a new agent, it starts at once by asking what you'd like
+            it to do, with a few jobs it could do for you to pick from or your own
+            words, and sets itself up from your answer. To make those jobs and its
+            setup fit you, its first replies (until it has a job or instructions)
+            read the names of your other agents and the first line of what each
+            does, the titles of your 10 newest chats, and the names of the 5 apps
+            you dictated into most in the last 90 days, with how many times you
+            dictated into each, beside the names of the apps you've connected and
+            your saved notes, as every agent's replies do. Only names and titles (a
+            chat's title is its own short summary): nothing inside your apps, and no
+            messages from your chats or text from your dictations. They go to the AI
+            that answers as part of that reply's notes.
         </p>
 
         <p>
@@ -459,9 +459,11 @@
 
         <p>
             Each agent keeps the choice you (or the agent, when you ask it) make for
-            it: Auto, a level (Fast, Expert or Max) or one model, with its thinking
-            level; a chat can keep its own choice too. We store that choice with the
-            agent or the chat, and your set of levels (and any model you put on a
+            it: a level (Fast, Expert or Max) or one model, with its thinking
+            level; a chat can keep its own choice too, and, on one model, whether
+            its older messages are summarized once it gets long (the &ldquo;Fold
+            long chats&rdquo; switch, on unless you turn it off). We store that
+            choice with the agent or the chat, and your set of levels (and any model you put on a
             level) with your account. When you send a message we work out which
             model answers it and keep that on the run, with the one backup behind
             it, so &ldquo;Next AI&rdquo; can try it. Which account answers is
@@ -479,7 +481,17 @@
             is kept apart from the database, so a copy of the database alone can't
             open it. We never see your password, and disconnecting deletes the
             stored sign-in. Those runs send your messages to ChatGPT (OpenAI),
-            billed to your own subscription.
+            billed to your own subscription, and so does naming a new chat: its
+            first message and the start of the agent's reply go to the same ChatGPT
+            model.
+        </p>
+
+        <p>
+            We also keep which ChatGPT models your connected plan offers (model
+            names and context sizes, nothing about you or your account), so Settings
+            and your agents don't ask ChatGPT for the list on every request. We ask
+            again after 5 minutes, or as soon as you sign in again, and the list is
+            deleted with your account.
         </p>
 
         <p>
@@ -487,7 +499,7 @@
             which feature it was, which model answered, how many tokens it used, how
             long it took, whether it finished, and what the same call would have
             cost on our own OpenAI account, so we can compare the two — never the
-            words you dictated or said to the agent. It costs you nothing against our monthly cap; ChatGPT bills your own
+            words you dictated or said to the agent. It costs you nothing against our weekly and 5-hour usage limits; ChatGPT bills your own
             subscription instead.
         </p>
 
@@ -551,11 +563,12 @@
 
         <h2>Skills</h2>
         <p>
-            In Marketplace → Skills you keep skills: the steps an agent follows for
-            one kind of task (a name, a description, instructions and any files),
-            and which of your agents use each one. They are stored in your account
-            so your agents can use them on every Mac you sign into. An agent can
-            make a new skill at once (you can delete it any time); it changes or
+            Your agents keep skills: the steps an agent follows for one kind of
+            task (a name, a description, instructions and any files), and which of
+            your agents use each one. You work with them by asking an agent in a
+            chat. They are stored in your account so your agents can use them on
+            every Mac you sign into. An agent can make a new skill at once (you can
+            ask it to delete one any time); it changes or
             deletes a skill only after you press Change or Delete on a card. Turning
             a skill on or off for an agent happens at once. Deleting a skill removes
             it from every agent; a run already under way keeps the version it
@@ -565,26 +578,37 @@
 
         <h2>Paying for a plan</h2>
         <p>
-            When you subscribe, you pay on Stripe's own page: your card details go
-            to Stripe and never reach us. From Stripe we keep only what a plan
+            When you subscribe, you pay on Stripe's own page: your card number goes
+            to Stripe and never reaches us. From Stripe we keep only what a plan
             needs: your Stripe customer id (made when you first open the payment
             page, so you only ever have one), your subscription id, which plan
             you're on, its status (paid, payment failed, cancelled), the current
             billing period, when it ends if you cancelled, and a plan change waiting
             for your renewal and its date, plus the ids of Stripe's notices to us so
-            each is handled once. Each agent run also notes which plan you had when
+            each is handled once. After a change you make in Abalone, we read your
+            plan from Stripe and save it before we answer, under an id of our own.
+            Each agent run also notes which plan you had when
             it started, so we can see how each plan is used. If two payment pages
             ever start a second plan, we cancel it at once and refund its payment in
             full. If a payment for your current period is refunded in full (for
             example by Stripe's Link), the plan ends at once. You change your plan
             in Abalone, which asks Stripe to make the change; your card and your
-            invoices are managed on Stripe's page. If a payment fails and you add a
-            new card there, Abalone asks Stripe to pay what's due with it right
-            away; the card's details still stay with Stripe. Where Stripe sells the
+            invoices are managed on Stripe's page. When you open Usage &amp;
+            Billing, Abalone asks Stripe, for your own account only, for what that
+            page shows and stores none of it: your next charge (its amount with tax,
+            its currency and date), your last three payments (the plan, the date,
+            the amount, whether it was refunded, and a link to Stripe's page for
+            each), and, only while a payment has failed or your card expires within
+            30 days, your saved card's brand, last four digits and expiry. Stripe's
+            answer also includes your card's billing details and the name, email and
+            address on your invoices; we pass none of that on and keep none of it.
+            If a payment fails and you add a new card there, Abalone asks Stripe to
+            pay what's due with it right away; the card's number still stays with
+            Stripe. Where Stripe sells the
             plan for us (Stripe Managed Payments), Stripe is the seller of record:
             it asks for your name and billing address to work out the tax, adds the
             tax and pays it, and handles refunds and disputes under its own terms.
-            Your address stays with Stripe; we don't receive it. When you delete
+            Your address stays with Stripe: we never store it or show it. When you delete
             your account, we delete your customer at Stripe within minutes: your
             subscription ends at once, with no further charges, and your saved card
             is removed. The invoices and payments Stripe must keep for tax and
@@ -658,11 +682,7 @@
                 up your dictation text (automatic polish), receiving the text to
                 tidy with the app, window title and your dictionary words (transit
                 only, not kept by us; not used for training under Cerebras's API
-                terms); and, when a chat's model or its thinking is left to Auto,
-                reads the first 2,000 characters of the message that starts Auto's
-                choice for that chat (usually its first) once, to choose how much
-                model and thinking the chat needs (transit only, not kept by us; not
-                used for training under Cerebras's API terms)
+                terms)
             </li>
             <li>
                 <strong><a href="https://openai.com">OpenAI</a></strong> — cleans up
@@ -676,9 +696,10 @@
                 terms); and answers your agents when you have a plan with us and no
                 connected ChatGPT: while a run works, it receives the conversation,
                 its files, your memory pages and what the agent's tools read (web
-                pages, Mac files it opens, connected-app results) (not kept by us
-                beyond the chat itself; not used for training under OpenAI's API
-                terms)
+                pages, Mac files it opens, connected-app results), and names a new
+                chat from its first message and the start of the agent's reply (not
+                kept by us beyond the chat itself and its title; not used for
+                training under OpenAI's API terms)
             </li>
             <li>
                 <strong><a href="https://anthropic.com">Anthropic</a></strong> —
@@ -689,21 +710,21 @@
                 backup for one) and you have a plan with us: while a run works, it
                 receives the conversation, its files, your memory pages and what the
                 agent's tools read (web pages, Mac files it opens, connected-app
-                results), and runs the web searches the agent asks for (not kept by
-                us beyond the chat itself; not used for training under Anthropic's
-                API terms)
+                results), runs the web searches the agent asks for, and names a new
+                chat from its first message and the start of the agent's reply (not
+                kept by us beyond the chat itself and its title; not used for
+                training under Anthropic's API terms)
             </li>
             <li>
                 <strong><a href="https://epoch.ai">Epoch AI</a></strong> — once a
                 day our server downloads its public ranking of AI models (the Epoch
                 Capabilities Index) to show how capable each model is; nothing about
-                you or your account is sent
-            </li>
-            <li>
-                <strong><a href="https://openrouter.ai">OpenRouter</a></strong> —
-                names your agent chats: receives a chat's first message and the
-                start of the agent's reply, and passes them only to US hosts that
-                keep nothing (transit only, not kept by us)
+                you or your account is sent. The Smarts steps in the app are ranked
+                by Abalone from Epoch AI's
+                <a href="https://epoch.ai/benchmarks/eci">Epoch Capabilities Index</a>,
+                licensed under
+                <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>;
+                we turn its scores into five steps
             </li>
             <li>
                 <strong><a href="https://composio.dev">Composio</a></strong> —
