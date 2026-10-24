@@ -31,12 +31,18 @@
             padding: 64px 24px 96px;
         }
         .back {
-            display: inline-block;
-            font-size: 14px;
-            color: var(--muted);
+            /* The brand, as on the download page (flow/index.html .brand): the app icon and the name, linking home. */
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            color: var(--text);
             text-decoration: none;
             margin-bottom: 48px;
         }
+        .back img { width: 24px; height: 24px; border-radius: 6px; }
         .back:hover { color: var(--text); }
         h1 {
             font-size: 40px;
@@ -109,7 +115,7 @@
 </head>
 <body>
     <main>
-        <a class="back" href="https://updates.abalone.ai/flow">← Back to Abalone</a>
+        <a class="back" href="https://abalone.ai/flow"><img src="https://updates.abalone.ai/flow/icon.svg" alt="" width="24" height="24">Abalone</a>
 
         <h1>Privacy Policy</h1>
         <p class="updated">Last updated: 2026-10-23</p>
