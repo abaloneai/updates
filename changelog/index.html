@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Changelog — Abalone</title>
+    <meta name="description" content="What's new in each version of Abalone.">
+    <link rel="canonical" href="https://abalone.ai/changelog">
+    <link rel="icon" type="image/svg+xml" href="https://updates.abalone.ai/flow/icon.svg">
+    <style>
+        /* The legal pages' look (flow/terms): one dark page, one reading column. */
+        :root {
+            --bg: #14141f;
+            --text: #ffffff;
+            --body: rgba(255, 255, 255, 0.85);
+            --muted: rgba(255, 255, 255, 0.65);
+            --accent: #aabeff;
+            --line: rgba(255, 255, 255, 0.08);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
+        }
+        main { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; }
+        .back {
+            display: inline-flex; align-items: center; gap: 8px;
+            font-size: 16px; font-weight: 600; letter-spacing: -0.015em;
+            color: var(--text); text-decoration: none; margin-bottom: 48px;
+        }
+        .back img { width: 24px; height: 24px; border-radius: 6px; }
+        h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+        .lede { color: var(--muted); font-size: 16px; margin-bottom: 16px; }
+        article { border-top: 1px solid var(--line); padding-top: 32px; margin-top: 32px; }
+        .when { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
+        article > h2 { font-size: 24px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 16px; }
+        h3 { font-size: 18px; font-weight: 600; margin-top: 24px; margin-bottom: 8px; }
+        h4 { font-size: 16px; font-weight: 600; margin-top: 16px; margin-bottom: 8px; }
+        p, ul, ol { font-size: 16px; color: var(--body); margin-bottom: 16px; }
+        ul, ol { padding-left: 24px; }
+        li { margin-bottom: 8px; }
+        strong { color: var(--text); font-weight: 600; }
+        a { color: var(--accent); }
+        a:hover { text-decoration: none; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <main>
+        <a class="back" href="https://abalone.ai/flow"><img src="https://updates.abalone.ai/flow/icon.svg" alt="" width="24" height="24">Abalone</a>
+        <h1>Changelog</h1>
+        <p class="lede">What's new in each version of Abalone for Mac, newest first.</p>
+        <article id="v1.29.0">
+            <p class="when">17 October 2026 · Version 1.29.0</p>
+            <h2>A team of agents, Scribe, and sharper dictation</h2>
+<p>Nothing to do: you stay signed in, and your history comes along.</p>
+<p>If you connected ChatGPT, sign in to it once more.</p>
+<p>Stop keeps what was already written.</p>
+<p>Your data now lives on our US servers, ChatGPT sign-ins are stored there encrypted, and our <a href="https://updates.abalone.ai/flow/privacy">privacy policy</a> is updated.</p>
+
+<h3>Agents that work on their own</h3>
+<ul>
+<li><strong>Schedules</strong> replace routines. Ask your agent to run something every 5 to 30 minutes, every few hours, daily, or once. Each schedule keeps its own chat, or starts a new one for each run. A schedule never waits for you: if it needs something it says so and marks the chat for you.</li>
+<li><strong>Skills</strong> have their own page with a shop of starter skills. Skills can be added to any agent, and the agent can create and edit them for you.</li>
+<li><strong>Connected apps</strong>: sign in to an app once, and every agent can use it. Browse about 120 apps, search them and the accounts you have added, add a second account with Add another, and ask your agent to connect or remove one right from chat. Anything that moves money or changes a password is off limits.</li>
+<li><strong>Your agent's computer</strong> is steadier and has its own tab in the side panel. If a computer cannot start, the agent says why. You can take over the screen and give it back.</li>
+<li><strong>Files</strong>: drop up to ten files on a chat to attach them. Files you send are also saved in that chat's folder in ~/Abalone/Chats on your Mac, so your agent can open them there, and it knows which folders you gave it.</li>
+<li><strong>Messages wait for your Send.</strong> When your agent writes an email or a Slack message, it waits as a card in the chat: read it, fix a word if you like, then press Send or Discard. Ask for a change and the new draft replaces the old one. Your agent keeps working meanwhile.</li>
+<li><strong>One kind of card for everything that needs you.</strong> Every message, question, approval and hand-off looks the same in the chat and the Inbox, and each button says what it does (Send, Delete, Add…). The button you press shows the wait, and when it's done the card folds to one line you can open. Discard, Cancel or Skip passes on that one thing and your agent carries on; only Stop ends a task.</li>
+<li><strong>Your agent can look at your Mac.</strong> It can list your open windows and look at one, and run commands that only read and never change anything. Pick a Window works again.</li>
+</ul>
+
+<h3>Scribe: say what you want written</h3>
+<p>Hold <strong>Caps Lock</strong>, say what you need ("tell Sam I'll be ten minutes late"), and Scribe writes it in your voice, using what is on your screen to match the conversation. The draft streams into a card beside the notch. Press the shortcut again to follow up and change it, then insert it where you were typing. Caps Lock now starts Scribe instead of typing capitals; you can pick another key in Settings. Scribe has its own page in Settings, and your Scribe drafts sit next to your dictations in History.</p>
+
+<h3>Dictation, rebuilt</h3>
+<p>The on-device speech model is now NVIDIA Parakeet Ultra, which replaces Whisper. It is more accurate, and it downloads once on first launch (while it downloads, cloud dictation covers you if you are signed in). There are now three modes in one picker: <strong>Auto</strong> (on your Mac once the model is ready), <strong>Cloud</strong> (more languages, needs internet) and <strong>On Device</strong> (works offline, fully private). Cloud dictation now streams, so your words appear as you speak. The recording wave is calmer and clearer, History shows the app each dictation went to, and Esc cancels a recording.</p>
+
+<h3>A calmer main window</h3>
+<p>Your agents now sit at the top of the sidebar with their faces, and you can pin and reorder them. A blue dot means a chat has something for you, and under each agent the sidebar lists those chats plus the one you have open. While an agent works, its steps show as a quiet timeline in the chat, with the answer underneath. The side panel opens on your agent's Inbox, which collects every question, approval and message waiting on you and lists what finished in the last 7 days, next to its Schedules, Identity and Cloud computer tabs. You also get one Mac notification when a run finishes or needs you while you are looking elsewhere. Agent faces have new eyes and colours, and the notch face looks around, follows your typing and falls asleep when you step away.</p>
+
+<h3>Settings and sign-in</h3>
+<p>Settings are one page, easier to search, and show your usage by feature in dollars. If your sign-in cannot renew for a moment (for example, a bad connection), Abalone now keeps you signed in instead of showing you as signed out. New app icons replace the old ones: Ink (black with the white mark, the default), Pearl, Sunset, Cobalt and Violet, in Settings. An icon you picked before goes back to Ink.</p>
+
+<h3>More reliable</h3>
+<p>If a model's reply is cut off or the server has a brief error, Abalone tries again twice on its own before giving up. Failures now say what went wrong in plain words, and on websites the agent never sends for you: you press Send yourself. Chats open at once from a saved copy. Lists in your agent's replies are easier to read: wrapped lines line up under the text.</p>
+
+<h3>What went away</h3>
+<p>Claude subscription sign-in is gone. Agents now run on your ChatGPT account, and "More models" is marked coming soon. Long-term memory and the older routines are removed, and search results now show as text instead of picture grids. Use Settings &gt; AI providers to connect ChatGPT.</p>
+        </article>
+        <article id="v1.28.1">
+            <p class="when">7 September 2026 · Version 1.28.1</p>
+            <h2>Updates you can watch, and a Claude engine that stays signed in</h2>
+<h3>See the update download</h3>
+<p>When an update is ready, the small "Update available" capsule under the sidebar logo, in Settings, and in the app menu now opens the standard macOS update window when you click it: what's new, a real download progress bar, and an "Install and Relaunch" button when it's done. Before, clicking showed a spinner with no idea of progress for as long as the download took. Checks still happen quietly every hour in the background; the app never pops a dialog on its own.</p>
+
+<h3>The Claude engine updates without signing you out</h3>
+<p>Abalone's Claude engine updates itself in the background. Until now, on the first launch after an engine update the Claude row looked signed out and offered "Sign in" for the minute or two the download took, and clicking it showed "Looking for a Claude sign-in…" until the download finished. You were never actually signed out. The app now checks your account on the engine it already has, in about a second, then updates the engine behind the scenes while showing the download's progress under your connected account. Nothing to click, nothing to re-enter.</p>
+
+<h3>And the small stuff</h3>
+<p>When the agent's working caption in the notch card wraps to a second line, its blue dot now sits on the first line instead of floating between the two.</p>
+        </article>
+        <article id="v1.28.0">
+            <p class="when">6 September 2026 · Version 1.28.0</p>
+            <h2>Your agent gets a computer of its own</h2>
+<h3>A computer of its own</h3>
+<p>The agent can now do its work on a computer that lives in the cloud, separate from your Mac — browsing the web, filling out a form, running a command — while your own machine stays free. A new <strong>Computer</strong> tab in the side panel shows exactly what it's doing there, in real time, and a <strong>Files</strong> tab lets you look through anything it saved. Copy and paste now works between your Mac and that screen, in both directions. Every new chat starts it with a clean desktop, and if two chats need it at the same time, the second one is told to wait rather than colliding with the first.</p>
+
+<h3>ChatGPT models, refreshed</h3>
+<p>GPT-6 Astra is joining the ChatGPT lineup as the most capable option — it'll appear in your model picker as soon as OpenAI switches it on for your account. The GPT-5.6 models (Luna, Terra, Sol) all gained a "Max" effort setting for the hardest problems, and the context size shown next to each one is now the working window OpenAI's own client uses (272k for the 5.6 family). The "More models" list now shows four options before you need to scroll, and the retired GPT-5.4 model is gone.</p>
+
+<h3>Claude, kept current</h3>
+<p>Claude Fable 5.1 replaces Fable 5. There is nothing to do on your end: the Claude engine updates itself in the background, and the model list re-reads itself after your first Claude turn, so the new name shows up without a relaunch. The Claude models in your picker are now ordered fastest to most capable: Haiku, Sonnet, Opus, Fable.</p>
+
+<h3>See where your usage goes</h3>
+<p>Your account page's "This month" card now breaks your usage down by feature instead of showing just one number, so you can see what your dictation, your agent, and your cloud computer each cost.</p>
+
+<h3>And the small stuff</h3>
+<p>Dragging a tab in the side panel used to drag the whole window along with it — fixed, and a dragged tab now lifts clearly above the others as they slide aside to make room. A long answer that turns into a table, a list, or another document while the agent is still working now streams into place as the answer from the start, instead of appearing as a small note and then jumping.</p>
+        </article>
+        <article id="v1.27.1">
+            <p class="when">30 August 2026 · Version 1.27.1</p>
+            <h2>The beachball at launch is gone</h2>
+<h3>Launch without the freeze</h3>
+<p>Since 1.27.0, the first launch after an update could show the spinning beachball — "Application Not Responding" — for many seconds before the app woke up. Three separate causes were found and rooted out: a launch-time warm-up that could stall the whole app waiting on a slow macOS service (removed outright), your conversation history being read on the same thread that draws the window (moved off it — the bigger your history, the more you'll feel this one), and the speech model's after-update tune-up elbowing everything else aside (it now works quietly in the background). The window is up and responsive in a blink, every launch.</p>
+
+<h3>Your SSD gets a break</h3>
+<p>The app was writing gigabytes per session of pointless cache to disk — copies of network responses it would never read again. Every connection now opts out of that cache. Less disk wear, less background churn, nothing visible lost.</p>
+
+<h3>Menus line up</h3>
+<p>In the notch's project menu, icons now sit level with each project's name instead of floating between the lines, and emoji icons are no longer clipped at the edges. The slash-command menu now matches the composer's width exactly — edge to edge — instead of poking out past it.</p>
+
+<h3>Long chats stream lighter</h3>
+<p>While a reply streams into a long conversation, the app was rebuilding the entire feed dozens of times a second even when nothing but the incoming text had changed. It now skips the rebuild whenever the change can't affect anything else on screen — noticeably less fan and heat on your longest chats.</p>
+
+<h3>And the small stuff</h3>
+<p>Older dictations in your history now show their full model names. If the app is ever slow to start again, it now keeps a precise record of where launch time went, so the cause can be found in one look instead of a hunt. And under the hood, every one of the agent's model calls — polish, titles, summaries, safety checks — now travels through one engine instead of two, with byte-for-byte proof that nothing changed on the way.</p>
+        </article>
+        <article id="v1.27.0">
+            <p class="when">27 August 2026 · Version 1.27.0</p>
+            <h2>Talking to the agent no longer interrupts it</h2>
+<h3>Talk to it while it works</h3>
+<p>You can now send the agent a thought at any moment — mid-reply, mid-task, mid-anything. It finishes what it's doing, folds your message in, and keeps working with everything it already knew. Nothing gets cut off, and no work is thrown away. The <strong>Stop</strong> button is the one and only way to interrupt.</p>
+
+<h3>Fewer needless questions</h3>
+<p>At <strong>Auto in folder</strong>, the agent can now send messages on websites — a support chat, a contact form — without asking your permission for every single one. The things that always stop it are unchanged and absolute: payments, sign-ins, and human-verification checks are yours alone, at every trust level.</p>
+
+<h3>A worklist you can see</h3>
+<p>On long errands the agent keeps a visible checklist, a plan, and a running notebook. You can watch it tick things off, and when you reopen a conversation later, its working state is still there.</p>
+
+<h3>Every new chat starts blank</h3>
+<p>⌘N — and every New-chat button — opens a clean, project-less chat. No inherited folder, no remembered default. A chat joins a project only when you put it there: the folder pill, a project's own "+", or the project page.</p>
+
+<h3>One menu family</h3>
+<p>The model picker was rebuilt to match every other menu in the composer — same look, same spacing, same behavior — with Effort and More-models as panes inside the menu. And it now floats above the browser panel like a proper menu, so nothing gets cramped when the panel is open.</p>
+
+<h3>The sidebar earns its keys</h3>
+<p>The sidebar toggle now sits beside the window controls where it belongs, ⌘B hides and shows the sidebar (⇧⌘B for the side panel), and both collapse with one smooth motion instead of a jump.</p>
+
+<h3>Chats open instantly</h3>
+<p>Opening a long conversation used to freeze the app for a moment and then fight you when you scrolled up — the view kept snapping back to the bottom. Both are gone: chats now open in a blink no matter how long they are, the view holds still the instant you move it yourself, and it only follows along while the agent is actively writing. Arrow and page keys now scroll the conversation too.</p>
+
+<h3>Archive, not delete</h3>
+<p>The chat menu's "Close" is now <strong>Archive</strong> — a clearer word for what it always did: tidy a chat out of the sidebar without deleting anything. Archived chats stay findable in ⌘F and the Chats screen, and come back the moment anything new happens in them. The ⌘F search palette also slimmed down: one action per row (the ⋯ menu), which holds everything — Rename, Move to Project, Archive, Delete.</p>
+
+<h3>And the small stuff</h3>
+<p>Esc releases the composer when nothing is running (your text stays put). ⌘U opens the file picker on any page with a composer, focused or not. On a project page with an empty composer, the arrow keys walk the chat list — Spotlight-style. Stray box-shaped symbols no longer appear in answers from the ChatGPT lane. Dictating into an edited message sends with the same key as always. The agent's answers can no longer be swallowed by its own bookkeeping. Replies to your mid-task messages arrive as real messages, not folded-away notes. Dozens of alignment and spacing fixes throughout.</p>
+        </article>
+        <article id="v1.26.2">
+            <p class="when">19 August 2026 · Version 1.26.2</p>
+            <h2>Music steps aside while you speak</h2>
+<ul>
+<li><b>Other audio ducks while you dictate.</b> Start speaking — to type or to the agent — and whatever's playing gently fades to a whisper instead of drowning out your voice, then comes right back the moment you're done. A fade, never a mute.</li>
+<li><b>Your volume stays yours.</b> Touch your volume keys while the music is turned down and the app steps aside instantly — your choice wins, no questions asked.</li>
+<li><b>On by default, easy to turn off.</b> Prefer your music loud? Flip "Turn down other audio while dictating" in Settings.</li>
+</ul>
+        </article>
+        <article id="v1.26.1">
+            <p class="when">17 August 2026 · Version 1.26.1</p>
+            <h2>The agent spends your plan more carefully</h2>
+<ul>
+<li><b>Smarter default effort.</b> The agent now runs at Medium effort out of the box — just as capable on real questions, without spending your Claude plan's limits on thinking through simple steps like clicking a button or scrolling a page. If you've picked an effort level yourself, your choice stays exactly as you set it, and you can raise or lower it anytime from the model picker.</li>
+<li><b>More honest usage accounting.</b> Behind the scenes, the app now records what each agent turn really used — including runs that were cancelled or failed — so usage totals reflect reality.</li>
+<li><b>Leaner browsing under the hood.</b> Groundwork that stops the agent from re-reading stale copies of web pages it has already moved past, making long browsing tasks cheaper and more focused.</li>
+</ul>
+        </article>
+        <article id="v1.26.0">
+            <p class="when">5 August 2026 · Version 1.26.0</p>
+            <h2>The agent gets its own browser</h2>
+<ul>
+<li><b>The agent gets its own browser.</b> A real browser now sits right beside your conversation, with tabs, a back button, and an address bar — everything you'd expect. A visible cursor glides across the page and shows exactly where it clicks, and every page it visits shows up as a step in the same trail you already see for searches and thinking.</li>
+<li><b>Free to browse, careful with the risky stuff.</b> The agent can look around, click links, and read pages without stopping to ask. It only pauses for your OK before anything that spends money, sends something, or signs you in — it will never type a password anywhere, and a page taking card details is entirely off-limits: it stops and hands the page to you. All of its web activity runs through this one browser; it can't take control of other apps on your Mac to get online.</li>
+<li><b>When a page needs you, you get a card.</b> Sign-ins, verification codes, captchas — the agent stops and plays a "Your turn" card instead of struggling: open the page beside the chat with one click, do your part, press "I'm done," and the errand carries on. It will never ask for a password in the chat, and it can't type into password fields — those moments are always yours.</li>
+<li><b>A visible plan for bigger jobs.</b> Ask for something with several steps, and the agent writes a short checklist first, checking items off live as it works. Open it any time to see the whole plan, not just a summary — it adjusts if you redirect the agent mid-task, stays saved as part of the conversation, and won't quietly call itself done while steps are still unchecked.</li>
+<li><b>Long conversations stay smooth.</b> Huge conversations used to slow everything down — typing lag, choppy scrolling, sluggish replies. Scrolling, dictating, and reading the agent's replies all stay fast now, no matter how long the conversation has grown.</li>
+<li><b>Dictation lands more accurately.</b> Text appears provisionally as you talk and firms up moments later, so you watch it settle instead of jumping around — and a single misheard word can no longer snowball into more mistakes later in the same dictation.</li>
+<li><b>Runs are harder to interrupt by accident.</b> A long agent run no longer cuts off partway through — not while it's deep in thought, not while it's waiting on your answer, not after many steps in a row. If one step fails, only that step retries, never the whole conversation, and you'll see plainly what went wrong instead of a run that just quietly stops. Working in more than one conversation at once no longer risks them crossing wires.</li>
+<li><b>Dozens of smaller refinements.</b> Dictation can no longer take the app down when your Mac's microphone is mid-shuffle (Bluetooth headphones connecting, waking from sleep) — it says the mic isn't ready and lets you try again. Stop is now the one button for ending a run. The composer makes it obvious when typing will answer a pending question instead of starting something new. Sign-in pop-ups open as tabs right beside the page that asked for them — nothing can ever open hidden behind your window. Downloads tell you plainly whether they landed, and tabs drag into the order you want.</li>
+</ul>
+        </article>
+        <article id="v1.25.0">
+            <p class="when">1 August 2026 · Version 1.25.0</p>
+            <h2>The agent shows its work — and answers flow</h2>
+<ul>
+<li><b>Watch the agent work, live.</b> Every search and page it reads appears as a step the moment it happens — steps bundle as it goes, thinking shows as quiet notes, and when the answer arrives the whole trail folds into one line: "Worked for 1m 23s". Click it any time to see exactly what your agent did.</li>
+<li><b>Answers stream like thought.</b> Replies now flow in word by word — smooth and continuous on every AI provider, instead of arriving in blocks.</li>
+<li><b>Web search runs on your own AI plan.</b> General web search now rides your connected ChatGPT or Claude subscription directly, so research is faster and never rationed — while places, news, and image searches stay just as rich.</li>
+<li><b>Sending feels instant.</b> Your message lands in the conversation the moment you hit send — on the main window and the notch — and a brand-new chat is ready to type into immediately.</li>
+<li><b>Runs are harder to lose.</b> If the connection drops mid-answer, the agent quietly retries and picks up where it left off. Stopping a run closes every step honestly, and denying one action no longer cancels the rest of the work.</li>
+<li><b>Dozens of small refinements.</b> Steps rise in softly, the follow-the-answer arrow appears exactly when you need it, summaries answer in chat instead of becoming draft cards, and abandoned screenshots no longer linger in the composer.</li>
+</ul>
+        </article>
+        <article id="v1.24.3">
+            <p class="when">30 July 2026 · Version 1.24.3</p>
+            <h2>Safer automatic commands, without the interruptions</h2>
+<ul>
+<li><b>Auto now checks shell commands before they run.</b> An independent, tool-free safety pass compares each proposed command with what you asked for and stops actions that are too broad, destructive, or unrelated.</li>
+<li><b>Routine work stays fast.</b> Read-only checks and clearly requested project work continue without an approval popup, while Ask First remains fully human-controlled.</li>
+<li><b>Folder mode gets an operating-system boundary.</b> Mutating shell commands that stay in your selected project run inside a macOS filesystem sandbox, while read-only shell checks are write-blocked in every mode.</li>
+</ul>
+        </article>
+        <article id="v1.24.2">
+            <p class="when">28 July 2026 · Version 1.24.2</p>
+            <h2>Claude sign-in that repairs itself</h2>
+<ul>
+<li><b>Claude setup now recovers automatically.</b> Abalone detects a missing or outdated Claude engine, securely downloads a complete signed replacement, and continues sign-in without asking you to repair files manually.</li>
+<li><b>Claude updates no longer interrupt a working connection.</b> Compatible engine updates install safely in the background, while offline users can keep using the last validated version.</li>
+</ul>
+        </article>
+        <article id="v1.24.1">
+            <p class="when">27 July 2026 · Version 1.24.1</p>
+            <h2>Live transcription that keeps up</h2>
+<ul>
+<li><b>Spoken words stay close to your voice.</b> Fixed an issue that made live text fall farther behind during longer dictations and voice messages.</li>
+<li><b>Settled speech stays settled.</b> Abalone now carries finished speech forward instead of repeatedly processing it, while keeping the newest phrase flexible for accurate corrections.</li>
+</ul>
+        </article>
+        <article id="v1.24.0">
+            <p class="when">27 July 2026 · Version 1.24.0</p>
+            <h2>Dictation that starts the instant you do</h2>
+<ul>
+<li><b>Reliable from the first second.</b> Dictating right after launching or updating the app could record nothing and end in an error. The microphone now opens the proven way every time — and if it's ever slow to wake, the app quietly repairs it before you'd notice.</li>
+<li><b>The sound tells the truth.</b> The start chime now plays at the exact moment the mic goes live. When you hear it, it's listening — never before.</li>
+<li><b>Clearer permission asks.</b> When the agent needs your OK, it explains the step in plain words with the exact command or address underneath, and Allow now offers "once" or "always."</li>
+<li><b>Safety without the nagging.</b> The agent browses and reads the web without interrupting you, and steps in only when something could genuinely be unsafe — sending data out, using your location, or reaching outside its folder.</li>
+<li><b>Smarter word learning.</b> Correct a name or term after dictating and the app learns it for next time — and it now learns only the words you kept, spelled exactly the way you kept them.</li>
+</ul>
+        </article>
+        <article id="v1.23.7">
+            <p class="when">26 July 2026 · Version 1.23.7</p>
+            <h2>Reliable first dictations</h2>
+<ul>
+<li><b>Your first dictation just works.</b> Fixed a bug where a dictation right after launching the app could fail with "Audio capture failed" — the microphone now opens only after your audio device is fully ready, and the start sound plays exactly when audio is truly flowing.</li>
+<li><b>Talk to your assistant while the speech model downloads.</b> Asking Abalone something no longer shows "Warming up speech engine" on a fresh install — your words ride Abalone's cloud while the on-device model finishes downloading, then everything moves on-device automatically.</li>
+<li><b>One waveform, everywhere.</b> Every sound wave in the app — dictation, setup lessons, talking to your assistant — now moves at the same steady pace with the same feel, and adapts to quiet rooms and quiet voices.</li>
+<li><b>The tucked-away assistant tells the truth.</b> If you click away while it works, the small capsule now narrates progress and flips to "✓ Take a look" when your answer is ready — or "Needs your OK" when it's waiting on you — instead of showing "working" forever or popping open over your work.</li>
+<li><b>New installs start on Auto.</b> Fresh setups pick the best transcription engine automatically; anyone who explicitly chose Cloud or On Device keeps their choice.</li>
+</ul>
+        </article>
+        <article id="v1.23.6">
+            <p class="when">26 July 2026 · Version 1.23.6</p>
+            <h2>Smoother notch motion</h2>
+<ul>
+<li><b>A calmer, more natural notch.</b> The pill now unfolds smoothly from the hardware notch and returns cleanly, without edge gaps, bright seams, or motion trails across dictation and status states.</li>
+<li><b>A seamless agent opening.</b> Captured-screen previews now arrive only after the agent panel has settled, removing the tiny flash that could appear during expansion.</li>
+</ul>
+        </article>
+        <article id="v1.23.5">
+            <p class="when">26 July 2026 · Version 1.23.5</p>
+            <h2>Setup polish</h2>
+<ul>
+<li><b>Update from inside setup.</b> If a new version of Abalone ships while you're still setting up, an update card now appears right in the onboarding window — one click installs it and setup resumes exactly where you left off.</li>
+<li><b>A calmer first dictation.</b> The first-dictation lesson no longer jumps ahead while you're still speaking — the step you're on stays put for the whole press-speak-release, and tells you when to let go.</li>
+</ul>
+        </article>
+        <article id="v1.23.4">
+            <p class="when">26 July 2026 · Version 1.23.4</p>
+            <h2>Onboarding crash fix</h2>
+<ul>
+<li><b>First-run setup no longer crashes.</b> Fixed a crash that could stop new users partway through onboarding — right after the "ask Abalone anywhere" shortcut screen — and repeat on every relaunch. If Abalone kept quitting during setup, this update resolves it; setup resumes exactly where you left off.</li>
+</ul>
+        </article>
+        <article id="v1.23.3">
+            <p class="when">25 July 2026 · Version 1.23.3</p>
+            <h2>A smoother start and finish</h2>
+<ul>
+<li><b>A notch that moves naturally.</b> When Abalone opens, the notch now grows smoothly from your Mac's camera notch. When you quit, it settles back without a jump or edge artifact.</li>
+<li><b>Complete voice requests.</b> When you dictate to the Agent, Abalone now waits for the final transcription before sending, so your last words are not lost.</li>
+</ul>
+        </article>
+        <article id="v1.23.2">
+            <p class="when">22 July 2026 · Version 1.23.2</p>
+            <h2>The Agent keeps up with your screen</h2>
+<ul>
+<li><b>Fresh context every time.</b> Summon the Agent from the notch and it now captures the window you are looking at, even when you are continuing an existing chat. Scroll to a new message, switch windows, or return with an update—the latest screen appears as a removable attachment before you send.</li>
+</ul>
+        </article>
+        <article id="v1.23.1">
+            <p class="when">22 July 2026 · Version 1.23.1</p>
+            <h2>A smoother Agent introduction</h2>
+<ul>
+<li><b>Resume after permission setup.</b> If macOS restarts Abalone after Screen Recording is enabled, the Agent tour now continues from the right lesson.</li>
+<li><b>Practice without losing your place.</b> The guided Agent exercise uses a temporary conversation, then restores your existing chat and unsent draft.</li>
+<li><b>Dictate while Agent works.</b> A minimized Agent can keep working while regular dictation temporarily uses the pill.</li>
+<li><b>Faster push-to-talk.</b> Fn and modifier-only dictation now start after the same short 150 ms chord window, while shortcuts such as Fn+Space and Fn+V win cleanly without flashing the wrong mode.</li>
+<li><b>A cleaner launch.</b> Abalone waits for the saved account session before choosing which screen to show, avoiding a brief onboarding flash.</li>
+</ul>
+        </article>
+        <article id="v1.23.0">
+            <p class="when">21 July 2026 · Version 1.23.0</p>
+            <h2>Meet your Agent</h2>
+<ul>
+<li><b>Meet your personal AI assistant.</b> Bring a window forward, press your Agent shortcut, and ask naturally. Abalone can use what you choose to share to help draft a reply, understand a document, or research the web.</li>
+<li><b>Put your existing AI subscription to work.</b> Connect Claude or ChatGPT and use the plan you already have to power Abalone across your Mac.</li>
+<li><b>See it work in two minutes.</b> Follow one guided task to learn the shortcut, share a window, and get a useful result.</li>
+</ul>
+        </article>
+        <article id="v1.22.0">
+            <p class="when">18 July 2026 · Version 1.22.0</p>
+            <h2>Local dictation polish and smarter provider routing</h2>
+<ul>
+<li><b>Dictate and polish fully on device.</b> On eligible Apple Intelligence Macs, choosing On Device now keeps both WhisperKit transcription and Apple Foundation Models polish local. If local polish cannot safely improve the text, Abalone pastes the original transcript instead.</li>
+<li><b>Keeps the whole thought.</b> Cloud dictation polish now uses our benchmark-tested preservation prompt, with stronger checks for names, numbers, command-like phrases, and the final words you spoke.</li>
+<li><b>Uses your fastest connected AI.</b> Auto follows your AI-provider priority, using the faster Claude Haiku polish path or ChatGPT Luna when connected, with graceful fallback if a provider is unavailable.</li>
+<li><b>A clearer Dictations screen.</b> The welcome, stats, live listening status, shortcut, engine picker, search, and history now share one cleaner layout, with native row menus for Copy, Save Audio, and Delete.</li>
+</ul>
+        </article>
+        <article id="v1.21.1">
+            <p class="when">18 July 2026 · Version 1.21.1</p>
+            <h2>Smoother, one-click updates</h2>
+<ul>
+<li><b>One click, no dialogs.</b> "Restart to Update" now installs the new version and relaunches instantly — the extra confirmation popup is gone.</li>
+<li><b>Click any time.</b> If the update is still downloading when you click, the button shows "Preparing update…" and the app restarts itself the moment it's ready. No more clicks that silently do nothing.</li>
+<li><b>Failures speak up.</b> If an update can't download, the sidebar chip says so and offers Retry instead of staying quiet.</li>
+</ul>
+        </article>
+        <article id="v1.21.0">
+            <p class="when">18 July 2026 · Version 1.21.0</p>
+            <h2>Use your own Claude subscription</h2>
+<ul>
+<li><b>Bring your Claude plan to Abalone.</b> Have Claude Pro or Max? Connect it in Settings → AI Providers, and dictation polish and the agent can run on Anthropic's engine using your own plan — your words travel straight from your Mac to Anthropic, never through our servers.</li>
+<li><b>Sign-in that respects your setup.</b> Already use Claude Code? One click detects your existing login and connects instantly — no browser, no new password. New to Claude? A claude.ai tab opens and Anthropic's own sign-in does the rest. We never see or store your credentials.</li>
+<li><b>Downloaded on demand, verified before install.</b> The Claude engine (~110MB) downloads only if you opt in, and every byte is checksum- and signature-verified before it runs.</li>
+<li><b>Dark Dock icons.</b> Every app-icon colourway now has a dark twin — find them in the icon picker in Settings.</li>
+</ul>
+        </article>
+        <article id="v1.20.1">
+            <p class="when">14 July 2026 · Version 1.20.1</p>
+            <h2>A quieter logo</h2>
+<ul>
+<li><b>The in-app logo stays black and white.</b> Your chosen app icon now changes only the Dock — the little abalone mark in the sidebar and the notch keeps its clean monochrome look, adapting to light and dark mode. Simpler to read, easier on the eyes.</li>
+</ul>
+        </article>
+        <article id="v1.20.0">
+            <p class="when">14 July 2026 · Version 1.20.0</p>
+            <h2>Pick your icon</h2>
+<ul>
+<li><b>Five app icons to choose from.</b> Settings → System → App icon now offers Sunset, Charcoal, Nacre, Rainbow, and Cosmos. Pick one and the Dock updates instantly — no restart, nothing to reinstall.</li>
+<li><b>A cleaner default.</b> The new default icon puts the sunset crescent on a bright white tile, so it reads crisply in the Dock at any size. Charcoal keeps its signature black-on-black look for those who prefer it quiet.</li>
+<li><b>The whole app follows your pick.</b> The little abalone mark in the sidebar and the notch pill takes on your chosen icon's colors — and it adapts between light and dark mode so it stays legible on any background.</li>
+</ul>
+        </article>
+        <article id="v1.19.0">
+            <p class="when">14 July 2026 · Version 1.19.0</p>
+            <h2>Search that shows, not tells</h2>
+<ul>
+<li><b>A real map for places.</b> Ask for restaurants, cafés, or anything nearby and results come with a live, pannable vector map — crisp Google-Maps-style rendering, numbered pins that match the list. Click a pin and its row lights up and stays selected.</li>
+<li><b>Photos open like they should.</b> Image results sit in a clean justified gallery; clicking one opens a proper preview panel with arrows at the edges, zoom controls, and keyboard navigation — no more dark overlay.</li>
+<li><b>Videos, news, and shopping results</b> each get their own card — thumbnails, sources, prices — with a small ↗ marking anything that opens in your browser.</li>
+<li><b>Reasoning that matches the label.</b> The model pill said "Medium" but turns weren't actually thinking at Medium. Now the effort you see is the effort that runs.</li>
+<li><b>Search keeps working during outages.</b> If our search provider has a hiccup, web searches automatically fall back to a second provider.</li>
+<li><b>Small fixes:</b> sidebar logo alignment, calmer map styling with collapsed attribution, and a taller map for easier browsing.</li>
+</ul>
+        </article>
+        <article id="v1.18.2">
+            <p class="when">13 July 2026 · Version 1.18.2</p>
+            <h2>Fixed a rare dictation crash</h2>
+<ul>
+<li><b>Fixed a rare crash</b> when dictation started at the exact moment your microphone was switching — AirPods connecting, a headset handing off. Abalone now waits for the switch to finish before it starts listening.</li>
+</ul>
+        </article>
+        <article id="v1.18.1">
+            <p class="when">13 July 2026 · Version 1.18.1</p>
+            <h2>Cleaner zoom controls and a clearer update button</h2>
+<ul>
+<li><b>Zoom controls</b> now sit neatly in the top-right corner of the window, with a cleaner single background.</li>
+<li><b>Update prompt</b> is easier to spot — a blue “Restart to Update” button so you always know when a new version is ready to install.</li>
+</ul>
+        </article>
+        <article id="v1.18.0">
+            <p class="when">12 July 2026 · Version 1.18.0</p>
+            <h2>Abalone 1.18.0</h2>
+<h3>Abalone 1.18.0 — Your projects follow you. And the sidebar grew up.</h3>
+<p><strong>Projects sync across your Macs.</strong> Sign in, and every project — its name, its emoji, its pinned state, its standing instructions, even the order you arranged them in — appears on every Mac you use. File a chat into a project on your laptop; it's filed on your desktop too. Delete a project on one machine and it's gone everywhere. Your folders stay yours: what a project points at on disk never leaves the Mac it lives on.</p>
+<p><strong>The sidebar was redesigned.</strong> Chats now nest under their projects with a clean connector line, and Recents holds only the chats that don't belong anywhere yet. Drag to reorder projects; drag a chat anywhere onto a project to file it — you'll see the actual row in your hand, a line showing exactly where it lands, and the cursor closes into a grab the moment you pick something up.</p>
+<p><strong>A real emoji picker.</strong> Click a project's icon and browse a full picker — search, categories, and a Frequently Used row that learns what you actually use.</p>
+<p><strong>Menus that belong on a Mac.</strong> Every right-click and ⋯ menu across the app is now a native macOS menu — the translucent kind — with keyboard shortcuts shown as proper keycaps.</p>
+<p><strong>Under the hood.</strong> Chats waiting on your approval now show their orange dot in every list, and a long list of small fixes to drag-and-drop, selection highlights, and sync resilience.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.17.0">
+            <p class="when">12 July 2026 · Version 1.17.0</p>
+            <h2>Abalone 1.17.0</h2>
+<h3>Abalone 1.17.0 — Permission, made conversational. Plus: your agent can browse the web.</h3>
+<p><strong>The agent asks like a person.</strong> When the agent needs your OK, the question now speaks plainly — "I'd like to count the files on your Desktop." — with the exact command one tap away and two clear buttons: Don't Allow and Allow. No jargon, no tiny print. The question takes over the composer until you decide, so it's never lost in the scroll.</p>
+<p><strong>Talk back to it.</strong> Not sure? Just reply — type or dictate "what does this do?" and the agent explains, then asks again so you can approve with one click. Words never grant permission on their own; only the Allow button does. That's the safety line, and now it feels like a conversation instead of a form.</p>
+<p><strong>An honest clock.</strong> While a question waits for you, the status says "waiting for you" and the timer stops — your thinking time never counts against the agent's. Decide whenever you're ready.</p>
+<p><strong>The agent can browse the web.</strong> Ask it to look something up or read a page — it searches, opens pages, and cites what it found. Reading a new site asks for your OK first, once per site, through the same clear question card.</p>
+<p><strong>Smoother voice.</strong> You can dictate a reply while the agent works, ESC now stops just your dictation (never the whole run), and chats waiting on your answer show a quiet orange dot in the sidebar.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.16.0">
+            <p class="when">11 July 2026 · Version 1.16.0</p>
+            <h2>Abalone 1.16.0</h2>
+<h3>Abalone 1.16.0 — Your agent can now see your screen</h3>
+<p><strong>Screen tools.</strong> Ask "what windows do I have open?" or "look at my Calendar" — the agent lists your windows, captures the one you name, and shows you exactly what it saw, right in the conversation. Every look is visible on the record, and it all runs under your existing Screen Recording permission.</p>
+<p><strong>Sharper images.</strong> Pictures in the conversation now load a full-resolution version on demand, and clicking one opens a clean full-size preview with an Image/Text toggle for captures.</p>
+<p><strong>Zoom and shortcuts.</strong> Zoom the conversation with ⌘+ / ⌘− and reset with ⌘0 — a small indicator shows the level. Start a new chat from anywhere with ⌘N.</p>
+<p><strong>Cleaner tables.</strong> Tables in replies got a minimal new look and a one-click copy button that puts the whole table on your clipboard as Markdown.</p>
+<p><strong>Stop that always works.</strong> Stopping the agent is now instant and reliable in every situation, and anything interrupted mid-way says so honestly in the transcript. Also fixed a crash that could occur while capturing a window.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.15.1">
+            <p class="when">10 July 2026 · Version 1.15.1</p>
+            <h2>Abalone 1.15.1</h2>
+<h3>Abalone 1.15.1 — Small polish</h3>
+<p><strong>Projects screen.</strong> The search bar now stays at the top of the Projects screen even before you've created your first project, so the page keeps its structure from day one.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.15.0">
+            <p class="when">10 July 2026 · Version 1.15.0</p>
+            <h2>Abalone 1.15.0</h2>
+<h3>Abalone 1.15.0 — The main window becomes the agent's home</h3>
+<p><strong>A real workspace, not a history list.</strong> The main window is now a full agent workspace: your conversation renders as a rich, live document — formatted answers, tool steps you can follow, images on the turns that carried them — with a proper composer underneath. Attach files, pick your model and effort, switch projects, all without leaving the keyboard. The notch pill is still the fastest way in; the window is now where the real work lives.</p>
+<p><strong>Type while it works.</strong> Send a message while the agent is mid-task and it queues as a steer — the agent folds it in at its next natural pause, exactly like briefing a colleague who's already moving. Queued messages show as chips you can edit or discard, and pressing Stop walks the queue one step at a time instead of throwing your words away.</p>
+<p><strong>Projects grew up.</strong> A project now holds its instructions, its sources (notes, PDFs, files the agent can read), and as many folders as the work spans — with a clear primary folder where the agent stands. Browse everything from the new Projects screen, edit titles in place, and create new projects with a proper naming step. Deleting anything now asks the way it should: click once to arm, click elsewhere to change your mind.</p>
+<p><strong>See how full the conversation is.</strong> A small ring by the composer shows how much of the model's context window this chat has used — it fills as the conversation grows, so "should I start a fresh chat?" stops being a guess.</p>
+<p><strong>A calmer sidebar.</strong> Recents now shows what's actually recent — older chats tuck into the Chats browser (with search) instead of stacking forever, and a running chat never disappears on you, no matter how old it is.</p>
+<p><strong>Under the hood.</strong> A deep pre-release review hardened the whole release: folder-consent prompts can no longer double-start a run, deleted chats stay deleted across account switches, deleting a project can't pull the floor out from under a live run, and side panels in the model menu now align cleanly to the row that opened them.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.14.0">
+            <p class="when">10 July 2026 · Version 1.14.0</p>
+            <h2>Abalone 1.14.0</h2>
+<h3>Abalone 1.14.0 — Pick any window, and a default that actually thinks</h3>
+<p><strong>Pick a Window.</strong> The agent could always see the window in front of you — now it can see the one behind it too. Open the ＋ menu and choose <em>Pick a Window…</em> to get a live thumbnail grid of everything on your screen; click one and that exact window lands on the attachment rail, right next to what's already there. Add a second, a third, mid-conversation — the panel floats above your work, so you never lose your thread by clicking around to line windows up.</p>
+<p><strong>The model you see is the model that runs.</strong> Until now, if you never picked a model, the agent quietly ran the fastest, shallowest tier — no matter what the picker showed. Every message now carries your resolved model explicitly, so the label and the actual work can never drift apart again.</p>
+<p><strong>A default with a brain.</strong> The out-of-the-box model is now a reasoning tier: GPT-5.6 Terra where your account has it, GPT-5.5 otherwise. The fast no-thinking models are still one click away — they're just no longer the silent default.</p>
+<p><strong>A picker that reads like a dial.</strong> Models are now ordered fastest to deepest — Luna, Terra, Sol — with the default clearly marked, so choosing a tier is a glance, not a puzzle.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.13.0">
+            <p class="when">9 July 2026 · Version 1.13.0</p>
+            <h2>Abalone 1.13.0</h2>
+<h3>Abalone 1.13.0 — The GPT-5.6 generation, verified for your account</h3>
+<p><strong>GPT-5.6 Luna, Terra, and Sol arrive in the agent.</strong> OpenAI rolls the 5.6 family out account by account, so Abalone now checks quietly in the background which of them your ChatGPT login can actually run — and shows exactly those. No broken menu entries, no guessing. The moment OpenAI switches a new model on for you, it simply appears in your picker.</p>
+<p><strong>Reasoning effort, per model.</strong> Terra and Sol expose their real thinking dials — Low, Medium, High, and Extra High — each verified against OpenAI's own service, so every option in the menu is one the model genuinely accepts.</p>
+<p><strong>The picker heals itself.</strong> If a model ever stops working for your account — you switch ChatGPT logins, or OpenAI reshuffles access — the app notices on the very first failed message, drops the dead model from the list, and your next try runs on a model that works. Switching accounts re-checks everything automatically.</p>
+<p><strong>Sturdier sign-in.</strong> A momentary network blip during ChatGPT sign-in used to fail the whole attempt with a cryptic system error. The exchange now rides through the blip, and when something genuinely is wrong, the message says so in plain words.</p>
+<p><strong>Long agent chats compact at the right time.</strong> The 5.6 models carry a much larger context window than the app assumed, so conversations no longer get summarized three times earlier than necessary.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.12.3">
+            <p class="when">9 July 2026 · Version 1.12.3</p>
+            <h2>Abalone 1.12.3</h2>
+<h3>Abalone 1.12.3 — Long dictations now finish their polish</h3>
+<p><strong>Dictate for eight minutes, get eight minutes of polished text.</strong> Polish used to run on a stopwatch: 15 seconds, no matter how much you said. Short dictations never noticed; a long one got cut off mid-polish and pasted raw, every time, even on retry. The stopwatch now scales with how much you spoke — a quick note still lands as fast as ever, and a long ramble gets the time it actually needs. Polish only gives up when the stream genuinely stalls, never just because your thought was long.</p>
+<p><strong>The same fix, one layer down.</strong> The cloud polish path used to ask the AI for the entire cleaned-up text in one four-second gulp — fine for a sentence, impossible for an essay. It now streams word-by-word as the model writes, so length simply stopped being a failure mode. If a stream ever does get cut off mid-flight, Abalone detects the truncation and falls back to your raw words instead of pasting half a polish.</p>
+<p><strong>Smarter model picks in the agent.</strong> The model list now knows which models your account can actually use — no more picking one that fails on send — and each model runs at the reasoning effort that suits it best.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.12.2">
+            <p class="when">8 July 2026 · Version 1.12.2</p>
+            <h2>Abalone 1.12.2</h2>
+<h3>Abalone 1.12.2 — New chats open with their eyes open</h3>
+<p><strong>⌘N now sees what you see.</strong> Starting a new chat from the notch grabs the window you're looking at, the same way opening the agent does — so "new conversation about <em>this</em>" is two keystrokes: open the agent, hit ⌘N. One rule everywhere now: the first message of a conversation knows what's on your screen; follow-ups only see what you deliberately show. (⌘N from the main window stays blank — there, the screen is just Abalone itself.)</p>
+<p><strong>Clicking into Abalone's own windows tucks the card away too.</strong> The agent card already stepped aside when you clicked into another app, but a click into Abalone's main window or Settings left it hanging open. Now any click that isn't on the card itself means "I've moved on" — and the card politely gets out of the way. Nothing is lost: your conversation, draft, and attachments are right there on the next open.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.12.1">
+            <p class="when">7 July 2026 · Version 1.12.1</p>
+            <h2>Abalone 1.12.1</h2>
+<h3>Abalone 1.12.1 — Show the agent more than one window</h3>
+<p><strong>Captures now stack instead of swapping.</strong> Opening the agent grabs the window you're looking at — but until now, opening it again on a different window threw the first capture away. So building a question out of two or three windows was a game you couldn't win. Now each open <em>adds</em> the new window to your draft: summon on your code, close, summon on the error, close, summon on the docs — all three ride along when you hit send. Any tile you don't want, ✕ it off.</p>
+<p><strong>Same window twice? You get the fresh one.</strong> Re-opening the agent on a window you already captured doesn't pile up duplicates — it quietly swaps in the newer picture, so what you send is what's on screen now.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.12.0">
+            <p class="when">4 July 2026 · Version 1.12.0</p>
+            <h2>Abalone 1.12.0</h2>
+<h3>Abalone 1.12.0 — Your words are safe, your screen stays awake</h3>
+<p><strong>Escape finally means one thing.</strong> While you're dictating to the agent, ESC stops the mic and lands every word you said in the composer, ready to edit — nothing is ever thrown away, no matter how fast you press it. Once you've sent a message, it's sent: ESC stops the reply (even in the split second before the first word arrives), but your message stays in the conversation. To take a message back, tap it and edit. One key, one rule, no surprises.</p>
+<p><strong>Click away mid-conversation.</strong> Talking to the agent and need to check something? Click into your work — the session tucks itself into a small capsule by the notch and keeps listening (or keeps working) while you do. Click it to bring the conversation back. Sending, stopping, and your hotkey all still work from the capsule.</p>
+<p><strong>The screen mirrors your attention, not your keyboard.</strong> Long dictations and agent conversations are hands-off, and macOS used to read that stillness as "asleep at the wheel" — dimming the display mid-sentence. Now the screen stays on while you're in the conversation, and if you put a running task away, the Mac stays awake until it finishes. Closing the lid still sleeps immediately, as it should.</p>
+<p>Also: tooltips wrap properly instead of getting cut off (and duck out from under the hardware notch), the capture tile's "can't see the screen" state is cleaner, and the live transcript no longer freezes for seconds at a time during long dictations.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.11.4">
+            <p class="when">3 July 2026 · Version 1.11.4</p>
+            <h2>Abalone 1.11.4</h2>
+<h3>Abalone 1.11.4 — The agent tells you when it can't see</h3>
+<p>Abalone's agent reads the window you summon it over — that's how "reply to this" and "explain this page" work. But if you never granted the Screen Recording permission, the agent used to go quietly half-blind: no snapshot, no explanation, and answers about "this" that felt strangely vague. Now the composer says it plainly: right where the window snapshot would appear, a small tile reads "Can't see Slack" with a Turn On button that walks you through the grant. Keep talking to the agent anyway — everything else works — and the moment you flip the switch, the tile tidies itself away.</p>
+<p>Also fixed: the one-time permission card that used to swallow your very first agent summon. Your summon now always starts your session — the tile carries the message instead.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.11.3">
+            <p class="when">3 July 2026 · Version 1.11.3</p>
+            <h2>Abalone 1.11.3</h2>
+<h3>Abalone 1.11.3 — The agent crash, actually fixed</h3>
+<p>1.11.2 packed the agent's files into the app but the app kept looking for them in the wrong spot — a spot that only existed on the machine that built it. So the crash survived: opening a chat, sending a message to the agent, or loading the conversation feed still brought the app down on every Mac but ours. The lookup now points where the files actually live, and we verified it with the build-machine safety net deliberately removed — the exact condition that fooled us twice.</p>
+<p>Our crash telemetry caught every one of these, which is how we traced it. If your agent crashed on 1.11.0 through 1.11.2, this is the one to install.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.11.2">
+            <p class="when">3 July 2026 · Version 1.11.2</p>
+            <h2>Abalone 1.11.2</h2>
+<h3>Abalone 1.11.2 — The agent works on every Mac again</h3>
+<p>This one matters: on any Mac except the one that built the app, opening the agent — clicking a chat, sending a message, or just loading the conversation feed — could crash Abalone instantly. The app's web renderer and skill files were being left out of the box during packaging, and macOS quietly covered for it on our build machine while failing everywhere else. The files now ship inside the app, and our release pipeline gained a hard gate that refuses to build an app without them — so this class of bug is extinct, not just fixed.</p>
+<p>If Abalone ever crashed for you when touching the agent, this is the release that ends it. Update, open a chat, and say "reply to this" — the draft card from 1.11.0 finally gets to do its job on your machine.</p>
+<p>Everything from 1.11.1 rides along: the streaming dictation engine that keeps ten-minute dictations as smooth as ten-second ones.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.11.1">
+            <p class="when">3 July 2026 · Version 1.11.1</p>
+            <h2>Abalone 1.11.1</h2>
+<h3>Abalone 1.11.1 — Long dictations, smooth to the last word</h3>
+<p>Talk for ten seconds or ten minutes: the waveform and clock now stay silky the whole way. Before this fix, the speech engine kept every second of audio since you started in one growing pile and re-shuffled that pile many times a second — by minute three the shuffling got heavy enough for the display to hiccup. Abalone now runs its own streaming engine: audio lands once in a quiet archive, the recognizer reads only the few seconds it's still deciding on, and the microphone thread does the same tiny amount of work at minute nine as at minute one.</p>
+<p>The rebuild also hardened the seams around it: a lightning-fast send right after summoning the agent can no longer strand a hot microphone, closing a chat mid-send can't drop your last few words anymore, and if the speech engine ever dies mid-session the mic now shuts off and tells you instead of recording into the void.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.11.0">
+            <p class="when">3 July 2026 · Version 1.11.0</p>
+            <h2>Abalone 1.11.0</h2>
+<h3>Abalone 1.11.0 — Say "reply to this." Get a draft. Drop it in.</h3>
+<p>Look at any message — Slack, Mail, iMessage — hold your agent key and say "reply to this, tell them Thursday works." Abalone reads what's on your screen, writes the reply, and hands it to you as a draft card right in the notch. Click <b>Insert</b> and the words land in the exact app you were looking at — Abalone remembers where you were, brings it forward, and types the draft where your cursor was. <b>Copy</b> is there too, and confirms the moment it's done.</p>
+<p>Not quite right? Under every draft sit a few refinement buttons written by the AI for that specific draft — "More formal," "Shorter," "Add a question" — each one click from a fresh version. Or just say what you'd change, the way you'd tell a colleague.</p>
+<p>The draft card is the first of Abalone's skills — self-contained abilities the agent picks up on its own when the moment calls for one. More are on the way, and they'll all work like this: you speak, the agent works, and the answer arrives as something you can act on, not just read.</p>
+<p>Also in this release: bullet points and line breaks in agent replies now render the way they were written, and the notch panel grows taller when a draft is on screen so nothing gets cropped.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.10.6">
+            <p class="when">3 July 2026 · Version 1.10.6</p>
+            <h2>Abalone 1.10.6</h2>
+<h3>Abalone 1.10.6 — The waveform stops stuttering.</h3>
+<p>The sound wave used to freeze mid-sentence, then leap to catch up — worst in long talks with the AI. We hunted it with a profiler wired into the app and caught three culprits red-handed, all doing slow work on the one thread that draws the screen: your chat history was being re-saved to disk every second while you spoke, the app was quizzing macOS about permissions every two seconds, and the notch's glow was repainting its entire gradient up to 120 times a second. All three are fixed at the root — saves and permission checks moved off the drawing thread, and the glow now animates for free. A ten-minute session stays as smooth as its first word.</p>
+<p>The wave itself got sharper eyes and a better stage. It now measures your voice 30 times a second instead of 10 — motion reads as flow, not ticks — and it stands taller in a roomier input box, so what you see actually looks like what you sound like.</p>
+<p>And if Abalone ever crashes, it now owns up: the next launch quietly files the technical crash record with us, so most crashes get diagnosed and fixed without you ever writing in.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.10.5">
+            <p class="when">2 July 2026 · Version 1.10.5</p>
+            <h2>Abalone 1.10.5</h2>
+<h3>Abalone 1.10.5 — Never loses your words.</h3>
+<p>Every chat's input box now remembers what you left in it. Type half a message, dictate mid-thought, close the notch, switch chats, even quit the app — your unsent words are saved on your Mac and waiting in the box when you come back. Each chat keeps its own draft; it clears only when you send or delete it yourself.</p>
+<p>Closing a dictation now catches your last words too. The speech engine always runs a beat behind your voice — before, clicking ✕ threw away whatever it hadn't caught up on. Now closing finishes the transcript in the background, exactly like sending does, and tucks the complete words into the chat's draft.</p>
+<p>Long dictations into the AI are smooth again. The live transcript was redrawing everything you'd said several times a second — the longer you spoke, the choppier the waveform and the more the text ghosted. Now it only draws the newest lines, so a ten-minute dictation feels like a ten-second one.</p>
+<p>Sending can no longer close the notch on you. If you clicked into another app while a long recording was still being transcribed, the pill would collapse and silently drop your message. Now the message always sends — collapse the pill and the answer keeps working in the background, with the finished hint on the dot.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.10.4">
+            <p class="when">1 July 2026 · Version 1.10.4</p>
+            <h2>Abalone 1.10.4</h2>
+<h3>Abalone 1.10.4 — Grabs the right words.</h3>
+<p>When you highlight something and ask the AI about it, Abalone is now careful about <em>whose</em> highlight it picks up. Before, if it couldn't read the selection directly it would grab whatever was highlighted anywhere — sometimes text from another window, or even its own. Now it checks who owns the highlight: if it's the app you're looking at, it's used; if it can't be sure, it hands it over with a note instead of pretending it's yours.</p>
+<p>Also fixed a rare crash that could happen when the app tried to read its own window.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.10.3">
+            <p class="when">1 July 2026 · Version 1.10.3</p>
+            <h2>Abalone 1.10.3</h2>
+<h3>Abalone 1.10.3 — Deletes that stay deleted.</h3>
+<p>Delete a chat and it's gone for good. Before, a removed conversation could quietly wander back after you signed out and in, or turn up on another Mac — the app forgot to tell the cloud. Now it doesn't.</p>
+<p>Deleting is also calmer: tapping the trash asks for a quick confirm — <b>Cancel</b> or a red <b>Delete</b> — instead of a three-second countdown. Nothing disappears until you say so.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.10.2">
+            <p class="when">1 July 2026 · Version 1.10.2</p>
+            <h2>Abalone 1.10.2</h2>
+<h3>Abalone 1.10.2 — Clearer permission prompts.</h3>
+<p>A little polish to the permission helper. The app's name now shows in full (no clipped ".app"), and when microphone access needs switching back on, the card mirrors the row you're looking for — with the switch flipping on — instead of a chip that looked like you should drag it.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.10.1">
+            <p class="when">1 July 2026 · Version 1.10.1</p>
+            <h2>Abalone 1.10.1</h2>
+<h3>Abalone 1.10.1 — A calmer, more reliable assistant.</h3>
+<p>The assistant now runs on your own connected ChatGPT, so starting it just works. Haven't connected ChatGPT yet? A one-tap prompt gets you there — no more dead-end error.</p>
+<p>The conversation reads cleaner, too: the assistant's behind-the-scenes steps fold away under "Show work," a live line tells you what it's doing and how long it's taking, and long messages scroll to the right place instead of stranding you at the top.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.10.0">
+            <p class="when">30 June 2026 · Version 1.10.0</p>
+            <h2>Abalone 1.10.0</h2>
+<h3>Abalone 1.10.0 — Permissions without the scavenger hunt.</h3>
+<p>Granting macOS permissions used to mean opening System Settings, scrolling past an alphabetical wall of every app on your Mac, spotting Abalone, and flipping a tiny switch. Now Abalone opens the exact page for you and floats a little card right beneath it — just drag Abalone's icon into the list and you're done. Move the Settings window around and the card follows it.</p>
+<p>It works the same way wherever a permission is needed — turning on your shortcut, or letting the agent see your screen — and if you ever wave off the microphone, there's a clear path back instead of a dead end.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.9.1">
+            <p class="when">29 June 2026 · Version 1.9.1</p>
+            <h2>Abalone 1.9.1</h2>
+<h3>Abalone 1.9.1 — A quieter updater.</h3>
+<p>A small fix. A fresh install could greet you with an "update required" card that pointed at an <em>older</em> version than the one you'd just installed — a leftover from the big rename a few versions ago, reading from the wrong drawer. That card is gone. Updates stay out of your way until there's genuinely something newer, and catching up is handled the moment you launch.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.9.0">
+            <p class="when">29 June 2026 · Version 1.9.0</p>
+            <h2>Abalone 1.9.0</h2>
+<h3>Abalone 1.9.0 — Show it what you're looking at.</h3>
+<p>Open the agent on a fresh chat and it now sees the window in front of you — the picture <em>and</em> the text on it — captured as context. Ask "what's this error?" or "summarise this thread" without copying a word. It reads the whole window (the full document, not just the title bar), so the agent works from what you're actually looking at. Don't want it? The screen tile shows up as it's captured, with an ✕ to drop it before you send.</p>
+<p>Attachments grew up too. Drop in screenshots, images, PDFs, or files and each becomes a tile you can tap to open full-size — zoom in crisp with the buttons, a pinch, or a scroll; flip between the picture and the text on it; page through several at once. A Word or Excel file opens straight in its own app. And everything you attach is saved on your Mac first, so it's there instantly — offline, signed out, always — with the cloud as backup.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.8.4">
+            <p class="when">10 June 2026 · Version 1.8.4</p>
+            <h2>Abalone 1.8.4</h2>
+<h3>Abalone 1.8.4 — Polish, without the pause.</h3>
+<p>Polish got a reliability overhaul. If a dictation sometimes took an extra five or six seconds — or came back unpolished after a long purple wait — the culprit was a network connection that had quietly gone stale while the app sat idle. Abalone now keeps that connection fresh from the moment you start talking (and re-checks it every 40 seconds during long dictations), so your polished text rides a line that's already open.</p>
+<p>Also in this build: slow-but-healthy polish requests now get the time they need instead of being cancelled and restarted mid-flight, and long dictations polish as reliably as short ones.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.8.3">
+            <p class="when">10 June 2026 · Version 1.8.3</p>
+            <h2>Abalone 1.8.3</h2>
+<h3>Abalone 1.8.3 — One identity, everywhere.</h3>
+<p>This build finishes the rename that started in 1.8.0. Versions 1.8.1 and 1.8.2 accidentally shipped with the app's old internal identity, which could break the ChatGPT connection handshake on fresh installs and held back one-click updates. Both fixed.</p>
+<p>Coming from Abalone Flow, 1.8.1, or 1.8.2? macOS will ask you to re-grant Microphone and Accessibility once — about 30 seconds. Your hotkey, history, and settings carry over automatically.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.8.2">
+            <p class="when">10 June 2026 · Version 1.8.2</p>
+            <h2>Abalone 1.8.2</h2>
+<h3>Abalone 1.8.2 — Installer fix.</h3>
+<p>The DMG installer now shows the correct blue Applications folder icon on macOS 15 Sequoia. Drag Abalone to it as usual.</p>
+<p>If you're upgrading from Abalone Flow, macOS will ask you to re-grant Microphone and Accessibility access once — takes about 30 seconds. Your hotkey, model, and history carry over automatically.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.8.1">
+            <p class="when">9 June 2026 · Version 1.8.1</p>
+            <h2>Abalone 1.8.1</h2>
+<h3>Abalone 1.8.1 — Installer polish.</h3>
+<p>The DMG installer now shows the correct blue Applications folder icon on macOS 15 and later — drag and drop to install as usual.</p>
+<p>If you're upgrading from Abalone Flow, macOS will ask you to re-grant Microphone and Accessibility access once. Takes about 30 seconds. Everything else — hotkey, model, history — carries over automatically.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.8.0">
+            <p class="when">8 June 2026 · Version 1.8.0</p>
+            <h2>Abalone Flow is now Abalone</h2>
+<h3>Abalone 1.8.0 — New name, cleaner foundation.</h3>
+<p>Abalone Flow is now just <strong>Abalone</strong>. Same app, tighter name.</p>
+<p>After updating, macOS will ask you to re-grant Microphone and Accessibility access once — this is expected when an app's identity changes and takes about 30 seconds. Everything you've set up (hotkey, model, history) carries over automatically.</p>
+<h4>Also in this update</h4>
+<ul>
+<li>Fixed a bug where macOS showed a password dialog whenever Abalone started up, asking for access to the system keychain. This affected every launch on some machines. Gone.</li>
+<li>Onboarding is clearer — the permissions screen now explains why each access is needed, and the shortcut key screen shows both ways to use your key (hold to record, or double-tap to toggle).</li>
+</ul>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.7.7">
+            <p class="when">5 June 2026 · Version 1.7.7</p>
+            <h2>Faster everything</h2>
+<h3>Abalone Flow 1.7.7 — Faster everything.</h3>
+<p>Cloud dictation now runs through Groq's Whisper turbo — transcription that used to take 2–3 seconds now lands in about one. Polish follows the same path: Llama 4 Scout on Groq finishes in under half a second on most dictations. Both fall back automatically if their primary provider is unavailable, so you stay unblocked.</p>
+<p>AirPods connecting mid-dictation no longer stops your recording. The engine pins to the microphone you started with, so Bluetooth routing changes pass by unnoticed.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.7.6">
+            <p class="when">4 June 2026 · Version 1.7.6</p>
+            <h2>Smarter from the start</h2>
+<h3>Abalone Flow 1.7.6 — Smarter from the start.</h3>
+<p>Your name is now in your dictionary the moment you finish onboarding. If Whisper ever mishears it — accent, unusual spelling, whatever — the polish step knows the right version and corrects it automatically. First dictation, already sharp.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.7.5">
+            <p class="when">31 May 2026 · Version 1.7.5</p>
+            <h2>Quieter updates</h2>
+<h3>Abalone Flow 1.7.5 — Quieter updates.</h3>
+<p>We retired the pop-up card that greeted you on launch whenever a new version was waiting. It was redundant: Abalone already downloads updates in the background and installs them the next time you quit. The "Restart to Update" button still lives in the sidebar and menu for when you want it sooner — one less card to wave away.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.7.4">
+            <p class="when">31 May 2026 · Version 1.7.4</p>
+            <h2>A smoother welcome when new features ship</h2>
+<h3>Abalone Flow 1.7.4 — A better welcome for the next feature.</h3>
+<p>Mostly behind the scenes. Starting now, when a release ships something that needs a moment of setup — connecting an AI provider, granting a permission, anything you'd otherwise have to discover by digging through Settings — Abalone walks you through it the next time you open the app. Bug-fix releases stay invisible; just launch and keep going.</p>
+
+<p>If you upgraded straight here from a version older than 1.6.0, the next launch will show you a short three-screen tour: a hello, the AI provider connection that powers polish, and a live "watch the magic" demo in a mock email.</p>
+
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.7.3">
+            <p class="when">30 May 2026 · Version 1.7.3</p>
+            <h2>The engine badge now matches what you picked</h2>
+<h3>Abalone Flow 1.7.3 — The engine badge says what you chose.</h3>
+<p>A small clarity fix to the home screen. The transcription badge now reflects the mode you selected: pick <strong>Cloud</strong> and it says Cloud. Previously, if you were at your monthly cloud limit, choosing Cloud could confusingly show "On Device" instead — the badge was reporting the engine that would actually run rather than the one you'd picked.</p>
+
+<p>Now the badge honors your choice and only changes when you actually dictate: a capped Cloud dictation still falls back to the on-device model automatically (introduced in 1.7.2), and at that point the badge follows — switching to On Device so you can see exactly what ran. No more "I picked Cloud but it says On Device" head-scratching.</p>
+
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.7.2">
+            <p class="when">30 May 2026 · Version 1.7.2</p>
+            <h2>Dictation keeps working when you hit your monthly limit</h2>
+<h3>Abalone Flow 1.7.2 — Your dictation never hits a dead end.</h3>
+<p>Before, if you'd set transcription to Cloud and used up your included monthly cloud usage, the next dictation could fail with a confusing stack of messages — a "limit reached" pill, a "couldn't transcribe, retry" card (where retry did nothing), and a cap notice, all at once. Now it just keeps working: when the cloud is maxed out, Abalone quietly transcribes on the on-device model instead and hands you your text. One calm notification, no dead end.</p>
+
+<h4>What you'll notice</h4>
+<ul>
+    <li><strong>It keeps going at your limit.</strong> Hit your monthly cloud usage on Cloud mode and dictation switches to the on-device model automatically — you still get your words. Your transcription mode moves to Auto so it's clear what's running: on-device when it's ready, cloud when it isn't.</li>
+    <li><strong>One calm message, not a pile-up.</strong> You used to get three competing pop-ups — a "limit reached" pill, a dead "retry" card, and a cap notice. Now there's nothing to dismiss when on-device can carry it; if the on-device model is still downloading, you get a single "warming up the on-device model" note instead. No re-nag on every relaunch.</li>
+    <li><strong>See where you stand.</strong> Settings → Providers now shows your monthly usage at a glance, turning amber as you approach the limit.</li>
+</ul>
+
+<h4>What changed under the hood</h4>
+<ul>
+    <li><strong>One decision, one message.</strong> A single pre-flight resolver now decides which engine a dictation uses — or, if it can't run, exactly why — and the routing and the on-screen message both read from that one decision. They can no longer disagree, which is what produced the old pile-up.</li>
+    <li><strong>Graceful fallback everywhere.</strong> Any cloud transcription failure (limit, network, server) now falls back to the on-device model when it's available, instead of surfacing an error you can't act on.</li>
+</ul>
+
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.7.1">
+            <p class="when">29 May 2026 · Version 1.7.1</p>
+            <h2>Faster polish on ChatGPT — refresh moves off the critical path</h2>
+<h3>Abalone Flow 1.7.1 — Faster polish on ChatGPT.</h3>
+<p>If you connect your ChatGPT subscription as your polish provider, polish on 1.7.1 lands measurably faster than 1.7.0. The fix moves OAuth token refresh off the polish call's critical path — your token gets refreshed in the background, well before it expires, instead of blocking the next polish for a few hundred milliseconds while we phone home to OpenAI.</p>
+
+<h4>What you'll notice</h4>
+<p>Less perceived latency on every polish — especially the first one you do after the app's been open a while. The two paths (your ChatGPT vs. Abalone's included polish) now feel closer in responsiveness, though Abalone's included path still has a small structural edge because it talks directly to OpenAI's API endpoint instead of going through ChatGPT.com's consumer infrastructure. That's a difference we can narrow but not fully close — you can read more in the architecture notes if you're curious.</p>
+
+<h4>What changed under the hood</h4>
+<ul>
+    <li><strong>Background refresh, read-through cache.</strong> Polish always returns immediately with the cached token if it has any meaningful life left. A background task refreshes the token when it crosses 20 minutes from expiry — well before any polish call could trip the cliff. Concurrent calls dedupe onto a single in-flight refresh instead of starting three races.</li>
+    <li><strong>Per-branch retry budget structure.</strong> The polish retry schedule is now factored per auth kind — same values today, but ready to diverge cleanly if telemetry shows one branch needs more headroom.</li>
+    <li><strong>Per-branch logs.</strong> Every polish log line now includes the auth kind, so Console.app can give per-branch latency distributions without manual correlation. Boring but invaluable for the next round of tuning.</li>
+</ul>
+
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.7.0">
+            <p class="when">29 May 2026 · Version 1.7.0</p>
+            <h2>Polish that knows when to be quiet</h2>
+<h3>Abalone Flow 1.7.0 — Polish that knows when to be quiet.</h3>
+<p>If you're on Abalone's included polish (no provider connected), the app now handles your monthly cap the way Claude handles yours: a heads-up at 80%, a hard stop at 100%, and then silence. Not a "polish failed" card on every dictation for the rest of the month.</p>
+
+<h4>What the pill does now when you're capped</h4>
+<p>Nothing dramatic. Your dictation runs, your raw text pastes, the green checkmark lands. No purple polish flicker, no failure card, no apology on repeat. The system knows polish can't run; it doesn't pretend to try.</p>
+
+<h4>The 80% conversation</h4>
+<p>When you cross 80% of your monthly cap, one card appears — "Polish nearing monthly limit" — with the percent used and a link to connect your own AI. Then it's quiet until 100%. No 81%, 82%, 83% chatter; you don't need to be reminded every 35 seconds.</p>
+
+<h4>INCLUDED, not TRIAL</h4>
+<p>The Settings → AI Providers section that tracks your monthly polish allowance is now labeled "INCLUDED." It's a permanent free tier, not a trial period that ends. The chip still turns orange at 80% and red at 100% — only the framing stopped lying.</p>
+
+<h4>Faster polish under the hood</h4>
+<p>Cloud polish swapped from gpt-4o-mini to gpt-5-nano. Cheaper per token (about a third of the old price), and sub-1s first byte on most connections. Already live for everyone since last week — this build just officializes the change and stamps it on your local copy.</p>
+
+<h4>Update prompts that actually reach you</h4>
+<p>Most people live in the menu bar. Update prompts used to render only inside the main window, which meant you'd miss them until you happened to open Settings. Now they surface in the pill too. The next "1.7.1 is ready" reaches you whether the window is open or not.</p>
+
+<h4>One card system</h4>
+<p>Internally, every notification the pill shows — sign-in prompts, the AI-cap card, the "we just learned a word" confirmation, this new nearing-limit heads-up — now flows through the same component. Same countdown ring, same dismiss button, same hover-pause. The "Learned 5 new words" pop-up that used to look slightly different from every other card now reads as part of the same family.</p>
+
+<h4>Smaller polish, no less honest</h4>
+<ul>
+    <li>The cap-reached card's button now reads "AI providers" instead of "Connect ChatGPT" — it'll keep being honest as Claude and bring-your-own-key land.</li>
+    <li>Card layout breathes more: dismiss button floats in the top-right corner of any card instead of reserving a full-height column. Body text and action rows now extend to the right edge instead of being pinched.</li>
+    <li>The "polish couldn't finish" card no longer fires when polish was actually just paused for the cap — different problem, different message, no conflation.</li>
+</ul>
+
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.6.0">
+            <p class="when">27 May 2026 · Version 1.6.0</p>
+            <h2>Polish on every dictation</h2>
+<h3>Abalone Flow 1.6.0 — Speak rough. Land clean.</h3>
+<p>Until today, Abalone gave you a raw transcript: every "um", every misfire, every comma in the wrong place. This update adds the second pass. Your dictation runs through an AI editor before it lands at your cursor. Filler gone. Grammar tidied. Your voice intact.</p>
+
+<h4>Bring your own AI</h4>
+<p>The first time you launch 1.6.0, Abalone asks which AI does the polish:</p>
+<ul>
+    <li><strong>Your ChatGPT.</strong> Sign in once with Plus, Pro, or Team. The polish runs on your subscription — no extra account to manage.</li>
+    <li><strong>Abalone Cloud.</strong> Skip the sign-in and Abalone's bundled polish takes over. Included.</li>
+</ul>
+<p>Switch any time in Settings → AI Providers. Claude and bring-your-own-key are coming soon.</p>
+
+<h4>Watch the magic</h4>
+<p>Onboarding now has one screen that does what three used to. A live Gmail compose mock. The real pill. Your own voice. Speak the prompt, see the raw text land, then watch the polish redraft it in front of you. End of demo. You're in the app.</p>
+
+<h4>History remembers both</h4>
+<p>Every dictation now stores what you said and what the polish made of it. Edit either. Compare the two. Useful when you want to revisit a thought in its rawest form.</p>
+
+<h4>Faster first polish</h4>
+<p>The path between your microphone and the AI used to start cold on every launch. Now it stays warm while the app is open — like an editor keeping a language server alive. The first polish after opening the app skips the cold-start tax.</p>
+
+<h4>Dictionary, smarter</h4>
+<p>When you edit a transcription, Abalone learns what you meant. 1.6.0 swaps the old pattern-matching for a language model. It spots names, technical terms, and your personal vocabulary the way a human editor would, then quietly remembers.</p>
+
+<h4>Polish under the hood</h4>
+<ul>
+    <li>If polish hits an error mid-dictation, your raw text stays at the cursor. Nothing lost.</li>
+    <li>ESC cancels in-flight polish cleanly.</li>
+    <li>Cap-reached state shows a clear card with the reset date — no "AI is unavailable" guesswork.</li>
+    <li>Window title is now "Abalone Flow" with the space it deserves.</li>
+</ul>
+
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.5.1">
+            <p class="when">16 May 2026 · Version 1.5.1</p>
+            <h2>Whisper v3 turbo on every Mac</h2>
+<h3>Abalone Flow 1.5.1 — Whisper v3 turbo, automatically</h3>
+<p>v1.5.0 made Whisper v3 turbo the default model for new users — comparable size to the previous default, noticeably faster on Apple Silicon, with quality on par. But existing users had no way to switch.</p>
+<p>This update fixes that. The first time you launch 1.5.1, your on-device model upgrades to turbo automatically — nothing to click. Cloud transcription covers the ~5–10 minute download window so you can keep dictating throughout.</p>
+<p>Your previous model files stay in your cache. If you ever want to switch back, they're still there.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.5.0">
+            <p class="when">16 May 2026 · Version 1.5.0</p>
+            <h2>New onboarding, instant cloud dictation, and engine choice</h2>
+<h3>Abalone Flow 1.5.0 — Hello, and start dictating now</h3>
+<p>The biggest update since launch. A brand-new welcome flow for first-time users, instant dictation while your on-device model downloads, an engine picker for the way you prefer to work, and a smaller, faster default model.</p>
+<h4>A real first-launch experience</h4>
+<p>Six guided screens teach you everything you need in under two minutes — and nothing you don't:</p>
+<ul>
+    <li><strong>Permissions, explained.</strong> Accessibility and microphone access are requested inline, with plain-English context for each.</li>
+    <li><strong>Pick your dictation shortcut.</strong> Try Fn, a key combo, or any modifier — see exactly how it feels in a live preview.</li>
+    <li><strong>Mic check.</strong> Pick the input device and watch a live waveform confirm it's listening. No more guessing whether the right mic is selected.</li>
+    <li><strong>Language follows your keyboard.</strong> By default Abalone reads your active keyboard layout — switch ⌘+Space and it switches with you. You can pin a single language too.</li>
+    <li><strong>Meet the dictionary.</strong> A short demo shows how Abalone learns names and proper nouns from your edits — using your own name as the example.</li>
+    <li><strong>One real practice dictation.</strong> Hold your shortcut, say a sentence, watch it land. The first proof that this just works.</li>
+</ul>
+<h4>Dictate the second you sign in</h4>
+<p>Abalone's on-device model is ~500 MB. That used to mean waiting before your first dictation. Not anymore.</p>
+<ul>
+    <li><strong>Cloud bridge.</strong> While your on-device model is downloading, Abalone routes dictation through the cloud automatically. You press your shortcut and it just works.</li>
+    <li><strong>Quiet handoff.</strong> The moment your on-device model finishes installing, Abalone switches over silently. No prompts, no popups.</li>
+    <li><strong>Honest progress.</strong> The home page shows a thin progress bar at the bottom of the window so you always know where the download stands — without taking over the screen.</li>
+</ul>
+<h4>Engine picker</h4>
+<p>Settings → Engine Mode lets you choose how Abalone transcribes:</p>
+<ul>
+    <li><strong>Auto.</strong> On-device when ready, cloud when not. The default — and what most people want.</li>
+    <li><strong>Cloud.</strong> Fastest cold start, lowest latency.</li>
+    <li><strong>On Device.</strong> Everything stays on your Mac. Works fully offline.</li>
+</ul>
+<h4>Whisper v3 turbo as the default</h4>
+<p>The default on-device model is now Whisper v3 turbo — about half the size of the previous default, noticeably faster on Apple Silicon, with quality on par with the small model. Existing models keep working; turbo downloads the next time your cache is cleared.</p>
+<h4>Polish under the hood</h4>
+<ul>
+    <li>Fixed an Fn-as-modifier edge case where holding Fn with another key could accidentally start recording.</li>
+    <li>Dock icon now reliably reopens the main window.</li>
+    <li>Pill status messages stay single-line and consistent across states.</li>
+    <li>Cloud transcription pre-warms the moment you press your shortcut, shaving response time off every cloud dictation.</li>
+</ul>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.4.3">
+            <p class="when">7 May 2026 · Version 1.4.3</p>
+            <h2>Fn+Delete works again, plus a friendlier push-to-talk</h2>
+<h3>Abalone Flow 1.4.3 — Fn keys behave the way macOS intended</h3>
+<p>Two small but meaningful keyboard fixes for anyone who uses Abalone with Fn as their dictation key.</p>
+<ul>
+    <li><strong>Fn+Delete forward-deletes again.</strong> When Abalone intercepts the Fn key for dictation, it accidentally also blocked macOS from translating Fn+Delete into a forward delete. Same for Fn+Left/Right (Home/End) and Fn+Up/Down (Page Up/Down). All of those now work the way they should.</li>
+    <li><strong>Holding Fn with another key won't accidentally start recording.</strong> Previously, if you held Fn for forward-deletes (or any Fn-modifier action), the hold timer could fire and start dictation behind your back. Now the moment you press another key while holding Fn, Abalone knows you're using Fn as a modifier — recording stays off.</li>
+    <li><strong>Push-to-talk feels more deliberate.</strong> The hold threshold is now 400ms (up from 150ms) — matching the double-tap window. A casual brush of Fn won't trigger PTT, but a clear hold still feels snappy.</li>
+</ul>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.4.2">
+            <p class="when">4 May 2026 · Version 1.4.2</p>
+            <h2>polish: cursor feedback, mic default, final-word transcription fix</h2>
+<h3>Abalone Flow 1.4.2</h3>
+<p>A polish release — no new features, just things that should have been right from the start.</p>
+<h4>What's changed</h4>
+<ul>
+    <li><strong>Your Mac's built-in mic is now always the default.</strong> Previously the app could silently switch to a Bluetooth device (like AirPods), causing a 1–3 second connection delay before your first dictation went through. Now Abalone always records from the built-in microphone unless you explicitly choose something else in Settings → Microphone.</li>
+    <li><strong>"Connecting mic…" feedback.</strong> If you do choose a Bluetooth mic and it needs a moment to negotiate, the dictation pill now shows "Connecting mic…" instead of a silent waveform while it waits.</li>
+    <li><strong>Final words no longer get cut off.</strong> Short final words at the end of a dictation ("…and <em>finally</em>") were sometimes dropped. Fixed by giving the audio engine a moment to flush its last buffer before transcription runs.</li>
+    <li><strong>Pointer cursor everywhere.</strong> Every button, toggle, keycap, and menu item in the app now shows the hand cursor on hover. No more arrow cursor over things you can click.</li>
+</ul>
+<p>No changes to core dictation, shortcuts, your dictionary, or cloud sync.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.4.1">
+            <p class="when">26 April 2026 · Version 1.4.1</p>
+            <h2>dock icon brings the window back reliably</h2>
+<h3>Abalone Flow 1.4.1</h3>
+<p>A small but long-overdue fix: clicking the Abalone Flow icon in your Dock now reliably brings the main window back, even after you've closed it.</p>
+<h4>What's changed</h4>
+<ul>
+    <li><strong>Dock-click always reopens the window.</strong> Previously, after closing the main window with the red ✕, clicking the Dock icon sometimes did nothing. The window now hides instead of being destroyed, and a single Dock click brings it forward every time.</li>
+    <li><strong>Window follows you across Spaces.</strong> If the main window is on a different desktop (Space) than the one you're currently on, clicking the Dock icon now pulls the window to your current Space — instead of yanking you to wherever the window was sitting.</li>
+    <li><strong>Minimized windows un-minimize on Dock click.</strong> If you'd minimized the window to the Dock with the yellow –, clicking the app icon now restores it directly.</li>
+</ul>
+<p>No changes to dictation, transcription, shortcuts, or your dictionary. Same shortcuts, same keys, same everything else.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.4.0">
+            <p class="when">26 April 2026 · Version 1.4.0</p>
+            <h2>Abalone learns proper nouns from your edits</h2>
+<h3>Abalone Flow 1.4.0 — Adaptive Dictionary</h3>
+<p>Abalone now learns the words you care about. Names, products, jargon — anything Whisper gets wrong the first time. You fix it once; from then on, it's right.</p>
+<h4>How it works</h4>
+<ul>
+    <li><strong>Auto-learn from your corrections.</strong> When you fix a transcription — change "Wispr" to "Wispr Flow", or "Sameer" to "Samir" — Abalone quietly notes the corrected proper noun. Next time you dictate, Whisper biases toward your spelling.</li>
+    <li><strong>Add words yourself.</strong> Open Settings → Dictionary and type the words you want Abalone to know: company names, teammates, product lines. Up to 100 entries, on-device only.</li>
+    <li><strong>Source badge per entry.</strong> Words you typed in show as "added by you"; words Abalone caught from your edits show with a sparkle ✨ "learned" badge — so you can tell which ones came from where.</li>
+    <li><strong>One toggle to disable.</strong> If auto-learn isn't your thing, flip the switch at the top of the Dictionary page. Manual entries keep working.</li>
+</ul>
+<h4>What triggers a learning</h4>
+<p>Auto-learn waits for a clear "I'm done editing" signal before saving anything. The strongest signals are <strong>pressing Enter to send</strong> (in Slack, ChatGPT, Cursor, etc.) and <strong>switching apps</strong>. Clicking a Send button with the mouse, or focusing a different field, also counts. The system never learns from text you typed — only from edits you made to dictated text.</p>
+<h4>What gets filtered out</h4>
+<p>To avoid learning typos or junk, Abalone runs every candidate word through Apple's spell-checker plus a stoplist of common English words. Only proper nouns and words that look like real names make it into your dictionary. Lowercase corrections, common-word swaps, and partial-word edits are skipped.</p>
+<p>Privacy: the dictionary lives on your Mac. If you're signed in, it syncs to your account so it's there on your next device — same shape as your transcription history.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.3.2">
+            <p class="when">24 April 2026 · Version 1.3.2</p>
+            <h2>shortcuts settings polish, one-tap error fixes</h2>
+<h3>Abalone Flow 1.3.2</h3>
+<p>The Shortcuts page in Settings got a cleanup. Same shortcuts, same keys — just easier to read, easier to fix, and easier to reset.</p>
+<h4>What's changed</h4>
+<ul>
+    <li><strong>Cleaner two-column layout.</strong> Each row now reads label on the left, keys on the right — the standard macOS settings convention. Keycaps scan cleanly down the right edge so you can spot what's bound to what at a glance.</li>
+    <li><strong>One Reset all shortcuts button.</strong> A single button at the top-right of the page resets every shortcut to its default, appearing only when something's actually been changed. The old per-row reset is gone — one clear escape hatch instead of two.</li>
+    <li><strong>One-tap fixes for invalid combos.</strong> If you try to bind something that won't work — a bare letter that fires while you type, Shift alone, or a universal ⌘ combo like ⌘Z — the error now shows tappable suggestion chips. Click one to commit a fixed version without re-recording.</li>
+    <li><strong>"Double-tap for hands-free" moved into the description.</strong> The hint now sits alongside "Hold to record" under Push to Talk, where behavior copy belongs. The controls column is just keycaps and actions.</li>
+</ul>
+<p>No changes to dictation, transcription, hotkey behavior, or anything outside the Settings page. Your bindings carry over unchanged.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.3.1">
+            <p class="when">24 April 2026 · Version 1.3.1</p>
+            <h2>card polish, reliable hover-to-pause</h2>
+<h3>Abalone Flow 1.3.1</h3>
+<p>Small polish on the cards that drop down from the notch — the permission prompt, model-download error, and sign-up nudge. Nothing new, just nicer.</p>
+<h4>What's changed</h4>
+<ul>
+    <li><strong>Countdown ring around the X.</strong> Cards that auto-dismiss now show a thin ring that drains as the timer runs out, so you can see how long you have before it disappears.</li>
+    <li><strong>Hover pauses the timer — reliably.</strong> Move the cursor anywhere over a card and the countdown freezes. Move away and it picks back up. (Previously this only worked sometimes, depending on where the cursor crossed.)</li>
+    <li><strong>Roomier layout.</strong> The dismiss X now sits in its own column in the top-right corner, and there's more breathing room between the title, body, and button. The card still stays locked to the notch width so it reads as one stacked element with the notch above.</li>
+</ul>
+<p>No changes to dictation, transcription, hotkeys, or anything else. Your settings and recordings carry over unchanged.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.3.0">
+            <p class="when">23 April 2026 · Version 1.3.0</p>
+            <h2>dictation moves to the notch</h2>
+<h3>Abalone Flow 1.3.0</h3>
+<p>The dictation pill has moved. Instead of floating at the bottom of the screen, it now lives at the top — anchored to the notch, extending downward as a small card when you record. Closer to where your eyes already are, out of the way of whatever you're writing into, and finally giving the notch a job on Macs that have one.</p>
+<h4>What's new</h4>
+<ul>
+    <li><strong>Notch-anchored pill.</strong> The pill sits flush against the top edge of your screen, extending the hardware notch if you have one and sitting in the same spot on Macs without. Hover it to see the shortcut hint; click to start recording.</li>
+    <li><strong>Undoable cancel.</strong> When you stop a recording by hitting the X, you get a short grace period with a progress bar and an Undo button. Hover the card and the countdown pauses — take as long as you need. Miss the window and the audio is discarded cleanly.</li>
+    <li><strong>New recording animations.</strong> A small abalone pearl appears during warming-up, transcribing, and done states, with motion tuned to the phase the app is in. The waveform during recording is crisper and the completion "done" moment is a single clean checkmark.</li>
+    <li><strong>New menu bar icon.</strong> A custom pearl-crescent template replaces the generic microphone glyph — matches the app's identity and respects your menu bar's light/dark appearance.</li>
+</ul>
+<p>Everything else — hotkeys, transcription quality, cloud sync, history — behaves the same. Your settings and recordings carry over unchanged.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.2.4">
+            <p class="when">22 April 2026 · Version 1.2.4</p>
+            <h2>fix: rapid hotkey taps no longer spawn ghost recordings</h2>
+<h3>Abalone Flow 1.2.4</h3>
+<p>Quiet but nasty bug fix. Rapid-fire-tapping your recording hotkey — five or six times in quick succession — could start multiple overlapping recording sessions in the background. Each would run invisibly until hitting the 10-minute max-duration cap, at which point it would paste a duplicate into your active app and save a near-empty 10-minute clip to your history. The pill would shimmer strangely and you'd often have to force-quit to escape. Fixed.</p>
+<h4>Change</h4>
+<ul>
+    <li><strong>Recording keys are ignored while a session is wrapping up.</strong> If you press the hotkey during the brief window where the app is transcribing and pasting the previous session, the press is dropped rather than starting a new overlapping one. You can start a fresh recording as soon as that finishes (usually under a second).</li>
+</ul>
+<p>No behaviour changes to dictation, cloud sync, or telemetry.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.2.3">
+            <p class="when">21 April 2026 · Version 1.2.3</p>
+            <h2>smarter update checks + reliable restart</h2>
+<h3>Abalone Flow 1.2.3</h3>
+<p>Closes out the auto-update flow. The "Restart to Update" button now reliably installs the update and relaunches the app. Previously, under certain conditions, clicking it would quit the app without installing anything — leaving you stuck on the old version.</p>
+<h4>Changes</h4>
+<ul>
+    <li><strong>Checks for updates every time you launch the app</strong>, plus once an hour while it's running. Previously it only checked once every 24 hours, which meant relaunching didn't necessarily trigger a fresh check.</li>
+    <li><strong>"Restart to Update" now reliably installs.</strong> You'll see a brief one-click "Install and Relaunch" confirmation from Sparkle when you click the capsule — then the app installs and relaunches, the way it was always supposed to.</li>
+</ul>
+<p>No behaviour changes to dictation, cloud sync, or telemetry.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.2.2">
+            <p class="when">21 April 2026 · Version 1.2.2</p>
+            <h2>stale-cache update CTA fix</h2>
+<h3>Abalone Flow 1.2.2</h3>
+<p>Another small polish on the auto-update flow. In 1.2.1 a stale DMG cache could leave the "Restart to Update" capsule on-screen even when there was nothing new to install — clicking it would quit the app without doing anything. This release ignores Sparkle's delegate callbacks for versions that match what's already running.</p>
+<h4>Change</h4>
+<ul>
+    <li>The "Restart to Update" capsule only appears when there's a genuinely newer build waiting. No more ghost CTAs that do nothing when clicked.</li>
+</ul>
+<p>No behaviour changes to dictation, cloud sync, or telemetry.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.2.1">
+            <p class="when">21 April 2026 · Version 1.2.1</p>
+            <h2>silent auto-update fix</h2>
+<h3>Abalone Flow 1.2.1</h3>
+<p>A quick follow-up to 1.2.0. The automatic update flow wasn't reliably surfacing the "Restart to Update" button when a new version was available in the background — you'd either see nothing, or occasionally a stray Sparkle dialog. This fixes both.</p>
+<h4>Change</h4>
+<ul>
+    <li>Sparkle now downloads new versions silently in the background (as intended) and the "Restart to Update" capsule appears automatically under the sidebar logo, in Settings, and in the app menu — no dialogs to dismiss.</li>
+</ul>
+<p>No behaviour changes to dictation, cloud sync, or telemetry from 1.2.0.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.2.0">
+            <p class="when">21 April 2026 · Version 1.2.0</p>
+            <h2>per-device telemetry + privacy policy</h2>
+<h3>Abalone Flow 1.2.0</h3>
+<p>New: the app now reports non-sensitive device info when you sign in, so we can debug issues faster and understand what Macs and OS versions our users are on. Nothing changes in how dictation works — your voice is still transcribed locally on your Mac.</p>
+<h4>What gets reported</h4>
+<ul>
+    <li>Mac model, chip, macOS version, app version, locale, timezone, and a stable hardware identifier — sent to our server the first time you sign in and on each launch afterwards.</li>
+    <li>IP address and country (derived by our edge provider) — logged for security monitoring.</li>
+</ul>
+<h4>What does <em>not</em> get collected</h4>
+<ul>
+    <li>No precise location, no contact lists, no browsing history, no data from other apps.</li>
+    <li>No selling, sharing, or licensing of your data. No ad networks. No AI training on what you say.</li>
+</ul>
+<p>Full details, including how to request deletion, are in our <a href="https://updates.abalone.ai/flow/privacy">privacy policy</a>. If you'd rather not share this data, email hello@abalone.ai and we'll delete your account on request.</p>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.1.3">
+            <p class="when">21 April 2026 · Version 1.1.3</p>
+            <h2>silent Restart to Update</h2>
+<h3>Abalone Flow 1.1.3</h3>
+<p>Smoother update flow — no more dialogs to click through.</p>
+<h4>Change</h4>
+<ul>
+    <li><strong>"Restart to Update" is now silent.</strong> Clicking the button used to surface two Sparkle dialogs ("Update Available" and then "Install and Relaunch"). Now it just quits the app, installs the new version, and relaunches — no clicks needed.</li>
+</ul>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.1.2">
+            <p class="when">21 April 2026 · Version 1.1.2</p>
+            <h2>launch fix for China</h2>
+<h3>Abalone Flow 1.1.2</h3>
+<p>Fixes a launch failure reported by users in mainland China.</p>
+<h4>Fix</h4>
+<ul>
+    <li><strong>"Apple could not verify" dialog on first launch.</strong> The notarization ticket is now stapled to the app bundle itself, so Gatekeeper can verify offline — no need to reach Apple's servers. This unblocks users in regions where Apple's notarization endpoints are throttled.</li>
+</ul>
+<p>No other behavior changes. Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+        <article id="v1.1.1">
+            <p class="when">19 April 2026 · Version 1.1.1</p>
+            <h2>bug-fix release</h2>
+<h3>Abalone Flow 1.1.1</h3>
+<p>Bug fixes for home stats, hands-free, and push-to-talk.</p>
+<h4>Fixes</h4>
+<ul>
+    <li><strong>Home stats from cloud DB.</strong> Weekly streak and 7-day WPM now read from the full cloud dataset, not the 200-row local cache.</li>
+    <li><strong>Modifier-only hands-free fires instantly.</strong> No more 150 ms hold before Control+Command (or any modifier combo bound to hands-free) starts recording.</li>
+    <li><strong>Push-to-talk no longer hangs after a mode switch.</strong> Pressing push-to-talk to stop hands-free used to silently break the key until a restart.</li>
+    <li><strong>Double-tap to re-enter hands-free works every time.</strong> After stopping hands-free with a single tap, the next double-tap was being dropped.</li>
+</ul>
+<p>Requires macOS 14 Sonoma or later. Apple Silicon.</p>
+        </article>
+    </main>
+</body>
+</html>
