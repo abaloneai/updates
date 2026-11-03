@@ -6,6 +6,25 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.29.2 — A steadier sidebar</title>
+            <pubDate>Tue, 03 Nov 2026 17:34:10 +0000</pubDate>
+            <sparkle:version>96</sparkle:version>
+            <sparkle:shortVersionString>1.29.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="95"/>
+            <description><![CDATA[
+                <h2>The Update button stays still</h2>
+                <p>Hovering the "Update available" button no longer flashes a tooltip that repeated the button's own words, and the pointer stays a hand the whole time instead of flicking to a text cursor.</p>
+                <h2>Every clickable row shows the hand</h2>
+                <p>Agents and chats in the sidebar now show the pointing hand when you hover them, like every other button. Dragging a row still shows the closed hand.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.29.2/Abalone-1.29.2.dmg"
+                sparkle:edSignature="d4IPAwjO4Cm+CF3/dEjgP02UJmVWCl5929ORPFXth8t86I/r97xXh4euqu919GdxKiYFasvrixBMGqvL+CUXDA=="
+                length="160952116"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.29.1 — Your own agent</title>
             <pubDate>Tue, 03 Nov 2026 16:50:22 +0000</pubDate>
             <sparkle:version>95</sparkle:version>
