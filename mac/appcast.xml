@@ -11,7 +11,7 @@
             <sparkle:version>95</sparkle:version>
             <sparkle:shortVersionString>1.29.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:criticalUpdate sparkle:version="94"/>
+            <sparkle:criticalUpdate sparkle:version="95"/>
             <description><![CDATA[
                 <h2>Plans</h2>
                 <p>Your agents can now run on Abalone's own AI, so you no longer need a ChatGPT plan. Pick Plus ($30 a month) or Pro ($100, $200 or $500 a month) on the Upgrade screen. Agents need a plan or your own ChatGPT plan, as before. The cloud computer and connected apps need a plan. Dictation stays free.</p>
