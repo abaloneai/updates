@@ -6,6 +6,43 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.29.1 — Your own agent</title>
+            <pubDate>Tue, 03 Nov 2026 16:50:22 +0000</pubDate>
+            <sparkle:version>95</sparkle:version>
+            <sparkle:shortVersionString>1.29.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="94"/>
+            <description><![CDATA[
+                <h2>Plans</h2>
+                <p>Your agents can now run on Abalone's own AI, so you no longer need a ChatGPT plan. Pick Plus ($30 a month) or Pro ($100, $200 or $500 a month) on the Upgrade screen. Agents need a plan or your own ChatGPT plan, as before. The cloud computer and connected apps need a plan. Dictation stays free.</p>
+                <p>Settings &gt; Usage &amp; Billing shows your two limits, the 5-hour session and the week, each with how much you have used and when it resets ("Resets in 3 hours"). Under them, This month shows your use this month, with a bar for each day.</p>
+                <p>The 5-hour session limits agents only. Dictation and Scribe keep working until this week's usage is used up.</p>
+                <h2>Agents</h2>
+                <ul>
+                <li><strong>Sub-agents.</strong> An agent can hand parts of a job to sub-agents that work at the same time and report back. Each one shows in the chat as its own line, with its own face.</li>
+                <li><strong>Full View.</strong> Your agent's computer now opens in Full View, like the browser. Its screen fills the window, the chat sits in one box on top, and you can watch it work.</li>
+                <li><strong>Your turn cards.</strong> When the agent needs you to do something on its computer or, now, on a web page, such as signing in, a Your turn card asks. Press Take control, do it, then Give back.</li>
+                <li><strong>Pictures in answers.</strong> An agent can show you what it saw: a screenshot, cropped to the part that matters, right in its reply. Click it to see it larger.</li>
+                <li><strong>New agents ask first.</strong> Press ＋ to make an agent, and it starts with a question card asking what job you want it to do.</li>
+                <li><strong>Schedules follow your time zone.</strong> A Schedule runs on your Mac's time zone, so when you travel, 8am stays 8am where you are. A time you set in another place's zone, such as 9:30am New York time, stays put.</li>
+                <li><strong>Agent settings</strong> are now in the side panel. Press the gear next to the panel's ×, or choose Agent settings… from an agent's ⋯ menu in the sidebar.</li>
+                </ul>
+                <h2>Settings</h2>
+                <ul>
+                <li><strong>Help &amp; support</strong> in Settings &gt; General has our support email, the terms of service and the privacy policy.</li>
+                <li><strong>Delete account</strong> in Settings &gt; General deletes your account and everything in it, and ends your plan at once.</li>
+                <li><strong>Open-source notices</strong> in Settings &gt; General lists the open-source software in Abalone and its licences.</li>
+                </ul>
+                <h2>A simpler privacy policy</h2>
+                <p>Our <a href="https://abalone.ai/privacy">privacy policy</a> is updated. We keep your data while your account is open, and when you delete your account we delete everything that identifies you. We may learn from what you make in Abalone to make it better; if you'd rather we didn't, email hello@abalone.ai and we'll stop. Settings now has its own <strong>Account</strong> page with your plan, Sign out and Delete account.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.29.1/Abalone-1.29.1.dmg"
+                sparkle:edSignature="z8jcPZMEYfdb8Pwmo5k1wCecDrL08DLwpZYjCIzOrYhd5V3jSEk4C67qp/VGtRp5+znoIseLJl5YmE3rVqGjAg=="
+                length="160952328"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.29.0 — A team of agents, Scribe, and sharper dictation</title>
             <pubDate>Sat, 17 Oct 2026 09:01:02 +0000</pubDate>
             <sparkle:version>94</sparkle:version>
