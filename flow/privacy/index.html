@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy — Abalone</title>
-    <meta name="description" content="How Abalone handles your data. Plain words. Updated 2026-10-23.">
+    <meta name="description" content="How Abalone handles your data. Plain words. Updated 2026-11-03.">
     <link rel="canonical" href="https://updates.abalone.ai/flow/privacy">
     <link rel="icon" type="image/svg+xml" href="https://updates.abalone.ai/flow/icon.svg">
     <style>
@@ -118,7 +118,7 @@
         <a class="back" href="https://abalone.ai/flow"><img src="https://updates.abalone.ai/flow/icon.svg" alt="" width="24" height="24">Abalone</a>
 
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: 2026-10-23</p>
+        <p class="updated">Last updated: 2026-11-03</p>
         <p>This policy covers the Abalone Mac app and the abalone.ai website. It is one policy for everyone, wherever you live and wherever you signed up. It is written in plain words so you can read all of it in a few minutes.</p>
 
         <h2>1. Who we are</h2>
@@ -130,7 +130,7 @@
             <li>We keep your data for as long as your account is open, with no time limit, so your history, chats and agents are there whenever you come back.</li>
             <li>We use it to run Abalone and to make Abalone better (section 5). If you'd rather we didn't use your content to improve Abalone, email us and we'll stop.</li>
             <li>We never sell your data and never show you ads.</li>
-            <li>OpenAI, Anthropic and Cerebras, the AI companies that answer on our account, don't train their models on what we send them.</li>
+            <li>OpenAI, Anthropic, Cerebras and DeepInfra, the AI companies that answer on our account, don't train their models on what we send them.</li>
             <li>You can delete your account in the app at any time. We then delete everything that identifies you, and keep only data that can no longer be linked to you and the billing records the law requires (section 9).</li>
         </ul>
 
@@ -149,7 +149,7 @@
                 </tr>
                 <tr>
                     <td><strong>What you make in Abalone</strong></td>
-                    <td>Dictation text and audio; your dictionary words; Scribe drafts you insert; agent chats, the files and pictures in them, the pages the agent visits and what its tools read for you; your agents, their memory pages, skills and schedules; message drafts the agent writes for you; your settings, such as your AI models</td>
+                    <td>Dictation text and audio; your dictionary words; Scribe drafts you insert; agent chats, the files and pictures in them, the pages the agent visits and what its tools read for you; your agents, their memory pages, skills and schedules; message drafts the agent writes for you; your settings, such as your AI models; the sites you let your agents open; feedback you send from Help › Send feedback, with the app version you sent it from and, only if you tick Include this chat, that chat’s id, which lets us open and read that chat to look into your feedback</td>
                 </tr>
                 <tr>
                     <td><strong>Your Mac's connection</strong></td>
@@ -164,12 +164,16 @@
                     <td>Your sign-in to it, stored encrypted, and the list of models your plan offers</td>
                 </tr>
                 <tr>
+                    <td><strong>Your API keys, if you save them</strong></td>
+                    <td>For each key you save in Settings → Secrets: the name you give it, one line on what it's for, and the key itself, stored encrypted with a key only our servers hold. We never show it to you again, or to anyone</td>
+                </tr>
+                <tr>
                     <td><strong>Payments</strong></td>
                     <td>Your plan, its status and billing dates, and your Stripe customer id. Your card number and address stay with Stripe</td>
                 </tr>
                 <tr>
                     <td><strong>Device and usage</strong></td>
-                    <td>Mac model, chip, macOS and app version, language, time zone, a hardware id and serial number; your IP address and country; crash reports (never your dictations); one usage row per AI request (feature, model, tokens, time, cost, never your words); in app versions up to 1.29.0, whether you turned on the agent's location setting (yes or no, never a location)</td>
+                    <td>Mac model, chip, macOS and app version, language, time zone (your Mac’s, or the one you choose in Settings), a hardware id and serial number; your IP address and country; crash reports (never your dictations); one usage row per AI request or app request (feature, model, tokens, time, cost, and for an app request how large the app’s answer was and how many of its items were shown; never your words); the newest release whose What's new you've seen (so we can mark what's new since); in app versions up to 1.29.0, whether you turned on the agent's location setting (yes or no, never a location)</td>
                 </tr>
             </tbody>
         </table>
@@ -224,7 +228,10 @@
             <li><strong>Auto-learn</strong> (Auto and Cloud modes, while you're signed in): when you fix a word right after dictating, what speech-to-text heard, the polished text, the text in the box after your change, your dictionary words and your name go to OpenAI, to find the word to add to your dictionary. In On Device mode it learns from your fix on your Mac and sends nothing. Turn it off in Settings → Dictation &amp; Scribe.</li>
             <li><strong>Scribe</strong> always uses cloud AI. It sends your spoken request, the app name, window title, the text in the box, your first name and a few of your recent dictations to OpenAI (or Anthropic as a backup). It reads the window you're in only if you said yes once; turn that off with Screen context in Settings → Dictation &amp; Scribe.</li>
             <li><strong>Audio files</strong> are saved to your account when you're signed in, so you can retry a transcription later.</li>
-            <li><strong>Agents</strong> run in our cloud. Your messages, files, memory pages, the folder paths you point an agent at, and what its tools read go to the AI that answers. The same AI names each new chat from its first message and the start of its reply. When you make a new agent, it also reads the names of your other agents, the titles of your newest chats and the apps you dictate into most, to suggest jobs it could do.</li>
+            <li><strong>Your API keys</strong> (Settings → Secrets) never go to an AI. Your agents see each key's name and what it's for. When a command on an agent's cloud computer names a key, our servers unlock it, for that one command only, and E2B runs the command with it. Before anyone sees what the command printed, the AI included, the key is hidden. An agent can use a key in its commands, so an agent tricked by a web page could send it somewhere else: use keys with a spending limit.</li>
+            <li><strong>Agents</strong> run in our cloud. Your messages, files, memory pages, the folder paths you point an agent at, and what its tools read go to the AI that answers. An agent may hand pieces of a job to sub-agents, copies of itself on a level it picks (Fast, Expert, or on Pro also Heavy): each sends what it reads to that level's AI, as the agent does. OpenAI's GPT-6 Luna, on our account, names each new chat from its first message and the start of its reply, whichever AI answers the chat. If you're on Pro and pick DeepSeek V4.1 Flash for a chat, it is run by DeepInfra in the US and reached through OpenRouter: we tell OpenRouter to send it only to DeepInfra and to keep nothing, and DeepInfra keeps nothing either. It reads pictures but is never sent PDFs. When you make a new agent, it also reads the names of your other agents, the titles of your newest chats and the apps you dictate into most, to suggest jobs it could do.</li>
+            <li><strong>Browsing in your desktop's browser</strong>: when an agent hands a stretch of plain browsing to a faster AI (finding a listing, a showtime or a price), the text of each page on that stretch and the agent's goal go to OpenAI on our account, whichever AI answers your chat, so it can pick the next link and tell when the goal is on the page. It sees nothing else: not your messages, not the chat.</li>
+            <li><strong>Web searches</strong> on our account: when an agent searches the web, the search words it writes and the facts it is looking for go to OpenRouter, which runs the search with Parallel. A faster AI on OpenAI, reached through OpenRouter, reads the result pages and writes the agent a short note, so OpenRouter also passes on that AI's instructions, the pages' text and the note. Parallel may keep search words and use them, not linked to you, to improve its search. When that search is down, OpenAI's own search runs it instead. If you connect your own ChatGPT, its built-in search runs your agents' searches.</li>
         </ul>
 
         <h2>7. Who processes your data for us</h2>
@@ -274,17 +281,27 @@
                 </tr>
                 <tr>
                     <td>OpenAI</td>
-                    <td>Polish backup, Auto-learn, Scribe, and agent answers on GPT models (with their web searches and chat titles)</td>
-                    <td>The words and context the feature needs</td>
+                    <td>Polish backup, Auto-learn, Scribe, agent answers on GPT models (the Fast and Expert levels included), every agent chat's title, reading web search results for agent answers on any model (and searching itself when the main search service is down), and the quick steps of a stretch of plain browsing on any model</td>
+                    <td>The words and context the feature needs; for browsing, the goal and the text of each page on that stretch; for a search, its words, the facts asked and the result pages</td>
                 </tr>
                 <tr>
                     <td>Anthropic</td>
-                    <td>Scribe backup, and agent answers on Claude models (with their web searches and chat titles)</td>
+                    <td>Scribe backup, and agent answers on Claude models (the Heavy level included)</td>
                     <td>The words and context the feature needs</td>
                 </tr>
                 <tr>
+                    <td>OpenRouter, and Parallel through it</td>
+                    <td>Web searches for agent answers on our account, and the call to the AI that reads their results</td>
+                    <td>The search words and the facts the agent asked for, which go to Parallel; and the reading AI's instructions, the result pages' text and its note, which go to OpenAI, with data collection refused. Parallel may keep search words and use them, not linked to you, to improve its search; OpenRouter's own terms apply</td>
+                </tr>
+                <tr>
+                    <td>DeepInfra (US), through OpenRouter</td>
+                    <td>Agent answers in a chat that picked DeepSeek V4.1 Flash</td>
+                    <td>What the agent's AI reads for that answer: your messages and pictures, the agent's memory pages and what its tools read. OpenRouter sends it only to DeepInfra, with zero data retention and data collection refused, and neither keeps it</td>
+                </tr>
+                <tr>
                     <td>Your own ChatGPT (only if you connect it)</td>
-                    <td>Agent answers and chat titles on your plan</td>
+                    <td>Agent answers on your plan</td>
                     <td>Your messages, billed to your subscription. Your ChatGPT data settings decide whether OpenAI trains on them</td>
                 </tr>
                 <tr>
@@ -295,11 +312,11 @@
                 <tr>
                     <td>E2B</td>
                     <td>The agent's cloud computer, when used</td>
-                    <td>The pages, commands and files on that machine</td>
+                    <td>The pages, commands and files on that machine, and the API keys a command uses</td>
                 </tr>
             </tbody>
         </table>
-        <p>OpenAI, Anthropic and Cerebras don't train their models on what we send them on our account, under their API terms, and may keep it for a limited time for safety checks.</p>
+        <p>OpenAI, Anthropic and Cerebras don't train their models on what we send them on our account, under their API terms, and may keep it for a limited time for safety checks. DeepInfra keeps none of what we send it through OpenRouter. We never reuse one person's search results for another person.</p>
         <p>Abalone is based in Singapore, and your data is stored in the <strong>United States</strong>. When we move data from the EU or UK to the US, we use the standard contracts the EU and UK approve, through each company's data processing terms.</p>
 
         <h2>8. How long we keep it</h2>
@@ -352,7 +369,7 @@
         <p>If we change what we collect or how we use it, we'll update the date at the top and tell you in the app before the change applies. Small wording fixes won't come with a notice.</p>
 
         <hr>
-        <p>Using Abalone is covered by our <a href="https://updates.abalone.ai/flow/terms">Terms of Service</a>.</p>
+        <p>Using Abalone is covered by our <a href="https://abalone.ai/terms">Terms of Service</a>.</p>
         <p>The Smarts steps in the app are ranked by Abalone from Epoch AI's <a href="https://epoch.ai/benchmarks/eci">Epoch Capabilities Index</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Our server downloads it once a day and sends Epoch AI nothing about you.</p>
         <p>Gmail, Google Calendar and Google Drive are trademarks of Google LLC. Other names and logos belong to their owners.</p>
     </main>
