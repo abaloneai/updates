@@ -11,7 +11,7 @@
             <sparkle:version>97</sparkle:version>
             <sparkle:shortVersionString>1.30.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:criticalUpdate sparkle:version="95"/>
+            <sparkle:criticalUpdate sparkle:version="97"/>
             <description><![CDATA[
                 <p>Abalone 1.30.0 is a required update: your cloud computer moves to a new version, and this app is the one that works with it.</p>
                 <h2>Sign in, then give it back</h2>
