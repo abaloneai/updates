@@ -6,6 +6,40 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.30.0 — Helpers that hand you the computer</title>
+            <pubDate>Wed, 04 Nov 2026 17:21:55 +0000</pubDate>
+            <sparkle:version>97</sparkle:version>
+            <sparkle:shortVersionString>1.30.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="95"/>
+            <description><![CDATA[
+                <p>Abalone 1.30.0 is a required update: your cloud computer moves to a new version, and this app is the one that works with it.</p>
+                <h2>Sign in, then give it back</h2>
+                <p>When a sub-agent working for your Agent reaches a sign-in page on the cloud computer, it now hands the computer to you itself. Its card shows in your chat. Sign in, press Give back, and it carries on from there.</p>
+                <ul>
+                <li>Give back puts you back where you were: in the chat, the side panel or full screen.</li>
+                <li>There is one Give back, and the button in the chat and the one at the top right always agree.</li>
+                <li>The window you just used stays open when you give it back.</li>
+                <li>Each chat has its own browser window on the cloud computer, so two chats no longer fight over one.</li>
+                </ul>
+                <h2>Smaller things</h2>
+                <ul>
+                <li>Usage bars in Settings now fill up as you use them ("40% used") instead of counting down.</li>
+                <li>Your Agent no longer asks "Open this site?". A link it read opens as written; it only refuses an address it built from your private files or messages.</li>
+                <li>Links in an answer open only pages your Agent actually searched or opened.</li>
+                <li>If your Mac goes to sleep mid-task, your Agent carries on in the cloud computer, or tells you what needs your Mac.</li>
+                <li>Schedules are one list, soonest first, with paused ones last. A one-time schedule leaves the list once it has run.</li>
+                <li>Paid plans no longer stop at a daily limit, only at your weekly usage.</li>
+                <li>Settings → Secrets says what it is for at the top.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.30.0/Abalone-1.30.0.dmg"
+                sparkle:edSignature="Ckxba2j7yU9Mk+FKqIFAhs1VzGuANph18darlTHMaGFHGTtEPhJ0MNy6DDF5RVGXEYhCfK52/LaTcTILeaIACg=="
+                length="160982221"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.29.2 — A steadier sidebar</title>
             <pubDate>Tue, 03 Nov 2026 17:34:10 +0000</pubDate>
             <sparkle:version>96</sparkle:version>
