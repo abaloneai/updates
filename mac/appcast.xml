@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.31.0 — Clearer usage bars</title>
+            <pubDate>Thu, 05 Nov 2026 16:43:32 +0000</pubDate>
+            <sparkle:version>100</sparkle:version>
+            <sparkle:shortVersionString>1.31.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="97"/>
+            <description><![CDATA[
+                <p>A small update. You can install it whenever you like.</p>
+                <ul>
+                <li>A usage bar turns amber once you’ve used 75% of a limit and red at 90%, so you can see at a glance when you’re close.</li>
+                <li>The session line is shorter (“Starts on your next use”) and stays on one row, and the percentages line up and never wrap.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.31.0/Abalone-1.31.0.dmg"
+                sparkle:edSignature="koQ6MqIxVEbiRCjDj3/QVnQ5pxlnMnLRjyQJG5kVFcp1a9c8yh4dux1GwfDxeJyyYpH4qcvoy5lFsZutQlCoAA=="
+                length="160984156"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.30.2 — A cleaner Connected apps button</title>
             <pubDate>Thu, 05 Nov 2026 05:15:27 +0000</pubDate>
             <sparkle:version>99</sparkle:version>
