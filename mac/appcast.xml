@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.30.1 — Updates go straight to the newest version</title>
+            <pubDate>Thu, 05 Nov 2026 03:13:09 +0000</pubDate>
+            <sparkle:version>98</sparkle:version>
+            <sparkle:shortVersionString>1.30.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="97"/>
+            <description><![CDATA[
+                <p>A small update. You can install it whenever you like.</p>
+                <ul>
+                <li>Updating now always takes you to the newest version. Before, if two versions came out while Abalone stayed open, the first update could install the older one and you had to update again.</li>
+                <li>With no apps connected, the Connected apps button in the sidebar now says “Connected apps” and shows a few apps you can connect. The window says what connecting an app lets your Agents do.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.30.1/Abalone-1.30.1.dmg"
+                sparkle:edSignature="0y36e3Sn+EDzzlnkkoQqgaSt0dK/d7yKGh/aGYOqCWcQYBmK3ElX+8dKelgX5gwQagIpA/IxKSu1aJi9f4egCA=="
+                length="160983864"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.30.0 — Helpers that hand you the computer</title>
             <pubDate>Wed, 04 Nov 2026 17:21:55 +0000</pubDate>
             <sparkle:version>97</sparkle:version>
