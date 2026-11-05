@@ -6,6 +6,26 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.30.2 — A cleaner Connected apps button</title>
+            <pubDate>Thu, 05 Nov 2026 05:15:27 +0000</pubDate>
+            <sparkle:version>99</sparkle:version>
+            <sparkle:shortVersionString>1.30.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="97"/>
+            <description><![CDATA[
+                <p>A small update. You can install it whenever you like.</p>
+                <ul>
+                <li>With no apps connected, the Connected apps button in the sidebar now shows one apps icon and the words “Connected apps”, in the same size as when apps are connected.</li>
+                <li>The list of Agents in the sidebar fades out at the bottom while there are more to scroll to.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.30.2/Abalone-1.30.2.dmg"
+                sparkle:edSignature="dzvtxeAJsWgDMBiWa1wIWPMA6OMR50Z9he/oa4KNMMM47Nz5osGXQvBXKtysanuNEVHoVBDJ/Iea1gehH5bKAA=="
+                length="160984119"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.30.1 — Updates go straight to the newest version</title>
             <pubDate>Thu, 05 Nov 2026 03:13:09 +0000</pubDate>
             <sparkle:version>98</sparkle:version>
