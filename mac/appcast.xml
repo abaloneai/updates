@@ -6,6 +6,34 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.32.0 — Sign in on a card</title>
+            <pubDate>Sat, 07 Nov 2026 16:27:23 +0000</pubDate>
+            <sparkle:version>101</sparkle:version>
+            <sparkle:shortVersionString>1.32.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="97"/>
+            <description><![CDATA[
+                <p>Abalone 1.32.0 is a required update: your cloud computer moves to a new version, and this app is the one that works with it.</p>
+                <h2>Sign in on a card</h2>
+                <p>When your Agent reaches a page that asks you to sign in, a card in the chat shows the boxes that page asks for: an email, a phone number, a password or a code. What you type goes to that page only. It is never stored, never sent to any AI, and your Agent never sees it.</p>
+                <ul>
+                <li>It works in your Mac's browser and on your cloud computer.</li>
+                <li>If the page shows a robot check, the card tells you to fill it in and tick it on the page.</li>
+                <li>Press Skip or "Couldn't sign in", and your Agent carries on without it.</li>
+                </ul>
+                <h2>Pages in your language</h2>
+                <ul>
+                <li>Before your Agent hands you a page, or shows you a picture of one, it switches the site to your language when the site has a language switch. It never translates pages or changes your browser's settings.</li>
+                <li>Your cloud computer now shows Thai, Chinese, Japanese, Korean and emoji instead of empty boxes.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.32.0/Abalone-1.32.0.dmg"
+                sparkle:edSignature="JoXTUyCXej/GWWC2AmvQ5qI8rtGmPVmGC2AgWIrC3JkX8DADVSJSzqKGOV/iAG1HRBTRwtnO75qUM34mHMgCAQ=="
+                length="161046635"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.31.0 — Clearer usage bars</title>
             <pubDate>Thu, 05 Nov 2026 16:43:32 +0000</pubDate>
             <sparkle:version>100</sparkle:version>

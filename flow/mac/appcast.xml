@@ -6,6 +6,21 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.32.0 — Sign in on a card</title>
+            <pubDate>Sat, 07 Nov 2026 16:27:23 +0000</pubDate>
+            <sparkle:version>101</sparkle:version>
+            <sparkle:shortVersionString>1.32.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:informationalUpdate>true</sparkle:informationalUpdate>
+            <link>https://updates.abalone.ai/download/mac</link>
+            <description><![CDATA[
+                <h2>Abalone has a new identity</h2>
+                <p>This update needs a fresh install — click <strong>Learn More</strong> to download it. It's 7 MB and takes about 30 seconds.</p>
+                <p>Open the downloaded file, drag <strong>Abalone</strong> to your Applications folder, then launch it. Your history, hotkey, and settings carry over automatically.</p>
+                <p>Once the new app is running, delete <strong>Abalone Flow</strong> from Applications.</p>
+            ]]></description>
+        </item>
+        <item>
             <title>Version 1.31.0 — Clearer usage bars</title>
             <pubDate>Thu, 05 Nov 2026 16:43:32 +0000</pubDate>
             <sparkle:version>100</sparkle:version>
