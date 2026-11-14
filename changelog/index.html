@@ -53,6 +53,84 @@
         <a class="back" href="https://abalone.ai/flow"><img src="https://updates.abalone.ai/flow/icon.svg" alt="" width="24" height="24">Abalone</a>
         <h1>Changelog</h1>
         <p class="lede">What's new in each version of Abalone for Mac, newest first.</p>
+        <article id="v1.33.0">
+            <p class="when">14 November 2026 · Version 1.33.0</p>
+            <h2>Use your own Claude plan, and choose who answers first</h2>
+<h3>Use your own Claude plan</h3>
+<p>If you have a Claude plan (Claude Pro or Claude Max) and a paid Abalone plan, your Agents can answer with your Claude plan instead of ours.</p>
+<ul>
+<li>Open Settings → AI, press + Add AI, then Sign in next to Claude subscription. Claude’s sign-in page opens in your own browser. On your Mac it comes back to Abalone by itself. If it doesn’t, press Use a code instead and paste the code from Claude’s page.</li>
+<li>The sign-in is made on your cloud computer and stays there. Abalone never sees it and never keeps it. We keep whether you’re signed in, when that sign-in ends and when you last signed in, and your plan’s latest limit readings.</li>
+<li>Claude does its work on your cloud computer, so the time that computer stays awake counts toward your Abalone usage. What Claude itself answers is paid by your Claude plan and never counts toward it.</li>
+<li>Sign out in Settings → AI, and Abalone signs Claude out of your cloud computer. If your Abalone plan ends, it does the same seven days later.</li>
+<li>Usage &amp; Billing shows your Claude plan’s 5-hour and weekly limits after your next Claude reply.</li>
+</ul>
+
+<h3>Your AIs, in your order</h3>
+<ul>
+<li>Settings → AI lists AI provided by Abalone and each subscription you’re signed in to, ChatGPT or Claude, in one list. Move them with the arrows. Your Agents use the first one that can answer, then the next.</li>
+<li>+ Add AI, under the list, offers the subscriptions you haven’t signed in to. To take one off the list, press Sign out in its row.</li>
+<li>An AI you sign in to joins at the bottom of the list. Move it up with the arrows.</li>
+<li>Updating moves nothing: the AI that answers you today stays first.</li>
+<li>Usage &amp; Billing shows your Abalone plan, then one card for each subscription you’re signed in to, with its own 5-hour and weekly limits as its maker reports them.</li>
+</ul>
+
+<h3>When an AI runs out</h3>
+<ul>
+<li>The reply stops where that AI ran out, and the next AI in your order carries on by itself. One line under the reply says what happened, for example “Claude is used up · resets 3:45 pm. Carried on with ChatGPT.” There is nothing to press.</li>
+<li>A reply moves on at most twice, and never back to an AI that already ran out on it. Schedules work the same way.</li>
+<li>While an AI earlier in your order can’t answer, a quiet line above the message box says so once, for example “Claude subscription is used up · resets 3:45 pm. GPT-6.1 Terra is answering.” It goes when you start typing.</li>
+<li>To try a used-up AI anyway, open More models in the model menu. When its name says “press a model to try it”, press one of its models, and it says “Trying with your next message”. If it’s still used up, the next AI answers and one line says so.</li>
+<li>A chat you set to one AI in More models never moves to another. When that AI runs out, the chat stops with one line and one button that names what answers next, for example “Carry on with GPT-6.1 Terra”.</li>
+<li>With no Abalone plan and no other AI with room, the line offers Upgrade plan. When every AI is used up, it says which one comes back first, for example “Your AIs are used up · Claude resets 3:45 pm”, and for Claude or ChatGPT links to the maker’s page to buy more.</li>
+<li>In the app’s window, every limit now says the clock time it resets, in your time zone: “resets 3:45 pm”, or “resets Mon 12:00 am” on another day.</li>
+<li>When ChatGPT is out of credits, it now says “needs credits”.</li>
+</ul>
+
+<h3>The model menu and what new chats start on</h3>
+<ul>
+<li>The button in the message box shows the model that will answer, with its maker’s logo.</li>
+<li>Its menu shows the four levels of the first AI in your order that can answer: Fast, Expert, Heavy and Max. Each row shows the model and how hard it thinks, for example “GPT-6 Luna · Low”, and under it the level and what it’s for, “Fast · Quick tasks”. Expert is recommended. A level your plan doesn’t include shows Pro and Upgrade.</li>
+<li>More models shows the four levels of each of your other AIs. Pick one, and this chat uses it.</li>
+<li>Settings → AI has “New chats start on”: Fast, Expert, Heavy or Max, the same for every AI. Every new chat starts there. A change you make inside a chat stays in that chat. On Plus, if you choose Heavy or Max, AI provided by Abalone starts new chats on Expert, and its list says so.</li>
+<li>On AI provided by Abalone and on your Claude subscription, Max now runs Claude Fable 5.2, Anthropic’s most capable model.</li>
+</ul>
+
+<h3>Choose the model for each level</h3>
+<ul>
+<li>In Settings → AI, every AI shows its four levels. For each one you can choose the model and how hard it thinks.</li>
+<li>On your ChatGPT or Claude subscription, you can pick any model your plan has. On AI provided by Abalone, you pick from Abalone’s models of that level’s kind, and Heavy and Max need Pro.</li>
+<li>The model menu and new chats use what you chose. Reset puts an AI’s levels back to Abalone’s choices.</li>
+<li>If a model you chose leaves your plan, its level says “Not on your plan” and runs Abalone’s choice until you pick again.</li>
+</ul>
+
+<h3>The side panel</h3>
+<ul>
+<li>Rest the pointer on the side panel’s ↙↗ button to choose a size: Chat only, ⅓, ½, ⅔ or Full view. View › Panel Size lists the same sizes.</li>
+</ul>
+
+<h3>Settings, plans and apps</h3>
+<ul>
+<li>Your plan lives on one page, Usage &amp; Billing. Each limit shows how much is used, and turns yellow from 75% and red from 90%. The ⓘ next to the 5-hour session says what stops when.</li>
+<li>Manage plan, Update card and the plan line in Settings all open the same Upgrade screen. If you reach today’s free limit, the message offers Upgrade plan. Plans have no daily limit.</li>
+<li>Permissions show a green dot when they’re granted.</li>
+<li>Every connected app now says it is by Composio, the partner Abalone uses to connect your apps. When you add one, Abalone tells you who will ask you to allow Composio, and that Abalone never sees your passwords.</li>
+<li>New Notion, Slack, GitHub and Linear accounts are named by their email, username or workspace, so you can tell them apart.</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul>
+<li>When an Agent scrolls a page or a list in the browser, it now scrolls the way you would, and it says what moved or that it’s already at the end.</li>
+<li>When Claude answers, its words before and after an Abalone tool show as separate replies, in order, and its steps name the file, search or site instead of a tool code.</li>
+<li>A message you type while Claude is still answering says Claude reads it when the reply finishes, and that Stop, then Send, changes course now.</li>
+<li>On macOS 15 and later, the sidebar button no longer shows twice when the app opens or when you move between Settings and your Agents.</li>
+<li>Search (⌘K) shows the same page titles you see on screen.</li>
+<li>In Settings, pressing beside an open list now closes it.</li>
+<li>The side panel’s size menu now looks right in the light theme.</li>
+<li>The hand pointer now shows steadily over every button and menu choice.</li>
+<li>Smaller fixes to spacing, icons and status lines across Settings.</li>
+</ul>
+        </article>
         <article id="v1.32.0">
             <p class="when">7 November 2026 · Version 1.32.0</p>
             <h2>Sign in on a card</h2>
