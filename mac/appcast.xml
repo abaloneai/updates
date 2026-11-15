@@ -11,7 +11,7 @@
             <sparkle:version>103</sparkle:version>
             <sparkle:shortVersionString>1.33.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:criticalUpdate sparkle:version="101"/>
+            <sparkle:criticalUpdate sparkle:version="103"/>
             <description><![CDATA[
                 <h2>Fixed</h2>
                 <ul>
