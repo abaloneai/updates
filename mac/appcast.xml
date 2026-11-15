@@ -6,6 +6,49 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.33.1 — No more freeze after a network drop, and each chat keeps its own model</title>
+            <pubDate>Sun, 15 Nov 2026 05:09:07 +0000</pubDate>
+            <sparkle:version>103</sparkle:version>
+            <sparkle:shortVersionString>1.33.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="101"/>
+            <description><![CDATA[
+                <h2>Fixed</h2>
+                <ul>
+                <li>The app could stop answering clicks after your network dropped and came back. It no longer does.</li>
+                <li>A chat you reopen shows the model you chose for that chat. Before, it showed your default until you pressed the model menu.</li>
+                <li>A model you pick is kept if the message doesn’t go through, so you don’t have to pick it again.</li>
+                </ul>
+                <h2>When a message can’t be sent</h2>
+                <ul>
+                <li>One line by the message box says why, with the one thing to press: Upgrade plan, Update card, Sign in, Change in Settings, or Carry on with the next AI. It shows before you press Send.</li>
+                <li>A chat set to one AI that has run out keeps its level when you let another AI answer.</li>
+                </ul>
+                <h2>When an AI runs out</h2>
+                <ul>
+                <li>The line that says who carried on, for example “Claude is used up · resets 3:45 pm. Carried on with ChatGPT.”, now stays in the chat. Before, it went away with your next message and never showed on another device.</li>
+                </ul>
+                <h2>Thinking</h2>
+                <ul>
+                <li>What the AI thought before it answered is kept with the reply, also for a reply you stopped, so a chat you reopen still shows it.</li>
+                </ul>
+                <h2>Schedules</h2>
+                <ul>
+                <li>A Schedule time that can’t run is skipped and moves on to its next time. Past runs says why: “Skipped · needs a plan” with Upgrade plan, or “Skipped · the model this schedule is set to can’t be used” with Edit in chat.</li>
+                </ul>
+                <h2>Smaller things</h2>
+                <ul>
+                <li>The panel size menu’s five tiles are drawn as one set.</li>
+                <li>The sidebar no longer has a Marketplace row. Ask any Agent to find and add a skill or a ready-made Agent.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.33.1/Abalone-1.33.1.dmg"
+                sparkle:edSignature="ZD76qLs4JSw1PUJ4EITECXxCAVHsr3fR12Ixk7kH9u+t+sJccicbHLI5EmalzdiHkWBtAHzZyAqKXJ/rKPleDw=="
+                length="161545895"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.33.0 — Use your own Claude plan, and choose who answers first</title>
             <pubDate>Sat, 14 Nov 2026 07:23:01 +0000</pubDate>
             <sparkle:version>102</sparkle:version>
