@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Order form</title>
+<style>body{font:16px/1.6 -apple-system,system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;color:#1c1917;background:#fff}h1{font-size:24px}.note{color:#78716c;font-size:14px}</style>
+</head><body>
+<h1>Order form</h1>
+<form id="order">
+<p><label>Name<br><input id="name" name="name" required></label></p>
+<p><label>Quantity<br><input id="quantity" name="quantity" type="number" min="1" value="1"></label></p>
+<p><button type="submit">Place order</button></p>
+</form>
+<p id="done" hidden>Order placed. Confirmation code: <b id="code"></b></p>
+<p class="note">A test page for the Abalone ship test. No order is placed and nothing leaves this page.</p>
+<script>
+function confirmationCode(name) {
+  let h = 5381;
+  for (const c of name.trim()) h = ((h * 33) ^ c.codePointAt(0)) >>> 0;
+  return "QA-" + h.toString(36).toUpperCase().padStart(7, "0").slice(-7);
+}
+document.getElementById("order").addEventListener("submit", (event) => {
+  event.preventDefault();
+  document.getElementById("code").textContent = confirmationCode(document.getElementById("name").value);
+  document.getElementById("done").hidden = false;
+});
+</script>
+</body></html>
