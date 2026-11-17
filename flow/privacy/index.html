@@ -118,7 +118,7 @@
         <a class="back" href="https://abalone.ai/flow"><img src="https://updates.abalone.ai/flow/icon.svg" alt="" width="24" height="24">Abalone</a>
 
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: 2026-11-14</p>
+        <p class="updated">Last updated: 2026-11-16</p>
         <p>This policy covers the Abalone Mac app and the abalone.ai website. It is one policy for everyone, wherever you live and wherever you signed up. It is written in plain words so you can read all of it in a few minutes.</p>
 
         <h2>1. Who we are</h2>
@@ -238,7 +238,8 @@
             <li><strong>When an AI runs out</strong> (Settings → AI): you can put your AIs in an order (AI provided by Abalone, your ChatGPT plan, your Claude plan), and we keep that order and what new chats start on. Every reply records which AI answered it and the model and effort it was asked for, with no words. When an AI reaches its limit, we note which one and when it resets, from the reply it stopped and from your plan's latest reading, never an amount; we also keep a yes or no on a reply for whether you asked an AI that was used up to try again. The next AI in your order then carries the reply on by itself. It gets a short note of ours naming what the stopped reply already did (each step's purpose and the file it worked on, never a command, address or search), then the chat so far, as for any reply there. That AI may belong to another company than the one that ran out.</li>
             <li><strong>Browsing in your desktop's browser</strong>: when an agent hands a stretch of plain browsing to a faster AI (finding a listing, a showtime or a price), the text of each page on that stretch and the agent's goal go to OpenAI on our account, whichever AI answers your chat, so it can pick the next link and tell when the goal is on the page. It sees nothing else: not your messages, not the chat.</li>
             <li><strong>Signing in on the Sign-in card</strong>: when an agent in your desktop's browser reaches a page that asks you to sign in (an email, a phone number, a password or a one-time code), it asks you to sign in on a card in the chat. The card shows the boxes that page asks for. What you type there goes from the card to your Mac, which types it into that page; it is never stored, never sent to our servers or to any AI, and the agent never sees it. On your cloud computer it passes once through our server, in memory only, to your own cloud computer, which types it into that page; it is never stored or logged there either, and never sent to any AI. After each press, the text of the page you reached, with every box you typed into shown as "(typed)", goes to OpenAI on our account, so it can tell whether you are signed in, the page asks for a next step, or what you typed was wrong. That page text can include your name, email address and account details. This check runs on an OpenAI service that offers no setting asking it not to keep requests, so OpenAI's API terms decide how long it keeps them. We keep only the usage row for the check, never the page.</li>
-            <li><strong>Web searches</strong> on our account: when an agent searches the web, the search words it writes and the facts it is looking for go to OpenRouter, which runs the search with Parallel. A faster AI on OpenAI, reached through OpenRouter, reads the result pages and writes the agent a short note, so OpenRouter also passes on that AI's instructions, the pages' text and the note. Parallel may keep search words and use them, not linked to you, to improve its search. When that search is down, OpenAI's own search runs it instead. If you connect your own ChatGPT, its built-in search runs your agents' searches.</li>
+            <li><strong>Web searches</strong> on our account: when an agent searches the web, the search words it writes go to OpenRouter, which runs the search with Parallel and sends back a short list of pages. OpenRouter runs a search only inside a call to a faster AI on OpenAI, so that AI also reads the search words and the results, with data collection refused; what it writes is thrown away. Parallel may keep search words and use them, not linked to you, to train and improve the AI behind its service; OpenRouter's own terms apply.</li>
+            <li><strong>Opening web pages</strong> on our account: when an agent opens a page, our own server asks the page's website for it, as "Abalone-User", with no cookies or sign-in, and turns it into text for the agent's AI. That can be a page a search found, a link in pages, emails, files or app results the agent read, or an address you gave it in the chat. An address carrying a password or a sign-in token we recognise is never opened, and neither is any address on a local or private network. No search service takes part in opening a page. When the agent looks for one fact in a long page, it can give a few words for it: our server then shows the page's start and the parts that match those words. Those words go only to our own server, never to the website or a search service. The page's text is then read by the AI that answers, like everything else the agent reads. The website sees our server's address and the page's address, as it would for any visitor, and may keep them under its own policy. If you connect your own ChatGPT, its built-in search runs your agents' searches. If you turn on your own Claude, Claude Code's own search and page reader run them on your plan.</li>
         </ul>
 
         <h2>7. Who processes your data for us</h2>
@@ -288,8 +289,8 @@
                 </tr>
                 <tr>
                     <td>OpenAI</td>
-                    <td>Polish backup, Auto-learn, Scribe, agent answers on GPT models (the Fast and Expert levels included), every agent chat's title, reading web search results for agent answers on any model (and searching itself when the main search service is down), the quick steps of a stretch of plain browsing on any model, and checking a sign-in page after each press on the Sign-in card</td>
-                    <td>The words and context the feature needs; for browsing, the goal and the text of each page on that stretch; for a search, its words, the facts asked and the result pages; for a sign-in, the text of the page you reached, never what you typed</td>
+                    <td>Polish backup, Auto-learn, Scribe, agent answers on GPT models (the Fast and Expert levels included), every agent chat's title, the call inside which OpenRouter runs a web search for agent answers on any model, the quick steps of a stretch of plain browsing on any model, and checking a sign-in page after each press on the Sign-in card</td>
+                    <td>The words and context the feature needs; for a search, its words and the results; for browsing, the goal and the text of each page on that stretch; for a sign-in, the text of the page you reached, never what you typed</td>
                 </tr>
                 <tr>
                     <td>Anthropic</td>
@@ -303,8 +304,8 @@
                 </tr>
                 <tr>
                     <td>OpenRouter, and Parallel through it</td>
-                    <td>Web searches for agent answers on our account, and the call to the AI that reads their results</td>
-                    <td>The search words and the facts the agent asked for, which go to Parallel; and the reading AI's instructions, the result pages' text and its note, which go to OpenAI, with data collection refused. Parallel may keep search words and use them, not linked to you, to improve its search; OpenRouter's own terms apply</td>
+                    <td>Web searches for agent answers on our account, each inside a call to an AI on OpenAI</td>
+                    <td>The search words the agent writes, which go to Parallel, and with them the results, which go to OpenAI with data collection refused. Parallel may keep search words and use them, not linked to you, to train and improve the AI behind its service; OpenRouter's own terms apply</td>
                 </tr>
                 <tr>
                     <td>DeepInfra (US), through OpenRouter</td>
