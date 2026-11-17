@@ -53,6 +53,67 @@
         <a class="back" href="https://abalone.ai/flow"><img src="https://updates.abalone.ai/flow/icon.svg" alt="" width="24" height="24">Abalone</a>
         <h1>Changelog</h1>
         <p class="lede">What's new in each version of Abalone for Mac, newest first.</p>
+        <article id="v1.34.0">
+            <p class="when">17 November 2026 · Version 1.34.0</p>
+            <h2>One way to look things up: the web, your apps, your chats and your Skills</h2>
+<h3>Searching the web</h3>
+<ul>
+<li>A web search now gives your Agent a short list of results. It answers from the list when the list holds the fact, and opens a page only when it needs more.</li>
+<li>Pages open in a few seconds, without a browser. When a site won’t let our reader in, your Agent opens the page in its browser instead.</li>
+<li>PDFs are read too.</li>
+<li>On a long page your Agent reads the start and the parts that match what it’s looking for, not the whole page.</li>
+</ul>
+
+<h3>Searching your apps</h3>
+<ul>
+<li>One search covers every account you’ve connected for an app, and several apps at once. “Find my newest invoice emails” is one step: “Searched Gmail and Outlook”.</li>
+<li>An account that couldn’t be searched shows as its own row, for example “Couldn’t search Outlook”, and the answer says so.</li>
+<li>When an app sends results your Agent can’t open, it now says how many came back. Before, it said “No results”.</li>
+</ul>
+
+<h3>Searching your chats and Skills</h3>
+<ul>
+<li>Past chats and Skills are searched the same way: a short list, then your Agent opens the one it needs.</li>
+<li>A chat search can try several wordings at once.</li>
+<li>When your Agent points you to one of your chats, press its name to open that chat.</li>
+</ul>
+
+<h3>Steps you can follow</h3>
+<ul>
+<li>Every step has a plain name and its own icon. Look-ups sent together show as one row you can open.</li>
+<li>A step that failed says what failed, in plain words.</li>
+</ul>
+
+<h3>Your own Claude plan</h3>
+<ul>
+<li>A Claude reply now says how long it worked, like every other reply.</li>
+<li>Claude can run look-ups side by side: searching your chats, reading files and looking at a window. Your cloud computer updates itself for this.</li>
+<li>Claude’s own steps are named properly in the chat: searching the web, reading a page, running a command, reading and changing files.</li>
+<li>Links in a Claude reply now open when Claude really read that page or found it in its search.</li>
+</ul>
+
+<h3>Usage</h3>
+<ul>
+<li>You can see your usage without a click. The Usage row in the account menu shows one number: the limit closest to stopping the first AI in your order. It turns amber when a limit is close and red when it’s used up.</li>
+<li>The Usage card is simpler. It has one row for that AI and, when that’s your own Claude or ChatGPT and you pay for an Abalone plan, one for your plan, which pays for your Agents and cloud computer. Each row has one bar, for the limit nearest its end, and says when it resets once it’s close.</li>
+<li>When your plan’s limit stops Claude, your plan’s row turns red and Claude’s row says it waits for your plan.</li>
+<li>A limit shows 100% only when it’s really used up.</li>
+<li>If your limits can’t be read again, the card keeps the last numbers and says when they’re from.</li>
+<li>Every limit of every AI is still in Settings → Usage &amp; Billing. The 5-hour session’s ⓘ there now says what counts toward it, cloud computer included, and a Claude plan that doesn’t share its limits says so.</li>
+</ul>
+
+<h3>Fixed</h3>
+<ul>
+<li>A Skill that was only busy for a moment could be reported as “not available”, and your Agent then wrote without it. It now waits and reads the Skill.</li>
+<li>Two look-ups sent at the same moment could leave one of them out of the saved steps.</li>
+<li>A reply made by one Agent messaging another could keep a job running on your cloud computer after it ended.</li>
+</ul>
+
+<h3>Privacy</h3>
+<ul>
+<li>Web search words go to our search service, as before. The pages your Agent opens are now fetched by our own server, straight from the site, so no search service takes part in opening a page. The AI that answers reads the page’s text, as it reads everything your Agent looks at. Our privacy policy has the details.</li>
+</ul>
+        </article>
         <article id="v1.33.1">
             <p class="when">15 November 2026 · Version 1.33.1</p>
             <h2>No more freeze after a network drop, and each chat keeps its own model</h2>
