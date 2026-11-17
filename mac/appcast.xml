@@ -11,7 +11,7 @@
             <sparkle:version>104</sparkle:version>
             <sparkle:shortVersionString>1.34.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:criticalUpdate sparkle:version="103"/>
+            <sparkle:criticalUpdate sparkle:version="104"/>
             <description><![CDATA[
                 <h2>Searching the web</h2>
                 <ul>
