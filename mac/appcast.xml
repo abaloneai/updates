@@ -11,7 +11,7 @@
             <sparkle:version>105</sparkle:version>
             <sparkle:shortVersionString>1.35.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:criticalUpdate sparkle:version="104"/>
+            <sparkle:criticalUpdate sparkle:version="105"/>
             <description><![CDATA[
                 <h2>Two accounts of one AI</h2>
                 <ul>
