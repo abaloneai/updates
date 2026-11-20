@@ -6,6 +6,42 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.36.0 — New AI models without an app update</title>
+            <pubDate>Fri, 20 Nov 2026 16:47:14 +0000</pubDate>
+            <sparkle:version>106</sparkle:version>
+            <sparkle:shortVersionString>1.36.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="105"/>
+            <description><![CDATA[
+                <h2>Models come from Abalone</h2>
+                <ul>
+                <li>The models each of your AI accounts can run now come from Abalone, not from inside the app. When a new model comes out, it shows up in the model menu and in Settings → AI on its own, with no app update.</li>
+                <li>The model beside Send, the menu and Settings → AI always name what really runs on each account.</li>
+                <li>When the app opens, the model beside Send says “Checking your models…” for a moment, and Send waits until it knows.</li>
+                </ul>
+                <h2>Nothing changes without you</h2>
+                <ul>
+                <li>If your models change while a window is open, a message you send then isn’t sent. It says “Not sent · Your AI models were updated”, the new names show, and Try again sends it. A Try again pressed then says “Couldn’t try again · Your AI models were updated”, and the next one works.</li>
+                <li>If a chat is set to a model that a newer one replaced, one line above the box says “A newer model is out”, with a button for the newer model. Nothing is sent until you choose.</li>
+                <li>If a level in Settings → AI is set to a model that a newer one replaced, it says “A newer model is out” and names the model that runs until you pick again.</li>
+                </ul>
+                <h2>Fixes</h2>
+                <ul>
+                <li>A chat opens at its very end, also when you open it from search.</li>
+                <li>In Settings, a model or effort menu opens under its button, lined up with it.</li>
+                </ul>
+                <h2>This update is required</h2>
+                <ul>
+                <li>Every Mac needs this version. An older Abalone says “Update to continue” and installs it.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.36.0/Abalone-1.36.0.dmg"
+                sparkle:edSignature="mYTy1PCbRZIs557ocAPEJI6a+NmZ0cFCRVvncxDgQqzF0sh0vkj7MIxKlMMNCl3OFSX2kpfaZ1IF7n26HN3lBw=="
+                length="161528413"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.35.0 — Two Claude or two ChatGPT accounts, and only the models your account can run</title>
             <pubDate>Thu, 19 Nov 2026 13:08:23 +0000</pubDate>
             <sparkle:version>105</sparkle:version>
