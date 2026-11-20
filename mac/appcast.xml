@@ -11,7 +11,7 @@
             <sparkle:version>106</sparkle:version>
             <sparkle:shortVersionString>1.36.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:criticalUpdate sparkle:version="105"/>
+            <sparkle:criticalUpdate sparkle:version="106"/>
             <description><![CDATA[
                 <h2>Models come from Abalone</h2>
                 <ul>
