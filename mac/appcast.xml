@@ -6,6 +6,38 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.37.0 — Clearer limits for your own Claude and ChatGPT</title>
+            <pubDate>Sat, 21 Nov 2026 15:57:53 +0000</pubDate>
+            <sparkle:version>107</sparkle:version>
+            <sparkle:shortVersionString>1.37.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="106"/>
+            <description><![CDATA[
+                <h2>Only what your plan’s maker tells us</h2>
+                <ul>
+                <li>Your Claude card shows a limit only when Claude names one in a reply, such as its 5-hour limit at 80% used when you get close. The rest of the time it shows a link to your usage on claude.ai.</li>
+                <li>Your ChatGPT card shows a link to your usage on chatgpt.com. OpenAI doesn’t share a plan’s limits with apps like Abalone, so the bars are gone.</li>
+                <li>In Settings → Usage &amp; Billing every card has “Manage usage on claude.ai” or “Manage usage on chatgpt.com”, which opens your plan’s own usage page. In the account menu’s Usage, a row that shows the link opens it.</li>
+                </ul>
+                <h2>When a plan runs out</h2>
+                <ul>
+                <li>Its card turns red and says “Used up”, with when it resets if Claude says. OpenAI doesn’t give apps like Abalone a reset time, so ChatGPT’s says no time, and Abalone tries ChatGPT again after 30 minutes.</li>
+                <li>Try again lets your next message go to it again, for when you know it has room, say after your admin raised your limit. It’s on the red card in Settings → Usage &amp; Billing.</li>
+                <li>Settings → Usage &amp; Billing shows every account, each with its usage page, the limit Claude named if it named one, and Try again when it’s used up. Settings → AI says “Used up” on that account’s row. The account menu’s Usage shows the AI your next message goes to, or the one back soonest when every AI is used up.</li>
+                <li>All three update by themselves when Claude’s reset time passes or Abalone’s 30-minute wait ends.</li>
+                </ul>
+                <h2>This update is required</h2>
+                <ul>
+                <li>Every Mac needs this version. An older Abalone says “Update to continue” and installs it.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.37.0/Abalone-1.37.0.dmg"
+                sparkle:edSignature="zT1iWW94I3iJWboGrPEyhxQvhlj9yTx4LlGaqJ1lgiexcZzwMoeCxRpZL5/XF3WTWobuBVt7GoYtpe1C7mLZBw=="
+                length="161524594"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.36.0 — New AI models without an app update</title>
             <pubDate>Fri, 20 Nov 2026 16:47:14 +0000</pubDate>
             <sparkle:version>106</sparkle:version>

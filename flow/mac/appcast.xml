@@ -6,6 +6,21 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.37.0 — Clearer limits for your own Claude and ChatGPT</title>
+            <pubDate>Sat, 21 Nov 2026 15:57:53 +0000</pubDate>
+            <sparkle:version>107</sparkle:version>
+            <sparkle:shortVersionString>1.37.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:informationalUpdate>true</sparkle:informationalUpdate>
+            <link>https://updates.abalone.ai/download/mac</link>
+            <description><![CDATA[
+                <h2>Abalone has a new identity</h2>
+                <p>This update needs a fresh install — click <strong>Learn More</strong> to download it. It's 7 MB and takes about 30 seconds.</p>
+                <p>Open the downloaded file, drag <strong>Abalone</strong> to your Applications folder, then launch it. Your history, hotkey, and settings carry over automatically.</p>
+                <p>Once the new app is running, delete <strong>Abalone Flow</strong> from Applications.</p>
+            ]]></description>
+        </item>
+        <item>
             <title>Version 1.36.0 — New AI models without an app update</title>
             <pubDate>Fri, 20 Nov 2026 16:47:14 +0000</pubDate>
             <sparkle:version>106</sparkle:version>
