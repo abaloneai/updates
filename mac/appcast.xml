@@ -11,7 +11,7 @@
             <sparkle:version>107</sparkle:version>
             <sparkle:shortVersionString>1.37.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:criticalUpdate sparkle:version="106"/>
+            <sparkle:criticalUpdate sparkle:version="107"/>
             <description><![CDATA[
                 <h2>Only what your plan’s maker tells us</h2>
                 <ul>
