@@ -6,6 +6,34 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.38.0 — Bring your own Claude, free</title>
+            <pubDate>Tue, 24 Nov 2026 19:57:53 +0000</pubDate>
+            <sparkle:version>108</sparkle:version>
+            <sparkle:shortVersionString>1.38.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="107"/>
+            <description><![CDATA[
+                <h2>Your Claude plan, no Abalone plan needed</h2>
+                <ul>
+                <li>In Settings → AI, sign in your Claude plan and your Agents answer with it on your own cloud computer, even without an Abalone plan. It needs a paid Claude plan: Claude’s free plan doesn’t include this.</li>
+                <li>The computer’s time comes out of your weekly usage. Every account gets some each week; a plan gives you more.</li>
+                <li>When this week’s usage is used up, the box above your message says so and when it resets, with Upgrade plan beside it.</li>
+                <li>If your Claude sign-in ends, Abalone offers Sign in, which needs no plan.</li>
+                </ul>
+                <h2>Claude keeps going through the 5-hour limit</h2>
+                <ul>
+                <li>The 5-hour limit is for AI provided by Abalone. A chat on your own Claude now keeps going until this week’s usage is used up.</li>
+                <li>Dictation and Scribe count toward your week only, never the 5-hour limit.</li>
+                <li>Your plan no longer signs Claude out of your computer when it ends. Sign out in Settings → AI, or deleting your account, still does.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.38.0/Abalone-1.38.0.dmg"
+                sparkle:edSignature="qRgyOmqWgJF99vwLLzev6/0pGNGgCWXQkC9/FWWmLPLxmMDKetvPRiOLZYTwacyUuqygKe3jd8ruSPSF1wy5Ag=="
+                length="161524778"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.37.0 — Clearer limits for your own Claude and ChatGPT</title>
             <pubDate>Sat, 21 Nov 2026 15:57:53 +0000</pubDate>
             <sparkle:version>107</sparkle:version>
