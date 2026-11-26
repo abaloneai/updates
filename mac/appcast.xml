@@ -6,6 +6,32 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.39.0 — Send a picture or file on its own, and other fixes</title>
+            <pubDate>Thu, 26 Nov 2026 23:22:34 +0000</pubDate>
+            <sparkle:version>109</sparkle:version>
+            <sparkle:shortVersionString>1.39.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="108"/>
+            <description><![CDATA[
+                <h2>Fixes</h2>
+                <ul>
+                <li>A message with only a picture or a file, and no words, now gets a reply. Before, the reply stopped at once with an error.</li>
+                <li>On an Agent’s page, ＋ › Add Files…, ＋ › Pick a Window… and the menu that sets how the Agent’s actions are approved now work.</li>
+                <li>When a picture in a reply can’t be found or opened, its place now shows “Picture not available” with its caption, so you can tell a picture belonged there.</li>
+                <li>Copy on a reply, and ⌘⇧C, copy its steps in the same words you see on screen.</li>
+                </ul>
+                <h2>Your cloud computer is a place to work</h2>
+                <ul>
+                <li>Ask an Agent to host a website, keep something online or share a link to your cloud computer, and it says plainly that this isn’t possible there. It offers what works instead: a picture, the screen, the text in its reply, a copy on your desktop, or a Schedule for work that repeats.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.39.0/Abalone-1.39.0.dmg"
+                sparkle:edSignature="az9VehpeYPgpBEeENr/IwFkhfj+/JcBRTZqROergBOB+ESfc5XBO68pFnajX9+AUBdfgRI8W2js/q1jJwOvPDA=="
+                length="161351564"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.38.0 — Bring your own Claude, free</title>
             <pubDate>Tue, 24 Nov 2026 19:57:53 +0000</pubDate>
             <sparkle:version>108</sparkle:version>
