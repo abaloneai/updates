@@ -6,6 +6,29 @@
         <description>Updates for Abalone Flow.</description>
         <language>en</language>
         <item>
+            <title>Version 1.39.1 — Drop a file anywhere, and other fixes</title>
+            <pubDate>Sat, 28 Nov 2026 12:10:20 +0000</pubDate>
+            <sparkle:version>110</sparkle:version>
+            <sparkle:shortVersionString>1.39.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:criticalUpdate sparkle:version="108"/>
+            <description><![CDATA[
+                <h2>Fixes</h2>
+                <ul>
+                <li>Drop a file anywhere on a chat or on an Agent’s page and it attaches to your message. Before, the drop showed its outline and then attached nothing.</li>
+                <li>A message with a file shows in the chat the moment you press Enter, and the file uploads after. Before, the message waited for the upload, so a second press of Enter could send it twice.</li>
+                <li>If a file can’t upload, the message says “Not sent” with Try again, and your file is kept.</li>
+                <li>＋ › Pick a Window…: one click on a window adds it. Before, it took a click and then a double click.</li>
+                <li>The ＋ and microphone buttons in the message box now highlight as circles, matching the box’s rounded corners.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/abaloneai/updates/releases/download/macos-v1.39.1/Abalone-1.39.1.dmg"
+                sparkle:edSignature="Y44hWrN/MSK41BRcJld0LIkmLtOUQBIsuvPMAdaU7FQ6dKvT3OlC/YN9GHvNWe3d/cYvavUzRKsecaSlHuQ8Bw=="
+                length="161345987"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.39.0 — Send a picture or file on its own, and other fixes</title>
             <pubDate>Thu, 26 Nov 2026 23:22:34 +0000</pubDate>
             <sparkle:version>109</sparkle:version>
